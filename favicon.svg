@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#0c0d11"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="12.5" fill="none" stroke="#cda349" stroke-width="2"/>
+  <text x="32" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-weight="800" font-size="34" fill="#cda349">EB</text>
+</svg>
