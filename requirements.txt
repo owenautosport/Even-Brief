@@ -1,0 +1,6 @@
+# Even Brief - build + generation dependencies
+anthropic>=0.69          # Claude API client (web_search / web_fetch server tools)
+pydantic>=2.6            # edition/archive schema + validation
+Jinja2>=3.1             # templating / render layer
+beautifulsoup4>=4.12     # HTML parse validation in the build gate + tests
+lxml>=5.1               # fast parser backend for bs4 + sitemap checks

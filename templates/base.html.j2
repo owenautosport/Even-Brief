@@ -1,0 +1,368 @@
+{%- import "partials/_macros.html.j2" as m -%}
+{%- import "partials/_markets.html.j2" as mk -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ seo.title }}</title>
+<meta name="description" content="{{ seo.description }}">
+<link rel="canonical" href="{{ seo.url }}">
+<meta name="theme-color" content="#0c0d11">
+<meta name="robots" content="index, follow">
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Even Brief">
+<meta property="og:title" content="{{ seo.title }}">
+<meta property="og:description" content="{{ seo.description }}">
+<meta property="og:url" content="{{ seo.url }}">
+<meta property="og:image" content="{{ seo.og_image }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ seo.title }}">
+<meta name="twitter:description" content="{{ seo.description }}">
+<meta name="twitter:image" content="{{ seo.og_image }}">
+<!-- Static icons (public-domain/open assets in the repo) -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<script type="application/ld+json">{{ jsonld | safe }}</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+{{ styles_css | safe }}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="brand">
+      <div class="kicker">{{ meta.kicker }}</div>
+      <h1>Even Brief</h1>
+      <div class="date">{{ meta.date_display }} &nbsp;·&nbsp; Compiled {{ meta.compile_time }} &nbsp;·&nbsp; {{ meta.location }}</div>
+    </div>
+    <div class="mast-right">
+      <div class="wx">
+        <div class="weather">
+          <div class="loc">{{ weather.masthead.loc }}</div>
+          <div class="temp">{{ weather.masthead.temp }}</div>
+          <div class="cond">{{ weather.masthead.cond }}</div>
+          <div class="row"><span>{{ weather.masthead.low }}</span><span>{{ weather.masthead.rain }}</span><span>{{ weather.masthead.gusts }}</span></div>
+        </div>
+        <div class="wx-radar">
+          <span class="wx-radar-tag">Today · temperature</span>
+          <div class="wx-mini" id="wxTempMini"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Sticky top bar with burger -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </button>
+    <div class="topbar-title" id="topbarTitle">Top Headlines</div>
+    <div class="topbar-tabs">
+      <button class="tbtab" type="button" data-target="headlines">Top Headlines</button>
+      <button class="tbtab" type="button" data-target="stocks">Stocks</button>
+      <button class="tbtab" type="button" data-target="forecast">Weather</button>
+      <button class="tbtab" type="button" data-target="archive">Search</button>
+    </div>
+    <div class="topbar-brand">Even Brief</div>
+  </div>
+</div>
+
+<!-- Slide-out menu -->
+<div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="Menu">
+  <div class="drawer-head">
+    <span class="dh-kicker">Sections</span>
+    <button class="drawer-close" id="drawerClose" type="button" aria-label="Close menu">✕</button>
+  </div>
+  <div class="drawer-nav">
+    <button class="mlink lead active" data-target="headlines">★ Top Headlines</button>
+
+    <div class="mgroup" id="grp-stories">
+      <button class="mgroup-head" type="button" aria-expanded="true">
+        <span class="mh-ico">📰</span>
+        <span class="mh-label">Top Stories</span>
+        <svg class="chev" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </button>
+      <div class="mgroup-body">
+        {%- for s in stories %}
+        <button class="mlink" data-target="{{ s.id }}">{{ s.nav_label }}</button>
+        {%- endfor %}
+      </div>
+    </div>
+
+    <div class="mgroup collapsed" id="grp-markets">
+      <button class="mgroup-head" type="button" aria-expanded="false">
+        <span class="mh-ico">📈</span>
+        <span class="mh-label">Markets</span>
+        <svg class="chev" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </button>
+      <div class="mgroup-body">
+        <button class="mlink" data-target="markets">Overview</button>
+        <button class="mlink" data-target="movers">Movers</button>
+        <button class="mlink" data-target="calendar">Calendar</button>
+        <button class="mlink" data-target="stocks">Stocks</button>
+      </div>
+    </div>
+
+    <button class="mlink standalone" data-target="forecast">🌦 Weather</button>
+    <button class="mlink standalone" data-target="archive">🔎 Search &amp; archive</button>
+    <button class="mlink standalone" data-target="guide">❔ How it works</button>
+  </div>
+
+  <div class="drawer-settings">
+    <div class="set-title">Display settings</div>
+    <div class="set-row">
+      <div class="set-label">Theme<span class="set-sub">Light or dark</span></div>
+      <div class="themer" id="themer" title="Theme">
+        <button data-theme-set="dark">Dark</button>
+        <button data-theme-set="light">Light</button>
+      </div>
+    </div>
+    <div class="set-row">
+      <div class="set-label">Focus mode<span class="set-sub">Dim all but the paragraph you're reading</span></div>
+      <button class="focusbtn" id="focusToggle" type="button">◎ Focus</button>
+    </div>
+  </div>
+</aside>
+
+<main>
+
+<!-- ===== TOP HEADLINES ===== -->
+<section class="panel active" id="headlines">
+  {{ m.headline_card(headlines.hero) }}
+  <div class="ov-grid">
+    {%- for c in headlines.cards %}
+    {{ m.headline_card(c) }}
+    {%- endfor %}
+  </div>
+</section>
+
+<!-- ===== MARKETS OVERVIEW ===== -->
+{{ m.story_panel(markets.overview, panel_id="markets") }}
+
+<!-- ===== MOVERS DASHBOARD ===== -->
+{{ mk.movers_panel(markets.movers) }}
+
+<!-- ===== ECONOMIC CALENDAR ===== -->
+{{ mk.calendar_panel(markets.calendar) }}
+
+<!-- ===== STORIES ===== -->
+{%- for s in stories %}
+{{ m.story_panel(s) }}
+{%- endfor %}
+
+<!-- ===== WEATHER ===== -->
+{{ mk.weather_panel(weather) }}
+
+<!-- ===== STOCKS (LIVE) ===== -->
+<section class="panel" id="stocks">
+  <div class="dateline">Live markets · powered by TradingView</div>
+  <span class="badge b-markets">Stocks · live</span>
+  <h2 class="head">NYSE live — charts, prices &amp; screener</h2>
+  <div class="note">Live data loads from TradingView when you're online (it won't appear offline). Quotes may be real-time or delayed depending on the exchange.</div>
+
+  <div class="tradingview-widget-container" id="tvTape"><div class="tradingview-widget-container__widget"></div></div>
+
+  <div class="sec-h">Market hours</div>
+  <div class="mh-grid" id="mhGrid"></div>
+  <div class="note" style="margin-top:6px">Regular trading hours in each exchange's local time, Mon–Fri. Status and countdowns update live; excludes public holidays and intraday breaks.</div>
+
+  <div class="tv-block">
+    <div class="tv-cap">Biggest movers — tiles coloured by daily % gain / loss</div>
+    <div class="tradingview-widget-container tv-heat" id="tvHot"><div class="tradingview-widget-container__widget"></div></div>
+  </div>
+
+  <div class="tv-block">
+    <div class="tv-cap">Popular stocks — live price &amp; % change</div>
+    <div class="tradingview-widget-container tv-quotes" id="tvQuotes"><div class="tradingview-widget-container__widget"></div></div>
+  </div>
+
+  <div class="tv-block">
+    <div class="tv-cap">Market screener — browse &amp; sort the US market</div>
+    <div class="tradingview-widget-container tv-screener" id="tvScreener"><div class="tradingview-widget-container__widget"></div></div>
+  </div>
+
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank">Track all markets on TradingView</a></div>
+</section>
+
+<!-- Stock detail overlay (full interactive chart) -->
+<div class="stk-detail-back" id="stkDetailBack" hidden></div>
+<div class="stk-detail" id="stkDetail" hidden role="dialog" aria-label="Stock detail">
+  <div class="sd-head">
+    <div class="sd-title" id="sdTitle">—</div>
+    <button class="sd-close" id="sdClose" type="button" aria-label="Close">✕</button>
+  </div>
+  <div class="sd-chart" id="sdChart"><div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div></div></div>
+</div>
+
+<!-- ===== ARCHIVE & SEARCH ===== -->
+<section class="panel" id="archive">
+  <div class="dateline">Archive</div>
+  <span class="badge b-markets">Search &amp; archive</span>
+  <h2 class="head">Browse &amp; search past articles</h2>
+  <p class="lead-p">Search every story across editions by keyword, or filter by topic. Today's stories open in full; earlier ones open as a summary card.</p>
+  <div class="arch-bar">
+    <input class="arch-input" id="archSearch" type="search" placeholder="Search headlines and summaries — e.g. Iran, Ebola, SpaceX, Fed…" autocomplete="off">
+  </div>
+  <div class="arch-filters" id="archFilters">
+    <button class="afchip active" data-cat="All">All</button>
+    <button class="afchip" data-cat="Politics">Politics</button>
+    <button class="afchip" data-cat="Conflict">Conflict</button>
+    <button class="afchip" data-cat="Business">Business</button>
+    <button class="afchip" data-cat="Markets">Markets</button>
+    <button class="afchip" data-cat="Health">Health</button>
+    <button class="afchip" data-cat="Science">Science</button>
+    <button class="afchip" data-cat="Technology">Technology</button>
+    <button class="afchip" data-cat="Climate">Climate</button>
+    <button class="afchip" data-cat="Sport">Sport</button>
+  </div>
+  <div class="arch-count" id="archCount"></div>
+  <div class="arch-list" id="archList"></div>
+
+  <script type="application/json" id="archiveData">
+{{ archive_json | safe }}
+  </script>
+</section>
+
+<!-- archive reader modal -->
+<div class="amback" id="amBack"></div>
+<div class="amodal" id="amModal" role="dialog" aria-label="Archived article">
+  <div class="am-top">
+    <div><div class="am-meta"></div><h3></h3></div>
+    <button class="am-close" type="button" aria-label="Close">✕</button>
+  </div>
+  <div class="am-body"></div>
+  <div class="am-note"></div>
+</div>
+
+<!-- ===== GUIDE / HOW IT WORKS ===== -->
+<section class="panel" id="guide">
+  <div class="dateline">Reader's guide</div>
+  <span class="badge b-markets">How it works</span>
+  <h2 class="head">How this briefing works</h2>
+  <p class="lead-p">Every edition is written like a newswire — flat, sourced and impartial — then layered with tools that show you how solid each story is and how differently it's being reported. Here's what each feature means.</p>
+
+  <div class="gsec-h">Getting around</div>
+  <div class="gitem">
+    <div class="gicon">☰</div>
+    <div class="gbody"><h4>The menu</h4><p>Open the menu (top-left) to jump between sections. <strong>Top Stories</strong> expands to every story in the edition; <strong>Markets</strong> expands to the markets pages; <strong>Display settings</strong> sit at the bottom. The bar at the top always shows which section you're reading.</p></div>
+  </div>
+  <div class="gitem">
+    <div class="gicon">★</div>
+    <div class="gbody"><h4>Top Headlines</h4><p>The landing page: a lead story plus a clickable card for every other story. Tap any card to open the full article.</p></div>
+  </div>
+  <div class="gitem">
+    <div class="gicon">🌧</div>
+    <div class="gbody"><h4>Weather &amp; radar</h4><p>The masthead weather panel has today's hourly temperature chart joined onto it. The full <strong>Weather</strong> page (menu or top-bar tab) adds today's temperature &amp; precipitation charts, a tap-through 7-day forecast, any Met Office warnings, and a large animated rain radar (the radar needs an internet connection).</p></div>
+  </div>
+
+  <div class="gitem">
+    <div class="gicon">🔎</div>
+    <div class="gbody"><h4>Search &amp; archive</h4><p>Browse and search every story across editions by keyword, or filter by topic. Today's stories open in full; earlier ones open as a summary card. The archive grows with each new edition.</p></div>
+  </div>
+
+  <div class="gsec-h">How we show reliability</div>
+  <div class="gitem">
+    <div class="gicon">◉</div>
+    <div class="gbody"><h4>Confidence meter</h4>
+      <p>At the top of each story, three pips and a label rate how settled the facts are.</p>
+      <div class="gdemo" style="display:flex;flex-direction:column;gap:8px">
+        <div class="confidence cf-corrob"><span class="meter"><span class="pip"></span><span class="pip"></span><span class="pip"></span></span><span class="lab">Verified</span><span class="why">— core facts agree across multiple independent sources</span></div>
+        <div class="confidence cf-develop"><span class="meter"><span class="pip"></span><span class="pip"></span><span class="pip"></span></span><span class="lab">Developing</span><span class="why">— fast-moving or partly single-sourced</span></div>
+        <div class="confidence cf-disputed"><span class="meter"><span class="pip"></span><span class="pip"></span><span class="pip"></span></span><span class="lab">Disputed</span><span class="why">— sources materially conflict on key facts</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="gitem">
+    <div class="gicon">✅</div>
+    <div class="gbody"><h4>Fact-check tags</h4><p>Individual claims are marked <strong>✅ Confirmed</strong> (corroborated across independent sources) or <strong>🔍 Unverified</strong> (single-origin or still moving). The sidebar's Fact-Check box summarises them per story.</p></div>
+  </div>
+  <div class="gitem">
+    <div class="gicon">⚠️</div>
+    <div class="gbody"><h4>Logic flags</h4><p>Where numbers, timelines or claims don't add up, a numbered Logic Flags box explains the discrepancy, names the conflicting sources, and says what would resolve it. When everything checks out, it says so too.</p></div>
+  </div>
+  <div class="gitem">
+    <div class="gicon">⚖️</div>
+    <div class="gbody"><h4>Common Ground vs Contested</h4><p>For contested stories, a box separates the facts <em>all</em> sides agree on from the points still in dispute.</p></div>
+  </div>
+
+  <div class="gsec-h">Seeing the spin</div>
+  <div class="gitem">
+    <div class="gicon">📰</div>
+    <div class="gbody"><h4>Media Framing &amp; bias bar</h4>
+      <p>On politically contentious stories, a section mid-article shows how the coverage breaks down. The bar is sized to the share of sources on each side — <span style="color:var(--blue);font-weight:700">left</span>, <span style="color:var(--ink-soft);font-weight:700">centre</span>, <span style="color:var(--red);font-weight:700">right</span> — and each outlet is mapped to its published lean (e.g. from AllSides). It then summarises, even-handedly, how each side frames the same events. Splits are approximate.</p>
+      <div class="gdemo"><div class="bias"><div class="barwrap"><span class="seg" style="width:40%;background:#3b82c4"></span><span class="seg" style="width:35%;background:#8b909c"></span><span class="seg" style="width:25%;background:#e0414f"></span></div><div class="blabels"><span><span class="dot" style="background:#3b82c4"></span>Left 40%</span><span><span class="dot" style="background:#8b909c"></span>Centre 35%</span><span><span class="dot" style="background:#e0414f"></span>Right 25%</span></div></div></div>
+    </div>
+  </div>
+
+  <div class="gsec-h">Reading tools</div>
+  <div class="gitem">
+    <div class="gicon">📅</div>
+    <div class="gbody"><h4>Interactive timeline</h4><p>Where a story has a clear chronology, a timeline mid-article lays out the key dated events. Tap any event to expand the detail; the page works out and labels how far apart the events were ("12 days later", "3 weeks later") and spaces them to match.</p></div>
+  </div>
+  <div class="gitem">
+    <div class="gicon">▸</div>
+    <div class="gbody"><h4>Clickable Key Facts</h4><p>Each Key Facts bullet (in the sidebar) is a link — tap it and the article scrolls to and briefly highlights the paragraph that fact comes from.</p></div>
+  </div>
+  <div class="gitem">
+    <div class="gicon">❝</div>
+    <div class="gbody"><h4>Dated pull-quotes &amp; sources</h4><p>Every quote names who said it and when. The sidebar's Sources list links out to the original reporting and, where possible, the primary document.</p></div>
+  </div>
+  <div class="gitem">
+    <div class="gicon">🖼️</div>
+    <div class="gbody"><h4>Licence-safe images</h4><p>Photos are public-domain or open-licensed (e.g. NASA, USGS, CDC, Wikimedia Commons), captioned with their source and licence — never lifted from the outlets we cite.</p></div>
+  </div>
+  <div class="gitem">
+    <div class="gicon">📌</div>
+    <div class="gbody"><h4>Sticky facts rail</h4><p>On longer stories the Key Facts and Sources panel follows you down the page, so the supporting detail stays in view while you read.</p></div>
+  </div>
+
+  <div class="gsec-h">Markets pages</div>
+  <div class="gitem">
+    <div class="gicon">📈</div>
+    <div class="gbody"><h4>Overview · Movers · Calendar · Stocks</h4><p><strong>Overview</strong> is the written markets analysis. <strong>Movers</strong> is an at-a-glance dashboard of the biggest gainers and losers across the US, UK and Europe with a major-index strip. <strong>Calendar</strong> lists the month's earnings, IPOs, dividends, central-bank meetings and data releases. <strong>Stocks</strong> is a TradingView-powered page: search by ticker or company name, browse the stock grid, and tap any stock to open a large interactive chart for it — it needs an internet connection to load.</p></div>
+  </div>
+
+  <div class="gsec-h">Display settings</div>
+  <div class="gitem">
+    <div class="gicon">◐</div>
+    <div class="gbody"><h4>Dark / Light theme</h4><p>Switch the whole briefing between dark and light from the bottom of the menu; your choice is remembered.</p></div>
+  </div>
+  <div class="gitem">
+    <div class="gicon">◎</div>
+    <div class="gbody"><h4>Focus mode</h4><p>Turn it on to spotlight one paragraph at a time — everything else dims and the headline pins to the top as you scroll. A <em>Show full article</em> button at the end restores the whole piece. It always starts off.</p></div>
+  </div>
+
+  <div class="note" style="margin-top:22px">This briefing is automatically compiled each morning from public, non-paywalled sources. Verdicts and framing reflect the state of reporting at compile time and may evolve.</div>
+</section>
+
+</main>
+
+<footer>
+  <strong>Even Brief</strong> — AI-generated edition compiled {{ meta.date_display }}.
+  <strong>AI disclosure:</strong> this briefing is researched, written and fact-checked by an AI system from public, non-paywalled sources. Facts are cross-referenced against named sources, but AI can make mistakes — verify anything important independently. Verdicts reflect the state of reporting at compile time and may evolve. Not financial, legal or medical advice.
+  <div class="legend">
+    <span>✅ <strong style="color:var(--green)">CONFIRMED</strong> — corroborated across independent sources</span>
+    <span>🔍 <strong style="color:var(--amber)">UNVERIFIED</strong> — single-origin or fast-moving</span>
+    <span>⚠️ <strong style="color:var(--red)">LOGIC FLAG</strong> — internal/cross-source inconsistency noted</span>
+  </div>
+  <p style="margin-top:12px"><strong style="color:var(--ink-soft)">Confidence rating (top of each story):</strong> ●●● Verified — core facts agree across independent sources · ●●○ Developing — firming up, fast-moving, or single-sourced · Disputed — sources materially conflict on key facts. Political stories also carry a <strong style="color:var(--ink-soft)">Common Ground vs Contested</strong> split, an in-article <strong style="color:var(--ink-soft)">Media Framing</strong> section with a left/centre/right bar, and source leans mapped to published <a href="https://www.allsides.com/media-bias/ratings">AllSides</a> / Ad Fontes / Media Bias-Fact Check ratings where available (unrated outlets are an editorial estimate).</p>
+  <p style="margin-top:12px">Self-contained file · no external dependencies · works offline. This is a research/test edition for human review before distribution.</p>
+</footer>
+
+<script type="application/json" id="wxData">
+{{ wx_json | safe }}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+{{ app_js | safe }}
+</script>
+</body>
+</html>

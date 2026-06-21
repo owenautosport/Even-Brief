@@ -1,0 +1,153 @@
+{#-
+  Component macros for Even Brief. Each macro reproduces the reference
+  index.html markup exactly (same classes, structure and JS hooks); only the
+  text content is data-driven. HTML-bearing fields (paragraph bodies, key-fact
+  bullets, framing/logic copy) are emitted with `| safe` and are producer-
+  trusted; plain-text fields are auto-escaped by the environment.
+-#}
+
+{#- one badge -#}
+{% macro badge(b) %}<span class="badge {{ b.cls }}">{{ b.label }}</span>{% endmacro %}
+
+{#- confidence meter (three pips + label + reason) -#}
+{% macro confidence(c) %}
+  <div class="confidence cf-{{ c.level }}"><span class="meter"><span class="pip"></span><span class="pip"></span><span class="pip"></span></span><span class="lab">{{ c.label }}</span><span class="why">{{ c.why }}</span></div>
+{%- endmacro %}
+
+{#- lead image figure with the reference onerror fallback -#}
+{% macro figure(img) %}
+  <figure class="art-img"><img src="{{ img.url }}" alt="{{ img.alt }}" loading="lazy" onerror="var f=this.closest('figure'); if(f) f.style.display='none';">{% if img.caption %}<figcaption>{{ img.caption }}</figcaption>{% endif %}</figure>
+{%- endmacro %}
+
+{#- one ordered article block (prose / pull-quote / timeline / framing) -#}
+{% macro article_block(blk) %}
+  {%- if blk.type == 'p' -%}
+    <p>{{ blk.html | safe }}</p>
+  {%- elif blk.type == 'pullquote' -%}
+    <div class="pullquote">{{ blk.text | safe }}{% if blk.src %}<span class="src">{{ blk.src }}</span>{% endif %}</div>
+  {%- elif blk.type == 'timeline' -%}
+    {{ timeline(blk) }}
+  {%- elif blk.type == 'framing' -%}
+    {{ framing(blk) }}
+  {%- endif -%}
+{% endmacro %}
+
+{#- interactive dated timeline (JS adds gap labels from data-date) -#}
+{% macro timeline(t) %}
+      <div class="timeline">
+        <div class="tl-head">{{ t.head }}</div>
+        <div class="tl-sub">{{ t.sub }}</div>
+        <div class="tl-list">
+        {%- for e in t.events %}
+          <div class="tl-ev" data-date="{{ e.date }}"><button class="tl-row" type="button"><span class="tl-dot"></span><span class="tl-date">{{ e.label }}</span><span class="tl-title">{{ e.title }}</span><span class="tl-toggle">+</span></button><div class="tl-detail"><p>{{ e.detail | safe }}</p></div></div>
+        {%- endfor %}
+        </div>
+        {%- if t.note %}<div class="tl-note">{{ t.note }}</div>{% endif %}
+      </div>
+{%- endmacro %}
+
+{#- in-article media-framing + bias bar -#}
+{% macro framing(f) %}
+      <div class="framing">
+        <h3>📰 Media Framing — across the coverage</h3>
+        <div class="bias">
+          <div class="ov">{{ f.overview | safe }}</div>
+          <div class="barwrap">{% for seg in f.bias %}<div class="seg" style="width:{{ seg.pct }}%;background:{{ seg.color }}"></div>{% endfor %}</div>
+          <div class="blabels">{% for seg in f.bias %}<span><i class="dot" style="background:{{ seg.color }}"></i>{{ seg.lean }} {{ seg.pct }}%</span>{% endfor %}</div>
+          <div class="cap">{{ f.caption }}</div>
+          {%- if f.ratings_html %}<div class="ratings">{{ f.ratings_html | safe }}</div>{% endif %}
+        </div>
+        {%- for line in f.lines %}
+        <p>{{ line | safe }}</p>
+        {%- endfor %}
+      </div>
+{%- endmacro %}
+
+{#- one ordered sidebar block -#}
+{% macro sidebar_block(blk) %}
+  {%- if blk.type == 'keyfacts' -%}
+      <div class="keyfacts">
+        <h3>Key Facts</h3>
+        <ul>
+        {%- for item in blk.items %}
+          <li>{{ item | safe }}</li>
+        {%- endfor %}
+        </ul>
+      </div>
+  {%- elif blk.type == 'sources' -%}
+      <div class="sources">
+        <h3>Sources</h3>
+        <ol>
+        {%- for s in blk.items %}
+          <li><span class="outlet">{{ s.outlet }}</span> — <a href="{{ s.url }}">{{ s.title }}</a></li>
+        {%- endfor %}
+        </ol>
+      </div>
+  {%- elif blk.type == 'factcheck' -%}
+      <div class="factcheck">
+        <h3>Fact-Check</h3>
+        {%- for fc in blk.items %}
+        <div class="fc {{ fc.status }}"><span class="ic">{{ '✅' if fc.status == 'ok' else '🔍' }}</span><div><span class="verdict">{{ fc.verdict }}</span> — {{ fc.text | safe }}</div></div>
+        {%- endfor %}
+      </div>
+  {%- elif blk.type == 'ground' -%}
+      <div class="ground">
+        <h3>Common Ground vs Contested</h3>
+        {%- if blk.agree %}
+        <div class="cg"><span class="tag agree">Agreed across sources</span>
+          <ul>{% for x in blk.agree %}<li>{{ x | safe }}</li>{% endfor %}</ul></div>
+        {%- endif %}
+        {%- if blk.contest %}
+        <div class="cg"><span class="tag contest">Contested / one-sided</span>
+          <ul>{% for x in blk.contest %}<li>{{ x | safe }}</li>{% endfor %}</ul></div>
+        {%- endif %}
+      </div>
+  {%- elif blk.type == 'logic' -%}
+      <div class="logic">
+        <h3>⚠️ Logic Flags</h3>
+        {%- for item in blk.items %}
+        <p>{{ item | safe }}</p>
+        {%- endfor %}
+      </div>
+  {%- elif blk.type == 'framing' -%}
+      {{ framing(blk) }}
+  {%- endif -%}
+{% endmacro %}
+
+{#- a full story panel (also used for the Markets Overview, with panel_id="markets") -#}
+{% macro story_panel(s, active=false, panel_id=none) %}
+<section class="panel{{ ' active' if active }}" id="{{ panel_id or s.id }}">
+  <div class="dateline">{{ s.dateline }}</div>
+  {% for b in s.badges %}{{ badge(b) }}{% if not loop.last %} {% endif %}{% endfor %}
+  <h2 class="head">{{ s.headline }}</h2>
+  {{ confidence(s.confidence) }}
+  <div class="grid">
+    <div class="article">
+      {%- if s.image %}{{ figure(s.image) }}{% endif %}
+      {%- if s.followup %}
+      <p><span class="followup">Follow-up to earlier coverage</span></p>
+      {%- endif %}
+      {%- for blk in s.article_blocks %}{{ article_block(blk) }}{% endfor %}
+    </div>
+    <div class="side">
+      {%- for blk in s.sidebar_blocks %}{{ sidebar_block(blk) }}{% endfor %}
+    </div>
+  </div>
+</section>
+{%- endmacro %}
+
+{#- one Top-Headlines card (hero or grid) -#}
+{% macro headline_card(c) %}
+{%- if c.lead -%}
+  <div class="ov-hero" data-target="{{ c.target }}">
+    <div class="ov-img {{ c.cat_cls }}"><span class="ov-emoji">{{ c.emoji }}</span>{% if c.image_url %}<img src="{{ c.image_url }}" alt="" loading="lazy" onerror="this.style.display='none'">{% endif %}</div>
+    <div class="ov-hero-body">
+      {{ badge(c.badge) }}
+      <h2>{{ c.headline }}</h2>
+      <p>{{ c.summary }}</p>
+    </div>
+  </div>
+{%- else -%}
+    <div class="ov-card" data-target="{{ c.target }}"><div class="ov-img {{ c.cat_cls }}"><span class="ov-emoji">{{ c.emoji }}</span>{% if c.image_url %}<img src="{{ c.image_url }}" alt="" loading="lazy" onerror="this.style.display='none'">{% endif %}</div><div class="ov-card-body">{{ badge(c.badge) }}<h4>{{ c.headline }}</h4><p>{{ c.summary }}</p></div></div>
+{%- endif -%}
+{% endmacro %}

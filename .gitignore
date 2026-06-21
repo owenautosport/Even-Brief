@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# OS
+.DS_Store
+
+# Local run artifacts / secrets
+.env
+*.log
+
+# Build-instruction prompt (meta, not part of the product)
+claude-code-prompt.md

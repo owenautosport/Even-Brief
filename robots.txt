@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://owenautosport.github.io/Even-Brief/sitemap.xml

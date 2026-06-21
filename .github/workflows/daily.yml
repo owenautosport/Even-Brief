@@ -1,0 +1,83 @@
+name: Daily edition
+
+# Generates the day's briefing, rebuilds the static site, and commits it.
+# Runs ~06:30 Europe/London. Cron is UTC, so two schedules straddle the BST/GMT
+# shift and a guard step lets exactly one of them through (the 06:xx London one).
+# Also runnable on demand via the "Run workflow" button.
+
+on:
+  schedule:
+    - cron: "30 5 * * *"   # 06:30 BST (summer)
+    - cron: "30 6 * * *"   # 06:30 GMT (winter)
+  workflow_dispatch:
+
+permissions:
+  contents: write          # required to commit the rebuilt site
+
+concurrency:
+  group: daily-edition     # never overlap two runs
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Gate to 06:xx Europe/London
+        id: gate
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "run=1" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          H=$(TZ='Europe/London' date +%H)
+          if [ "$H" = "06" ]; then
+            echo "run=1" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=0" >> "$GITHUB_OUTPUT"
+            echo "Skipping off-DST schedule (London hour=$H)."
+          fi
+
+      - name: Set up Python
+        if: steps.gate.outputs.run == '1'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        if: steps.gate.outputs.run == '1'
+        run: pip install -r requirements.txt -e .
+
+      - name: Generate today's edition
+        if: steps.gate.outputs.run == '1'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          DATE=$(TZ='Europe/London' date +%F)
+          echo "EDITION_FILE=content/editions/${DATE}.json" >> "$GITHUB_ENV"
+          python -m evenbrief.pipeline --out "content/editions/${DATE}.json"
+
+      - name: Build the static site (with validation gate)
+        if: steps.gate.outputs.run == '1'
+        run: python -m build.render --edition "${EDITION_FILE}"
+
+      - name: Commit & push if changed
+        if: steps.gate.outputs.run == '1'
+        run: |
+          git config user.name  "even-brief-bot"
+          git config user.email "actions@github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Edition: $(TZ='Europe/London' date +'%A, %-d %B %Y')"
+            git push
+          fi
+
+# ---------------------------------------------------------------------------
+# Faster "breaking-news" cadence (future): copy this job, switch the schedule to
+# e.g. `*/30 * * * *`, drop the 06:xx gate, and run the pipeline with a
+# significance/dedupe flag so it only commits when a genuinely new, material
+# story clears the bar. The generate->build->commit shape stays identical.
+# ---------------------------------------------------------------------------

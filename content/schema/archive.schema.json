@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "additionalProperties": false,
+    "properties": {
+      "date": {
+        "title": "Date",
+        "type": "string"
+      },
+      "edition": {
+        "title": "Edition",
+        "type": "string"
+      },
+      "cat": {
+        "enum": [
+          "Politics",
+          "Conflict",
+          "Business",
+          "Markets",
+          "Health",
+          "Science",
+          "Technology",
+          "Climate",
+          "Sport"
+        ],
+        "title": "Cat",
+        "type": "string"
+      },
+      "title": {
+        "title": "Title",
+        "type": "string"
+      },
+      "summary": {
+        "title": "Summary",
+        "type": "string"
+      },
+      "panel": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Panel"
+      }
+    },
+    "required": [
+      "date",
+      "edition",
+      "cat",
+      "title",
+      "summary"
+    ],
+    "title": "ArchiveItem",
+    "type": "object"
+  }
+}

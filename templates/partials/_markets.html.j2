@@ -1,0 +1,131 @@
+{#- Markets dashboards: Movers and Calendar. Overview reuses story_panel. -#}
+
+{% macro movers_panel(m) %}
+<section class="panel" id="movers">
+  <div class="dateline">{{ m.dateline }}</div>
+  <span class="badge b-markets">Movers &amp; Markets</span>
+  <h2 class="head">{{ m.headline }}</h2>
+  <div class="note">{{ m.note_html | safe }}</div>
+
+  <div class="sec-h">Major indices</div>
+  <div class="mkt-grid">
+    {%- for ix in m.indices %}
+    <div class="mkt-card"><div class="name">{{ ix.name }}</div><div class="val">{{ ix.value }}</div><div class="chg {{ ix.direction }}">{{ ix.change }}</div></div>
+    {%- endfor %}
+  </div>
+
+  {%- for g in m.groups %}
+  <div class="sec-h">{{ g.section | safe }}</div>
+  <div class="mv-cols">
+    {%- for box in g.boxes %}
+    <div class="mv-box {{ box.kind }}">
+      <h3>{{ box.heading }} <span class="reg">{{ box.region_note }}</span></h3>
+      {%- for r in box.rows %}
+      <div class="mvrow"><span class="tk">{{ r.ticker }}</span><span class="nm">{{ r.name }}</span><span class="pc {{ r.direction }}">{{ r.pct }}</span></div>
+      {%- endfor %}
+    </div>
+    {%- endfor %}
+  </div>
+  {%- if g.note_html %}<div class="note">{{ g.note_html | safe }}</div>{% endif %}
+  {%- endfor %}
+
+  <div class="sources" style="background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;box-shadow:var(--shadow);max-width:560px">
+    <h3>Sources</h3>
+    <ol>
+      {%- for s in m.sources %}
+      <li><span class="outlet">{{ s.outlet }}</span> — <a href="{{ s.url }}">{{ s.title }}</a></li>
+      {%- endfor %}
+    </ol>
+  </div>
+</section>
+{%- endmacro %}
+
+{% macro calendar_panel(c) %}
+<section class="panel" id="calendar">
+  <div class="dateline">{{ c.dateline }}</div>
+  <span class="badge b-markets">Economic Calendar</span>
+  <h2 class="head">{{ c.headline }}</h2>
+  <div class="cal-legend">
+    <span class="cchip data">Data</span>
+    <span class="cchip bank">Central bank</span>
+    <span class="cchip earn">Earnings</span>
+    <span class="cchip ipo">IPO</span>
+    <span class="cchip div">Dividend</span>
+  </div>
+  <div class="note">{{ c.note_html | safe }}</div>
+
+  {%- for day in c.days %}
+  <div class="calday{% if day.state %} {{ day.state }}{% endif %}">
+    <div class="caldate"><div class="d">{{ day.day }}</div><div class="m">{{ day.month }}</div><div class="dow">{{ day.dow }}</div></div>
+    <div class="calitems">
+      {%- for it in day.items %}
+      <div class="calitem"><div class="cline"><span class="cchip {{ it.chip }}">{{ it.chip_label }}</span><span class="ev">{{ it.event }}</span>{% if it.done %}<span class="done">{{ it.done }}</span>{% endif %}</div>{% if it.meta %}<div class="meta">{{ it.meta | safe }}</div>{% endif %}</div>
+      {%- endfor %}
+    </div>
+  </div>
+  {%- endfor %}
+
+  <div class="sources" style="background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;box-shadow:var(--shadow);max-width:560px;margin-top:16px">
+    <h3>Sources</h3>
+    <ol>
+      {%- for s in c.sources %}
+      <li><span class="outlet">{{ s.outlet }}</span> — <a href="{{ s.url }}">{{ s.title }}</a></li>
+      {%- endfor %}
+    </ol>
+  </div>
+</section>
+{%- endmacro %}
+
+{% macro weather_panel(w) %}
+<section class="panel" id="forecast">
+  <div class="dateline">Weather · Guildford, Surrey</div>
+  <span class="badge b-markets">Weather</span>
+  <h2 class="head">Guildford weather — the week ahead</h2>
+
+  <div class="fc-cur">
+    <div class="big">{{ w.current_temp }}</div>
+    <div>
+      <div class="meta" style="color:var(--ink-strong);font-weight:700">{{ w.current_cond }}</div>
+      <div class="meta">{{ w.current_meta }}</div>
+    </div>
+  </div>
+
+  {%- if w.warnings %}
+  <div class="sec-h">Met Office warnings</div>
+  <div class="fc-warn">
+    {%- for wc in w.warnings %}
+    <div class="fc-warncard {{ wc.sev }}">
+      <div style="flex:1">
+        <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><span class="wsev {{ wc.sev }}">{{ wc.sev_label }}</span><span class="wtitle">{{ wc.title }}</span></div>
+        <p>{{ wc.body_html | safe }}</p>
+      </div>
+    </div>
+    {%- endfor %}
+  </div>
+  {%- endif %}
+
+  <div class="sec-h">Today — hour by hour</div>
+  <div class="wx-charts">
+    <div class="wx-chart"><h4>Temperature</h4><div class="cap">°C through the day (00:00–23:00)</div><div id="wxTemp"></div></div>
+    <div class="wx-chart"><h4>Chance of precipitation</h4><div class="cap">% through the day (00:00–23:00)</div><div id="wxPrecip"></div></div>
+  </div>
+
+  <div class="sec-h">7-day forecast</div>
+  <div class="fc-days" id="fcDays"></div>
+  <div class="fc-detail" id="fcDetail"></div>
+  <div class="note" style="margin-top:10px">Tap any day for the full breakdown. Forecast is indicative and updates daily.</div>
+
+  <div class="sec-h">Live rain radar</div>
+  <div class="fc-radar" id="fcRadar"></div>
+  <div class="note" style="margin-top:10px">Radar animates the last hour of rainfall and the short-term nowcast. Drag and zoom to explore; needs an internet connection.</div>
+
+  <div class="sources" style="background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;box-shadow:var(--shadow);max-width:560px;margin-top:16px">
+    <h3 style="font-size:12px;text-transform:uppercase;letter-spacing:2px;margin-bottom:12px;color:var(--gold);font-weight:800">Sources</h3>
+    <ol>
+      {%- for s in w.sources %}
+      <li><span class="outlet">{{ s.outlet }}</span> — <a href="{{ s.url }}">{{ s.title }}</a></li>
+      {%- endfor %}
+    </ol>
+  </div>
+</section>
+{%- endmacro %}

@@ -1,0 +1,1383 @@
+{
+  "$defs": {
+    "ArchiveItem": {
+      "additionalProperties": false,
+      "properties": {
+        "date": {
+          "title": "Date",
+          "type": "string"
+        },
+        "edition": {
+          "title": "Edition",
+          "type": "string"
+        },
+        "cat": {
+          "enum": [
+            "Politics",
+            "Conflict",
+            "Business",
+            "Markets",
+            "Health",
+            "Science",
+            "Technology",
+            "Climate",
+            "Sport"
+          ],
+          "title": "Cat",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "summary": {
+          "title": "Summary",
+          "type": "string"
+        },
+        "panel": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Panel"
+        }
+      },
+      "required": [
+        "date",
+        "edition",
+        "cat",
+        "title",
+        "summary"
+      ],
+      "title": "ArchiveItem",
+      "type": "object"
+    },
+    "Badge": {
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "cls": {
+          "title": "Cls",
+          "type": "string"
+        }
+      },
+      "required": [
+        "label",
+        "cls"
+      ],
+      "title": "Badge",
+      "type": "object"
+    },
+    "BiasSegment": {
+      "additionalProperties": false,
+      "properties": {
+        "lean": {
+          "title": "Lean",
+          "type": "string"
+        },
+        "pct": {
+          "maximum": 100,
+          "minimum": 0,
+          "title": "Pct",
+          "type": "integer"
+        },
+        "color": {
+          "title": "Color",
+          "type": "string"
+        }
+      },
+      "required": [
+        "lean",
+        "pct",
+        "color"
+      ],
+      "title": "BiasSegment",
+      "type": "object"
+    },
+    "CalDay": {
+      "additionalProperties": false,
+      "properties": {
+        "day": {
+          "title": "Day",
+          "type": "string"
+        },
+        "month": {
+          "title": "Month",
+          "type": "string"
+        },
+        "dow": {
+          "title": "Dow",
+          "type": "string"
+        },
+        "state": {
+          "default": "",
+          "enum": [
+            "past",
+            "next",
+            ""
+          ],
+          "title": "State",
+          "type": "string"
+        },
+        "items": {
+          "items": {
+            "$ref": "#/$defs/CalItem"
+          },
+          "minItems": 1,
+          "title": "Items",
+          "type": "array"
+        }
+      },
+      "required": [
+        "day",
+        "month",
+        "dow",
+        "items"
+      ],
+      "title": "CalDay",
+      "type": "object"
+    },
+    "CalItem": {
+      "additionalProperties": false,
+      "properties": {
+        "chip": {
+          "enum": [
+            "data",
+            "bank",
+            "earn",
+            "ipo",
+            "div"
+          ],
+          "title": "Chip",
+          "type": "string"
+        },
+        "chip_label": {
+          "title": "Chip Label",
+          "type": "string"
+        },
+        "event": {
+          "title": "Event",
+          "type": "string"
+        },
+        "meta": {
+          "default": "",
+          "title": "Meta",
+          "type": "string"
+        },
+        "done": {
+          "default": "",
+          "title": "Done",
+          "type": "string"
+        }
+      },
+      "required": [
+        "chip",
+        "chip_label",
+        "event"
+      ],
+      "title": "CalItem",
+      "type": "object"
+    },
+    "Calendar": {
+      "additionalProperties": false,
+      "properties": {
+        "dateline": {
+          "title": "Dateline",
+          "type": "string"
+        },
+        "headline": {
+          "title": "Headline",
+          "type": "string"
+        },
+        "note_html": {
+          "title": "Note Html",
+          "type": "string"
+        },
+        "days": {
+          "items": {
+            "$ref": "#/$defs/CalDay"
+          },
+          "minItems": 1,
+          "title": "Days",
+          "type": "array"
+        },
+        "sources": {
+          "items": {
+            "$ref": "#/$defs/Source"
+          },
+          "minItems": 1,
+          "title": "Sources",
+          "type": "array"
+        }
+      },
+      "required": [
+        "dateline",
+        "headline",
+        "note_html",
+        "days",
+        "sources"
+      ],
+      "title": "Calendar",
+      "type": "object"
+    },
+    "CommonGround": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "ground",
+          "default": "ground",
+          "title": "Type",
+          "type": "string"
+        },
+        "agree": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Agree",
+          "type": "array"
+        },
+        "contest": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Contest",
+          "type": "array"
+        }
+      },
+      "title": "CommonGround",
+      "type": "object"
+    },
+    "Confidence": {
+      "additionalProperties": false,
+      "properties": {
+        "level": {
+          "enum": [
+            "corrob",
+            "develop",
+            "disputed"
+          ],
+          "title": "Level",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "why": {
+          "title": "Why",
+          "type": "string"
+        }
+      },
+      "required": [
+        "level",
+        "label",
+        "why"
+      ],
+      "title": "Confidence",
+      "type": "object"
+    },
+    "FactCheck": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "factcheck",
+          "default": "factcheck",
+          "title": "Type",
+          "type": "string"
+        },
+        "items": {
+          "items": {
+            "$ref": "#/$defs/FactCheckItem"
+          },
+          "minItems": 1,
+          "title": "Items",
+          "type": "array"
+        }
+      },
+      "required": [
+        "items"
+      ],
+      "title": "FactCheck",
+      "type": "object"
+    },
+    "FactCheckItem": {
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "ok",
+            "unv"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "verdict": {
+          "title": "Verdict",
+          "type": "string"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "status",
+        "verdict",
+        "text"
+      ],
+      "title": "FactCheckItem",
+      "type": "object"
+    },
+    "Framing": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "framing",
+          "default": "framing",
+          "title": "Type",
+          "type": "string"
+        },
+        "overview": {
+          "title": "Overview",
+          "type": "string"
+        },
+        "bias": {
+          "items": {
+            "$ref": "#/$defs/BiasSegment"
+          },
+          "minItems": 1,
+          "title": "Bias",
+          "type": "array"
+        },
+        "caption": {
+          "default": "Share of the gathered sources by lean - an approximate read, not a measure of the entire press.",
+          "title": "Caption",
+          "type": "string"
+        },
+        "ratings_html": {
+          "default": "",
+          "title": "Ratings Html",
+          "type": "string"
+        },
+        "lines": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Lines",
+          "type": "array"
+        }
+      },
+      "required": [
+        "overview",
+        "bias"
+      ],
+      "title": "Framing",
+      "type": "object"
+    },
+    "HeadlineCard": {
+      "additionalProperties": false,
+      "properties": {
+        "target": {
+          "title": "Target",
+          "type": "string"
+        },
+        "badge": {
+          "$ref": "#/$defs/Badge"
+        },
+        "cat_cls": {
+          "title": "Cat Cls",
+          "type": "string"
+        },
+        "emoji": {
+          "title": "Emoji",
+          "type": "string"
+        },
+        "headline": {
+          "title": "Headline",
+          "type": "string"
+        },
+        "summary": {
+          "title": "Summary",
+          "type": "string"
+        },
+        "image_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Image Url"
+        },
+        "lead": {
+          "default": false,
+          "title": "Lead",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "target",
+        "badge",
+        "cat_cls",
+        "emoji",
+        "headline",
+        "summary"
+      ],
+      "title": "HeadlineCard",
+      "type": "object"
+    },
+    "Headlines": {
+      "additionalProperties": false,
+      "properties": {
+        "hero": {
+          "$ref": "#/$defs/HeadlineCard"
+        },
+        "cards": {
+          "items": {
+            "$ref": "#/$defs/HeadlineCard"
+          },
+          "minItems": 1,
+          "title": "Cards",
+          "type": "array"
+        }
+      },
+      "required": [
+        "hero",
+        "cards"
+      ],
+      "title": "Headlines",
+      "type": "object"
+    },
+    "Image": {
+      "additionalProperties": false,
+      "description": "A licence-safe lead/hero image.\n\n``url`` must be public-domain or open-licensed; ``validate.py`` enforces the\nhost allowlist (Wikimedia Commons / Openverse / NASA / USGS / CDC ...).",
+      "properties": {
+        "url": {
+          "title": "Url",
+          "type": "string"
+        },
+        "alt": {
+          "title": "Alt",
+          "type": "string"
+        },
+        "caption": {
+          "default": "",
+          "title": "Caption",
+          "type": "string"
+        },
+        "credit": {
+          "default": "",
+          "title": "Credit",
+          "type": "string"
+        },
+        "license": {
+          "default": "",
+          "title": "License",
+          "type": "string"
+        }
+      },
+      "required": [
+        "url",
+        "alt"
+      ],
+      "title": "Image",
+      "type": "object"
+    },
+    "IndexCard": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "value": {
+          "title": "Value",
+          "type": "string"
+        },
+        "change": {
+          "title": "Change",
+          "type": "string"
+        },
+        "direction": {
+          "enum": [
+            "up",
+            "down"
+          ],
+          "title": "Direction",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "value",
+        "change",
+        "direction"
+      ],
+      "title": "IndexCard",
+      "type": "object"
+    },
+    "KeyFacts": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "keyfacts",
+          "default": "keyfacts",
+          "title": "Type",
+          "type": "string"
+        },
+        "items": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Items",
+          "type": "array"
+        }
+      },
+      "required": [
+        "items"
+      ],
+      "title": "KeyFacts",
+      "type": "object"
+    },
+    "LogicFlags": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "logic",
+          "default": "logic",
+          "title": "Type",
+          "type": "string"
+        },
+        "items": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Items",
+          "type": "array"
+        }
+      },
+      "required": [
+        "items"
+      ],
+      "title": "LogicFlags",
+      "type": "object"
+    },
+    "Markets": {
+      "additionalProperties": false,
+      "properties": {
+        "overview": {
+          "$ref": "#/$defs/Story"
+        },
+        "movers": {
+          "$ref": "#/$defs/Movers"
+        },
+        "calendar": {
+          "$ref": "#/$defs/Calendar"
+        }
+      },
+      "required": [
+        "overview",
+        "movers",
+        "calendar"
+      ],
+      "title": "Markets",
+      "type": "object"
+    },
+    "MastheadWeather": {
+      "additionalProperties": false,
+      "properties": {
+        "loc": {
+          "default": "Guildford, UK",
+          "title": "Loc",
+          "type": "string"
+        },
+        "temp": {
+          "title": "Temp",
+          "type": "string"
+        },
+        "cond": {
+          "title": "Cond",
+          "type": "string"
+        },
+        "low": {
+          "title": "Low",
+          "type": "string"
+        },
+        "rain": {
+          "title": "Rain",
+          "type": "string"
+        },
+        "gusts": {
+          "title": "Gusts",
+          "type": "string"
+        }
+      },
+      "required": [
+        "temp",
+        "cond",
+        "low",
+        "rain",
+        "gusts"
+      ],
+      "title": "MastheadWeather",
+      "type": "object"
+    },
+    "Meta": {
+      "additionalProperties": false,
+      "properties": {
+        "date_iso": {
+          "title": "Date Iso",
+          "type": "string"
+        },
+        "date_display": {
+          "title": "Date Display",
+          "type": "string"
+        },
+        "edition_label": {
+          "title": "Edition Label",
+          "type": "string"
+        },
+        "compile_time": {
+          "title": "Compile Time",
+          "type": "string"
+        },
+        "location": {
+          "default": "London",
+          "title": "Location",
+          "type": "string"
+        },
+        "kicker": {
+          "default": "Investigative Global Edition",
+          "title": "Kicker",
+          "type": "string"
+        }
+      },
+      "required": [
+        "date_iso",
+        "date_display",
+        "edition_label",
+        "compile_time"
+      ],
+      "title": "Meta",
+      "type": "object"
+    },
+    "MoverBox": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "gain",
+            "lose"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "heading": {
+          "title": "Heading",
+          "type": "string"
+        },
+        "region_note": {
+          "title": "Region Note",
+          "type": "string"
+        },
+        "rows": {
+          "items": {
+            "$ref": "#/$defs/MoverRow"
+          },
+          "minItems": 1,
+          "title": "Rows",
+          "type": "array"
+        }
+      },
+      "required": [
+        "kind",
+        "heading",
+        "region_note",
+        "rows"
+      ],
+      "title": "MoverBox",
+      "type": "object"
+    },
+    "MoverRow": {
+      "additionalProperties": false,
+      "properties": {
+        "ticker": {
+          "title": "Ticker",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "pct": {
+          "title": "Pct",
+          "type": "string"
+        },
+        "direction": {
+          "enum": [
+            "up",
+            "down"
+          ],
+          "title": "Direction",
+          "type": "string"
+        }
+      },
+      "required": [
+        "ticker",
+        "name",
+        "pct",
+        "direction"
+      ],
+      "title": "MoverRow",
+      "type": "object"
+    },
+    "Movers": {
+      "additionalProperties": false,
+      "properties": {
+        "dateline": {
+          "title": "Dateline",
+          "type": "string"
+        },
+        "headline": {
+          "title": "Headline",
+          "type": "string"
+        },
+        "note_html": {
+          "title": "Note Html",
+          "type": "string"
+        },
+        "indices": {
+          "items": {
+            "$ref": "#/$defs/IndexCard"
+          },
+          "minItems": 1,
+          "title": "Indices",
+          "type": "array"
+        },
+        "groups": {
+          "items": {
+            "$ref": "#/$defs/MoversBlock"
+          },
+          "title": "Groups",
+          "type": "array"
+        },
+        "sources": {
+          "items": {
+            "$ref": "#/$defs/Source"
+          },
+          "minItems": 1,
+          "title": "Sources",
+          "type": "array"
+        }
+      },
+      "required": [
+        "dateline",
+        "headline",
+        "note_html",
+        "indices",
+        "sources"
+      ],
+      "title": "Movers",
+      "type": "object"
+    },
+    "MoversBlock": {
+      "additionalProperties": false,
+      "description": "A region group on the Movers dashboard (US / UK / Europe ...).",
+      "properties": {
+        "section": {
+          "title": "Section",
+          "type": "string"
+        },
+        "boxes": {
+          "items": {
+            "$ref": "#/$defs/MoverBox"
+          },
+          "minItems": 1,
+          "title": "Boxes",
+          "type": "array"
+        },
+        "note_html": {
+          "default": "",
+          "title": "Note Html",
+          "type": "string"
+        }
+      },
+      "required": [
+        "section",
+        "boxes"
+      ],
+      "title": "MoversBlock",
+      "type": "object"
+    },
+    "Paragraph": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "p",
+          "default": "p",
+          "title": "Type",
+          "type": "string"
+        },
+        "html": {
+          "title": "Html",
+          "type": "string"
+        }
+      },
+      "required": [
+        "html"
+      ],
+      "title": "Paragraph",
+      "type": "object"
+    },
+    "PullQuote": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "pullquote",
+          "default": "pullquote",
+          "title": "Type",
+          "type": "string"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "src": {
+          "default": "",
+          "title": "Src",
+          "type": "string"
+        }
+      },
+      "required": [
+        "text"
+      ],
+      "title": "PullQuote",
+      "type": "object"
+    },
+    "Source": {
+      "additionalProperties": false,
+      "properties": {
+        "outlet": {
+          "title": "Outlet",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        },
+        "lean": {
+          "default": "",
+          "title": "Lean",
+          "type": "string"
+        }
+      },
+      "required": [
+        "outlet",
+        "title",
+        "url"
+      ],
+      "title": "Source",
+      "type": "object"
+    },
+    "Sources": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "sources",
+          "default": "sources",
+          "title": "Type",
+          "type": "string"
+        },
+        "items": {
+          "items": {
+            "$ref": "#/$defs/Source"
+          },
+          "minItems": 1,
+          "title": "Items",
+          "type": "array"
+        }
+      },
+      "required": [
+        "items"
+      ],
+      "title": "Sources",
+      "type": "object"
+    },
+    "Story": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "nav_label": {
+          "title": "Nav Label",
+          "type": "string"
+        },
+        "category": {
+          "enum": [
+            "Politics",
+            "Conflict",
+            "Business",
+            "Markets",
+            "Health",
+            "Science",
+            "Technology",
+            "Climate",
+            "Sport"
+          ],
+          "title": "Category",
+          "type": "string"
+        },
+        "badges": {
+          "items": {
+            "$ref": "#/$defs/Badge"
+          },
+          "minItems": 1,
+          "title": "Badges",
+          "type": "array"
+        },
+        "dateline": {
+          "title": "Dateline",
+          "type": "string"
+        },
+        "headline": {
+          "title": "Headline",
+          "type": "string"
+        },
+        "summary": {
+          "title": "Summary",
+          "type": "string"
+        },
+        "confidence": {
+          "$ref": "#/$defs/Confidence"
+        },
+        "followup": {
+          "default": false,
+          "title": "Followup",
+          "type": "boolean"
+        },
+        "image": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Image"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "article_blocks": {
+          "items": {
+            "discriminator": {
+              "mapping": {
+                "framing": "#/$defs/Framing",
+                "p": "#/$defs/Paragraph",
+                "pullquote": "#/$defs/PullQuote",
+                "timeline": "#/$defs/Timeline"
+              },
+              "propertyName": "type"
+            },
+            "oneOf": [
+              {
+                "$ref": "#/$defs/Paragraph"
+              },
+              {
+                "$ref": "#/$defs/PullQuote"
+              },
+              {
+                "$ref": "#/$defs/Timeline"
+              },
+              {
+                "$ref": "#/$defs/Framing"
+              }
+            ]
+          },
+          "minItems": 1,
+          "title": "Article Blocks",
+          "type": "array"
+        },
+        "sidebar_blocks": {
+          "items": {
+            "discriminator": {
+              "mapping": {
+                "factcheck": "#/$defs/FactCheck",
+                "framing": "#/$defs/Framing",
+                "ground": "#/$defs/CommonGround",
+                "keyfacts": "#/$defs/KeyFacts",
+                "logic": "#/$defs/LogicFlags",
+                "sources": "#/$defs/Sources"
+              },
+              "propertyName": "type"
+            },
+            "oneOf": [
+              {
+                "$ref": "#/$defs/KeyFacts"
+              },
+              {
+                "$ref": "#/$defs/Sources"
+              },
+              {
+                "$ref": "#/$defs/FactCheck"
+              },
+              {
+                "$ref": "#/$defs/CommonGround"
+              },
+              {
+                "$ref": "#/$defs/LogicFlags"
+              },
+              {
+                "$ref": "#/$defs/Framing"
+              }
+            ]
+          },
+          "title": "Sidebar Blocks",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "nav_label",
+        "category",
+        "badges",
+        "dateline",
+        "headline",
+        "summary",
+        "confidence",
+        "article_blocks"
+      ],
+      "title": "Story",
+      "type": "object"
+    },
+    "Timeline": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "timeline",
+          "default": "timeline",
+          "title": "Type",
+          "type": "string"
+        },
+        "head": {
+          "default": "Timeline",
+          "title": "Head",
+          "type": "string"
+        },
+        "sub": {
+          "default": "Tap an event to expand. Spacing reflects the time between events.",
+          "title": "Sub",
+          "type": "string"
+        },
+        "note": {
+          "default": "",
+          "title": "Note",
+          "type": "string"
+        },
+        "events": {
+          "items": {
+            "$ref": "#/$defs/TimelineEvent"
+          },
+          "minItems": 2,
+          "title": "Events",
+          "type": "array"
+        }
+      },
+      "required": [
+        "events"
+      ],
+      "title": "Timeline",
+      "type": "object"
+    },
+    "TimelineEvent": {
+      "additionalProperties": false,
+      "properties": {
+        "date": {
+          "title": "Date",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "detail": {
+          "title": "Detail",
+          "type": "string"
+        }
+      },
+      "required": [
+        "date",
+        "label",
+        "title",
+        "detail"
+      ],
+      "title": "TimelineEvent",
+      "type": "object"
+    },
+    "WarnCard": {
+      "additionalProperties": false,
+      "properties": {
+        "sev": {
+          "enum": [
+            "amber",
+            "yellow",
+            "red",
+            "none"
+          ],
+          "title": "Sev",
+          "type": "string"
+        },
+        "sev_label": {
+          "title": "Sev Label",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "body_html": {
+          "title": "Body Html",
+          "type": "string"
+        }
+      },
+      "required": [
+        "sev",
+        "sev_label",
+        "title",
+        "body_html"
+      ],
+      "title": "WarnCard",
+      "type": "object"
+    },
+    "Weather": {
+      "additionalProperties": false,
+      "properties": {
+        "masthead": {
+          "$ref": "#/$defs/MastheadWeather"
+        },
+        "current_temp": {
+          "title": "Current Temp",
+          "type": "string"
+        },
+        "current_cond": {
+          "title": "Current Cond",
+          "type": "string"
+        },
+        "current_meta": {
+          "title": "Current Meta",
+          "type": "string"
+        },
+        "warnings": {
+          "items": {
+            "$ref": "#/$defs/WarnCard"
+          },
+          "title": "Warnings",
+          "type": "array"
+        },
+        "hourly_temp": {
+          "items": {
+            "type": "integer"
+          },
+          "maxItems": 24,
+          "minItems": 24,
+          "title": "Hourly Temp",
+          "type": "array"
+        },
+        "hourly_precip": {
+          "items": {
+            "type": "integer"
+          },
+          "maxItems": 24,
+          "minItems": 24,
+          "title": "Hourly Precip",
+          "type": "array"
+        },
+        "days": {
+          "items": {
+            "$ref": "#/$defs/WeatherDay"
+          },
+          "minItems": 1,
+          "title": "Days",
+          "type": "array"
+        },
+        "sources": {
+          "items": {
+            "$ref": "#/$defs/Source"
+          },
+          "minItems": 1,
+          "title": "Sources",
+          "type": "array"
+        }
+      },
+      "required": [
+        "masthead",
+        "current_temp",
+        "current_cond",
+        "current_meta",
+        "hourly_temp",
+        "hourly_precip",
+        "days",
+        "sources"
+      ],
+      "title": "Weather",
+      "type": "object"
+    },
+    "WeatherDay": {
+      "additionalProperties": false,
+      "properties": {
+        "d": {
+          "title": "D",
+          "type": "string"
+        },
+        "ic": {
+          "title": "Ic",
+          "type": "string"
+        },
+        "cond": {
+          "title": "Cond",
+          "type": "string"
+        },
+        "hi": {
+          "title": "Hi",
+          "type": "integer"
+        },
+        "lo": {
+          "title": "Lo",
+          "type": "integer"
+        },
+        "feels": {
+          "title": "Feels",
+          "type": "integer"
+        },
+        "wind": {
+          "title": "Wind",
+          "type": "integer"
+        },
+        "gust": {
+          "title": "Gust",
+          "type": "integer"
+        },
+        "hum": {
+          "title": "Hum",
+          "type": "integer"
+        },
+        "uv": {
+          "title": "Uv",
+          "type": "integer"
+        },
+        "pc": {
+          "title": "Pc",
+          "type": "integer"
+        },
+        "mm": {
+          "title": "Mm",
+          "type": "number"
+        },
+        "sr": {
+          "title": "Sr",
+          "type": "string"
+        },
+        "ss": {
+          "title": "Ss",
+          "type": "string"
+        },
+        "warn": {
+          "default": false,
+          "title": "Warn",
+          "type": "boolean"
+        },
+        "tag": {
+          "title": "Tag",
+          "type": "string"
+        },
+        "sum": {
+          "title": "Sum",
+          "type": "string"
+        }
+      },
+      "required": [
+        "d",
+        "ic",
+        "cond",
+        "hi",
+        "lo",
+        "feels",
+        "wind",
+        "gust",
+        "hum",
+        "uv",
+        "pc",
+        "mm",
+        "sr",
+        "ss",
+        "tag",
+        "sum"
+      ],
+      "title": "WeatherDay",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "One day's validated briefing - the complete render input.",
+  "properties": {
+    "meta": {
+      "$ref": "#/$defs/Meta"
+    },
+    "weather": {
+      "$ref": "#/$defs/Weather"
+    },
+    "headlines": {
+      "$ref": "#/$defs/Headlines"
+    },
+    "stories": {
+      "items": {
+        "$ref": "#/$defs/Story"
+      },
+      "minItems": 1,
+      "title": "Stories",
+      "type": "array"
+    },
+    "markets": {
+      "$ref": "#/$defs/Markets"
+    },
+    "archive": {
+      "items": {
+        "$ref": "#/$defs/ArchiveItem"
+      },
+      "minItems": 1,
+      "title": "Archive",
+      "type": "array"
+    }
+  },
+  "required": [
+    "meta",
+    "weather",
+    "headlines",
+    "stories",
+    "markets",
+    "archive"
+  ],
+  "title": "Edition",
+  "type": "object"
+}

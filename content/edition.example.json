@@ -1,0 +1,504 @@
+{
+  "meta": {
+    "date_iso": "2026-06-22",
+    "date_display": "Monday, 22 June 2026",
+    "edition_label": "22 June 2026",
+    "compile_time": "06:30 BST",
+    "location": "London",
+    "kicker": "Investigative Global Edition"
+  },
+  "weather": {
+    "masthead": {
+      "loc": "Guildford, UK",
+      "temp": "25°C",
+      "cond": "Warm & humid · sunny spells",
+      "low": "↓ Low 17°C",
+      "rain": "Rain <5%",
+      "gusts": "Gusts 24 mph"
+    },
+    "current_temp": "25°C",
+    "current_cond": "Warm & humid · sunny spells",
+    "current_meta": "Feels like 26°C · Low 17°C · Rain <5% · Gusts 24 mph · Humidity 64%",
+    "warnings": [
+      {
+        "sev": "amber",
+        "sev_label": "Amber",
+        "title": "Extreme heat — southern England",
+        "body_html": "In force <strong>Mon–Tue</strong>. Covers Surrey."
+      }
+    ],
+    "hourly_temp": [
+      18,
+      18,
+      17,
+      17,
+      17,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      24,
+      25,
+      25,
+      24,
+      24,
+      23,
+      22,
+      21,
+      20,
+      19,
+      18
+    ],
+    "hourly_precip": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      3,
+      3,
+      4,
+      4,
+      5,
+      5,
+      5,
+      6,
+      6,
+      7,
+      8,
+      9,
+      12,
+      14,
+      12,
+      9,
+      6,
+      4,
+      3
+    ],
+    "days": [
+      {
+        "d": "Sun 22",
+        "ic": "☀️",
+        "cond": "Sunny and hot",
+        "hi": 27,
+        "lo": 16,
+        "feels": 28,
+        "wind": 10,
+        "gust": 20,
+        "hum": 55,
+        "uv": 7,
+        "pc": 5,
+        "mm": 0.0,
+        "sr": "04:43",
+        "ss": "21:22",
+        "warn": false,
+        "tag": "5% rain",
+        "sum": "Plenty of sunshine; very warm by afternoon."
+      }
+    ],
+    "sources": [
+      {
+        "outlet": "Met Office",
+        "title": "Guildford forecast",
+        "url": "https://weather.metoffice.gov.uk/forecast/gcpe7p302",
+        "lean": ""
+      }
+    ]
+  },
+  "headlines": {
+    "hero": {
+      "target": "example-story",
+      "badge": {
+        "label": "Politics",
+        "cls": "b-politics"
+      },
+      "cat_cls": "cat-politics",
+      "emoji": "🏛",
+      "headline": "A neutral, descriptive headline stating what happened",
+      "summary": "One flat sentence summarising the development for the hero/cards/archive.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Example.jpg?width=1100",
+      "lead": true
+    },
+    "cards": [
+      {
+        "target": "markets",
+        "badge": {
+          "label": "Markets & Investments",
+          "cls": "b-markets"
+        },
+        "cat_cls": "cat-markets",
+        "emoji": "💹",
+        "headline": "Markets overview headline (written like a story)",
+        "summary": "One-line markets summary.",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Example_Fed.jpg?width=1100",
+        "lead": false
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "example-story",
+      "nav_label": "Example Story",
+      "category": "Politics",
+      "badges": [
+        {
+          "label": "Politics",
+          "cls": "b-politics"
+        },
+        {
+          "label": "Conflict",
+          "cls": "b-conflict"
+        }
+      ],
+      "dateline": "22 June 2026 | Capital & Field",
+      "headline": "A neutral, descriptive headline stating what happened",
+      "summary": "One flat sentence summarising the development for the hero/cards/archive.",
+      "confidence": {
+        "level": "develop",
+        "label": "Developing",
+        "why": "— fast-moving and partly single-sourced; key claim still being confirmed"
+      },
+      "followup": false,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Example.jpg?width=1100",
+        "alt": "Descriptive alt text for accessibility",
+        "caption": "What the photo shows. Photo: NASA · public domain",
+        "credit": "NASA",
+        "license": "public domain"
+      },
+      "article_blocks": [
+        {
+          "type": "p",
+          "html": "Opening paragraph in flat newswire register. Inline emphasis with <strong>bold</strong> is allowed."
+        },
+        {
+          "type": "p",
+          "html": "A second paragraph. State the numbers plainly; attribute any characterisation to a named source."
+        },
+        {
+          "type": "timeline",
+          "head": "Timeline — how it unfolded",
+          "sub": "Tap an event to expand. Spacing reflects the time between events.",
+          "note": "The earliest date is approximate.",
+          "events": [
+            {
+              "date": "2026-06-18",
+              "label": "18 Jun",
+              "title": "First event",
+              "detail": "What happened on this date."
+            },
+            {
+              "date": "2026-06-20",
+              "label": "20 Jun",
+              "title": "Second event",
+              "detail": "The next development."
+            },
+            {
+              "date": "2026-06-22",
+              "label": "22 Jun",
+              "title": "Today",
+              "detail": "The latest, dated, sourced fact."
+            }
+          ]
+        },
+        {
+          "type": "pullquote",
+          "text": "\"An exact, attributed quotation.\"",
+          "src": "— Named Official, 22 June 2026"
+        },
+        {
+          "type": "framing",
+          "overview": "<strong>Political-bias overview:</strong> left-leaning to centre in the gathered sources.",
+          "bias": [
+            {
+              "lean": "Left",
+              "pct": 40,
+              "color": "#3b82c4"
+            },
+            {
+              "lean": "Centre",
+              "pct": 60,
+              "color": "#8b909c"
+            },
+            {
+              "lean": "Right",
+              "pct": 0,
+              "color": "#e0414f"
+            }
+          ],
+          "caption": "Share of the gathered sources by lean - an approximate read, not a measure of the entire press.",
+          "ratings_html": "<strong>Source leans:</strong> CNN <b>Lean Left</b>, NPR <b>Lean Left</b> (AllSides); think-tank centrist. <a href=\"https://www.allsides.com/media-bias/ratings\">AllSides ratings ↗</a>",
+          "lines": [
+            "<span class=\"lean\">US mainstream:</span> frames it as a fragile breakthrough.",
+            "<span class=\"lean\">Opposition outlet:</span> is more sceptical of the official account."
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<strong>Why it matters:</strong> the wider significance, stated without editorialising."
+        },
+        {
+          "type": "p",
+          "html": "<strong>What comes next:</strong> what to watch, and which claims remain unverified."
+        }
+      ],
+      "sidebar_blocks": [
+        {
+          "type": "keyfacts",
+          "items": [
+            "Key fact with a <strong>number</strong>",
+            "A second sourced fact",
+            "A third fact"
+          ]
+        },
+        {
+          "type": "sources",
+          "items": [
+            {
+              "outlet": "Reuters",
+              "title": "Primary report",
+              "url": "https://www.reuters.com/world/example",
+              "lean": "Wire"
+            },
+            {
+              "outlet": "AP",
+              "title": "Corroborating report",
+              "url": "https://apnews.com/article/example",
+              "lean": "Wire"
+            },
+            {
+              "outlet": "BBC",
+              "title": "Background",
+              "url": "https://www.bbc.com/news/example",
+              "lean": "Centre"
+            }
+          ]
+        },
+        {
+          "type": "factcheck",
+          "items": [
+            {
+              "status": "ok",
+              "verdict": "Confirmed",
+              "text": "Core fact corroborated across Reuters, AP and BBC."
+            },
+            {
+              "status": "unv",
+              "verdict": "Unverified",
+              "text": "A single-source claim still being confirmed."
+            }
+          ]
+        },
+        {
+          "type": "ground",
+          "agree": [
+            "Point all sides accept",
+            "A second agreed point"
+          ],
+          "contest": [
+            "A point still in dispute",
+            "A one-sided characterisation"
+          ]
+        },
+        {
+          "type": "logic",
+          "items": [
+            "<strong>1 · Internal-consistency check.</strong> The figures are mutually consistent; no anomaly.",
+            "<strong>2 · A flagged claim.</strong> Names the conflicting sources and what would resolve it."
+          ]
+        }
+      ]
+    }
+  ],
+  "markets": {
+    "overview": {
+      "id": "markets-overview",
+      "nav_label": "Markets Overview",
+      "category": "Markets",
+      "badges": [
+        {
+          "label": "Markets & Investments",
+          "cls": "b-markets"
+        }
+      ],
+      "dateline": "22 June 2026 | The Week in Markets",
+      "headline": "Markets overview headline (written like a story)",
+      "summary": "One-line markets summary.",
+      "confidence": {
+        "level": "corrob",
+        "label": "Verified",
+        "why": "— the week's moves are reported consistently"
+      },
+      "followup": false,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Example_Fed.jpg?width=1100",
+        "alt": "Markets image",
+        "caption": "Photo: public domain",
+        "credit": "",
+        "license": "public domain"
+      },
+      "article_blocks": [
+        {
+          "type": "p",
+          "html": "The written markets analysis goes here, several paragraphs."
+        },
+        {
+          "type": "p",
+          "html": "Indices, commodities and the Fed in flat prose with plain numbers."
+        }
+      ],
+      "sidebar_blocks": [
+        {
+          "type": "keyfacts",
+          "items": [
+            "Index close 1",
+            "Index close 2"
+          ]
+        },
+        {
+          "type": "sources",
+          "items": [
+            {
+              "outlet": "TheStreet",
+              "title": "Index closes",
+              "url": "https://www.thestreet.com/example",
+              "lean": ""
+            }
+          ]
+        },
+        {
+          "type": "logic",
+          "items": [
+            "<strong>Interrogated — checks pass.</strong> Levels are correctly labelled as last-close, not live."
+          ]
+        }
+      ]
+    },
+    "movers": {
+      "dateline": "Last close · US Thu · UK & Europe Fri",
+      "headline": "Markets at a glance — biggest movers",
+      "note_html": "Figures are each market's most recent <strong>close</strong>, not live prices.",
+      "indices": [
+        {
+          "name": "S&P 500",
+          "value": "7,500.58",
+          "change": "▲ 1.08%",
+          "direction": "up"
+        },
+        {
+          "name": "Nasdaq Comp.",
+          "value": "26,517.93",
+          "change": "▲ 1.91%",
+          "direction": "up"
+        },
+        {
+          "name": "FTSE 100",
+          "value": "10,364",
+          "change": "▼ 0.34%",
+          "direction": "down"
+        }
+      ],
+      "groups": [
+        {
+          "section": "United States — top movers",
+          "boxes": [
+            {
+              "kind": "gain",
+              "heading": "▲ Top gainers",
+              "region_note": "US · Thu close",
+              "rows": [
+                {
+                  "ticker": "BE",
+                  "name": "Bloom Energy",
+                  "pct": "+15.41%",
+                  "direction": "up"
+                }
+              ]
+            },
+            {
+              "kind": "lose",
+              "heading": "▼ Top losers",
+              "region_note": "US · Thu close",
+              "rows": [
+                {
+                  "ticker": "ACN",
+                  "name": "Accenture",
+                  "pct": "−17.97%",
+                  "direction": "down"
+                }
+              ]
+            }
+          ],
+          "note_html": "If single-stock movers can't be sourced for a region, show index level only and say so."
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "SlickCharts",
+          "title": "US market movers",
+          "url": "https://www.slickcharts.com/market-movers",
+          "lean": ""
+        }
+      ]
+    },
+    "calendar": {
+      "dateline": "Economic calendar · June 2026",
+      "headline": "June 2026 — earnings, IPOs, dividends & data",
+      "note_html": "Passed items marked; upcoming highlighted. Earnings issuer-confirmed where available.",
+      "days": [
+        {
+          "day": "16–17",
+          "month": "Jun",
+          "dow": "Tue–Wed",
+          "state": "past",
+          "items": [
+            {
+              "chip": "bank",
+              "chip_label": "Central bank",
+              "event": "Federal Reserve FOMC",
+              "meta": "Rates held.",
+              "done": "✓ held"
+            }
+          ]
+        },
+        {
+          "day": "24",
+          "month": "Jun",
+          "dow": "Wed",
+          "state": "next",
+          "items": [
+            {
+              "chip": "earn",
+              "chip_label": "Earnings",
+              "event": "Micron (MU) — Q3 FY26",
+              "meta": "After the close.",
+              "done": ""
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "Econoday",
+          "title": "June 2026 events",
+          "url": "https://example.com/calendar",
+          "lean": ""
+        }
+      ]
+    }
+  },
+  "archive": [
+    {
+      "date": "22 Jun 2026",
+      "edition": "22 June 2026",
+      "cat": "Politics",
+      "title": "A neutral, descriptive headline stating what happened",
+      "summary": "One flat sentence summarising the development for the hero/cards/archive.",
+      "panel": "example-story"
+    }
+  ]
+}
