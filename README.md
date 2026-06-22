@@ -37,11 +37,31 @@ Read the live site: https://owenautosport.github.io/Even-Brief/
 - **Search & archive** — every story across editions, searchable by keyword or topic.
 - **Dark / light themes and a distraction-free focus mode.**
 
-## How it's made
+## How it works — the process behind each edition
 
-Each edition is compiled automatically by an AI system that researches the day's most significant stories across world politics, conflict, science, climate, health, technology and business. It corroborates major claims across multiple independent outlets, flags anything single-sourced or disputed rather than dropping it, writes each story in a neutral register, and assembles the markets, weather and a growing archive. Photos are public-domain or open-licensed and credited — never lifted from the outlets cited.
+Every edition is compiled automatically by an AI system following the same newsroom-style pipeline each morning. The goal is a briefing you can trust *because you can see the workings* — where every claim came from, how well it's corroborated, and where the press disagrees.
 
-Verdicts and framing reflect the state of reporting at the time each edition is compiled, and may evolve.
+**1. Discover the day's stories.** It scans for the most significant developments across world politics, conflict, science, climate, health, technology and business — the things with international impact, that set a precedent, or that affect millions. Before choosing, it reads the existing archive and **de-duplicates**: a topic only returns if there's a genuinely new, material development, written fresh — yesterday's news isn't republished.
+
+**2. Research each story in depth.** For every story it runs multiple targeted searches across a spread of independent outlets — Reuters, AP, BBC, Bloomberg, The Guardian, CNN, Al Jazeera, NPR, PBS and others — and reads the primary source where one exists. It gathers dated quotes (recording *who* said it and *when*), figures, a timeline of events, named officials and statements, background and reactions.
+
+**3. Cross-check and fact-check.** Every major claim is corroborated across **two or more independent sources** before it ships. Each is tagged ✅ **Confirmed** or 🔍 **Unverified** with the sources named. Crucially, an unverifiable or single-source claim is **flagged, not dropped** — you see it, clearly marked, rather than having it quietly omitted.
+
+**4. Rate the confidence.** Each story gets an overall reading of how settled the facts are: **Verified** (core facts agree across independent sources), **Developing** (fast-moving or partly single-sourced), or **Disputed** (sources materially conflict).
+
+**5. Logic-check the numbers and timeline.** It interrogates the figures, dates and cause-versus-effect for internal consistency. Where something genuinely doesn't add up — say two trackers reporting opposite movements for the same period — a logic flag explains the discrepancy, names the conflicting sources, and says what would resolve it. When everything checks out, it says so too.
+
+**6. Map the framing and bias.** On contested or political stories it records which outlets are covering the topic and roughly where each sits on the spectrum, then builds a **left / centre / right bias bar** sized to the share of sources, plus an even-handed summary of how each side frames the same events — leaning on published ratings (e.g. AllSides) where available.
+
+**7. Add markets and weather — from sourced data only.** It compiles a markets overview, the biggest gainers and losers across the US, UK and Europe, and a month-ahead economic calendar, all corroborated from independent financial sources (and clearly labelled when a figure is a last close rather than live). The weather page draws a real Guildford forecast — hourly temperature and rainfall, a 7-day outlook, and any Met Office or health alerts. It never invents a ticker, price or figure; if something can't be sourced, it's shown at a coarser level and said so.
+
+**8. Use only licence-safe images.** Photos are public-domain or open-licensed — NASA, USGS, CDC, Wikimedia Commons and similar — captioned with their source and licence. Never lifted from the outlets being cited.
+
+**9. Assemble, validate and publish.** The finished, structured edition is checked for integrity, added to the searchable archive, and published as a single fast, self-contained page.
+
+Throughout, two rules govern the writing: a strict **neutrality standard** — a flat, descriptive newswire register, no emotive or loaded language, and any sense of significance attributed to a named source rather than asserted; and **accuracy first** — nothing is fabricated, working source links are kept, and implausible figures are withheld or flagged.
+
+Verdicts and framing reflect the state of reporting at the time each edition is compiled, and may evolve as a story develops.
 
 ---
 
