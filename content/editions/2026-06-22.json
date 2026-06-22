@@ -3,245 +3,245 @@
     "date_iso": "2026-06-22",
     "date_display": "Monday, 22 June 2026",
     "edition_label": "22 June 2026",
-    "compile_time": "01:20 BST",
+    "compile_time": "11:50 BST",
     "location": "London",
     "kicker": "Investigative Global Edition"
   },
   "weather": {
     "masthead": {
       "loc": "Guildford, UK",
-      "temp": "31°C",
-      "cond": "Hot & sunny · building heatwave",
+      "temp": "28°C",
+      "cond": "Hot & sunny · Red heat warning midweek",
       "low": "↓ Low 18°C",
       "rain": "Rain <5%",
-      "gusts": "Gusts 23 mph"
+      "gusts": "Gusts 22 mph"
     },
-    "current_temp": "31°C",
-    "current_cond": "Hot & sunny · building heatwave",
-    "current_meta": "Feels like 32°C · Low 18°C · Rain <5% · Gusts 23 mph · Humidity 45%",
+    "current_temp": "28°C",
+    "current_cond": "Hot · hazy sunshine",
+    "current_meta": "Feels like 27°C · High 30°C · Low 18°C · Rain <5% · Gusts 22 mph · Humidity 52–75% · UV High",
     "warnings": [
       {
-        "sev": "amber",
-        "sev_label": "Amber",
-        "title": "Extreme heat — southern England & Wales",
-        "body_html": "Met Office Amber extreme-heat warning in force through <strong>Mon 22–Tue 23 June</strong>, covering most of southern England including <strong>Surrey</strong>. Temperatures into the mid-30s, isolated thundery downpours possible, and tropical nights (above 20°C) in places. Water-safety risk highlighted."
+        "sev": "red",
+        "sev_label": "Red",
+        "title": "Extreme heat — Red warning (Wed–Thu)",
+        "body_html": "Met Office <strong>Red</strong> extreme-heat warning in force <strong>Wed 24 June 09:00 – Thu 25 June 21:00</strong>, covering Surrey and parts of central and southern England. The Met Office says “an exceptional spell of hot and humid weather is expected… with impacts to the general population highly likely.” Maximum temperatures are forecast to exceed 37°C, locally 38–40°C."
       },
       {
         "sev": "amber",
         "sev_label": "Amber",
-        "title": "Heat-health alert — South East",
-        "body_html": "UKHSA Amber heat-health alert for the <strong>South East</strong> in force from <strong>11am Mon 22 June to 11pm Fri 26 June</strong>. Increased risk to those aged over 65 or with pre-existing conditions, and rising demand on health and social care services."
+        "title": "Extreme heat — Amber warning",
+        "body_html": "Met Office <strong>Amber</strong> extreme-heat warnings cover Surrey from now through <strong>Tue 23 June</strong> and again <strong>Wed–Thu</strong>, with “widespread impacts on people and infrastructure” likely. Daytime temperatures into the low-to-mid 30s°C and warm nights in the high teens to low 20s°C."
+      },
+      {
+        "sev": "amber",
+        "sev_label": "Amber",
+        "title": "Heat-health alert — South East (UKHSA)",
+        "body_html": "UKHSA <strong>Amber heat-health alert</strong> for the <strong>South East</strong> (and most of England) from <strong>11am Mon 22 June to 11:59pm Wed 24 June</strong>. Significant impacts expected across health and social care services, including a rise in deaths among those aged 65 and over or with pre-existing conditions."
       }
     ],
     "hourly_temp": [
       19,
+      19,
       18,
       18,
-      17,
-      17,
       18,
-      20,
-      22,
-      24,
+      19,
+      21,
+      23,
       25,
+      26,
       27,
       28,
       29,
       30,
       30,
-      31,
-      31,
       30,
       29,
+      28,
       27,
       25,
       23,
+      22,
       21,
       20
     ],
     "hourly_precip": [
-      2,
-      2,
-      2,
-      2,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      4,
+      3,
+      3,
+      3,
       2,
       2,
       2,
       3,
-      3,
       4,
-      4,
+      5,
       5,
       6,
       8,
       10,
-      12,
-      14,
-      20,
       15,
-      10,
-      6,
-      4,
-      3,
-      2
+      20,
+      18,
+      12
     ],
     "days": [
       {
         "d": "Mon 22",
         "ic": "☀️",
-        "cond": "Sunny and hot",
-        "hi": 31,
+        "cond": "Hot, hazy sunshine",
+        "hi": 30,
         "lo": 18,
-        "feels": 32,
+        "feels": 29,
         "wind": 10,
-        "gust": 23,
-        "hum": 45,
-        "uv": 7,
-        "pc": 20,
-        "mm": 0.2,
-        "sr": "04:47",
-        "ss": "21:22",
-        "warn": true,
-        "tag": "⚠ Amber heat",
-        "sum": "Hot and sunny as the heatwave builds; an isolated thundery shower possible late afternoon."
-      },
-      {
-        "d": "Tue 23",
-        "ic": "☀️",
-        "cond": "Sunny, very hot",
-        "hi": 36,
-        "lo": 19,
-        "feels": 37,
-        "wind": 11,
-        "gust": 21,
-        "hum": 39,
+        "gust": 22,
+        "hum": 60,
         "uv": 8,
-        "pc": 10,
+        "pc": 5,
         "mm": 0.0,
         "sr": "04:47",
         "ss": "21:22",
         "warn": true,
         "tag": "⚠ Amber heat",
-        "sum": "Very hot with strong sunshine; tropical night possible, low staying near 19°C."
+        "sum": "Dry with plenty of hazy sunshine; hot and building toward midweek."
+      },
+      {
+        "d": "Tue 23",
+        "ic": "☀️",
+        "cond": "Sunny and very hot",
+        "hi": 35,
+        "lo": 19,
+        "feels": 35,
+        "wind": 11,
+        "gust": 22,
+        "hum": 50,
+        "uv": 8,
+        "pc": 30,
+        "mm": 0.3,
+        "sr": "04:47",
+        "ss": "21:22",
+        "warn": true,
+        "tag": "⚠ Amber heat",
+        "sum": "Very hot; an isolated thundery shower possible late. Amber heat warning."
       },
       {
         "d": "Wed 24",
-        "ic": "☀️",
-        "cond": "Sunny, extreme heat",
-        "hi": 40,
+        "ic": "🌡️",
+        "cond": "Extreme heat",
+        "hi": 39,
         "lo": 20,
-        "feels": 40,
-        "wind": 6,
-        "gust": 17,
-        "hum": 23,
+        "feels": 39,
+        "wind": 10,
+        "gust": 20,
+        "hum": 45,
         "uv": 8,
         "pc": 5,
         "mm": 0.0,
         "sr": "04:48",
         "ss": "21:22",
         "warn": true,
-        "tag": "🔥 Peak heat",
-        "sum": "Peak of the heat; light winds and intense sun push Guildford to around 40°C."
+        "tag": "⚠ Red heat",
+        "sum": "Exceptional heat; Met Office Red warning 9am–9pm. Temperatures near 39°C."
       },
       {
         "d": "Thu 25",
-        "ic": "☀️",
-        "cond": "Hot, sunny",
+        "ic": "🌡️",
+        "cond": "Extreme heat",
         "hi": 39,
-        "lo": 19,
-        "feels": 39,
-        "wind": 12,
-        "gust": 26,
-        "hum": 21,
+        "lo": 18,
+        "feels": 38,
+        "wind": 11,
+        "gust": 21,
+        "hum": 45,
         "uv": 8,
-        "pc": 20,
-        "mm": 0.3,
+        "pc": 5,
+        "mm": 0.0,
         "sr": "04:48",
-        "ss": "21:22",
+        "ss": "21:23",
         "warn": true,
-        "tag": "🔥 Peak heat",
-        "sum": "Still very hot and sunny; freshening breeze later, with a thundery shower possible overnight."
+        "tag": "⚠ Red heat",
+        "sum": "Red heat warning until 9pm; very hot again before fresher air arrives."
       },
       {
         "d": "Fri 26",
-        "ic": "⛈️",
-        "cond": "Fresher, thundery breakdown",
+        "ic": "⛅",
+        "cond": "Fresher, sunny spells",
         "hi": 27,
         "lo": 18,
-        "feels": 28,
-        "wind": 9,
-        "gust": 20,
-        "hum": 53,
+        "feels": 27,
+        "wind": 13,
+        "gust": 25,
+        "hum": 55,
         "uv": 6,
         "pc": 20,
-        "mm": 1.5,
-        "sr": "04:48",
-        "ss": "21:22",
+        "mm": 0.5,
+        "sr": "04:49",
+        "ss": "21:23",
         "warn": false,
-        "tag": "Cooler · storms",
-        "sum": "Hot spell breaks down to fresher air; showers and the chance of thunderstorms."
+        "tag": "20% rain",
+        "sum": "Cooler and fresher as the heat breaks; the odd shower."
       },
       {
         "d": "Sat 27",
         "ic": "🌤️",
         "cond": "Sunny intervals",
-        "hi": 26,
+        "hi": 25,
         "lo": 16,
-        "feels": 26,
-        "wind": 9,
-        "gust": 22,
-        "hum": 54,
+        "feels": 25,
+        "wind": 12,
+        "gust": 24,
+        "hum": 58,
         "uv": 6,
         "pc": 20,
-        "mm": 0.5,
+        "mm": 0.4,
         "sr": "04:49",
-        "ss": "21:22",
+        "ss": "21:23",
         "warn": false,
         "tag": "20% rain",
-        "sum": "Brighter and fresher with sunny intervals; the odd passing shower."
+        "sum": "Sunny intervals and near-average temperatures."
       },
       {
         "d": "Sun 28",
         "ic": "🌤️",
         "cond": "Sunny intervals",
-        "hi": 26,
-        "lo": 16,
-        "feels": 26,
-        "wind": 9,
-        "gust": 21,
-        "hum": 53,
-        "uv": 6,
+        "hi": 24,
+        "lo": 15,
+        "feels": 24,
+        "wind": 12,
+        "gust": 23,
+        "hum": 58,
+        "uv": 5,
         "pc": 20,
         "mm": 0.4,
-        "sr": "04:49",
+        "sr": "04:50",
         "ss": "21:22",
         "warn": false,
         "tag": "20% rain",
-        "sum": "Warm with sunny intervals; comfortable after the heat, an isolated shower possible."
+        "sum": "Comfortable with sunny intervals; isolated shower risk."
       }
     ],
     "sources": [
       {
         "outlet": "Met Office",
-        "title": "Guildford forecast",
+        "title": "Guildford (Surrey) forecast",
         "url": "https://weather.metoffice.gov.uk/forecast/gcpe7p302",
         "lean": ""
       },
       {
         "outlet": "Met Office",
-        "title": "Amber extreme heat warning updated with heatwave forecast for many",
-        "url": "https://www.metoffice.gov.uk/about-us/news-and-media/media-centre/weather-and-climate-news/2026/amber-extreme-heat-warning-updated-with-heatwave-forecast-for-many",
-        "lean": ""
-      },
-      {
-        "outlet": "Met Office",
-        "title": "UK weather warnings",
-        "url": "https://weather.metoffice.gov.uk/warnings-and-advice/uk-warnings",
+        "title": "Guildford weather warnings",
+        "url": "https://weather.metoffice.gov.uk/warnings-and-advice/uk-warnings/gcpe7p302",
         "lean": ""
       },
       {
         "outlet": "UKHSA",
-        "title": "UKHSA issues amber and yellow heat-health alerts across England",
+        "title": "Heat-health alerts across England",
         "url": "https://www.gov.uk/government/news/ukhsa-issues-amber-and-yellow-heat-health-alerts-across-england",
         "lean": ""
       }
@@ -249,19 +249,45 @@
   },
   "headlines": {
     "hero": {
-      "target": "iran",
+      "target": "starmer",
       "badge": {
         "label": "Politics",
         "cls": "b-politics"
       },
       "cat_cls": "cat-politics",
       "emoji": "🏛",
-      "headline": "US and Iran open first round of technical talks in Switzerland as Tehran sets Hormuz insurance rule",
-      "summary": "US and Iranian delegations held a first round of technical-level talks in Switzerland under a 60-day window, as Iran imposed mandatory insurance on ships transiting the Strait of Hormuz and oil posted its sharpest weekly fall in months.",
-      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Strait_of_hormuz_full.jpg?width=1100",
+      "headline": "Starmer announces resignation as UK prime minister; Labour to choose a successor by 1 September",
+      "summary": "Keir Starmer said on Monday he will step down as Labour leader and prime minister, triggering a leadership process with nominations opening on 9 July; Andy Burnham is the reported front-runner. Sterling held lower and gilt yields edged up.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Prime_Minister_Sir_Keir_Starmer_Official_Portrait_(cropped).jpg?width=1100",
       "lead": true
     },
     "cards": [
+      {
+        "target": "iran",
+        "badge": {
+          "label": "Politics",
+          "cls": "b-politics"
+        },
+        "cat_cls": "cat-politics",
+        "emoji": "🏛",
+        "headline": "US and Iran conclude first Switzerland session; mediators report ‘encouraging progress’ on sanctions and Hormuz",
+        "summary": "US and Iranian delegations wrapped up the first session of talks in Switzerland, with mediators Qatar and Pakistan reporting ‘encouraging progress’; Iranian officials said draft oil-sanctions waivers and the release of frozen assets were discussed, and technical teams will continue this week.",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Strait_of_hormuz_full.jpg?width=1100",
+        "lead": false
+      },
+      {
+        "target": "italy",
+        "badge": {
+          "label": "Politics",
+          "cls": "b-politics"
+        },
+        "cat_cls": "cat-politics",
+        "emoji": "🏛",
+        "headline": "Italy's Meloni rejects Trump's ‘fabricated’ G7 account; foreign minister Tajani cancels US trip",
+        "summary": "Italian Prime Minister Giorgia Meloni called ‘completely fabricated’ a claim by President Trump that she had begged him for a photo at the G7 summit; Foreign Minister Antonio Tajani cancelled a US visit, in a public rift between the two governments.",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Giorgia_Meloni_Official_2024_(cropped).jpg?width=1100",
+        "lead": false
+      },
       {
         "target": "poland",
         "badge": {
@@ -282,7 +308,7 @@
           "cls": "b-health"
         },
         "cat_cls": "cat-health",
-        "emoji": "🧬",
+        "emoji": "🏥",
         "headline": "WHO warns of “missing” Ebola cases in DR Congo as official tallies diverge across agencies",
         "summary": "A month into the Bundibugyo-virus outbreak, the WHO says it is still missing cases amid intense community transmission, while WHO, the CDC and the ECDC publish materially different case counts.",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ebola_virus_virion.jpg?width=1100",
@@ -295,7 +321,7 @@
           "cls": "b-business"
         },
         "cat_cls": "cat-business",
-        "emoji": "📈",
+        "emoji": "🏭",
         "headline": "Japan proposes G7 jointly stockpile critical minerals; leaders set a 60% cap on reliance on any single supplier",
         "summary": "Prime Minister Sanae Takaichi pitched a G7 \"Joint Stockpiling Cooperation Initiative\" at the Evian summit, where leaders agreed to cut dependence on any single non-G7 supplier of rare earths to below 60% by 2030.",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rareearthoxides.jpg?width=1100",
@@ -321,7 +347,7 @@
           "cls": "b-health"
         },
         "cat_cls": "cat-health",
-        "emoji": "🧬",
+        "emoji": "🏥",
         "headline": "Review concludes nicotine vapes are likely to cause lung and oral cancer",
         "summary": "A qualitative risk assessment led by UNSW Sydney in the journal Carcinogenesis judges nicotine e-cigarettes likely carcinogenic, while several outside experts call the conclusion an overinterpretation of the evidence.",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Electronic%20cigarette.jpg?width=1100",
@@ -335,14 +361,237 @@
         },
         "cat_cls": "cat-markets",
         "emoji": "💹",
-        "headline": "Stocks steady into Monday after a week defined by a hawkish Fed and falling oil",
-        "summary": "US equities recovered after the FOMC sell-off and Brent fell about 8.5% on the week as the Strait of Hormuz reopened; the wildcard into Monday is oil.",
+        "headline": "Stocks mixed as Starmer resigns and US–Iran talks conclude; oil slips below $79",
+        "summary": "European shares were modestly higher and the pound held lower after UK PM Keir Starmer announced his resignation, while US futures slipped on renewed Iran threats; Brent fell below $79 as the first Switzerland session ended with ‘encouraging progress.’",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/NYSE127.jpg?width=1100",
         "lead": false
       }
     ]
   },
   "stories": [
+    {
+      "id": "starmer",
+      "nav_label": "Starmer Resignation",
+      "category": "Politics",
+      "badges": [
+        {
+          "label": "Politics",
+          "cls": "b-politics"
+        }
+      ],
+      "dateline": "22 June 2026 | London",
+      "headline": "Starmer announces resignation as UK prime minister; Labour to choose a successor by 1 September",
+      "summary": "Keir Starmer said on Monday he will step down as Labour leader and prime minister, triggering a leadership process with nominations opening on 9 July; Andy Burnham is the reported front-runner. Sterling held lower and gilt yields edged up.",
+      "confidence": {
+        "level": "develop",
+        "label": "Developing",
+        "why": "— the resignation and broad timetable are confirmed; whether the succession is a contest or a coronation, and the exact handover date, are not yet settled"
+      },
+      "followup": true,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Prime_Minister_Sir_Keir_Starmer_Official_Portrait_(cropped).jpg?width=1100",
+        "alt": "Official portrait of Keir Starmer",
+        "caption": "Keir Starmer, who announced his resignation on 22 June 2026. Photo: UK Government · Open Government Licence v3.0",
+        "credit": "UK Government",
+        "license": "OGL v3.0"
+      },
+      "article_blocks": [
+        {
+          "type": "p",
+          "html": "Keir Starmer announced on Monday 22 June that he will resign as leader of the Labour Party and as prime minister, ending a premiership of just under two years and setting up what would be the United Kingdom's seventh change of leader in a decade. Starmer said he would remain as caretaker prime minister until the party chooses a successor."
+        },
+        {
+          "type": "p",
+          "html": "Starmer said he had informed King Charles III of his decision and would oversee what he called an orderly transfer of power, adding that he would support whoever replaces him. He had won a large House of Commons majority at the July 2024 general election."
+        },
+        {
+          "type": "p",
+          "html": "The resignation follows months of discontent within Labour over the government's standing in the polls and its record on economic growth, public services and the cost of living. By mid-May, more than 95 Labour MPs had publicly called on Starmer to resign or set out a departure timetable, according to reporting compiled by NBC News and Wikipedia. Several ministers stepped down in recent weeks, including defence officials on 11 June and, in May, the then health secretary Wes Streeting."
+        },
+        {
+          "type": "p",
+          "html": "Pressure intensified after Andy Burnham, the former mayor of Greater Manchester, won the Makerfield by-election on 18 June with 54.8% of the vote, returning to the Commons after Josh Simons stood down to create the vacancy. Many Labour MPs had said Burnham's return cleared the way for a leadership challenge."
+        },
+        {
+          "type": "p",
+          "html": "Starmer said he would ask Labour's National Executive Committee to set a timetable. Nominations are reported to open on <strong>9 July</strong> and close on <strong>16 July</strong>, with a new leader to be chosen by <strong>1 September</strong> if there is a contest, NPR and Time reported. If the party opts for a so-called coronation rather than a contest, Burnham is widely expected to become leader and prime minister."
+        },
+        {
+          "type": "pullquote",
+          "text": "“I will resign as leader of the Labour Party.”",
+          "src": "— Keir Starmer, statement, 22 June 2026"
+        },
+        {
+          "type": "p",
+          "html": "Reported potential candidates for the leadership, beyond Burnham, include David Lammy, Shabana Mahmood, Wes Streeting, Angela Rayner, Ed Miliband and Al Carns, according to NBC News and Wikipedia. Burnham is described as the front-runner."
+        },
+        {
+          "type": "timeline",
+          "head": "Timeline — how it unfolded",
+          "sub": "Tap an event to expand. Spacing reflects the time between events.",
+          "note": "Some ministerial-resignation dates are reported approximately.",
+          "events": [
+            {
+              "date": "2024-07-05",
+              "label": "Jul 2024",
+              "title": "Labour wins the general election",
+              "detail": "Starmer becomes prime minister with a large Commons majority."
+            },
+            {
+              "date": "2026-05-15",
+              "label": "15 May",
+              "title": "Ministers quit; MPs press for a timetable",
+              "detail": "Wes Streeting among ministers to leave; more than 95 Labour MPs urge Starmer to go or set a departure timetable."
+            },
+            {
+              "date": "2026-06-11",
+              "label": "11 Jun",
+              "title": "Defence officials resign",
+              "detail": "Further ministerial resignations cite a lack of confidence in Starmer's leadership."
+            },
+            {
+              "date": "2026-06-18",
+              "label": "18 Jun",
+              "title": "Burnham wins Makerfield",
+              "detail": "Andy Burnham takes the by-election with 54.8%, returning to the Commons and clearing a path to a leadership bid."
+            },
+            {
+              "date": "2026-06-22",
+              "label": "22 Jun",
+              "title": "Starmer announces resignation",
+              "detail": "Starmer says he will step down as Labour leader and PM, staying on as caretaker; nominations reported to open 9 July."
+            }
+          ]
+        },
+        {
+          "type": "framing",
+          "overview": "<strong>Political-bias overview:</strong> a mix of centre wires and centre-left and centre-right outlets in the gathered sources.",
+          "bias": [
+            {
+              "lean": "Left",
+              "pct": 30,
+              "color": "#3b82c4"
+            },
+            {
+              "lean": "Centre",
+              "pct": 55,
+              "color": "#8b909c"
+            },
+            {
+              "lean": "Right",
+              "pct": 15,
+              "color": "#e0414f"
+            }
+          ],
+          "caption": "Share of the gathered sources by lean - an approximate read, not a measure of the entire press.",
+          "ratings_html": "<strong>Source leans:</strong> NPR <b>Lean Left</b>, NBC News <b>Lean Left</b>; CNBC, Time and Bloomberg <b>Centre</b>; Fox News <b>Lean Right</b> (AllSides). <a href=\"https://www.allsides.com/media-bias/ratings\">AllSides ratings ↗</a>",
+          "lines": [
+            "<span class=\"lean\">Centre and centre-left outlets:</span> frame the exit as the end of a troubled premiership and focus on the succession and fiscal outlook.",
+            "<span class=\"lean\">Right-leaning outlets:</span> emphasise the Labour revolt and local-election losses behind the resignation."
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<strong>Why it matters:</strong> a change of Labour leader would install a new prime minister without a general election, and the successor will inherit constrained public finances and the disputes that fuelled the revolt."
+        },
+        {
+          "type": "p",
+          "html": "<strong>What comes next:</strong> the National Executive Committee is expected to confirm the timetable; watch whether the succession is contested or settled by a coronation, and how gilt markets respond to the front-runner's fiscal commitments."
+        }
+      ],
+      "sidebar_blocks": [
+        {
+          "type": "keyfacts",
+          "items": [
+            "Starmer announced his resignation on <strong>22 June 2026</strong>; he stays on as caretaker PM.",
+            "Successor to be chosen by <strong>1 September</strong>; nominations open <strong>9 July</strong>, close 16 July (if contested).",
+            "Would be the UK's <strong>seventh</strong> leader in a decade; Starmer won office in July 2024.",
+            "Sterling held lower at about <strong>$1.319</strong>; the 10-year gilt yield edged up to about <strong>4.85%</strong>.",
+            "Andy Burnham — winner of the 18 June Makerfield by-election (54.8%) — is the reported front-runner."
+          ]
+        },
+        {
+          "type": "sources",
+          "items": [
+            {
+              "outlet": "NPR",
+              "title": "Keir Starmer announces resignation as UK prime minister",
+              "url": "https://www.npr.org/2026/06/22/nx-s1-5866231/keir-starmer-resigns",
+              "lean": "Lean Left"
+            },
+            {
+              "outlet": "NBC News",
+              "title": "Starmer resigns; Britain faces its seventh leader in a decade",
+              "url": "https://www.nbcnews.com/world/united-kingdom/keir-starmer-resigns-prime-minister-andy-burnham-labour-party-britain-rcna257534",
+              "lean": "Lean Left"
+            },
+            {
+              "outlet": "Time",
+              "title": "UK PM Keir Starmer resigns, promises orderly transfer of power",
+              "url": "https://time.com/article/2026/06/22/uk-prime-minister-keir-starmer-resignation-reports-burnham-leadership-potential/",
+              "lean": "Centre"
+            },
+            {
+              "outlet": "Bloomberg",
+              "title": "Pound lower, gilts steady as UK PM Starmer resigns",
+              "url": "https://www.bloomberg.com/news/articles/2026-06-22/gilts-steady-pound-lower-as-uk-prime-minister-starmer-resigns",
+              "lean": "Centre"
+            },
+            {
+              "outlet": "Wikipedia",
+              "title": "2026 Labour Party leadership crisis",
+              "url": "https://en.wikipedia.org/wiki/2026_Labour_Party_leadership_crisis",
+              "lean": "Reference"
+            }
+          ]
+        },
+        {
+          "type": "factcheck",
+          "items": [
+            {
+              "status": "ok",
+              "verdict": "Confirmed",
+              "text": "Starmer announced his resignation as Labour leader and PM on 22 June; corroborated by NPR, NBC News, Time and CNBC."
+            },
+            {
+              "status": "ok",
+              "verdict": "Confirmed",
+              "text": "Sterling traded lower (about $1.319) and the 10-year gilt yield edged up (about 4.85%) after the announcement (Bloomberg; market data)."
+            },
+            {
+              "status": "unv",
+              "verdict": "Unverified",
+              "text": "🔍 Whether the succession is a full contest or a coronation for Burnham, and the precise handover date, are not yet settled."
+            },
+            {
+              "status": "unv",
+              "verdict": "Unverified",
+              "text": "🔍 Exact dates of some ministerial resignations and the full candidate field vary across outlets."
+            }
+          ]
+        },
+        {
+          "type": "ground",
+          "agree": [
+            "Starmer announced he will resign as Labour leader and prime minister on 22 June.",
+            "He remains caretaker prime minister until a successor is chosen.",
+            "Andy Burnham won the 18 June Makerfield by-election and is a leading contender."
+          ],
+          "contest": [
+            "Whether there will be a full leadership contest or a coronation.",
+            "The exact timetable and the date of the handover.",
+            "The relative weight of the causes behind the resignation, framed differently across outlets."
+          ]
+        },
+        {
+          "type": "logic",
+          "items": [
+            "<strong>1 · “Seventh leader in a decade” check.</strong> Counting Cameron, May, Johnson, Truss, Sunak and Starmer, a successor would be the seventh prime minister of the decade; the count is consistent across NPR, NBC News and CNBC.",
+            "<strong>2 · Market reaction internally consistent.</strong> A modestly lower pound alongside a slightly higher 10-year gilt yield is consistent with uncertainty over a new Labour administration's fiscal stance; no anomaly."
+          ]
+        }
+      ]
+    },
     {
       "id": "iran",
       "nav_label": "Iran Talks",
@@ -357,13 +606,13 @@
           "cls": "b-conflict"
         }
       ],
-      "dateline": "22 June 2026 | Geneva & Tehran",
-      "headline": "US and Iran open first round of technical talks in Switzerland as Tehran sets Hormuz insurance rule",
-      "summary": "US and Iranian delegations held a first round of technical-level talks in Switzerland under a 60-day window, as Iran imposed mandatory insurance on ships transiting the Strait of Hormuz and oil posted its sharpest weekly fall in months.",
+      "dateline": "22 June 2026 | Bürgenstock & Tehran",
+      "headline": "US and Iran conclude first Switzerland session; mediators report ‘encouraging progress’ on sanctions and Hormuz",
+      "summary": "US and Iranian delegations wrapped up the first session of talks in Switzerland, with mediators Qatar and Pakistan reporting ‘encouraging progress’; Iranian officials said draft oil-sanctions waivers and the release of frozen assets were discussed, and technical teams will continue this week.",
       "confidence": {
         "level": "develop",
         "label": "Developing",
-        "why": "— fast-moving; delegation rosters and the MoU signing date are reported with some variation across outlets"
+        "why": "— the conclusion and ‘encouraging progress’ are corroborated by mediators and both governments; specific Iranian claims of secured oil waivers and asset releases are so far single-sourced to Iranian officials"
       },
       "followup": true,
       "image": {
@@ -376,24 +625,27 @@
       "article_blocks": [
         {
           "type": "p",
-          "html": "United States and Iranian negotiators held a first round of technical-level talks in Switzerland on Sunday, opening a 60-day window agreed under a memorandum of understanding to convert an interim accord into a durable settlement covering Iran's nuclear programme and the Strait of Hormuz."
+          "html": "The first session of negotiations between the United States and Iran in Switzerland has concluded, with mediators Qatar and Pakistan issuing a joint statement reporting that the two sides made “encouraging progress” and that technical teams would continue their work through the week. Iran's foreign ministry spokesperson, Esmaeil Baghaei, said the talks had ended in what he described as a “positive and constructive atmosphere.”"
         },
         {
           "type": "p",
-          "html": "Al Jazeera and CNBC reported the meeting took place at the Bürgenstock resort. The US delegation was led by Vice President JD Vance and included envoy Steve Witkoff and Jared Kushner; the Iranian side was led by Parliament Speaker Mohammad Bagher Ghalibaf and Foreign Minister Abbas Araghchi. The agenda included the Lebanon ceasefire, the nuclear file and keeping the Strait of Hormuz open. A schedule for the next round was not announced."
+          "html": "Baghaei said the delegations discussed the remaining clauses needed to begin final negotiations, including the release of Iran's frozen assets and sanctions waivers for the sale of Iranian oil. He said technical talks would continue on nuclear issues, sanctions and dispute resolution, and that both sides reaffirmed that ships must be allowed to pass safely through the Strait of Hormuz."
         },
         {
           "type": "p",
-          "html": "Separately, Iran said vessels passing through the Strait of Hormuz would require mandatory insurance, currently issued free of charge by its newly established Persian Gulf Strait Authority but with the right to charge fees later reserved, according to Bloomberg, Lloyd's List and CNBC. The authority requires ships to submit passage requests and follow a prescribed route, a step Tehran presents as reinforcing its claims over the waterway."
+          "html": "The two governments agreed to establish a <strong>High Level Committee</strong> to provide political oversight of the mediation, with chief negotiators reporting to it and leading working groups on the nuclear file, sanctions, and monitoring and dispute resolution, according to the mediators' statement reported by CNN and NBC News. Negotiators reaffirmed a road map aimed at a final deal within <strong>60 days</strong>."
         },
         {
           "type": "p",
-          "html": "Oil eased over the week as shipping conditions improved. Brent crude futures settled at <strong>$80.57</strong> a barrel on Friday, on track for a weekly decline of about <strong>8.5%</strong>, CNBC reported, paring most of the gains accumulated during the height of the conflict."
+          "html": "Members of Iran's delegation went further in describing the outcome. Foreign Minister Abbas Araghchi was reported by Iran International to have said oil waivers and asset releases had been secured, and Hossein Ghorbanzadeh, an economy expert on the delegation, told the semi-official Fars news agency that a draft agreement for a temporary exemption from US sanctions on Iranian oil had been completed and would “soon move toward implementation.” These characterisations come from Iranian officials and had not been independently confirmed by US or mediator statements."
         },
         {
-          "type": "pullquote",
-          "text": "\"The Iranians, for the second night in a row, did not shoot at any ships in the Strait of Hormuz. So far, they are honoring their end of the commitment.\"",
-          "src": "— US Vice President JD Vance, to reporters, 19 June 2026"
+          "type": "p",
+          "html": "The session took place after President Trump publicly threatened renewed military action, telling Fox News the United States could resume strikes and “take over” the Strait of Hormuz if no deal was reached — remarks Iranian negotiators said had complicated the talks. US Vice President JD Vance attended the Switzerland round."
+        },
+        {
+          "type": "p",
+          "html": "Oil prices, which had spiked during the conflict, eased further. Brent crude traded below <strong>$79</strong> a barrel into Monday, down from a weekend spike near $82, as traders judged that the risk of disruption in the strait was receding."
         },
         {
           "type": "timeline",
@@ -405,25 +657,31 @@
               "date": "2026-06-18",
               "label": "18 Jun",
               "title": "Memorandum of understanding signed",
-              "detail": "President Trump and Iranian President Masoud Pezeshkian signed an MoU to reopen the Strait of Hormuz and launch a 60-day negotiation window, per CBS News. Wikipedia dates the signing to 17 June."
+              "detail": "Trump and Iranian President Masoud Pezeshkian signed an MoU to reopen the Strait of Hormuz and launch a 60-day negotiating window, per CBS News. Wikipedia dates the signing to 17 June."
             },
             {
               "date": "2026-06-19",
               "label": "19 Jun",
-              "title": "Switzerland round postponed; insurance rule floated",
-              "detail": "Switzerland said the planned talks were postponed without a new date; Iran said ships would need mandatory insurance to transit Hormuz. Brent settled at $80.57, down about 8.5% on the week."
+              "title": "Trump threatens renewed strikes; oil volatile",
+              "detail": "Trump said the US could resume bombing and “take over” the strait absent a deal; Iran floated a mandatory Hormuz insurance rule."
             },
             {
               "date": "2026-06-21",
               "label": "21 Jun",
-              "title": "First round of technical talks held",
-              "detail": "US and Iranian delegations met at the Bürgenstock resort in Switzerland for a first round of talks, with no date set for the next session."
+              "title": "First Switzerland session held",
+              "detail": "US (VP Vance) and Iranian delegations met at the Bürgenstock resort; mediators Qatar and Pakistan reported “encouraging progress.”"
+            },
+            {
+              "date": "2026-06-22",
+              "label": "22 Jun",
+              "title": "Session concludes; technical talks continue",
+              "detail": "Baghaei said the round had ended and technical teams would continue this week. Iranian officials claimed draft oil-sanctions waivers and asset releases; mediators to publish a document."
             }
           ]
         },
         {
           "type": "framing",
-          "overview": "<strong>Political-bias overview:</strong> centre-leaning wires and financial outlets dominate the gathered sources, with a wire and centre-left spread.",
+          "overview": "<strong>Political-bias overview:</strong> centre wires and financial outlets dominate, alongside centre-left and Iranian sources.",
           "bias": [
             {
               "lean": "Left",
@@ -442,62 +700,63 @@
             }
           ],
           "caption": "Share of the gathered sources by lean - an approximate read, not a measure of the entire press.",
-          "ratings_html": "<strong>Source leans:</strong> CNN <b>Lean Left</b>, Al Jazeera <b>Lean Left</b>; CNBC and Bloomberg <b>Centre</b> (AllSides). <a href=\"https://www.allsides.com/media-bias/ratings\">AllSides ratings ↗</a>",
+          "ratings_html": "<strong>Source leans:</strong> CNN <b>Lean Left</b>, Al Jazeera <b>Lean Left</b>; NBC News <b>Centre</b>; Iran International is an Iran-focused outlet critical of Tehran. <a href=\"https://www.allsides.com/media-bias/ratings\">AllSides ratings ↗</a>",
           "lines": [
-            "<span class=\"lean\">US and financial press:</span> frames the talks as a fragile step toward a lasting settlement and the insurance rule as a commercial and legal risk.",
-            "<span class=\"lean\">Iranian framing:</span> presents the insurance requirement as a lawful exercise of authority over the strait."
+            "<span class=\"lean\">Western press:</span> frames the session as encouraging but inconclusive, stressing that key claims came from Iranian officials.",
+            "<span class=\"lean\">Iranian framing:</span> presents oil waivers and asset releases as effectively secured."
           ]
         },
         {
           "type": "p",
-          "html": "<strong>Why it matters:</strong> the Strait of Hormuz carries a large share of seaborne oil, and the terms reached in the 60-day window will shape both energy markets and the status of Iran's nuclear material. Legal analysts cited by Tech Times and Gulf News argue Iran's permit-and-insurance regime conflicts with the UNCLOS principle of transit passage; Iran has signed but not ratified UNCLOS and asserts a more limited right of innocent passage."
+          "html": "<strong>Why it matters:</strong> the talks aim to convert an interim ceasefire into a durable settlement covering Iran's nuclear programme, sanctions and the Strait of Hormuz, through which a large share of seaborne oil passes."
         },
         {
           "type": "p",
-          "html": "<strong>What comes next:</strong> watch for a date for the second round of talks and whether the insurance regime begins charging fees. The 60-day window is reported to expire on or around 17 August 2026. The exact MoU signing date and the schedule of further rounds remain unconfirmed across sources."
+          "html": "<strong>What comes next:</strong> Qatar and Pakistan are expected to publish a document outlining the agreements; watch whether US and mediator statements confirm the oil-waiver and asset-release claims made by Iranian officials, and the schedule for the next session."
         }
       ],
       "sidebar_blocks": [
         {
           "type": "keyfacts",
           "items": [
-            "First round of US–Iran technical talks held in Switzerland on <strong>21 June 2026</strong>.",
-            "Negotiating window: <strong>60 days</strong>, reported to expire around <strong>17 August 2026</strong>.",
-            "Brent settled at <strong>$80.57</strong> on 19 June, down about <strong>8.5%</strong> on the week (CNBC).",
-            "Iran's Persian Gulf Strait Authority requires mandatory insurance for Hormuz transit, free for now."
+            "First Switzerland session concluded; mediators Qatar and Pakistan reported <strong>“encouraging progress.”</strong>",
+            "A <strong>High Level Committee</strong> agreed to oversee the mediation; technical teams continue this week.",
+            "Road map targets a final deal within <strong>60 days</strong>.",
+            "Iranian officials claimed draft <strong>oil-sanctions waivers</strong> and release of frozen assets — not independently confirmed.",
+            "Brent crude traded below <strong>$79</strong> a barrel into Monday."
           ]
         },
         {
           "type": "sources",
           "items": [
             {
-              "outlet": "CBS News",
-              "title": "Iran war live updates: US deal and Strait of Hormuz",
-              "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-deal-strait-of-hormuz/",
+              "outlet": "CNN",
+              "title": "Iran and US make ‘encouraging progress’ in talks, mediators say",
+              "url": "https://www.cnn.com/2026/06/21/world/live-news/iran-war-trump-israel-lebanon",
+              "lean": "Lean Left"
+            },
+            {
+              "outlet": "NBC News",
+              "title": "First round of US-Iran negotiations ends; technical talks to continue",
+              "url": "https://www.nbcnews.com/world/iran/president-jd-vance-switzerland-iran-talks-trump-threatens-toll-rcna351033",
               "lean": "Centre"
             },
             {
+              "outlet": "Iran International",
+              "title": "Araghchi claims oil waivers, asset releases secured in US-Iran talks",
+              "url": "https://www.iranintl.com/en/202606221995",
+              "lean": "Iran-focused"
+            },
+            {
               "outlet": "Al Jazeera",
-              "title": "First round of Iran-US talks concludes in Switzerland",
+              "title": "US-Iran talks in Switzerland with Qatar, Pakistan mediation",
               "url": "https://www.aljazeera.com/news/liveblog/2026/6/21/iran-war-live-vance-heads-to-switzerland-israel-kills-16-in-lebanon",
               "lean": "Lean Left"
             },
             {
-              "outlet": "CNBC",
-              "title": "Brent rises after US-Iran peace talks in Geneva are postponed",
-              "url": "https://www.cnbc.com/2026/06/19/oil-prices-wti-brent-crude-us-iran-deal-strait-hormuz-shipping-recovery.html",
-              "lean": "Centre"
-            },
-            {
-              "outlet": "Bloomberg",
-              "title": "Iran says ships need its permission to transit Strait of Hormuz",
-              "url": "https://www.bloomberg.com/news/articles/2026-06-19/iran-says-ships-need-its-permission-to-transit-strait-of-hormuz",
-              "lean": "Centre"
-            },
-            {
               "outlet": "Wikipedia",
-              "title": "2026 Strait of Hormuz crisis",
-              "url": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis",
+              "title": "2025–2026 Iran–United States negotiations",
+              "url": "https://en.wikipedia.org/wiki/2025%E2%80%932026_Iran%E2%80%93United_States_negotiations",
               "lean": "Reference"
             }
           ]
@@ -508,43 +767,213 @@
             {
               "status": "ok",
               "verdict": "Confirmed",
-              "text": "A first round of US–Iran technical talks took place in Switzerland on 21 June; corroborated by Al Jazeera, CNBC and CBS News."
+              "text": "The first Switzerland session concluded and technical teams will continue; corroborated by CNN, NBC News and the Qatar–Pakistan mediators' statement."
             },
             {
               "status": "ok",
               "verdict": "Confirmed",
-              "text": "Iran imposed a mandatory insurance requirement for Hormuz transit; corroborated by Bloomberg, Lloyd's List and CNBC."
-            },
-            {
-              "status": "ok",
-              "verdict": "Confirmed",
-              "text": "Brent settled at $80.57 on 19 June, about 8.5% lower on the week (CNBC; consistent with Al Jazeera reporting of a sharp weekly fall)."
+              "text": "Mediators reported ‘encouraging progress’ and a ‘positive and constructive atmosphere’ (joint statement; Iran's foreign ministry)."
             },
             {
               "status": "unv",
               "verdict": "Unverified",
-              "text": "🔍 Exact MoU signing date (17 vs 18 June) and full delegation rosters vary across outlets; not fully reconciled."
+              "text": "🔍 Claims that oil-sanctions waivers and asset releases were ‘secured’ come from Iranian officials (Araghchi; Ghorbanzadeh via Fars/Iran International); not independently confirmed by US or mediators."
+            },
+            {
+              "status": "ok",
+              "verdict": "Confirmed",
+              "text": "Brent crude traded below $79 a barrel into Monday, easing from a weekend spike (Saxo; market data)."
             }
           ]
         },
         {
           "type": "ground",
           "agree": [
-            "A first round of technical talks was held in Switzerland on 21 June.",
-            "Iran has introduced a mandatory insurance requirement for Hormuz transit, free of charge for now.",
-            "Oil prices fell over the week as shipping conditions in the strait improved."
+            "The first Switzerland session concluded; technical teams will continue this week.",
+            "Mediators reported ‘encouraging progress’ and a road map toward a final deal within 60 days.",
+            "Both sides reaffirmed safe passage through the Strait of Hormuz."
           ],
           "contest": [
-            "Whether Iran's permit-and-insurance regime is lawful under UNCLOS transit-passage rules.",
-            "Whether Iran is honouring the ceasefire and Hormuz commitments, characterised differently by the parties.",
-            "The exact date the MoU was signed."
+            "Whether oil-sanctions waivers and asset releases have actually been secured, as Iranian officials claim.",
+            "The effect of Trump's threat of renewed strikes on the negotiations.",
+            "The precise terms and schedule of the next round."
           ]
         },
         {
           "type": "logic",
           "items": [
-            "<strong>1 · Internal-consistency check.</strong> Brent at $80.57 down ~8.5% on the week is consistent with the prior peak above $120 reported during the conflict; no anomaly.",
-            "<strong>2 · Date discrepancy flagged.</strong> Wikipedia dates the MoU to 17 June while CBS/Bloomberg/Al Jazeera cite Wednesday 18 June; an official text or single primary source would resolve it. Kept and flagged rather than dropped."
+            "<strong>1 · Single-source claim flagged.</strong> The specific claims of secured oil waivers and asset releases trace to Iranian officials and the semi-official Fars agency; the mediators' joint statement speaks only of ‘encouraging progress.’ Marked Unverified rather than asserted.",
+            "<strong>2 · Oil internally consistent.</strong> Brent below $79 into Monday is consistent with an easing risk premium as the strait reopens; no anomaly versus the earlier spike above $120."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "italy",
+      "nav_label": "Italy–US Dispute",
+      "category": "Politics",
+      "badges": [
+        {
+          "label": "Politics",
+          "cls": "b-politics"
+        }
+      ],
+      "dateline": "19–22 June 2026 | Rome & Washington",
+      "headline": "Italy's Meloni rejects Trump's ‘fabricated’ G7 account; foreign minister Tajani cancels US trip",
+      "summary": "Italian Prime Minister Giorgia Meloni called ‘completely fabricated’ a claim by President Trump that she had begged him for a photo at the G7 summit; Foreign Minister Antonio Tajani cancelled a US visit, in a public rift between the two governments.",
+      "confidence": {
+        "level": "corrob",
+        "label": "Verified",
+        "why": "— the dispute and Tajani's cancelled trip are reported consistently across PBS, NPR, Al Jazeera, CBS and France 24; only the underlying photo account is contested"
+      },
+      "followup": false,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Giorgia_Meloni_Official_2024_(cropped).jpg?width=1100",
+        "alt": "Official portrait of Giorgia Meloni",
+        "caption": "Italian Prime Minister Giorgia Meloni. Photo: Governo Italiano / Palazzo Chigi · CC BY-NC-SA (official portrait)",
+        "credit": "Governo Italiano",
+        "license": "official portrait"
+      },
+      "article_blocks": [
+        {
+          "type": "p",
+          "html": "A public dispute has opened between the governments of Italy and the United States after President Trump said Italian Prime Minister Giorgia Meloni had “begged” him for a photograph at the Group of Seven summit. Meloni rejected the account as fabricated, and Italy's foreign minister cancelled a planned visit to the United States."
+        },
+        {
+          "type": "p",
+          "html": "In a 19 June interview with Italy's La7 network, Trump said Meloni had asked him for a photo during the G7 summit, held on 16 June in Evian-les-Bains, France, and that he had agreed. In a video response the same day, Meloni said Trump's statements were “completely fabricated” and that she was “frankly stunned,” adding: “Italy and I do not beg.”"
+        },
+        {
+          "type": "p",
+          "html": "Italy's foreign minister, Antonio Tajani, cancelled a weekend trip to the United States, where he had been due to attend an Italy–US business forum in Miami and meet Secretary of State Marco Rubio. Tajani called Trump's reported remarks “serious and offensive.”"
+        },
+        {
+          "type": "p",
+          "html": "Relations between the two governments, once close, have frayed over several issues. Meloni described the US-led war on Iran as illegal and criticised Israeli operations in Gaza as going “beyond the principle of proportionality”; the two have also differed over Ukraine, US tariffs and Greenland. According to NPR and AP, Trump turned on Meloni in April after she defended Pope Leo XIV from his criticism."
+        },
+        {
+          "type": "pullquote",
+          "text": "“Donald Trump's statements are completely fabricated. I am frankly stunned.”",
+          "src": "— Giorgia Meloni, video statement, 19 June 2026"
+        },
+        {
+          "type": "timeline",
+          "head": "Timeline — how it unfolded",
+          "sub": "Tap an event to expand. Spacing reflects the time between events.",
+          "note": "",
+          "events": [
+            {
+              "date": "2026-06-16",
+              "label": "16 Jun",
+              "title": "G7 summit",
+              "detail": "Leaders meet in Evian-les-Bains, France."
+            },
+            {
+              "date": "2026-06-19",
+              "label": "19 Jun",
+              "title": "Trump's claim; Meloni's rebuttal",
+              "detail": "Trump tells La7 that Meloni “begged” for a photo; Meloni calls the account “completely fabricated.”"
+            },
+            {
+              "date": "2026-06-19",
+              "label": "19 Jun",
+              "title": "Tajani cancels the US trip",
+              "detail": "Foreign Minister Tajani scraps a Miami visit and a planned meeting with Secretary of State Rubio."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<strong>Why it matters:</strong> Meloni had positioned herself as a bridge between Washington and the European Union and was among Trump's closest allies in Europe; the rift signals strain in one of the administration's key transatlantic relationships."
+        },
+        {
+          "type": "p",
+          "html": "<strong>What comes next:</strong> watch whether the cancelled Tajani–Rubio meeting is rescheduled and whether the dispute affects Italy's positions on Ukraine, tariffs and Iran."
+        }
+      ],
+      "sidebar_blocks": [
+        {
+          "type": "keyfacts",
+          "items": [
+            "Trump said on <strong>19 June</strong> that Meloni had “begged” for a G7 photo; she called the account “completely fabricated.”",
+            "Foreign Minister <strong>Antonio Tajani</strong> cancelled a US trip and a planned meeting with Secretary of State Marco Rubio.",
+            "The G7 summit was held <strong>16 June</strong> in Evian-les-Bains, France.",
+            "Tensions span the Iran war, Gaza, Ukraine, tariffs and Greenland."
+          ]
+        },
+        {
+          "type": "sources",
+          "items": [
+            {
+              "outlet": "PBS NewsHour",
+              "title": "Italy's Meloni pushes back on Trump's ‘fabricated’ claim as top diplomat cancels US trip",
+              "url": "https://www.pbs.org/newshour/politics/italys-meloni-pushes-back-on-trumps-fabricated-claim-as-top-diplomat-cancels-u-s-trip",
+              "lean": "Centre"
+            },
+            {
+              "outlet": "NPR",
+              "title": "Meloni says Trump made up a story about her",
+              "url": "https://www.npr.org/2026/06/19/nx-s1-5864264/meloni-trump-fight-beg",
+              "lean": "Lean Left"
+            },
+            {
+              "outlet": "Al Jazeera",
+              "title": "Italy's top diplomat nixes US trip after Meloni says Trump fabricated story",
+              "url": "https://www.aljazeera.com/news/2026/6/19/italys-top-diplomat-nixes-us-trip-after-meloni-says-trump-fabricated-story",
+              "lean": "Lean Left"
+            },
+            {
+              "outlet": "CBS News",
+              "title": "Meloni ‘stunned’ as Italy nixes Tajani visit",
+              "url": "https://www.cbsnews.com/news/trump-giorgia-meloni-stunned-italy-nixes-tajani-visit/",
+              "lean": "Centre"
+            },
+            {
+              "outlet": "France 24",
+              "title": "Italian FM cancels US visit over reported Trump comments",
+              "url": "https://www.france24.com/en/live-news/20260619-italian-fm-cancels-us-visit-over-reported-trump-comments",
+              "lean": "Centre"
+            }
+          ]
+        },
+        {
+          "type": "factcheck",
+          "items": [
+            {
+              "status": "ok",
+              "verdict": "Confirmed",
+              "text": "Meloni publicly rejected Trump's claim as fabricated and Tajani cancelled his US trip; corroborated by PBS, NPR, Al Jazeera, CBS and France 24."
+            },
+            {
+              "status": "ok",
+              "verdict": "Confirmed",
+              "text": "Trump made the ‘begged for a photo’ claim in a 19 June La7 interview (multiple outlets)."
+            },
+            {
+              "status": "unv",
+              "verdict": "Unverified",
+              "text": "🔍 What was actually said or requested around the G7 photo is contested between the two leaders; there is no independent account."
+            }
+          ]
+        },
+        {
+          "type": "ground",
+          "agree": [
+            "Trump said Meloni asked him for a G7 photo; Meloni publicly denied it.",
+            "Tajani cancelled a planned US visit and a meeting with Rubio.",
+            "Relations have cooled over Iran, Gaza, Ukraine and tariffs."
+          ],
+          "contest": [
+            "What was actually said or requested around the G7 photo.",
+            "The motivation behind Trump's remarks.",
+            "The longer-term effect on Italy–US relations."
+          ]
+        },
+        {
+          "type": "logic",
+          "items": [
+            "<strong>1 · Attribution check.</strong> The competing accounts of the photo request are first-person claims from the two leaders; the briefing reports each as attributed rather than adjudicating between them.",
+            "<strong>2 · Timeline consistent.</strong> The G7 (16 June), the interview and rebuttal (19 June) and the cancelled trip (19 June) are reported consistently across outlets; no anomaly."
           ]
         }
       ]
@@ -1493,12 +1922,12 @@
         }
       ],
       "dateline": "22 June 2026 | The Week in Markets",
-      "headline": "Stocks steady into Monday after a week defined by a hawkish Fed and falling oil",
-      "summary": "US equities recovered after the FOMC sell-off and Brent fell about 8.5% on the week as the Strait of Hormuz reopened; the wildcard into Monday is oil.",
+      "headline": "Stocks mixed as Starmer resigns and US–Iran talks conclude; oil slips below $79",
+      "summary": "European shares were modestly higher and the pound held lower after UK PM Keir Starmer announced his resignation, while US futures slipped on renewed Iran threats; Brent fell below $79 as the first Switzerland session ended with ‘encouraging progress.’",
       "confidence": {
         "level": "corrob",
         "label": "Verified",
-        "why": "— the week's index and commodity moves are reported consistently across Reuters, CNBC, TheStreet and Trading Economics"
+        "why": "— Monday index levels, FX and commodity marks are corroborated across Saxo, Trading Economics and Bloomberg, and are clearly labelled by session"
       },
       "followup": false,
       "image": {
@@ -1511,53 +1940,47 @@
       "article_blocks": [
         {
           "type": "p",
-          "html": "Global equity markets reopen on Monday 22 June after a week shaped by two forces: a hawkish US Federal Reserve and the de-escalation between the United States and Iran. The Federal Open Market Committee, meeting on 16–17 June in the first decision under new chair Kevin Warsh, held the federal funds target at <strong>3.50%–3.75%</strong> for a fourth consecutive meeting and dropped its prior easing bias. Updated projections showed nine of the participants who submitted forecasts penciling in at least one rate increase later in 2026."
+          "html": "Trading on Monday 22 June was dominated by two developments: the resignation of UK Prime Minister Keir Starmer and the conclusion of the first round of US–Iran talks in Switzerland. European markets were modestly higher in late-morning trade, while US cash markets were not yet open; US stock-index futures had slipped earlier after President Trump renewed threats of military action against Iran."
         },
         {
           "type": "p",
-          "html": "The decision drove a sharp sell-off on Wednesday 17 June, which equities then partly reversed. In the last full US session on <strong>Thursday 18 June</strong>, the S&amp;P 500 closed at <strong>7,500.58</strong>, up 1.08%; the Nasdaq Composite at <strong>26,517.93</strong>, up 1.91%; the Dow Jones Industrial Average at <strong>51,564.70</strong>, up 0.14%; and the small-cap Russell 2000 at <strong>2,979.77</strong>, up 2.12%. Friday 19 June was the Juneteenth holiday, so US cash markets did not trade."
+          "html": "In Europe, the FTSE 100 traded around <strong>10,385</strong>, up about 0.2%, little changed after Starmer said he would step down. Germany's DAX was up about <strong>0.5%</strong> near 24,966, led by Infineon and gains across defence and automotive shares, according to Trading Economics. Sterling held lower at about <strong>$1.319</strong> and the UK 10-year gilt yield edged up to roughly <strong>4.85%</strong> as traders weighed whether a new Labour administration would alter the fiscal outlook; the reported front-runner, Andy Burnham, has signalled he would keep to the fiscal rules."
         },
         {
           "type": "p",
-          "html": "In Europe, which did trade on Friday 19 June, the FTSE 100 closed at about <strong>10,364</strong>, down 0.34%, weighed by mining and precious-metals shares. Germany's DAX ended at <strong>24,986</strong>, down 0.16%. In Asia, Japan's Nikkei 225 finished Friday at about <strong>71,250</strong>, up 0.28%."
+          "html": "In Asia, Japan's Nikkei 225 closed up about <strong>0.8%</strong> near 72,600, led by financial shares, while South Korea's Kospi fell about 1.1% and Australia's ASX 200 slipped 0.4%. The MSCI Asia Pacific index was modestly lower."
         },
         {
           "type": "p",
-          "html": "Oil set the tone for the week. Brent crude settled Friday at <strong>$80.57</strong> a barrel, up about 0.9% on the day but down roughly 8.5% over the week, as the conditional reopening of the Strait of Hormuz, the lifting of force-majeure declarations by Kuwait and the end of the US naval blockade convinced traders that the disruption which had earlier pushed prices above $120 had passed. West Texas Intermediate traded near <strong>$77.50</strong> a barrel. Spot gold eased to about <strong>$4,127</strong> an ounce, down roughly 1.5% on Friday, while US Henry Hub natural gas was around <strong>$3.10</strong> per million BTU."
+          "html": "US cash markets last traded on <strong>Thursday 18 June</strong>; Friday 19 June was the Juneteenth holiday. At that Thursday close the S&amp;P 500 stood at <strong>7,500.58</strong> (+1.08%), the Nasdaq Composite at <strong>26,517.93</strong> (+1.91%) and the Dow Jones Industrial Average at <strong>51,564.70</strong> (+0.14%), after equities partly recovered from the sell-off that followed the Federal Reserve's hawkish hold on 16–17 June. US index futures pointed lower early Monday."
         },
         {
           "type": "p",
-          "html": "The live wildcard into Monday is the Strait of Hormuz. Tehran has said vessels passing through the strait will require mandatory insurance policies — currently free but potentially chargeable later — and major shipping lines have yet to fully resume transits. Talks between the US and Iran in Switzerland were abruptly postponed on Friday, leaving the path from interim agreement to lasting settlement uncertain."
+          "html": "Oil eased further. Brent crude traded below <strong>$79</strong> a barrel, down from a weekend spike near $82, as the conditional reopening of the Strait of Hormuz reduced the risk premium. Spot gold was near <strong>$4,200</strong> an ounce, supported by a softer dollar. The US 2-year Treasury yield was above <strong>4.22%</strong>, a new cycle high, and the 10-year just below 4.49%, per Saxo."
         },
         {
           "type": "p",
-          "html": "The week ahead is data- and earnings-heavy. FedEx reports on 23 June and Micron on 24 June; May personal-consumption-expenditures inflation and the final first-quarter GDP estimate are due on 25 June; and Nike closes the month with fiscal fourth-quarter results on 30 June."
+          "html": "The week ahead is data- and earnings-heavy: FedEx reports on 23 June and Micron on 24 June; May personal-consumption-expenditures inflation and the final first-quarter GDP estimate are due on 25 June; and Nike closes the month on 30 June. Investors are also watching the Labour leadership timetable and any document from the Qatar–Pakistan mediation of the US–Iran talks."
         }
       ],
       "sidebar_blocks": [
         {
           "type": "keyfacts",
           "items": [
-            "S&amp;P 500 <strong>7,500.58</strong> (+1.08%) — Thu 18 Jun close",
-            "Nasdaq Composite <strong>26,517.93</strong> (+1.91%) — Thu 18 Jun close",
-            "FTSE 100 <strong>~10,364</strong> (−0.34%) — Fri 19 Jun close",
-            "Brent crude <strong>$80.57</strong> — Fri 19 Jun, down ~8.5% on the week",
-            "Fed funds target held at <strong>3.50%–3.75%</strong> (FOMC 16–17 Jun)"
+            "FTSE 100 <strong>~10,385</strong> (+0.2%) — Mon 22 Jun intraday",
+            "DAX <strong>~24,966</strong> (+0.5%) — Mon 22 Jun intraday",
+            "Nikkei 225 <strong>~72,600</strong> (+0.8%) — Mon 22 Jun close",
+            "S&amp;P 500 <strong>7,500.58</strong> (+1.08%) — Thu 18 Jun close (US shut Fri)",
+            "Brent <strong>below $79</strong>; gold near $4,200; £/$ ~1.319; 10-yr gilt ~4.85%"
           ]
         },
         {
           "type": "sources",
           "items": [
             {
-              "outlet": "TheStreet",
-              "title": "Stock Market Today (June 18, 2026): Russell 2000, Nasdaq rise after Fed surprise",
-              "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-18-2026",
-              "lean": ""
-            },
-            {
-              "outlet": "CNBC",
-              "title": "Oil drifts as Strait of Hormuz reopens; focus shifts to demand",
-              "url": "https://www.cnbc.com/2026/06/19/oil-prices-wti-brent-crude-us-iran-deal-strait-hormuz-shipping-recovery.html",
+              "outlet": "Saxo",
+              "title": "Market Quick Take — 22 June 2026",
+              "url": "https://www.home.saxo/content/articles/macro/market-quick-take---22-june-2026-22062026",
               "lean": ""
             },
             {
@@ -1567,9 +1990,15 @@
               "lean": ""
             },
             {
-              "outlet": "Federal Reserve",
-              "title": "FOMC statement, 17 June 2026",
-              "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
+              "outlet": "Bloomberg",
+              "title": "Pound lower, gilts steady as UK PM Starmer resigns",
+              "url": "https://www.bloomberg.com/news/articles/2026-06-22/gilts-steady-pound-lower-as-uk-prime-minister-starmer-resigns",
+              "lean": ""
+            },
+            {
+              "outlet": "TheStreet",
+              "title": "Stock Market Today (June 18, 2026): US closes",
+              "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-18-2026",
               "lean": ""
             }
           ]
@@ -1577,16 +2006,16 @@
         {
           "type": "logic",
           "items": [
-            "<strong>1 · Session labelling — checks pass.</strong> US levels are the Thursday 18 June close, the last full session before the Juneteenth holiday; UK, German and Japanese levels are the Friday 19 June close. None are presented as live Monday prices.",
-            "<strong>2 · Commodity timing.</strong> Brent ($80.57), WTI (~$77.50), gold (~$4,127) and natural gas (~$3.10) are Friday 19 June marks; the ~8.5% Brent weekly fall is consistent with the week's reported high-to-low move."
+            "<strong>1 · Session labelling — checks pass.</strong> European and Japanese levels are Monday 22 June (intraday for Europe, close for Tokyo); US levels are the Thursday 18 June close, the last full session before the Juneteenth holiday. None of the US figures are presented as live.",
+            "<strong>2 · FX/yield consistency.</strong> A lower pound (~$1.319) with a higher 10-year gilt yield (~4.85%) is consistent with fiscal uncertainty after the resignation; Brent below $79 aligns with the easing Hormuz risk premium."
           ]
         }
       ]
     },
     "movers": {
-      "dateline": "Last close · US Thu 18 Jun · UK & Europe Fri 19 Jun",
+      "dateline": "US Thu 18 Jun close · Europe Mon 22 Jun · Asia Mon 22 Jun close",
       "headline": "Markets at a glance — biggest movers",
-      "note_html": "Figures are each market's most recent <strong>close</strong>, not live Monday prices. US cash markets were shut on Friday 19 June for the Juneteenth holiday, so US levels are the <strong>Thursday 18 June</strong> close; UK, German and Japanese levels are the <strong>Friday 19 June</strong> close.",
+      "note_html": "US cash markets were shut on Friday 19 June (Juneteenth), so US figures are the <strong>Thursday 18 June</strong> close. European index levels are <strong>Monday 22 June</strong> intraday and Japan's Nikkei is the <strong>Monday 22 June</strong> close. Figures are labelled by session; US single-stock movers are the Thursday close.",
       "indices": [
         {
           "name": "S&P 500",
@@ -1608,20 +2037,20 @@
         },
         {
           "name": "FTSE 100",
-          "value": "10,364",
-          "change": "▼ 0.34%",
-          "direction": "down"
+          "value": "10,385",
+          "change": "▲ 0.24%",
+          "direction": "up"
         },
         {
           "name": "DAX",
-          "value": "24,986",
-          "change": "▼ 0.16%",
-          "direction": "down"
+          "value": "24,966",
+          "change": "▲ 0.49%",
+          "direction": "up"
         },
         {
           "name": "Nikkei 225",
-          "value": "71,250",
-          "change": "▲ 0.28%",
+          "value": "72,584",
+          "change": "▲ 0.80%",
           "direction": "up"
         }
       ],
@@ -1736,26 +2165,26 @@
               ]
             }
           ],
-          "note_html": "FTSE 100 risers and fallers are the Friday 19 June close. Miners and precious-metals producers led the fallers as gold eased."
+          "note_html": "FTSE 100 risers and fallers are the Friday 19 June close; miners and precious-metals producers led the fallers as gold eased. The index was little changed on Monday 22 June after Starmer's resignation; Monday single-stock movers were not independently corroborated intraday and are not published."
         },
         {
           "section": "Europe — index level",
           "boxes": [
             {
-              "kind": "lose",
-              "heading": "▼ DAX index",
-              "region_note": "Germany · Fri 19 Jun close",
+              "kind": "gain",
+              "heading": "▲ DAX index",
+              "region_note": "Germany · Mon 22 Jun intraday",
               "rows": [
                 {
                   "ticker": "GDAXI",
                   "name": "DAX 40 index",
-                  "pct": "−0.16%",
-                  "direction": "down"
+                  "pct": "+0.49%",
+                  "direction": "up"
                 }
               ]
             }
           ],
-          "note_html": "For continental Europe we show the DAX index level only (24,986; −0.16% on Friday 19 June), led lower by Volkswagen, Adidas and Beiersdorf with Rheinmetall and Bayer the strongest names per Trading Economics. We are not publishing a full single-stock gainers/losers strip for other European exchanges where individual moves could not be independently corroborated."
+          "note_html": "For continental Europe we show the DAX index level only (~24,966; +0.49% intraday on Monday 22 June), led by Infineon and gains across defence and automotive shares per Trading Economics. Saxo noted Reply (−6.1%) and EQT among Monday fallers. A full single-stock gainers/losers strip is withheld for exchanges where Monday moves could not be independently corroborated."
         }
       ],
       "sources": [
@@ -1775,6 +2204,12 @@
           "outlet": "Trading Economics",
           "title": "Germany & Japan stock market indices",
           "url": "https://tradingeconomics.com/germany/stock-market",
+          "lean": ""
+        },
+        {
+          "outlet": "Saxo",
+          "title": "Market Quick Take — 22 June 2026",
+          "url": "https://www.home.saxo/content/articles/macro/market-quick-take---22-june-2026-22062026",
           "lean": ""
         }
       ]
@@ -1917,9 +2352,25 @@
       "date": "22 Jun 2026",
       "edition": "22 June 2026",
       "cat": "Politics",
-      "title": "US and Iran open first round of technical talks in Switzerland as Tehran sets Hormuz insurance rule",
-      "summary": "US and Iranian delegations held a first round of technical-level talks in Switzerland under a 60-day window, as Iran imposed mandatory insurance on ships transiting the Strait of Hormuz and oil posted its sharpest weekly fall in months.",
+      "title": "Starmer announces resignation as UK prime minister; Labour to choose a successor by 1 September",
+      "summary": "Keir Starmer said on Monday he will step down as Labour leader and prime minister, triggering a leadership process with nominations opening on 9 July; Andy Burnham is the reported front-runner. Sterling held lower and gilt yields edged up.",
+      "panel": "starmer"
+    },
+    {
+      "date": "22 Jun 2026",
+      "edition": "22 June 2026",
+      "cat": "Politics",
+      "title": "US and Iran conclude first Switzerland session; mediators report ‘encouraging progress’ on sanctions and Hormuz",
+      "summary": "US and Iranian delegations wrapped up the first session of talks in Switzerland, with mediators Qatar and Pakistan reporting ‘encouraging progress’; Iranian officials said draft oil-sanctions waivers and the release of frozen assets were discussed, and technical teams will continue this week.",
       "panel": "iran"
+    },
+    {
+      "date": "22 Jun 2026",
+      "edition": "22 June 2026",
+      "cat": "Politics",
+      "title": "Italy's Meloni rejects Trump's ‘fabricated’ G7 account; foreign minister Tajani cancels US trip",
+      "summary": "Italian Prime Minister Giorgia Meloni called ‘completely fabricated’ a claim by President Trump that she had begged him for a photo at the G7 summit; Foreign Minister Antonio Tajani cancelled a US visit, in a public rift between the two governments.",
+      "panel": "italy"
     },
     {
       "date": "22 Jun 2026",
@@ -1965,8 +2416,8 @@
       "date": "22 Jun 2026",
       "edition": "22 June 2026",
       "cat": "Markets",
-      "title": "Stocks steady into Monday after a week defined by a hawkish Fed and falling oil",
-      "summary": "US equities recovered after the FOMC sell-off and Brent fell about 8.5% on the week as the Strait of Hormuz reopened; the wildcard into Monday is oil.",
+      "title": "Stocks mixed as Starmer resigns and US–Iran talks conclude; oil slips below $79",
+      "summary": "European shares were modestly higher and the pound held lower after UK PM Keir Starmer announced his resignation, while US futures slipped on renewed Iran threats; Brent fell below $79 as the first Switzerland session ended with ‘encouraging progress.’",
       "panel": "markets"
     }
   ]
