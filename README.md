@@ -2,9 +2,9 @@
 
 > **AI disclosure:** Even Brief is researched, written and fact-checked by an AI system from public, non-paywalled sources. AI can make mistakes — verify anything important independently. Not financial, legal or medical advice.
 
-A self-contained daily news briefing (one HTML file): top stories with fact-checks,
-confidence ratings and media-framing analysis, plus markets, live stocks, a full
-weather page and a searchable archive.
+**A daily, impartial world-news briefing.** Even Brief reads like a newswire — flat, sourced and even-handed — then layers on tools that show you how solid each story is and how differently it's being reported across the press.
+
+### 🔗 Read it live → **https://owenautosport.github.io/Even-Brief/**
 
 <!--EDITION:START-->
 ## Current edition — Sunday, 21 June 2026
@@ -24,42 +24,25 @@ Today's Top Headlines:
 Read the live site: https://owenautosport.github.io/Even-Brief/
 <!--EDITION:END-->
 
-## How it's published
-This folder is the website. `index.html` is the whole site (one self-contained
-file), hosted on GitHub Pages (static, free, HTTPS) at
-<https://owenautosport.github.io/Even-Brief/>.
+## What's inside each edition
 
-`index.html` is **built**, not hand-edited: a generator produces a validated
-`content/editions/<date>.json`, and the build renders it through templates +
-inlined assets into `index.html` + `archive.json`. See **ARCHITECTURE.md**.
+- **Top Headlines** — a clean front page with a lead story and a card for every other story.
+- **Fact-checks & confidence ratings** — each major claim is tagged ✅ Confirmed or 🔍 Unverified, and every story carries a **Verified / Developing / Disputed** confidence meter.
+- **Media framing & bias bar** — on contested stories, a left / centre / right breakdown of how different outlets cover the same events, with sources mapped to their published lean.
+- **Common ground vs contested** — the facts all sides agree on, separated from the points still in dispute.
+- **Logic checks** — where numbers or timelines don't add up, a flag explains the discrepancy and names the conflicting sources.
+- **Reading tools** — interactive timelines, clickable key facts, dated pull-quotes, and a working source list for every story.
+- **Markets** — a written overview, the biggest movers across the US, UK and Europe, a month-ahead economic calendar, and a live stocks page.
+- **Weather** — a full Guildford forecast: hourly temperature and rainfall charts, a tap-through 7-day outlook, any Met Office warnings, and an animated rain radar.
+- **Search & archive** — every story across editions, searchable by keyword or topic.
+- **Dark / light themes and a distraction-free focus mode.**
 
-## Updating the site
-Two ways to generate an edition (both end at the same build — see **GENERATION.md**):
+## How it's made
 
-- **Claude Code mode (no API cost):** in a Claude Code session here, run
-  `/new-edition` — it researches the day's news on your subscription, writes the
-  edition JSON, and builds. Then `git commit && git push`.
-- **API pipeline (metered):** `python -m evenbrief.pipeline` then
-  `python -m build.render` — used by the optional nightly GitHub Action once the
-  `ANTHROPIC_API_KEY` secret is set (**AUTOMATION.md**).
+Each edition is compiled automatically by an AI system that researches the day's most significant stories across world politics, conflict, science, climate, health, technology and business. It corroborates major claims across multiple independent outlets, flags anything single-sourced or disputed rather than dropping it, writes each story in a neutral register, and assembles the markets, weather and a growing archive. Photos are public-domain or open-licensed and credited — never lifted from the outlets cited.
 
-Build a hand-written/edited edition directly:
-```
-python -m evenbrief.check_edition content/editions/<date>.json   # validate
-python -m build.render --edition content/editions/<date>.json    # build + gate
-```
+Verdicts and framing reflect the state of reporting at the time each edition is compiled, and may evolve.
 
-## Develop / test (free, no key)
-```
-pip install -r requirements.txt -e .
-python -m pytest -q                                  # full suite
-python -m evenbrief.pipeline --dry-run --out /tmp/e.json && \
-  python -m build.render --edition /tmp/e.json --check-only
-```
+---
 
-## Notes
-- Most of the page works offline; the live stock widgets (TradingView) and the
-  rain radar (Leaflet + RainViewer) need an internet connection to load.
-- `.nojekyll` tells GitHub Pages to serve files as-is.
-- A `LICENSE` (MIT) and the static brand assets (`favicon.svg`, `favicon-32.png`,
-  `apple-touch-icon.png`, `og-image.png`) live in the repo root.
+<sub>Even Brief is an automated, AI-compiled briefing published as a static site. © 2026 · MIT-licensed.</sub>
