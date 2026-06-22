@@ -16,7 +16,7 @@
 
 {#- lead image figure with the reference onerror fallback -#}
 {% macro figure(img) %}
-  <figure class="art-img"><img src="{{ img.url }}" alt="{{ img.alt }}" loading="lazy" onerror="var f=this.closest('figure'); if(f) f.style.display='none';">{% if img.caption %}<figcaption>{{ img.caption }}</figcaption>{% endif %}</figure>
+  <figure class="art-img"><span class="img-fill"><img src="{{ img.url }}" alt="{{ img.alt }}" loading="lazy" onerror="var f=this.closest('figure'); if(f) f.style.display='none';"></span>{% if img.caption %}<figcaption>{{ img.caption }}</figcaption>{% endif %}</figure>
 {%- endmacro %}
 
 {#- one ordered article block (prose / pull-quote / timeline / framing) -#}
@@ -123,7 +123,7 @@
   {{ confidence(s.confidence) }}
   <button type="button" class="artfocus" data-focus-toggle aria-pressed="false">◎ Focus mode</button>
   <div class="grid">
-    <div class="article">
+    <div class="article"{% if s.inline_image %} data-inline-img="{{ s.inline_image.url }}" data-inline-alt="{{ s.inline_image.alt }}" data-inline-cap="{{ s.inline_image.caption }}"{% endif %}>
       {%- if s.image %}{{ figure(s.image) }}{% endif %}
       {%- if s.followup %}
       <p><span class="followup">Follow-up to earlier coverage</span></p>

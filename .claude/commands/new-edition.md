@@ -75,9 +75,23 @@ London date** — run `TZ='Europe/London' date '+%Y-%m-%d | %A, %-d %B %Y | %H:%
    > ticker tape / heatmap / watchlist / screener) and the market-hours countdown
    > board are **live** client-side and always current — do not try to hardcode or
    > "refresh" them. Your job for stocks is the **Markets** data above.
-7. **Images:** licence-safe only — Wikimedia Commons (`Special:FilePath/…`),
-   NASA, USGS, CDC, NOAA — with a credited caption, or omit the image. Never use a
-   cited outlet's own photo.
+7. **Images — TWO per story.** Licence-safe only — Wikimedia Commons
+   (`Special:FilePath/…`), NASA, USGS, CDC, NOAA, ESA — with a credited caption.
+   Never use a cited outlet's own photo. **Verify each filename actually resolves**
+   before shipping it, e.g.
+   `curl -sIL -o /dev/null -w '%{http_code}' "https://commons.wikimedia.org/wiki/Special:FilePath/<File>.jpg"` → expect `200`.
+   Any aspect ratio is fine: the page shows every image whole over a blurred
+   self-fill of itself, so nothing is cropped — no need to pick "landscape" crops.
+   - `image` — the **lead** image at the top of the story.
+   - `inline_image` — a **second, different-but-relevant** image (a *distinct*
+     subject from the lead, not a near-duplicate) that is floated mid-article and
+     the body text wraps around. Set it on **every** story **and** on
+     `markets.overview`. If you genuinely can't source a good distinct one, omit it
+     and the page falls back to a category-emoji tile.
+   > The masthead/weather and market-hours board are also **localised live** in the
+   > browser (Open-Meteo + the visitor's geolocation/clock). Your Guildford weather
+   > data is the **default + fallback** shown before/without permission — still fill
+   > it fully as below.
 8. **Write** the full edition to `content/editions/<YYYY-MM-DD>.json`, matching the
    schema. Build the Headlines hero + cards from the stories. In
    `edition.archive`, include **only today's** items (one per story, `panel` set to
@@ -90,7 +104,8 @@ London date** — run `TZ='Europe/London' date '+%Y-%m-%d | %A, %-d %B %Y | %H:%
    If you reused any weather or markets numbers from a previous edition, re-research
    them.
 10. **Validate** until clean: `python -m evenbrief.check_edition content/editions/<date>.json`
-    (fix any reported field errors).
+    (fix any reported field errors). If bare `python` isn't on PATH, use
+    `.venv/bin/python` instead (for both this and the build).
 11. **Build:** `python -m build.render --edition content/editions/<date>.json`.
     This renders `index.html`, merges + writes `archive.json`,
     `template-reference.html`, refreshes `sitemap.xml` and the README edition

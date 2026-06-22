@@ -148,8 +148,9 @@ def validate_edition(edition, html: str, prior_archive: list[dict] | None = None
 
     # Image URLs must be on the licence-safe allowlist.
     for s in panels:
-        if s.image and not _host_ok(s.image.url):
-            errors.append(f"story '{s.id}' image is not on an open-licence host: {s.image.url}")
+        for im in (s.image, s.inline_image):
+            if im and not _host_ok(im.url):
+                errors.append(f"story '{s.id}' image is not on an open-licence host: {im.url}")
 
     # 24-hour / dedupe rule: a current story must not repeat an OLDER archive
     # edition's headline verbatim (a genuine new development must be rewritten).

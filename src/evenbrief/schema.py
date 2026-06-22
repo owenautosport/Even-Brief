@@ -177,6 +177,7 @@ class Story(_Model):
     confidence: Confidence
     followup: bool = False
     image: Optional[Image] = None
+    inline_image: Optional[Image] = None   # a second, different-but-relevant image floated mid-article
     article_blocks: list[ArticleBlock] = Field(min_length=1)
     sidebar_blocks: list[SidebarBlock] = Field(default_factory=list)
 

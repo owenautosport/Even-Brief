@@ -170,6 +170,13 @@
         "credit": "NASA",
         "license": "public domain"
       },
+      "inline_image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Example_Detail.jpg?width=600",
+        "alt": "A different but relevant image, floated mid-article",
+        "caption": "A second, distinct subject (not a near-duplicate of the lead). Photo: Wikimedia Commons",
+        "credit": "Wikimedia Commons",
+        "license": "open licence"
+      },
       "article_blocks": [
         {
           "type": "p",
@@ -340,6 +347,13 @@
         "caption": "Photo: public domain",
         "credit": "",
         "license": "public domain"
+      },
+      "inline_image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Example_Exchange.jpg?width=600",
+        "alt": "A different but relevant markets image, floated mid-article",
+        "caption": "A distinct markets subject (e.g. a trading floor or index). Photo: Wikimedia Commons",
+        "credit": "Wikimedia Commons",
+        "license": "open licence"
       },
       "article_blocks": [
         {

@@ -91,6 +91,7 @@
   </div>
 
   {%- if w.warnings %}
+  <div id="wxWarnBlock">
   <div class="sec-h">Met Office warnings</div>
   <div class="fc-warn">
     {%- for wc in w.warnings %}
@@ -101,6 +102,7 @@
       </div>
     </div>
     {%- endfor %}
+  </div>
   </div>
   {%- endif %}
 
@@ -119,7 +121,7 @@
   <div class="fc-radar" id="fcRadar"></div>
   <div class="note" style="margin-top:10px">Radar animates the last hour of rainfall and the short-term nowcast. Drag and zoom to explore; needs an internet connection.</div>
 
-  <div class="sources" style="background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;box-shadow:var(--shadow);max-width:560px;margin-top:16px">
+  <div class="sources" id="wxSources" style="background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;box-shadow:var(--shadow);max-width:560px;margin-top:16px">
     <h3 style="font-size:12px;text-transform:uppercase;letter-spacing:2px;margin-bottom:12px;color:var(--gold);font-weight:800">Sources</h3>
     <ol>
       {%- for s in w.sources %}

@@ -285,8 +285,10 @@
   /* Headlines overview */
   /* Shared image tile + category placeholders */
   .ov-img{position:relative;width:100%;background:var(--panel2);overflow:hidden;display:flex;align-items:center;justify-content:center}
-  .ov-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-  .ov-emoji{font-size:32px;opacity:.55;filter:saturate(.6)}
+  /* whole image (contain) over a blurred self-fill — fills the tile, never crops */
+  .ov-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;z-index:1}
+  .ov-img.has-img .ov-emoji{display:none}
+  .ov-emoji{position:relative;z-index:1;font-size:32px;opacity:.55;filter:saturate(.6)}
   .cat-politics{background:linear-gradient(135deg,rgba(90,169,230,.34),rgba(90,169,230,.06))}
   .cat-conflict{background:linear-gradient(135deg,rgba(224,65,79,.32),rgba(224,65,79,.06))}
   .cat-business{background:linear-gradient(135deg,rgba(72,199,142,.30),rgba(72,199,142,.06))}
@@ -308,7 +310,7 @@
   .ov-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
   .ov-card{background:var(--panel);border:1px solid var(--line);border-radius:11px;overflow:hidden;cursor:pointer;transition:.15s;display:flex;flex-direction:column}
   .ov-card:hover{border-color:var(--gold);transform:translateY(-2px)}
-  .ov-card .ov-img{aspect-ratio:16/9}
+  .ov-card .ov-img{aspect-ratio:1/1}
   .ov-card-body{padding:13px 15px 15px}
   .ov-card .badge{margin-bottom:9px;font-size:9.5px}
   .ov-card h4{font-size:15.5px;color:var(--ink-strong);line-height:1.25;margin-bottom:6px}
@@ -443,8 +445,19 @@
   html.focus .article .fullbtn:hover{color:var(--ink);border-color:var(--gold)}
   html.focus .panel.ffull .article .fullbtn{display:none}
   .art-img{margin:0 0 18px}
-  .art-img img{width:100%;height:auto;max-height:300px;object-fit:cover;border-radius:10px;border:1px solid var(--line);display:block;background:var(--panel2)}
+  /* Shared "fill" form: the whole photo is shown (object-fit:contain) over a
+     blurred, zoomed copy of itself, so the area is always filled and the photo
+     is never cropped weirdly — used by the lead image, cards and thumbnails. */
+  .img-fill{position:relative;display:block;overflow:hidden;aspect-ratio:16/9;border-radius:10px;border:1px solid var(--line);background:var(--panel2)}
+  .img-fill::before,.ov-img::before,.arch-thumb::before{content:"";position:absolute;inset:0;background-image:var(--img,none);background-size:cover;background-position:center;filter:blur(16px) saturate(1.3);transform:scale(1.25);opacity:.5;z-index:0;pointer-events:none}
+  .img-fill>img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;z-index:1}
   .art-img figcaption{font-size:11px;color:var(--ink-mute);margin-top:6px;line-height:1.5}
+  /* mid-article figure — a different-but-relevant image the body text wraps around */
+  .art-figure{float:right;width:212px;margin:6px 0 14px 22px}
+  .art-figure .img-fill{aspect-ratio:1/1;border-radius:14px}
+  .art-figure figcaption{font-size:10.5px;color:var(--ink-mute);margin-top:6px;line-height:1.45}
+  .art-figure .af-tile{display:flex;align-items:center;justify-content:center;aspect-ratio:1/1;border-radius:14px;border:3px solid var(--gold);background:var(--panel2);box-shadow:var(--shadow);font-size:62px;line-height:1}
+  @media(max-width:640px){ .art-figure{float:none;width:100%;max-width:300px;margin:14px auto} }
 
   /* Long-word/URL safeguard (prevents horizontal overflow without breaking sticky positioning) */
   .article p, .tl-title, .tl-detail p, .calitem .ev, .calitem .meta, .gbody p, .gbody h4, .sources a, .sources li, .mvrow .nm, .pullquote, h2.head, .ov-hero h2, .ov-card h4{overflow-wrap:break-word}
@@ -482,7 +495,7 @@
     table.mkt{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap}
     .sources[style]{max-width:100%!important}
     .amodal{padding:18px}
-    .arch-thumb{flex:0 0 78px;width:78px}
+    .arch-thumb{flex:0 0 72px;width:72px;height:72px;margin:8px 0 8px 8px}
     .ov-hero h2{font-size:21px}
   }
 
@@ -499,9 +512,10 @@
   .arch-list{display:flex;flex-direction:column;gap:10px}
   .arch-item{display:flex;align-items:stretch;width:100%;text-align:left;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:0;overflow:hidden;cursor:pointer;transition:.12s;font-family:var(--font)}
   .arch-item:hover{border-color:var(--gold);transform:translateY(-1px)}
-  .arch-thumb{flex:0 0 96px;width:96px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
-  .arch-thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-  .arch-thumb .ov-emoji{font-size:26px}
+  .arch-thumb{flex:0 0 84px;width:84px;height:84px;align-self:center;margin:9px 0 9px 10px;border-radius:10px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;background:var(--panel2)}
+  .arch-thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;z-index:1}
+  .arch-thumb.has-img .ov-emoji{display:none}
+  .arch-thumb .ov-emoji{position:relative;z-index:1;font-size:26px}
   .arch-body{flex:1;min-width:0;padding:13px 15px}
   .arch-mrow{display:flex;gap:10px;align-items:center;margin-bottom:7px;flex-wrap:wrap}
   .arch-date{font-size:11px;color:var(--gold);font-weight:800;letter-spacing:.5px}
@@ -584,6 +598,18 @@
   .tradingview-widget-copyright a{color:var(--ink-mute)}
   .tradingview-widget-copyright a:hover{color:var(--gold)}
   @media(max-width:600px){ .tv-chart{height:72vh;min-height:460px} }
+  /* localisation: masthead clock, "use my location" control, data-source pill, market-board local clock, toast */
+  .eb-localclock{color:var(--ink-mute);white-space:nowrap}
+  .wx-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:8px}
+  .wx-geo{background:var(--panel2);border:1px solid var(--line);color:var(--ink-soft);font-family:var(--font);font-size:11px;font-weight:700;letter-spacing:.3px;padding:5px 10px;border-radius:8px;cursor:pointer;transition:.15s;white-space:nowrap}
+  .wx-geo:hover{color:var(--ink);border-color:var(--gold)}
+  .wx-src{font-size:10.5px;color:var(--ink-mute);letter-spacing:.3px}
+  .mh-localtime{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 14px;color:var(--ink-soft);font-size:13px}
+  .mh-localtime .mh-lt-lab{color:var(--ink-mute);font-size:11px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700}
+  .mh-localtime .mh-lt-val{color:var(--ink-strong);font-weight:800;font-variant-numeric:tabular-nums;font-size:16px}
+  .mh-localtime .mh-lt-tz{color:var(--ink-mute);font-size:12px}
+  .eb-toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,12px);z-index:90;background:var(--panel2);border:1px solid var(--line);color:var(--ink);font-size:13px;font-weight:600;padding:11px 18px;border-radius:10px;box-shadow:var(--shadow);opacity:0;transition:opacity .3s,transform .3s;pointer-events:none;max-width:90vw}
+  .eb-toast.show{opacity:1;transform:translate(-50%,0)}
 </style>
 </head>
 <body>
@@ -1688,12 +1714,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
 (function(){
+  var EB={};                                          // shared hooks for the geolocation / localisation layer
+  var __radarCenter=[51.235,-0.574], __radarZoom=7;   // default Guildford; geolocation may recentre this
   // Full weather-page radar — interactive + animated through recent frames
   function initForecastRadar(){
     if(typeof L==='undefined') return;
     var el=document.getElementById('fcRadar'); if(!el || el._built) return; el._built=true;
     var dark=document.documentElement.getAttribute('data-theme')!=='light';
-    var map=L.map(el,{zoomControl:true,attributionControl:true,scrollWheelZoom:false}).setView([51.235,-0.574],7);
+    var map=L.map(el,{zoomControl:true,attributionControl:true,scrollWheelZoom:false}).setView(__radarCenter,__radarZoom);
+    el._map=map;
     var base=dark?'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png':'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
     L.tileLayer(base,{subdomains:'abcd',maxZoom:19,attribution:'© OSM, © CARTO'}).addTo(map);
     fetch('https://api.rainviewer.com/public/weather-maps.json').then(function(r){return r.json();}).then(function(d){
@@ -1707,6 +1736,11 @@
     setTimeout(function(){ map.invalidateSize(); },250);
     window.addEventListener('resize', function(){ map.invalidateSize(); });
   }
+  EB.recenterRadar=function(lat,lon,z){
+    __radarCenter=[lat,lon]; __radarZoom=z||9;
+    var el=document.getElementById('fcRadar');
+    if(el && el._map){ el._map.setView(__radarCenter,__radarZoom); setTimeout(function(){ el._map.invalidateSize(); },80); }
+  };
 
   var navlinks = document.querySelectorAll('.mlink');
   var panels = document.querySelectorAll('.panel');
@@ -1737,6 +1771,15 @@
   // Market hours board — live open/closed status + countdown to open/close (computed in each market's timezone)
   (function(){
     var grid=document.getElementById('mhGrid'); if(!grid) return;
+    // Live "your local time" header — the board's open/closed countdowns are computed from this device clock.
+    var clk=document.createElement('div'); clk.className='mh-localtime';
+    grid.parentNode.insertBefore(clk, grid);
+    function tickClock(){
+      var n=new Date(), tz='';
+      try{ tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''; }catch(e){}
+      clk.innerHTML='<span class="mh-lt-lab">Your local time</span><span class="mh-lt-val">'+n.toLocaleTimeString([],{hour:'2-digit',minute:'2-digit',second:'2-digit'})+'</span>'+(tz?'<span class="mh-lt-tz">'+tz+'</span>':'');
+    }
+    tickClock(); setInterval(tickClock,1000);
     var MK=[
       {city:'New York',name:'NYSE · Nasdaq',tz:'America/New_York',o:570,c:960},
       {city:'London',name:'LSE',tz:'Europe/London',o:480,c:990},
@@ -1915,6 +1958,12 @@
     function renderDays(){ if(!daysEl) return; daysEl.innerHTML=DAYS.map(function(D,i){return '<button class="fc-day'+(D.warn?' warn':'')+(i===sel?' sel':'')+'" data-i="'+i+'"><div class="d">'+esc(D.d)+'</div><div class="ic">'+D.ic+'</div><div class="hi">'+D.hi+'°</div><div class="lo">'+D.lo+'°</div><div class="pr">'+esc(D.tag)+'</div></button>';}).join(''); }
     function renderDetail(){ if(!detEl) return; var D=DAYS[sel]; detEl.innerHTML='<div class="fcd-head">'+esc(D.d+' · '+D.cond)+'</div><div class="fcd-grid">'+stat('High / Low',D.hi+'° / '+D.lo+'°')+stat('Feels like',D.feels+'°')+stat('Precip',D.pc+'% · '+D.mm+' mm')+stat('Wind',D.wind+' mph')+stat('Gusts',D.gust+' mph')+stat('Humidity',D.hum+'%')+stat('UV index',String(D.uv))+stat('Sunrise',D.sr)+stat('Sunset',D.ss)+'</div><div class="fcd-sum">'+esc(D.sum)+'</div>'; }
     if(daysEl){ daysEl.addEventListener('click',function(e){var b=e.target.closest('.fc-day');if(!b)return;sel=+b.getAttribute('data-i');renderDays();renderDetail();}); renderDays(); renderDetail(); }
+    // Let the geolocation layer swap in live data and redraw every chart/tile.
+    EB.applyWeather=function(d){
+      if(d.temp && d.temp.length){ temp=d.temp; if(tEl) tEl.innerHTML=lineChart(temp); if(mEl) mEl.innerHTML=miniTemp(temp); }
+      if(d.precip && d.precip.length){ precip=d.precip; if(pEl) pEl.innerHTML=barChart(precip); }
+      if(d.days && d.days.length){ DAYS=d.days; sel=0; renderDays(); renderDetail(); }
+    };
   })();
 
   function show(id){
@@ -2180,6 +2229,199 @@
     pop.addEventListener('click', function(e){ e.stopPropagation(); });
     document.addEventListener('click', function(){ if(!pop.hidden) open(false); });
     document.addEventListener('keydown', function(e){ if(e.key==='Escape' && !pop.hidden) open(false); });
+  })();
+
+  // Live local clock + opt-in geolocation: localise the masthead weather, the
+  // forecast page and the radar to the visitor (live data from Open-Meteo).
+  // Falls back to the editioned Guildford / Met Office data on decline or error.
+  (function(){
+    // ---- live local clock in the masthead date line (no permission needed) ----
+    var dateEl=document.querySelector('.brand .date');
+    if(dateEl){
+      var clk=document.createElement('span'); clk.className='eb-localclock'; dateEl.appendChild(clk);
+      function tickMast(){ clk.textContent=' · 🕒 '+new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'})+' local'; }
+      tickMast(); setInterval(tickMast, 15000);
+    }
+
+    var wxBox=document.querySelector('.wx .weather'); if(!wxBox) return;
+    var state={localised:false};
+
+    function q(s){ return document.querySelector(s); }
+    function setText(s,t){ var el=q(s); if(el) el.textContent=t; }
+    function tm(iso){ return (iso||'').slice(11,16); }
+    function tzLabel(tz){ return tz ? tz.split('/').pop().replace(/_/g,' ') : 'your location'; }
+    function dayLabel(s){ try{ var d=new Date(s+'T12:00:00'); return d.toLocaleDateString('en-GB',{weekday:'short'})+' '+d.getDate(); }catch(e){ return s; } }
+    function codeMap(c){
+      var M={0:['Clear sky','☀️'],1:['Mainly clear','🌤️'],2:['Partly cloudy','⛅'],3:['Overcast','☁️'],
+        45:['Fog','🌫️'],48:['Freezing fog','🌫️'],51:['Light drizzle','🌦️'],53:['Drizzle','🌦️'],55:['Heavy drizzle','🌦️'],
+        56:['Freezing drizzle','🌧️'],57:['Freezing drizzle','🌧️'],61:['Light rain','🌧️'],63:['Rain','🌧️'],65:['Heavy rain','🌧️'],
+        66:['Freezing rain','🌧️'],67:['Freezing rain','🌧️'],71:['Light snow','🌨️'],73:['Snow','🌨️'],75:['Heavy snow','❄️'],
+        77:['Snow grains','🌨️'],80:['Rain showers','🌦️'],81:['Rain showers','🌦️'],82:['Violent showers','⛈️'],
+        85:['Snow showers','🌨️'],86:['Snow showers','🌨️'],95:['Thunderstorm','⛈️'],96:['Thunderstorm','⛈️'],99:['Thunderstorm, hail','⛈️']};
+      var e=M[c]||['—','🌡️']; return {cond:e[0], ic:e[1]};
+    }
+    function buildArrays(wx){
+      var H=wx.hourly||{}, D=wx.daily||{}, rh=H.relative_humidity_2m||[];
+      var temp=(H.temperature_2m||[]).slice(0,24).map(function(v){return Math.round(v);});
+      var precip=(H.precipitation_probability||[]).slice(0,24).map(function(v){return Math.round(v||0);});
+      var days=(D.time||[]).map(function(ds,i){
+        var cm=codeMap(D.weather_code[i]), hum=null;
+        if(rh.length){ var s=0,n=0; for(var h=i*24; h<i*24+24 && h<rh.length; h++){ s+=rh[h]; n++; } if(n) hum=Math.round(s/n); }
+        var pc=Math.round(D.precipitation_probability_max[i]||0);
+        return { d:dayLabel(ds), ic:cm.ic, cond:cm.cond,
+          hi:Math.round(D.temperature_2m_max[i]), lo:Math.round(D.temperature_2m_min[i]),
+          feels:Math.round(D.apparent_temperature_max[i]), wind:Math.round(D.wind_speed_10m_max[i]),
+          gust:Math.round(D.wind_gusts_10m_max[i]), hum:(hum==null?0:hum), uv:Math.round(D.uv_index_max[i]||0),
+          pc:pc, mm:Math.round((D.precipitation_sum[i]||0)*10)/10, sr:tm(D.sunrise[i]), ss:tm(D.sunset[i]),
+          warn:false, tag:pc+'% rain', sum:cm.cond+'. High '+Math.round(D.temperature_2m_max[i])+'°, low '+Math.round(D.temperature_2m_min[i])+'°.' };
+      });
+      return {temp:temp, precip:precip, days:days};
+    }
+
+    // injected masthead controls: a "use my location" button + a data-source pill
+    var act=document.createElement('div'); act.className='wx-actions';
+    var geoBtn=document.createElement('button'); geoBtn.type='button'; geoBtn.className='wx-geo'; geoBtn.textContent='📍 Use my location';
+    var srcPill=document.createElement('span'); srcPill.className='wx-src'; srcPill.textContent='Met Office · Guildford';
+    act.appendChild(geoBtn); act.appendChild(srcPill); wxBox.appendChild(act);
+
+    // capture the editioned defaults so we can restore them on reset
+    var orig={
+      loc:(q('.wx .weather .loc')||{}).textContent, temp:(q('.wx .weather .temp')||{}).textContent, cond:(q('.wx .weather .cond')||{}).textContent,
+      row:[].map.call(document.querySelectorAll('.wx .weather .row span'),function(s){return s.textContent;}),
+      big:(q('#forecast .fc-cur .big')||{}).textContent,
+      metas:[].map.call(document.querySelectorAll('#forecast .fc-cur .meta'),function(s){return s.textContent;}),
+      dateline:(q('#forecast .dateline')||{}).textContent, head:(q('#forecast h2.head')||{}).textContent,
+      sources:(document.getElementById('wxSources')||{}).innerHTML,
+      wx:(function(){try{return JSON.parse(document.getElementById('wxData').textContent)||{};}catch(e){return {};}})()
+    };
+
+    function flash(msg){
+      var t=document.createElement('div'); t.className='eb-toast'; t.textContent=msg; document.body.appendChild(t);
+      requestAnimationFrame(function(){ t.classList.add('show'); });
+      setTimeout(function(){ t.classList.remove('show'); setTimeout(function(){ t.remove(); }, 350); }, 3200);
+    }
+
+    function applyLocalised(wx, place, lat, lon){
+      var cur=wx.current||{}, D=wx.daily||{};
+      var t0=Math.round(cur.temperature_2m), cm=codeMap(cur.weather_code);
+      var low=Math.round(D.temperature_2m_min[0]), rain=Math.round(D.precipitation_probability_max[0]||0), gust=Math.round(cur.wind_gusts_10m);
+      setText('.wx .weather .loc', place); setText('.wx .weather .temp', t0+'°C'); setText('.wx .weather .cond', cm.cond);
+      var rs=document.querySelectorAll('.wx .weather .row span');
+      if(rs[0]) rs[0].textContent='↓ Low '+low+'°C'; if(rs[1]) rs[1].textContent='Rain '+rain+'%'; if(rs[2]) rs[2].textContent='Gusts '+gust+' mph';
+      setText('#forecast .fc-cur .big', t0+'°C');
+      var ms=document.querySelectorAll('#forecast .fc-cur .meta');
+      if(ms[0]) ms[0].textContent=cm.cond;
+      if(ms[1]) ms[1].textContent='Feels like '+Math.round(cur.apparent_temperature)+'°C · Low '+low+'°C · Rain '+rain+'% · Gusts '+gust+' mph · Humidity '+Math.round(cur.relative_humidity_2m)+'%';
+      setText('#forecast .dateline', 'Weather · '+place);
+      setText('#forecast h2.head', place+' — the week ahead');
+      var wb=document.getElementById('wxWarnBlock'); if(wb) wb.style.display='none';
+      var src=document.getElementById('wxSources');
+      if(src) src.innerHTML='<h3 style="font-size:12px;text-transform:uppercase;letter-spacing:2px;margin-bottom:12px;color:var(--gold);font-weight:800">Sources</h3><ol><li><span class="outlet">Open-Meteo</span> — <a href="https://open-meteo.com/">live forecast for your location</a></li><li><span class="outlet">BigDataCloud</span> — <a href="https://www.bigdatacloud.com/">reverse geocoding</a></li></ol>';
+      if(EB.applyWeather) EB.applyWeather(buildArrays(wx));
+      if(EB.recenterRadar && lat!=null) EB.recenterRadar(lat, lon, 9);
+      srcPill.textContent='Open-Meteo · live'; geoBtn.textContent='📍 '+place+' · reset';
+      state.localised=true;
+    }
+
+    function resetToDefault(){
+      setText('.wx .weather .loc', orig.loc); setText('.wx .weather .temp', orig.temp); setText('.wx .weather .cond', orig.cond);
+      var rs=document.querySelectorAll('.wx .weather .row span'); orig.row.forEach(function(v,i){ if(rs[i]) rs[i].textContent=v; });
+      setText('#forecast .fc-cur .big', orig.big);
+      var ms=document.querySelectorAll('#forecast .fc-cur .meta'); orig.metas.forEach(function(v,i){ if(ms[i]) ms[i].textContent=v; });
+      setText('#forecast .dateline', orig.dateline); setText('#forecast h2.head', orig.head);
+      var wb=document.getElementById('wxWarnBlock'); if(wb) wb.style.display='';
+      var src=document.getElementById('wxSources'); if(src && orig.sources!=null) src.innerHTML=orig.sources;
+      if(EB.applyWeather) EB.applyWeather(orig.wx);
+      if(EB.recenterRadar) EB.recenterRadar(51.235, -0.574, 7);
+      srcPill.textContent='Met Office · Guildford'; geoBtn.textContent='📍 Use my location';
+      state.localised=false;
+    }
+
+    function localise(lat, lon){
+      geoBtn.textContent='Locating…';
+      var base='https://api.open-meteo.com/v1/forecast?latitude='+lat+'&longitude='+lon
+        +'&current=temperature_2m,relative_humidity_2m,apparent_temperature,precipitation,weather_code,wind_speed_10m,wind_gusts_10m'
+        +'&hourly=temperature_2m,precipitation_probability,relative_humidity_2m'
+        +'&daily=weather_code,temperature_2m_max,temperature_2m_min,apparent_temperature_max,precipitation_probability_max,precipitation_sum,wind_speed_10m_max,wind_gusts_10m_max,uv_index_max,sunrise,sunset'
+        +'&timezone=auto&wind_speed_unit=mph&forecast_days=7';
+      var geo='https://api.bigdatacloud.net/data/reverse-geocode-client?latitude='+lat+'&longitude='+lon+'&localityLanguage=en';
+      fetch(base).then(function(r){ return r.json(); }).then(function(wx){
+        fetch(geo).then(function(r){ return r.json(); }).catch(function(){ return {}; }).then(function(g){
+          var place=(g && (g.city||g.locality)) ? ((g.city||g.locality)+(g.countryCode?', '+g.countryCode:'')) : tzLabel(wx.timezone);
+          applyLocalised(wx, place, lat, lon);
+        });
+      }).catch(function(){ geoBtn.textContent='📍 Use my location'; flash('Could not load live weather — showing Guildford'); });
+    }
+
+    function requestLocation(userInitiated){
+      if(!navigator.geolocation){ if(userInitiated) flash('Geolocation is not supported by this browser'); return; }
+      geoBtn.textContent='Locating…';
+      navigator.geolocation.getCurrentPosition(function(pos){
+        try{ localStorage.setItem('eb-geo','on'); }catch(e){}
+        localise(pos.coords.latitude, pos.coords.longitude);
+      }, function(){
+        try{ localStorage.setItem('eb-geo','off'); }catch(e){}
+        geoBtn.textContent='📍 Use my location';
+        if(userInitiated) flash('Location unavailable — showing Guildford');
+      }, {enableHighAccuracy:false, timeout:10000, maximumAge:600000});
+    }
+
+    geoBtn.addEventListener('click', function(){
+      if(state.localised){ try{ localStorage.setItem('eb-geo','off'); }catch(e){} resetToDefault(); }
+      else { requestLocation(true); }
+    });
+
+    // Auto-prompt on first visit; respect a remembered "off"; re-localise silently if previously granted.
+    var pref=null; try{ pref=localStorage.getItem('eb-geo'); }catch(e){}
+    if(pref!=='off'){ requestLocation(false); }
+  })();
+
+  // Article images: every photo is shown whole (object-fit:contain, via CSS) over
+  // a blurred, zoomed copy of itself so the area is filled and nothing is cropped
+  // weirdly; plus a small rounded-square mid-article photo medallion.
+  (function(){
+    function fillHost(img){
+      var h=img.closest('.img-fill, .ov-img, .arch-thumb'); if(!h) return;
+      var src=img.getAttribute('src')||img.src; if(!src) return;
+      h.style.setProperty('--img','url("'+src.replace(/"/g,'%22')+'")');
+      h.classList.add('has-img');
+    }
+    Array.prototype.forEach.call(document.querySelectorAll('.img-fill img, .ov-img img, .arch-thumb img'), fillHost);
+    // archive thumbnails are rendered/refreshed on search — fill those too
+    var arch=document.getElementById('archive');
+    if(arch && 'MutationObserver' in window){
+      new MutationObserver(function(muts){
+        muts.forEach(function(m){ Array.prototype.forEach.call(m.addedNodes||[], function(n){
+          if(n.nodeType!==1) return;
+          if(n.matches && n.matches('img')) fillHost(n);
+          if(n.querySelectorAll) Array.prototype.forEach.call(n.querySelectorAll('.img-fill img, .ov-img img, .arch-thumb img'), fillHost);
+        }); });
+      }).observe(arch, {childList:true, subtree:true});
+    }
+
+    // mid-article figure — a different-but-relevant image (from data-inline-img) the
+    // body text wraps around; emoji tile fallback when no inline image is provided.
+    var BEMO={'b-politics':'🏛','b-conflict':'⚔','b-business':'🏭','b-markets':'💹','b-health':'🏥','b-science':'🔬','b-tech':'💻','b-climate':'🌍','b-sport':'🏆'};
+    var BCOL={'b-politics':'var(--blue)','b-conflict':'var(--red)','b-business':'var(--green)','b-markets':'var(--gold)','b-health':'var(--amber)','b-science':'#aa82e6','b-tech':'#5ac8d2','b-climate':'#78c878','b-sport':'#e6965a'};
+    document.querySelectorAll('.panel .article').forEach(function(art){
+      var ps=art.querySelectorAll(':scope > p'); if(ps.length<4) return;          // only longer articles
+      var url=art.getAttribute('data-inline-img'), alt=art.getAttribute('data-inline-alt')||'', cap=art.getAttribute('data-inline-cap')||'';
+      var panel=art.closest('.panel'), badge=panel && panel.querySelector('.badge'), cls='';
+      if(badge){ (badge.className||'').split(/\s+/).forEach(function(c){ if(BEMO[c]) cls=c; }); }
+      var fig=document.createElement('figure'); fig.className='art-figure';
+      if(url){
+        fig.innerHTML='<span class="img-fill"><img alt="" loading="lazy"></span>'+(cap?'<figcaption></figcaption>':'');
+        var fill=fig.querySelector('.img-fill'), im=fig.querySelector('img');
+        fill.style.setProperty('--img','url("'+url.replace(/"/g,'%22')+'")'); fill.classList.add('has-img');
+        im.alt=alt; im.onerror=function(){ fig.remove(); }; im.src=url;
+        if(cap) fig.querySelector('figcaption').textContent=cap;
+      } else {
+        fig.innerHTML='<span class="af-tile">'+(BEMO[cls]||'📰')+'</span>';
+        fig.querySelector('.af-tile').style.borderColor=BCOL[cls]||'var(--gold)';
+      }
+      var mid=ps[Math.floor(ps.length/2)];
+      if(mid && mid.parentNode===art) art.insertBefore(fig, mid);
+    });
   })();
 })();
 </script>
