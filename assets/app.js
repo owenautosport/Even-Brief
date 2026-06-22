@@ -231,7 +231,7 @@
     if(cur && topbarTitle){ topbarTitle.textContent = cur.textContent.replace(/^[★❔]\s*/,'').trim(); }
     reflow(document.getElementById(id));
     window.scrollTo({top:0, behavior:'instant' in window ? 'instant' : 'auto'});
-    if(document.documentElement.classList.contains('focus')){ __focusPaint(); }
+    if(document.documentElement.classList.contains('focus')){ __focusPaint(); __focusArrows(); }
   }
   navlinks.forEach(function(t){ t.addEventListener('click', function(){ show(t.dataset.target); closeDrawer(); }); });
   document.querySelectorAll('.tbtab').forEach(function(t){ t.addEventListener('click', function(){ show(t.dataset.target); }); });
@@ -379,7 +379,8 @@
   });
 
   // Focus / reading mode: scroll "spotlight" — only the paragraph near screen-centre is visible
-  var __focusBtn=null, __raf=null;
+  var __focusBtn=null, __raf=null, __fnav=null;
+  var __FCENTER=0.46; // fraction of viewport height the spotlight sits at
   function __focusPaint(){
     if(!document.documentElement.classList.contains('focus')) return;
     var panel=document.querySelector('.panel.active'); if(!panel) return;
@@ -394,18 +395,57 @@
       el.style.transform='translateY('+ty.toFixed(1)+'px)';
     });
   }
-  function __focusScroll(){ if(__raf) return; __raf=requestAnimationFrame(function(){ __raf=null; __focusPaint(); }); }
+  function __focusScroll(){ if(__raf) return; __raf=requestAnimationFrame(function(){ __raf=null; __focusPaint(); __focusArrows(); }); }
   function __focusClear(){ document.querySelectorAll('.article > p, .article > .pullquote, .article > .framing').forEach(function(el){ el.style.opacity=''; el.style.transform=''; }); document.querySelectorAll('.panel.ffull').forEach(function(p){ p.classList.remove('ffull'); }); }
+  // Section navigation: the steps you can jump between, the current one, and the jump itself.
+  function __focusSteps(){
+    var panel=document.querySelector('.panel.active'); if(!panel) return [];
+    return Array.prototype.slice.call(panel.querySelectorAll('.article > p, .article > .pullquote, .article > .framing, .article > .timeline'))
+      .filter(function(el){ return el.offsetParent!==null; });
+  }
+  function __focusIndex(steps){
+    var center=(window.innerHeight||800)*__FCENTER, best=0, bestd=Infinity;
+    steps.forEach(function(el,i){ var r=el.getBoundingClientRect(); var d=Math.abs((r.top+r.height/2)-center); if(d<bestd){ bestd=d; best=i; } });
+    return best;
+  }
+  function __focusGo(dir){
+    if(!document.documentElement.classList.contains('focus')) return;
+    var steps=__focusSteps(); if(!steps.length) return;
+    var i=Math.max(0, Math.min(steps.length-1, __focusIndex(steps)+dir));
+    var r=steps[i].getBoundingClientRect();
+    var top=window.pageYOffset + r.top + r.height/2 - (window.innerHeight||800)*__FCENTER;
+    window.scrollTo({top:Math.max(0,Math.round(top)), behavior:'smooth'});
+  }
+  function __focusArrows(){
+    if(!__fnav) return;
+    var steps=__focusSteps(), i=steps.length?__focusIndex(steps):0;
+    __fnav.querySelector('.fnav-up').disabled=(i<=0);
+    __fnav.querySelector('.fnav-down').disabled=(i>=steps.length-1);
+  }
   function setFocus(on){
     document.documentElement.classList.toggle('focus', on);
     if(__focusBtn){ __focusBtn.classList.toggle('active', on); __focusBtn.innerHTML = on ? '◉ Focus on' : '◎ Focus'; }
+    document.querySelectorAll('[data-focus-toggle]').forEach(function(b){
+      b.classList.toggle('active', on); b.setAttribute('aria-pressed', on?'true':'false');
+      b.innerHTML = on ? '◉ Focus mode on' : '◎ Focus mode';
+    });
     try{ localStorage.setItem('briefing-focus', on?'1':'0'); }catch(e){}
-    if(on){ window.addEventListener('scroll', __focusScroll, {passive:true}); window.addEventListener('resize', __focusScroll); __focusPaint(); }
+    if(on){ window.addEventListener('scroll', __focusScroll, {passive:true}); window.addEventListener('resize', __focusScroll); __focusPaint(); __focusArrows(); }
     else { window.removeEventListener('scroll', __focusScroll); window.removeEventListener('resize', __focusScroll); __focusClear(); }
   }
   (function(){
     __focusBtn=document.getElementById('focusToggle');
     if(__focusBtn){ __focusBtn.addEventListener('click', function(){ setFocus(!document.documentElement.classList.contains('focus')); }); }
+    // per-article focus toggles (one at the top of every story)
+    document.querySelectorAll('[data-focus-toggle]').forEach(function(b){
+      b.addEventListener('click', function(){ setFocus(!document.documentElement.classList.contains('focus')); });
+    });
+    // left-edge section navigator (shown only in focus mode, via CSS)
+    __fnav=document.createElement('div'); __fnav.className='fnav'; __fnav.setAttribute('aria-label','Section navigation');
+    __fnav.innerHTML='<button type="button" class="fnav-up" aria-label="Previous section" title="Previous section">↑</button><button type="button" class="fnav-down" aria-label="Next section" title="Next section">↓</button>';
+    __fnav.querySelector('.fnav-up').addEventListener('click', function(){ __focusGo(-1); });
+    __fnav.querySelector('.fnav-down').addEventListener('click', function(){ __focusGo(1); });
+    document.body.appendChild(__fnav);
     document.querySelectorAll('.panel .article').forEach(function(art){
       var b=document.createElement('button'); b.type='button'; b.className='fullbtn'; b.innerHTML='Show full article ▾';
       b.addEventListener('click', function(){ var pn=art.closest('.panel'); if(pn) pn.classList.add('ffull'); art.querySelectorAll(':scope > p, :scope > .pullquote, :scope > .framing').forEach(function(el){ el.style.opacity='1'; el.style.transform='none'; }); });

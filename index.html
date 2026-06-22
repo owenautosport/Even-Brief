@@ -433,6 +433,17 @@
   .focusbtn:hover{color:var(--ink);border-color:var(--gold)}
   .focusbtn.active{background:var(--gold);color:#10120f;border-color:var(--gold)}
   html.focus h2.head{position:sticky;top:var(--navh,50px);z-index:30;background:var(--bg);padding:12px 0;box-shadow:0 12px 16px -10px var(--bg)}
+  /* per-article focus-mode toggle (sits below the confidence meter, above the grid) */
+  .artfocus{display:inline-flex;align-items:center;gap:6px;margin:4px 0 16px;background:var(--panel2);border:1px solid var(--line);color:var(--ink-soft);font-family:var(--font);font-size:12px;font-weight:700;letter-spacing:.3px;padding:8px 14px;border-radius:9px;cursor:pointer;transition:.15s;white-space:nowrap}
+  .artfocus:hover{color:var(--ink);border-color:var(--gold)}
+  html.focus .artfocus{background:var(--gold);color:#10120f;border-color:var(--gold)}
+  /* left-edge section navigator — only visible in focus mode */
+  .fnav{position:fixed;left:14px;top:50%;transform:translateY(-50%);z-index:60;display:none;flex-direction:column;gap:12px}
+  html.focus .fnav{display:flex}
+  .fnav button{width:46px;height:46px;border-radius:50%;background:var(--panel2);border:1px solid var(--line);color:var(--ink-soft);font-size:20px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);transition:.15s}
+  .fnav button:hover{color:var(--ink-strong);border-color:var(--gold);background:var(--panel)}
+  .fnav button:disabled{opacity:.32;cursor:default;box-shadow:none}
+  @media (max-width:640px){ .fnav{left:8px;gap:9px} .fnav button{width:40px;height:40px;font-size:17px} }
   .fullbtn{display:none}
   html.focus .article .fullbtn{display:inline-flex;align-items:center;gap:6px;margin:18px 0 4px;background:var(--panel2);border:1px solid var(--line);color:var(--ink-soft);font-family:var(--font);font-size:12.5px;font-weight:700;padding:8px 16px;border-radius:20px;cursor:pointer;opacity:1;transform:none}
   html.focus .article .fullbtn:hover{color:var(--ink);border-color:var(--gold)}
@@ -719,6 +730,7 @@
   <h2 class="head">Stocks mixed as Starmer resigns and US–Iran talks conclude; oil slips below $79</h2>
   
   <div class="confidence cf-corrob"><span class="meter"><span class="pip"></span><span class="pip"></span><span class="pip"></span></span><span class="lab">Verified</span><span class="why">— Monday index levels, FX and commodity marks are corroborated across Saxo, Trading Economics and Bloomberg, and are clearly labelled by session</span></div>
+  <button type="button" class="artfocus" data-focus-toggle aria-pressed="false">◎ Focus mode</button>
   <div class="grid">
     <div class="article">
   <figure class="art-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/NYSE127.jpg?width=1100" alt="Trading floor of the New York Stock Exchange" loading="lazy" onerror="var f=this.closest('figure'); if(f) f.style.display='none';"><figcaption>US equities last traded a full session on Thursday 18 June; Friday 19 June was the Juneteenth holiday. Photo: public domain</figcaption></figure><p>Trading on Monday 22 June was dominated by two developments: the resignation of UK Prime Minister Keir Starmer and the conclusion of the first round of US–Iran talks in Switzerland. European markets were modestly higher in late-morning trade, while US cash markets were not yet open; US stock-index futures had slipped earlier after President Trump renewed threats of military action against Iran.</p><p>In Europe, the FTSE 100 traded around <strong>10,385</strong>, up about 0.2%, little changed after Starmer said he would step down. Germany's DAX was up about <strong>0.5%</strong> near 24,966, led by Infineon and gains across defence and automotive shares, according to Trading Economics. Sterling held lower at about <strong>$1.319</strong> and the UK 10-year gilt yield edged up to roughly <strong>4.85%</strong> as traders weighed whether a new Labour administration would alter the fiscal outlook; the reported front-runner, Andy Burnham, has signalled he would keep to the fiscal rules.</p><p>In Asia, Japan's Nikkei 225 closed up about <strong>0.8%</strong> near 72,600, led by financial shares, while South Korea's Kospi fell about 1.1% and Australia's ASX 200 slipped 0.4%. The MSCI Asia Pacific index was modestly lower.</p><p>US cash markets last traded on <strong>Thursday 18 June</strong>; Friday 19 June was the Juneteenth holiday. At that Thursday close the S&amp;P 500 stood at <strong>7,500.58</strong> (+1.08%), the Nasdaq Composite at <strong>26,517.93</strong> (+1.91%) and the Dow Jones Industrial Average at <strong>51,564.70</strong> (+0.14%), after equities partly recovered from the sell-off that followed the Federal Reserve's hawkish hold on 16–17 June. US index futures pointed lower early Monday.</p><p>Oil eased further. Brent crude traded below <strong>$79</strong> a barrel, down from a weekend spike near $82, as the conditional reopening of the Strait of Hormuz reduced the risk premium. Spot gold was near <strong>$4,200</strong> an ounce, supported by a softer dollar. The US 2-year Treasury yield was above <strong>4.22%</strong>, a new cycle high, and the 10-year just below 4.49%, per Saxo.</p><p>The week ahead is data- and earnings-heavy: FedEx reports on 23 June and Micron on 24 June; May personal-consumption-expenditures inflation and the final first-quarter GDP estimate are due on 25 June; and Nike closes the month on 30 June. Investors are also watching the Labour leadership timetable and any document from the Qatar–Pakistan mediation of the US–Iran talks.</p>
@@ -890,6 +902,7 @@
   <h2 class="head">Starmer announces resignation as UK prime minister; Labour to choose a successor by 1 September</h2>
   
   <div class="confidence cf-develop"><span class="meter"><span class="pip"></span><span class="pip"></span><span class="pip"></span></span><span class="lab">Developing</span><span class="why">— the resignation and broad timetable are confirmed; whether the succession is a contest or a coronation, and the exact handover date, are not yet settled</span></div>
+  <button type="button" class="artfocus" data-focus-toggle aria-pressed="false">◎ Focus mode</button>
   <div class="grid">
     <div class="article">
   <figure class="art-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Prime_Minister_Sir_Keir_Starmer_Official_Portrait_(cropped).jpg?width=1100" alt="Official portrait of Keir Starmer" loading="lazy" onerror="var f=this.closest('figure'); if(f) f.style.display='none';"><figcaption>Keir Starmer, who announced his resignation on 22 June 2026. Photo: UK Government · Open Government Licence v3.0</figcaption></figure>
@@ -962,6 +975,7 @@
   <h2 class="head">US and Iran conclude first Switzerland session; mediators report ‘encouraging progress’ on sanctions and Hormuz</h2>
   
   <div class="confidence cf-develop"><span class="meter"><span class="pip"></span><span class="pip"></span><span class="pip"></span></span><span class="lab">Developing</span><span class="why">— the conclusion and ‘encouraging progress’ are corroborated by mediators and both governments; specific Iranian claims of secured oil waivers and asset releases are so far single-sourced to Iranian officials</span></div>
+  <button type="button" class="artfocus" data-focus-toggle aria-pressed="false">◎ Focus mode</button>
   <div class="grid">
     <div class="article">
   <figure class="art-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Strait_of_hormuz_full.jpg?width=1100" alt="Map of the Strait of Hormuz between Iran and Oman" loading="lazy" onerror="var f=this.closest('figure'); if(f) f.style.display='none';"><figcaption>The Strait of Hormuz, the waterway at the centre of the talks. Map: US Government / Perry-Castañeda Library, University of Texas at Austin · public domain</figcaption></figure>
@@ -1033,6 +1047,7 @@
   <h2 class="head">Italy&#39;s Meloni rejects Trump&#39;s ‘fabricated’ G7 account; foreign minister Tajani cancels US trip</h2>
   
   <div class="confidence cf-corrob"><span class="meter"><span class="pip"></span><span class="pip"></span><span class="pip"></span></span><span class="lab">Verified</span><span class="why">— the dispute and Tajani&#39;s cancelled trip are reported consistently across PBS, NPR, Al Jazeera, CBS and France 24; only the underlying photo account is contested</span></div>
+  <button type="button" class="artfocus" data-focus-toggle aria-pressed="false">◎ Focus mode</button>
   <div class="grid">
     <div class="article">
   <figure class="art-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Giorgia_Meloni_Official_2024_(cropped).jpg?width=1100" alt="Official portrait of Giorgia Meloni" loading="lazy" onerror="var f=this.closest('figure'); if(f) f.style.display='none';"><figcaption>Italian Prime Minister Giorgia Meloni. Photo: Governo Italiano / Palazzo Chigi · CC BY-NC-SA (official portrait)</figcaption></figure><p>A public dispute has opened between the governments of Italy and the United States after President Trump said Italian Prime Minister Giorgia Meloni had “begged” him for a photograph at the Group of Seven summit. Meloni rejected the account as fabricated, and Italy's foreign minister cancelled a planned visit to the United States.</p><p>In a 19 June interview with Italy's La7 network, Trump said Meloni had asked him for a photo during the G7 summit, held on 16 June in Evian-les-Bains, France, and that he had agreed. In a video response the same day, Meloni said Trump's statements were “completely fabricated” and that she was “frankly stunned,” adding: “Italy and I do not beg.”</p><p>Italy's foreign minister, Antonio Tajani, cancelled a weekend trip to the United States, where he had been due to attend an Italy–US business forum in Miami and meet Secretary of State Marco Rubio. Tajani called Trump's reported remarks “serious and offensive.”</p><p>Relations between the two governments, once close, have frayed over several issues. Meloni described the US-led war on Iran as illegal and criticised Israeli operations in Gaza as going “beyond the principle of proportionality”; the two have also differed over Ukraine, US tariffs and Greenland. According to NPR and AP, Trump turned on Meloni in April after she defended Pope Leo XIV from his criticism.</p><div class="pullquote">“Donald Trump's statements are completely fabricated. I am frankly stunned.”<span class="src">— Giorgia Meloni, video statement, 19 June 2026</span></div>
@@ -1089,6 +1104,7 @@
   <h2 class="head">Poland strips Zelensky of its highest honour over UPA military unit; Ukraine returns the award</h2>
   
   <div class="confidence cf-corrob"><span class="meter"><span class="pip"></span><span class="pip"></span><span class="pip"></span></span><span class="lab">Verified</span><span class="why">— the revocation and the return of awards are reported across CNN, the Kyiv Independent, France 24, The Times of Israel and Al Jazeera</span></div>
+  <button type="button" class="artfocus" data-focus-toggle aria-pressed="false">◎ Focus mode</button>
   <div class="grid">
     <div class="article">
   <figure class="art-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Order_of_White_Eagle_Poland-Order_Star.jpg?width=1100" alt="The eight-pointed star of the Order of the White Eagle, Poland&#39;s highest state distinction" loading="lazy" onerror="var f=this.closest('figure'); if(f) f.style.display='none';"><figcaption>The star of the Order of the White Eagle, Poland&#39;s highest state distinction. Image: Polish government official pattern (1992) · public domain</figcaption></figure><p>Polish President <strong>Karol Nawrocki</strong> announced on 19 June 2026 that he had stripped Ukrainian President <strong>Volodymyr Zelensky</strong> of the <strong>Order of the White Eagle</strong>, Poland's highest state distinction, which had been awarded to Zelensky in 2023. The move followed Kyiv's decision to name a serving unit of the Armed Forces of Ukraine after the <strong>“Heroes of the UPA”</strong> — the WWII-era Ukrainian Insurgent Army.</p><p>In a video address, Nawrocki said the decision was taken “in view of President Volodymyr Zelensky's consent to one of the units of the Armed Forces of Ukraine being named after the Heroes of the UPA, and following consultations with the Chapter.” He said the UPA “remains above all a formation responsible for cruel crimes against the citizens of the Polish Republic during World War II,” adding that “we have supported and continue to support Ukraine because we know that Russian aggression poses a threat.”</p><p>On 20 June, Zelensky said he had returned the order by post, sharing photographs taken at a post office showing a mailing form addressed to the Chancellery of the President of Poland. “We believed that the Order of the White Eagle, awarded in 2023, was meant for the Ukrainian People and our army,” Zelensky said in a statement reported by Al Jazeera and The Times of Israel.</p><p>Several senior Ukrainian officials said they would relinquish Polish honours in solidarity. Foreign Minister <strong>Andrii Sybiha</strong>, military intelligence chief <strong>Kyrylo Budanov</strong> and Ukraine's ambassador to Warsaw <strong>Vasyl Bodnar</strong> each announced they were returning Polish awards on 20 June. Budanov said he “cannot stand aside and simply watch as the flywheel of hatred is unreasonably and artificially spun against our citizens.”</p>
@@ -1161,6 +1177,7 @@
   <h2 class="head">WHO warns of “missing” Ebola cases in DR Congo as official tallies diverge across agencies</h2>
   
   <div class="confidence cf-develop"><span class="meter"><span class="pip"></span><span class="pip"></span><span class="pip"></span></span><span class="lab">Developing</span><span class="why">— case counts are being revised and harmonised; agencies disagree on totals and the live figure is not independently verified</span></div>
+  <button type="button" class="artfocus" data-focus-toggle aria-pressed="false">◎ Focus mode</button>
   <div class="grid">
     <div class="article">
   <figure class="art-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ebola_virus_virion.jpg?width=1100" alt="Colorized transmission electron micrograph of a single filament-shaped Ebola virus virion" loading="lazy" onerror="var f=this.closest('figure'); if(f) f.style.display='none';"><figcaption>An Ebola virus virion under electron microscopy. The current Democratic Republic of the Congo outbreak is caused by the Bundibugyo strain, for which no vaccine is licensed. Photo: CDC / Cynthia Goldsmith (PHIL #10816) · public domain</figcaption></figure>
@@ -1217,6 +1234,7 @@
   <h2 class="head">Japan proposes G7 jointly stockpile critical minerals; leaders set a 60% cap on reliance on any single supplier</h2>
   
   <div class="confidence cf-corrob"><span class="meter"><span class="pip"></span><span class="pip"></span><span class="pip"></span></span><span class="lab">Verified</span><span class="why">— the proposal and the summit declaration are reported consistently across Reuters, Nikkei Asia, Bloomberg and the Élysée primary text</span></div>
+  <button type="button" class="artfocus" data-focus-toggle aria-pressed="false">◎ Focus mode</button>
   <div class="grid">
     <div class="article">
   <figure class="art-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Rareearthoxides.jpg?width=1100" alt="Six samples of rare-earth oxide powders in different colours arranged in rows" loading="lazy" onerror="var f=this.closest('figure'); if(f) f.style.display='none';"><figcaption>Rare-earth oxides — among them praseodymium, cerium, lanthanum, neodymium, samarium and gadolinium. Photo: Peggy Greb, USDA Agricultural Research Service · public domain</figcaption></figure><p>Japanese Prime Minister <strong>Sanae Takaichi</strong> proposed at the Group of Seven summit in Evian, France, that member countries jointly stockpile critical minerals, including rare earths, under what Tokyo calls a <strong>"Joint Stockpiling Cooperation Initiative."</strong> She put the plan to leaders at a working dinner on 15 June, the first day of the summit, according to Japanese government and wire accounts.</p><p>Under the Japanese proposal, each G7 member and like-minded partner would build a national stockpile covering at least <strong>90 days</strong> of demand, and coordinate with the International Energy Agency (IEA) to release reserves jointly in the event of a supply disruption. Japan, which already operates a stockpiling system, offered to help other members set up their own.</p><p>On 17 June, G7 leaders adopted a declaration on securing critical-mineral supply chains. It commits them to reduce dependence on any single supplier outside the G7 and partner countries for <strong>rare earths and permanent magnets to under 60% by 2030</strong>, "with an ambition to reach 50 per cent as soon as possible." The leaders established a non-binding <strong>Critical Minerals Resilience and Production Alliance</strong>, backed by a coordination platform drawing on the IEA and the OECD, and named <strong>lithium and nickel</strong> as the two pilot metals for joint mechanisms.</p>
@@ -1285,6 +1303,7 @@
   <h2 class="head">Aarhus researchers report intense UV light can break down PFAS without added chemicals</h2>
   
   <div class="confidence cf-corrob"><span class="meter"><span class="pip"></span><span class="pip"></span><span class="pip"></span></span><span class="lab">Verified</span><span class="why">— named institution, researchers and peer-reviewed journal (Environmental Science &amp; Technology) confirmed across the university release, ScienceDaily and the journal record</span></div>
+  <button type="button" class="artfocus" data-focus-toggle aria-pressed="false">◎ Focus mode</button>
   <div class="grid">
     <div class="article">
   <figure class="art-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Perfluorooctanoic_acid.svg?width=1100" alt="Skeletal chemical structure of perfluorooctanoic acid (PFOA), a long carbon chain lined with fluorine atoms ending in a carboxylic acid group" loading="lazy" onerror="var f=this.closest('figure'); if(f) f.style.display='none';"><figcaption>Perfluorooctanoic acid (PFOA), one of the best-known PFAS compounds. The carbon–fluorine bonds that make such molecules persistent are what the Aarhus team set out to break. Image: Wikimedia Commons · public domain</figcaption></figure><p>Researchers at <strong>Aarhus University</strong> in Denmark report that intense ultraviolet light can break down PFAS “forever chemicals” in water without any added chemical reagents, by generating highly reactive hydrogen radicals directly from water molecules. The findings were published in the peer-reviewed journal <em>Environmental Science &amp; Technology</em> and summarised by ScienceDaily on 16 June 2026.</p><p>In the team’s account, ultraviolet light at wavelengths below 300 nanometres (the UV-C range) splits water to produce hydrogen radicals. These radicals attack the carbon–fluorine bonds that make PFAS so stable, progressively stripping away fluorine atoms and breaking the molecules into smaller, less persistent substances. The study identifies hydrogen radicals — rather than hydrated electrons, the species earlier work had emphasised — as the dominant driver of the reaction.</p><p>The work is laboratory-stage and the breakdown is partial. For GenX, a PFOA substitute, the researchers reported up to <strong>49.1% degradation</strong> and <strong>21.2% defluorination</strong> within five hours under simulated solar light in a catalyst-free setup. The team notes the process is relatively slow and that intermediate compounds can form during treatment, and presents the result as a mechanistic insight rather than a finished treatment technology.</p>
@@ -1336,6 +1355,7 @@
   <h2 class="head">Review concludes nicotine vapes are likely to cause lung and oral cancer</h2>
   
   <div class="confidence cf-develop"><span class="meter"><span class="pip"></span><span class="pip"></span><span class="pip"></span></span><span class="lab">Developing</span><span class="why">— the publication and its authorship are confirmed, but the central claim is a hazard judgement rather than a measured human cancer rate, and outside experts dispute its strength</span></div>
+  <button type="button" class="artfocus" data-focus-toggle aria-pressed="false">◎ Focus mode</button>
   <div class="grid">
     <div class="article">
   <figure class="art-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Electronic%20cigarette.jpg?width=1100" alt="An electronic cigarette device with refill pods on a plain surface" loading="lazy" onerror="var f=this.closest('figure'); if(f) f.style.display='none';"><figcaption>A nicotine e-cigarette device. The review assessed the cancer hazard of such products, not a measured cancer rate among users. Photo: Fair Expert via Wikimedia Commons · CC BY-SA 4.0</figcaption></figure><p>A research review led by UNSW Sydney has concluded that nicotine-based e-cigarettes are <strong>likely to cause lung and oral cancers</strong> in people who use them. The paper, titled "The carcinogenicity of e-cigarettes: a qualitative risk assessment," was published in the journal <strong>Carcinogenesis</strong> on 30 March 2026 and drew a fresh wave of coverage around 19–21 June. The authors state that nicotine-based e-cigarettes are "likely to be carcinogenic to humans who use them, causing an indeterminate burden of oral cancer and lung cancer."</p><p>The assessment was led by UNSW cancer researcher Adjunct Professor Bernard W Stewart, with co-authors drawn from the University of Queensland, Flinders University, the University of Sydney, Royal North Shore Hospital, The Prince Charles Hospital and Sunshine Coast University Hospital. The team, which included pharmacists, epidemiologists, a thoracic surgeon and public-health researchers, weighed a wide body of international research rather than running a new trial.</p><p>The review draws on three strands of evidence: human biomarkers showing DNA damage, oxidative stress and tissue inflammation in users; animal experiments in which mice exposed to e-cigarette aerosol developed lung tumours; and laboratory studies of cellular damage and disrupted biological pathways. The authors also point to carcinogenic compounds in the aerosol, including nicotine-derived nitrosamines, volatile organic compounds and metals released from heating coils.</p>
@@ -1918,7 +1938,7 @@
     if(cur && topbarTitle){ topbarTitle.textContent = cur.textContent.replace(/^[★❔]\s*/,'').trim(); }
     reflow(document.getElementById(id));
     window.scrollTo({top:0, behavior:'instant' in window ? 'instant' : 'auto'});
-    if(document.documentElement.classList.contains('focus')){ __focusPaint(); }
+    if(document.documentElement.classList.contains('focus')){ __focusPaint(); __focusArrows(); }
   }
   navlinks.forEach(function(t){ t.addEventListener('click', function(){ show(t.dataset.target); closeDrawer(); }); });
   document.querySelectorAll('.tbtab').forEach(function(t){ t.addEventListener('click', function(){ show(t.dataset.target); }); });
@@ -2066,7 +2086,8 @@
   });
 
   // Focus / reading mode: scroll "spotlight" — only the paragraph near screen-centre is visible
-  var __focusBtn=null, __raf=null;
+  var __focusBtn=null, __raf=null, __fnav=null;
+  var __FCENTER=0.46; // fraction of viewport height the spotlight sits at
   function __focusPaint(){
     if(!document.documentElement.classList.contains('focus')) return;
     var panel=document.querySelector('.panel.active'); if(!panel) return;
@@ -2081,18 +2102,57 @@
       el.style.transform='translateY('+ty.toFixed(1)+'px)';
     });
   }
-  function __focusScroll(){ if(__raf) return; __raf=requestAnimationFrame(function(){ __raf=null; __focusPaint(); }); }
+  function __focusScroll(){ if(__raf) return; __raf=requestAnimationFrame(function(){ __raf=null; __focusPaint(); __focusArrows(); }); }
   function __focusClear(){ document.querySelectorAll('.article > p, .article > .pullquote, .article > .framing').forEach(function(el){ el.style.opacity=''; el.style.transform=''; }); document.querySelectorAll('.panel.ffull').forEach(function(p){ p.classList.remove('ffull'); }); }
+  // Section navigation: the steps you can jump between, the current one, and the jump itself.
+  function __focusSteps(){
+    var panel=document.querySelector('.panel.active'); if(!panel) return [];
+    return Array.prototype.slice.call(panel.querySelectorAll('.article > p, .article > .pullquote, .article > .framing, .article > .timeline'))
+      .filter(function(el){ return el.offsetParent!==null; });
+  }
+  function __focusIndex(steps){
+    var center=(window.innerHeight||800)*__FCENTER, best=0, bestd=Infinity;
+    steps.forEach(function(el,i){ var r=el.getBoundingClientRect(); var d=Math.abs((r.top+r.height/2)-center); if(d<bestd){ bestd=d; best=i; } });
+    return best;
+  }
+  function __focusGo(dir){
+    if(!document.documentElement.classList.contains('focus')) return;
+    var steps=__focusSteps(); if(!steps.length) return;
+    var i=Math.max(0, Math.min(steps.length-1, __focusIndex(steps)+dir));
+    var r=steps[i].getBoundingClientRect();
+    var top=window.pageYOffset + r.top + r.height/2 - (window.innerHeight||800)*__FCENTER;
+    window.scrollTo({top:Math.max(0,Math.round(top)), behavior:'smooth'});
+  }
+  function __focusArrows(){
+    if(!__fnav) return;
+    var steps=__focusSteps(), i=steps.length?__focusIndex(steps):0;
+    __fnav.querySelector('.fnav-up').disabled=(i<=0);
+    __fnav.querySelector('.fnav-down').disabled=(i>=steps.length-1);
+  }
   function setFocus(on){
     document.documentElement.classList.toggle('focus', on);
     if(__focusBtn){ __focusBtn.classList.toggle('active', on); __focusBtn.innerHTML = on ? '◉ Focus on' : '◎ Focus'; }
+    document.querySelectorAll('[data-focus-toggle]').forEach(function(b){
+      b.classList.toggle('active', on); b.setAttribute('aria-pressed', on?'true':'false');
+      b.innerHTML = on ? '◉ Focus mode on' : '◎ Focus mode';
+    });
     try{ localStorage.setItem('briefing-focus', on?'1':'0'); }catch(e){}
-    if(on){ window.addEventListener('scroll', __focusScroll, {passive:true}); window.addEventListener('resize', __focusScroll); __focusPaint(); }
+    if(on){ window.addEventListener('scroll', __focusScroll, {passive:true}); window.addEventListener('resize', __focusScroll); __focusPaint(); __focusArrows(); }
     else { window.removeEventListener('scroll', __focusScroll); window.removeEventListener('resize', __focusScroll); __focusClear(); }
   }
   (function(){
     __focusBtn=document.getElementById('focusToggle');
     if(__focusBtn){ __focusBtn.addEventListener('click', function(){ setFocus(!document.documentElement.classList.contains('focus')); }); }
+    // per-article focus toggles (one at the top of every story)
+    document.querySelectorAll('[data-focus-toggle]').forEach(function(b){
+      b.addEventListener('click', function(){ setFocus(!document.documentElement.classList.contains('focus')); });
+    });
+    // left-edge section navigator (shown only in focus mode, via CSS)
+    __fnav=document.createElement('div'); __fnav.className='fnav'; __fnav.setAttribute('aria-label','Section navigation');
+    __fnav.innerHTML='<button type="button" class="fnav-up" aria-label="Previous section" title="Previous section">↑</button><button type="button" class="fnav-down" aria-label="Next section" title="Next section">↓</button>';
+    __fnav.querySelector('.fnav-up').addEventListener('click', function(){ __focusGo(-1); });
+    __fnav.querySelector('.fnav-down').addEventListener('click', function(){ __focusGo(1); });
+    document.body.appendChild(__fnav);
     document.querySelectorAll('.panel .article').forEach(function(art){
       var b=document.createElement('button'); b.type='button'; b.className='fullbtn'; b.innerHTML='Show full article ▾';
       b.addEventListener('click', function(){ var pn=art.closest('.panel'); if(pn) pn.classList.add('ffull'); art.querySelectorAll(':scope > p, :scope > .pullquote, :scope > .framing').forEach(function(el){ el.style.opacity='1'; el.style.transform='none'; }); });

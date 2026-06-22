@@ -121,6 +121,7 @@
   {% for b in s.badges %}{{ badge(b) }}{% if not loop.last %} {% endif %}{% endfor %}
   <h2 class="head">{{ s.headline }}</h2>
   {{ confidence(s.confidence) }}
+  <button type="button" class="artfocus" data-focus-toggle aria-pressed="false">◎ Focus mode</button>
   <div class="grid">
     <div class="article">
       {%- if s.image %}{{ figure(s.image) }}{% endif %}
