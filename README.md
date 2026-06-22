@@ -7,19 +7,16 @@
 ### 🔗 Read it live → **https://owenautosport.github.io/Even-Brief/**
 
 <!--EDITION:START-->
-## Current edition — Sunday, 21 June 2026
+## Current edition — Monday, 22 June 2026
 
 Today's Top Headlines:
 
-- **Iran says it has re-closed the Strait of Hormuz; Switzerland talks postponed** — After an Israeli strike on Lebanon, Iran says it has again closed the strait and the US–Iran talks are postponed — the week-old memorandum under strain.
-- **Burnham wins Makerfield; a Labour leadership contest opens** — The Manchester mayor took the seat with about 55% and is expected to press Starmer to stand aside.
-- **Ukraine strikes Crimea-bridge approaches overnight; trackers still disagree** — Drones hit the Kerch and Kavkaz ports on 21 June; DeepState and ISW give opposite readings of who is gaining ground.
-- **The ceasefire's weakest link: Israel and Lebanon** — An Israeli strike on Lebanon on Saturday became the flashpoint that pushed Iran to re-close the strait and stall the talks.
-- **Congo Ebola: 896 cases, 232 deaths, a global emergency** — The WHO's highest alert is in force; the Bundibugyo strain still has no licensed vaccine.
-- **AI labs step onto the world stage: G7 debut, Seoul office, new benchmark** — Altman, Amodei and Hassabis appeared together at the G7; Anthropic opened a Seoul office and its Fable 5 model topped a hard-maths benchmark.
-- **CERN completes the doubly-charmed baryon family** — Physicists report the third and final member, a confirmation of the Standard Model.
-- **A California fault is more stressed than in 1,000 years** — Researchers describe an 'earthquake gate' on a system overdue for a major rupture.
-- **A hawkish Fed reset the week before the holiday lull** — Markets were shut Friday for Juneteenth; the story remains Warsh's pivot toward a 2026 hike.
+- **US and Iran open first round of technical talks in Switzerland as Tehran sets Hormuz insurance rule** — US and Iranian delegations held a first round of technical-level talks in Switzerland under a 60-day window, as Iran imposed mandatory insurance on ships transiting the Strait of Hormuz and oil posted its sharpest weekly fall in months.
+- **Poland strips Zelensky of its highest honour over UPA military unit; Ukraine returns the award** — Polish President Nawrocki revoked Ukrainian President Zelensky's Order of the White Eagle after a Ukrainian unit was named for the WWII-era UPA; Zelensky and several officials returned Polish honours.
+- **WHO warns of “missing” Ebola cases in DR Congo as official tallies diverge across agencies** — A month into the Bundibugyo-virus outbreak, the WHO says it is still missing cases amid intense community transmission, while WHO, the CDC and the ECDC publish materially different case counts.
+- **Japan proposes G7 jointly stockpile critical minerals; leaders set a 60% cap on reliance on any single supplier** — Prime Minister Sanae Takaichi pitched a G7 "Joint Stockpiling Cooperation Initiative" at the Evian summit, where leaders agreed to cut dependence on any single non-G7 supplier of rare earths to below 60% by 2030.
+- **Aarhus researchers report intense UV light can break down PFAS without added chemicals** — A lab study at Aarhus University finds that hydrogen radicals released from water by short-wavelength UV light can strip fluorine from PFAS “forever chemicals,” though degradation is partial and slow.
+- **Review concludes nicotine vapes are likely to cause lung and oral cancer** — A qualitative risk assessment led by UNSW Sydney in the journal Carcinogenesis judges nicotine e-cigarettes likely carcinogenic, while several outside experts call the conclusion an overinterpretation of the evidence.
 
 Read the live site: https://owenautosport.github.io/Even-Brief/
 <!--EDITION:END-->

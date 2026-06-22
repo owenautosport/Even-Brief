@@ -1,0 +1,1973 @@
+{
+  "meta": {
+    "date_iso": "2026-06-22",
+    "date_display": "Monday, 22 June 2026",
+    "edition_label": "22 June 2026",
+    "compile_time": "01:20 BST",
+    "location": "London",
+    "kicker": "Investigative Global Edition"
+  },
+  "weather": {
+    "masthead": {
+      "loc": "Guildford, UK",
+      "temp": "31°C",
+      "cond": "Hot & sunny · building heatwave",
+      "low": "↓ Low 18°C",
+      "rain": "Rain <5%",
+      "gusts": "Gusts 23 mph"
+    },
+    "current_temp": "31°C",
+    "current_cond": "Hot & sunny · building heatwave",
+    "current_meta": "Feels like 32°C · Low 18°C · Rain <5% · Gusts 23 mph · Humidity 45%",
+    "warnings": [
+      {
+        "sev": "amber",
+        "sev_label": "Amber",
+        "title": "Extreme heat — southern England & Wales",
+        "body_html": "Met Office Amber extreme-heat warning in force through <strong>Mon 22–Tue 23 June</strong>, covering most of southern England including <strong>Surrey</strong>. Temperatures into the mid-30s, isolated thundery downpours possible, and tropical nights (above 20°C) in places. Water-safety risk highlighted."
+      },
+      {
+        "sev": "amber",
+        "sev_label": "Amber",
+        "title": "Heat-health alert — South East",
+        "body_html": "UKHSA Amber heat-health alert for the <strong>South East</strong> in force from <strong>11am Mon 22 June to 11pm Fri 26 June</strong>. Increased risk to those aged over 65 or with pre-existing conditions, and rising demand on health and social care services."
+      }
+    ],
+    "hourly_temp": [
+      19,
+      18,
+      18,
+      17,
+      17,
+      18,
+      20,
+      22,
+      24,
+      25,
+      27,
+      28,
+      29,
+      30,
+      30,
+      31,
+      31,
+      30,
+      29,
+      27,
+      25,
+      23,
+      21,
+      20
+    ],
+    "hourly_precip": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      3,
+      3,
+      4,
+      4,
+      5,
+      6,
+      8,
+      10,
+      12,
+      14,
+      20,
+      15,
+      10,
+      6,
+      4,
+      3,
+      2
+    ],
+    "days": [
+      {
+        "d": "Mon 22",
+        "ic": "☀️",
+        "cond": "Sunny and hot",
+        "hi": 31,
+        "lo": 18,
+        "feels": 32,
+        "wind": 10,
+        "gust": 23,
+        "hum": 45,
+        "uv": 7,
+        "pc": 20,
+        "mm": 0.2,
+        "sr": "04:47",
+        "ss": "21:22",
+        "warn": true,
+        "tag": "⚠ Amber heat",
+        "sum": "Hot and sunny as the heatwave builds; an isolated thundery shower possible late afternoon."
+      },
+      {
+        "d": "Tue 23",
+        "ic": "☀️",
+        "cond": "Sunny, very hot",
+        "hi": 36,
+        "lo": 19,
+        "feels": 37,
+        "wind": 11,
+        "gust": 21,
+        "hum": 39,
+        "uv": 8,
+        "pc": 10,
+        "mm": 0.0,
+        "sr": "04:47",
+        "ss": "21:22",
+        "warn": true,
+        "tag": "⚠ Amber heat",
+        "sum": "Very hot with strong sunshine; tropical night possible, low staying near 19°C."
+      },
+      {
+        "d": "Wed 24",
+        "ic": "☀️",
+        "cond": "Sunny, extreme heat",
+        "hi": 40,
+        "lo": 20,
+        "feels": 40,
+        "wind": 6,
+        "gust": 17,
+        "hum": 23,
+        "uv": 8,
+        "pc": 5,
+        "mm": 0.0,
+        "sr": "04:48",
+        "ss": "21:22",
+        "warn": true,
+        "tag": "🔥 Peak heat",
+        "sum": "Peak of the heat; light winds and intense sun push Guildford to around 40°C."
+      },
+      {
+        "d": "Thu 25",
+        "ic": "☀️",
+        "cond": "Hot, sunny",
+        "hi": 39,
+        "lo": 19,
+        "feels": 39,
+        "wind": 12,
+        "gust": 26,
+        "hum": 21,
+        "uv": 8,
+        "pc": 20,
+        "mm": 0.3,
+        "sr": "04:48",
+        "ss": "21:22",
+        "warn": true,
+        "tag": "🔥 Peak heat",
+        "sum": "Still very hot and sunny; freshening breeze later, with a thundery shower possible overnight."
+      },
+      {
+        "d": "Fri 26",
+        "ic": "⛈️",
+        "cond": "Fresher, thundery breakdown",
+        "hi": 27,
+        "lo": 18,
+        "feels": 28,
+        "wind": 9,
+        "gust": 20,
+        "hum": 53,
+        "uv": 6,
+        "pc": 20,
+        "mm": 1.5,
+        "sr": "04:48",
+        "ss": "21:22",
+        "warn": false,
+        "tag": "Cooler · storms",
+        "sum": "Hot spell breaks down to fresher air; showers and the chance of thunderstorms."
+      },
+      {
+        "d": "Sat 27",
+        "ic": "🌤️",
+        "cond": "Sunny intervals",
+        "hi": 26,
+        "lo": 16,
+        "feels": 26,
+        "wind": 9,
+        "gust": 22,
+        "hum": 54,
+        "uv": 6,
+        "pc": 20,
+        "mm": 0.5,
+        "sr": "04:49",
+        "ss": "21:22",
+        "warn": false,
+        "tag": "20% rain",
+        "sum": "Brighter and fresher with sunny intervals; the odd passing shower."
+      },
+      {
+        "d": "Sun 28",
+        "ic": "🌤️",
+        "cond": "Sunny intervals",
+        "hi": 26,
+        "lo": 16,
+        "feels": 26,
+        "wind": 9,
+        "gust": 21,
+        "hum": 53,
+        "uv": 6,
+        "pc": 20,
+        "mm": 0.4,
+        "sr": "04:49",
+        "ss": "21:22",
+        "warn": false,
+        "tag": "20% rain",
+        "sum": "Warm with sunny intervals; comfortable after the heat, an isolated shower possible."
+      }
+    ],
+    "sources": [
+      {
+        "outlet": "Met Office",
+        "title": "Guildford forecast",
+        "url": "https://weather.metoffice.gov.uk/forecast/gcpe7p302",
+        "lean": ""
+      },
+      {
+        "outlet": "Met Office",
+        "title": "Amber extreme heat warning updated with heatwave forecast for many",
+        "url": "https://www.metoffice.gov.uk/about-us/news-and-media/media-centre/weather-and-climate-news/2026/amber-extreme-heat-warning-updated-with-heatwave-forecast-for-many",
+        "lean": ""
+      },
+      {
+        "outlet": "Met Office",
+        "title": "UK weather warnings",
+        "url": "https://weather.metoffice.gov.uk/warnings-and-advice/uk-warnings",
+        "lean": ""
+      },
+      {
+        "outlet": "UKHSA",
+        "title": "UKHSA issues amber and yellow heat-health alerts across England",
+        "url": "https://www.gov.uk/government/news/ukhsa-issues-amber-and-yellow-heat-health-alerts-across-england",
+        "lean": ""
+      }
+    ]
+  },
+  "headlines": {
+    "hero": {
+      "target": "iran",
+      "badge": {
+        "label": "Politics",
+        "cls": "b-politics"
+      },
+      "cat_cls": "cat-politics",
+      "emoji": "🏛",
+      "headline": "US and Iran open first round of technical talks in Switzerland as Tehran sets Hormuz insurance rule",
+      "summary": "US and Iranian delegations held a first round of technical-level talks in Switzerland under a 60-day window, as Iran imposed mandatory insurance on ships transiting the Strait of Hormuz and oil posted its sharpest weekly fall in months.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Strait_of_hormuz_full.jpg?width=1100",
+      "lead": true
+    },
+    "cards": [
+      {
+        "target": "poland",
+        "badge": {
+          "label": "Politics",
+          "cls": "b-politics"
+        },
+        "cat_cls": "cat-politics",
+        "emoji": "🏛",
+        "headline": "Poland strips Zelensky of its highest honour over UPA military unit; Ukraine returns the award",
+        "summary": "Polish President Nawrocki revoked Ukrainian President Zelensky's Order of the White Eagle after a Ukrainian unit was named for the WWII-era UPA; Zelensky and several officials returned Polish honours.",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Order_of_White_Eagle_Poland-Order_Star.jpg?width=1100",
+        "lead": false
+      },
+      {
+        "target": "ebola",
+        "badge": {
+          "label": "Health",
+          "cls": "b-health"
+        },
+        "cat_cls": "cat-health",
+        "emoji": "🧬",
+        "headline": "WHO warns of “missing” Ebola cases in DR Congo as official tallies diverge across agencies",
+        "summary": "A month into the Bundibugyo-virus outbreak, the WHO says it is still missing cases amid intense community transmission, while WHO, the CDC and the ECDC publish materially different case counts.",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ebola_virus_virion.jpg?width=1100",
+        "lead": false
+      },
+      {
+        "target": "rareearth",
+        "badge": {
+          "label": "Business",
+          "cls": "b-business"
+        },
+        "cat_cls": "cat-business",
+        "emoji": "📈",
+        "headline": "Japan proposes G7 jointly stockpile critical minerals; leaders set a 60% cap on reliance on any single supplier",
+        "summary": "Prime Minister Sanae Takaichi pitched a G7 \"Joint Stockpiling Cooperation Initiative\" at the Evian summit, where leaders agreed to cut dependence on any single non-G7 supplier of rare earths to below 60% by 2030.",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rareearthoxides.jpg?width=1100",
+        "lead": false
+      },
+      {
+        "target": "pfas",
+        "badge": {
+          "label": "Science",
+          "cls": "b-science"
+        },
+        "cat_cls": "cat-science",
+        "emoji": "🔬",
+        "headline": "Aarhus researchers report intense UV light can break down PFAS without added chemicals",
+        "summary": "A lab study at Aarhus University finds that hydrogen radicals released from water by short-wavelength UV light can strip fluorine from PFAS “forever chemicals,” though degradation is partial and slow.",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Perfluorooctanoic_acid.svg?width=1100",
+        "lead": false
+      },
+      {
+        "target": "vapes",
+        "badge": {
+          "label": "Health",
+          "cls": "b-health"
+        },
+        "cat_cls": "cat-health",
+        "emoji": "🧬",
+        "headline": "Review concludes nicotine vapes are likely to cause lung and oral cancer",
+        "summary": "A qualitative risk assessment led by UNSW Sydney in the journal Carcinogenesis judges nicotine e-cigarettes likely carcinogenic, while several outside experts call the conclusion an overinterpretation of the evidence.",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Electronic%20cigarette.jpg?width=1100",
+        "lead": false
+      },
+      {
+        "target": "markets",
+        "badge": {
+          "label": "Markets & Investments",
+          "cls": "b-markets"
+        },
+        "cat_cls": "cat-markets",
+        "emoji": "💹",
+        "headline": "Stocks steady into Monday after a week defined by a hawkish Fed and falling oil",
+        "summary": "US equities recovered after the FOMC sell-off and Brent fell about 8.5% on the week as the Strait of Hormuz reopened; the wildcard into Monday is oil.",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/NYSE127.jpg?width=1100",
+        "lead": false
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "iran",
+      "nav_label": "Iran Talks",
+      "category": "Politics",
+      "badges": [
+        {
+          "label": "Politics",
+          "cls": "b-politics"
+        },
+        {
+          "label": "Conflict",
+          "cls": "b-conflict"
+        }
+      ],
+      "dateline": "22 June 2026 | Geneva & Tehran",
+      "headline": "US and Iran open first round of technical talks in Switzerland as Tehran sets Hormuz insurance rule",
+      "summary": "US and Iranian delegations held a first round of technical-level talks in Switzerland under a 60-day window, as Iran imposed mandatory insurance on ships transiting the Strait of Hormuz and oil posted its sharpest weekly fall in months.",
+      "confidence": {
+        "level": "develop",
+        "label": "Developing",
+        "why": "— fast-moving; delegation rosters and the MoU signing date are reported with some variation across outlets"
+      },
+      "followup": true,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Strait_of_hormuz_full.jpg?width=1100",
+        "alt": "Map of the Strait of Hormuz between Iran and Oman",
+        "caption": "The Strait of Hormuz, the waterway at the centre of the talks. Map: US Government / Perry-Castañeda Library, University of Texas at Austin · public domain",
+        "credit": "US Government / Perry-Castañeda Library, University of Texas at Austin",
+        "license": "public domain"
+      },
+      "article_blocks": [
+        {
+          "type": "p",
+          "html": "United States and Iranian negotiators held a first round of technical-level talks in Switzerland on Sunday, opening a 60-day window agreed under a memorandum of understanding to convert an interim accord into a durable settlement covering Iran's nuclear programme and the Strait of Hormuz."
+        },
+        {
+          "type": "p",
+          "html": "Al Jazeera and CNBC reported the meeting took place at the Bürgenstock resort. The US delegation was led by Vice President JD Vance and included envoy Steve Witkoff and Jared Kushner; the Iranian side was led by Parliament Speaker Mohammad Bagher Ghalibaf and Foreign Minister Abbas Araghchi. The agenda included the Lebanon ceasefire, the nuclear file and keeping the Strait of Hormuz open. A schedule for the next round was not announced."
+        },
+        {
+          "type": "p",
+          "html": "Separately, Iran said vessels passing through the Strait of Hormuz would require mandatory insurance, currently issued free of charge by its newly established Persian Gulf Strait Authority but with the right to charge fees later reserved, according to Bloomberg, Lloyd's List and CNBC. The authority requires ships to submit passage requests and follow a prescribed route, a step Tehran presents as reinforcing its claims over the waterway."
+        },
+        {
+          "type": "p",
+          "html": "Oil eased over the week as shipping conditions improved. Brent crude futures settled at <strong>$80.57</strong> a barrel on Friday, on track for a weekly decline of about <strong>8.5%</strong>, CNBC reported, paring most of the gains accumulated during the height of the conflict."
+        },
+        {
+          "type": "pullquote",
+          "text": "\"The Iranians, for the second night in a row, did not shoot at any ships in the Strait of Hormuz. So far, they are honoring their end of the commitment.\"",
+          "src": "— US Vice President JD Vance, to reporters, 19 June 2026"
+        },
+        {
+          "type": "timeline",
+          "head": "Timeline — how it unfolded",
+          "sub": "Tap an event to expand. Spacing reflects the time between events.",
+          "note": "The MoU signing date is reported as 17 or 18 June across outlets.",
+          "events": [
+            {
+              "date": "2026-06-18",
+              "label": "18 Jun",
+              "title": "Memorandum of understanding signed",
+              "detail": "President Trump and Iranian President Masoud Pezeshkian signed an MoU to reopen the Strait of Hormuz and launch a 60-day negotiation window, per CBS News. Wikipedia dates the signing to 17 June."
+            },
+            {
+              "date": "2026-06-19",
+              "label": "19 Jun",
+              "title": "Switzerland round postponed; insurance rule floated",
+              "detail": "Switzerland said the planned talks were postponed without a new date; Iran said ships would need mandatory insurance to transit Hormuz. Brent settled at $80.57, down about 8.5% on the week."
+            },
+            {
+              "date": "2026-06-21",
+              "label": "21 Jun",
+              "title": "First round of technical talks held",
+              "detail": "US and Iranian delegations met at the Bürgenstock resort in Switzerland for a first round of talks, with no date set for the next session."
+            }
+          ]
+        },
+        {
+          "type": "framing",
+          "overview": "<strong>Political-bias overview:</strong> centre-leaning wires and financial outlets dominate the gathered sources, with a wire and centre-left spread.",
+          "bias": [
+            {
+              "lean": "Left",
+              "pct": 25,
+              "color": "#3b82c4"
+            },
+            {
+              "lean": "Centre",
+              "pct": 60,
+              "color": "#8b909c"
+            },
+            {
+              "lean": "Right",
+              "pct": 15,
+              "color": "#e0414f"
+            }
+          ],
+          "caption": "Share of the gathered sources by lean - an approximate read, not a measure of the entire press.",
+          "ratings_html": "<strong>Source leans:</strong> CNN <b>Lean Left</b>, Al Jazeera <b>Lean Left</b>; CNBC and Bloomberg <b>Centre</b> (AllSides). <a href=\"https://www.allsides.com/media-bias/ratings\">AllSides ratings ↗</a>",
+          "lines": [
+            "<span class=\"lean\">US and financial press:</span> frames the talks as a fragile step toward a lasting settlement and the insurance rule as a commercial and legal risk.",
+            "<span class=\"lean\">Iranian framing:</span> presents the insurance requirement as a lawful exercise of authority over the strait."
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<strong>Why it matters:</strong> the Strait of Hormuz carries a large share of seaborne oil, and the terms reached in the 60-day window will shape both energy markets and the status of Iran's nuclear material. Legal analysts cited by Tech Times and Gulf News argue Iran's permit-and-insurance regime conflicts with the UNCLOS principle of transit passage; Iran has signed but not ratified UNCLOS and asserts a more limited right of innocent passage."
+        },
+        {
+          "type": "p",
+          "html": "<strong>What comes next:</strong> watch for a date for the second round of talks and whether the insurance regime begins charging fees. The 60-day window is reported to expire on or around 17 August 2026. The exact MoU signing date and the schedule of further rounds remain unconfirmed across sources."
+        }
+      ],
+      "sidebar_blocks": [
+        {
+          "type": "keyfacts",
+          "items": [
+            "First round of US–Iran technical talks held in Switzerland on <strong>21 June 2026</strong>.",
+            "Negotiating window: <strong>60 days</strong>, reported to expire around <strong>17 August 2026</strong>.",
+            "Brent settled at <strong>$80.57</strong> on 19 June, down about <strong>8.5%</strong> on the week (CNBC).",
+            "Iran's Persian Gulf Strait Authority requires mandatory insurance for Hormuz transit, free for now."
+          ]
+        },
+        {
+          "type": "sources",
+          "items": [
+            {
+              "outlet": "CBS News",
+              "title": "Iran war live updates: US deal and Strait of Hormuz",
+              "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-deal-strait-of-hormuz/",
+              "lean": "Centre"
+            },
+            {
+              "outlet": "Al Jazeera",
+              "title": "First round of Iran-US talks concludes in Switzerland",
+              "url": "https://www.aljazeera.com/news/liveblog/2026/6/21/iran-war-live-vance-heads-to-switzerland-israel-kills-16-in-lebanon",
+              "lean": "Lean Left"
+            },
+            {
+              "outlet": "CNBC",
+              "title": "Brent rises after US-Iran peace talks in Geneva are postponed",
+              "url": "https://www.cnbc.com/2026/06/19/oil-prices-wti-brent-crude-us-iran-deal-strait-hormuz-shipping-recovery.html",
+              "lean": "Centre"
+            },
+            {
+              "outlet": "Bloomberg",
+              "title": "Iran says ships need its permission to transit Strait of Hormuz",
+              "url": "https://www.bloomberg.com/news/articles/2026-06-19/iran-says-ships-need-its-permission-to-transit-strait-of-hormuz",
+              "lean": "Centre"
+            },
+            {
+              "outlet": "Wikipedia",
+              "title": "2026 Strait of Hormuz crisis",
+              "url": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis",
+              "lean": "Reference"
+            }
+          ]
+        },
+        {
+          "type": "factcheck",
+          "items": [
+            {
+              "status": "ok",
+              "verdict": "Confirmed",
+              "text": "A first round of US–Iran technical talks took place in Switzerland on 21 June; corroborated by Al Jazeera, CNBC and CBS News."
+            },
+            {
+              "status": "ok",
+              "verdict": "Confirmed",
+              "text": "Iran imposed a mandatory insurance requirement for Hormuz transit; corroborated by Bloomberg, Lloyd's List and CNBC."
+            },
+            {
+              "status": "ok",
+              "verdict": "Confirmed",
+              "text": "Brent settled at $80.57 on 19 June, about 8.5% lower on the week (CNBC; consistent with Al Jazeera reporting of a sharp weekly fall)."
+            },
+            {
+              "status": "unv",
+              "verdict": "Unverified",
+              "text": "🔍 Exact MoU signing date (17 vs 18 June) and full delegation rosters vary across outlets; not fully reconciled."
+            }
+          ]
+        },
+        {
+          "type": "ground",
+          "agree": [
+            "A first round of technical talks was held in Switzerland on 21 June.",
+            "Iran has introduced a mandatory insurance requirement for Hormuz transit, free of charge for now.",
+            "Oil prices fell over the week as shipping conditions in the strait improved."
+          ],
+          "contest": [
+            "Whether Iran's permit-and-insurance regime is lawful under UNCLOS transit-passage rules.",
+            "Whether Iran is honouring the ceasefire and Hormuz commitments, characterised differently by the parties.",
+            "The exact date the MoU was signed."
+          ]
+        },
+        {
+          "type": "logic",
+          "items": [
+            "<strong>1 · Internal-consistency check.</strong> Brent at $80.57 down ~8.5% on the week is consistent with the prior peak above $120 reported during the conflict; no anomaly.",
+            "<strong>2 · Date discrepancy flagged.</strong> Wikipedia dates the MoU to 17 June while CBS/Bloomberg/Al Jazeera cite Wednesday 18 June; an official text or single primary source would resolve it. Kept and flagged rather than dropped."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "poland",
+      "nav_label": "Poland–Ukraine Row",
+      "category": "Politics",
+      "badges": [
+        {
+          "label": "Politics",
+          "cls": "b-politics"
+        },
+        {
+          "label": "Conflict",
+          "cls": "b-conflict"
+        }
+      ],
+      "dateline": "22 June 2026 | Warsaw & Kyiv",
+      "headline": "Poland strips Zelensky of its highest honour over UPA military unit; Ukraine returns the award",
+      "summary": "Polish President Nawrocki revoked Ukrainian President Zelensky's Order of the White Eagle after a Ukrainian unit was named for the WWII-era UPA; Zelensky and several officials returned Polish honours.",
+      "confidence": {
+        "level": "corrob",
+        "label": "Verified",
+        "why": "— the revocation and the return of awards are reported across CNN, the Kyiv Independent, France 24, The Times of Israel and Al Jazeera"
+      },
+      "followup": false,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Order_of_White_Eagle_Poland-Order_Star.jpg?width=1100",
+        "alt": "The eight-pointed star of the Order of the White Eagle, Poland's highest state distinction",
+        "caption": "The star of the Order of the White Eagle, Poland's highest state distinction. Image: Polish government official pattern (1992) · public domain",
+        "credit": "Polish government (Dziennik Ustaw RP nr 90/1992)",
+        "license": "public domain"
+      },
+      "article_blocks": [
+        {
+          "type": "p",
+          "html": "Polish President <strong>Karol Nawrocki</strong> announced on 19 June 2026 that he had stripped Ukrainian President <strong>Volodymyr Zelensky</strong> of the <strong>Order of the White Eagle</strong>, Poland's highest state distinction, which had been awarded to Zelensky in 2023. The move followed Kyiv's decision to name a serving unit of the Armed Forces of Ukraine after the <strong>“Heroes of the UPA”</strong> — the WWII-era Ukrainian Insurgent Army."
+        },
+        {
+          "type": "p",
+          "html": "In a video address, Nawrocki said the decision was taken “in view of President Volodymyr Zelensky's consent to one of the units of the Armed Forces of Ukraine being named after the Heroes of the UPA, and following consultations with the Chapter.” He said the UPA “remains above all a formation responsible for cruel crimes against the citizens of the Polish Republic during World War II,” adding that “we have supported and continue to support Ukraine because we know that Russian aggression poses a threat.”"
+        },
+        {
+          "type": "p",
+          "html": "On 20 June, Zelensky said he had returned the order by post, sharing photographs taken at a post office showing a mailing form addressed to the Chancellery of the President of Poland. “We believed that the Order of the White Eagle, awarded in 2023, was meant for the Ukrainian People and our army,” Zelensky said in a statement reported by Al Jazeera and The Times of Israel."
+        },
+        {
+          "type": "p",
+          "html": "Several senior Ukrainian officials said they would relinquish Polish honours in solidarity. Foreign Minister <strong>Andrii Sybiha</strong>, military intelligence chief <strong>Kyrylo Budanov</strong> and Ukraine's ambassador to Warsaw <strong>Vasyl Bodnar</strong> each announced they were returning Polish awards on 20 June. Budanov said he “cannot stand aside and simply watch as the flywheel of hatred is unreasonably and artificially spun against our citizens.”"
+        },
+        {
+          "type": "timeline",
+          "head": "Timeline — how it unfolded",
+          "sub": "Tap an event to expand. Spacing reflects the time between events.",
+          "note": "The 1943–45 massacres predate this timeline; the events below cover the current row.",
+          "events": [
+            {
+              "date": "2016-07-22",
+              "label": "22 Jul 2016",
+              "title": "Sejm declares Volhynia a genocide",
+              "detail": "Poland's parliament adopted a resolution, by 432 votes to 1, designating the 1943–45 killings of Poles by Ukrainian nationalists a genocide and establishing 11 July as a national day of remembrance."
+            },
+            {
+              "date": "2023-01-01",
+              "label": "2023",
+              "title": "Zelensky awarded the Order",
+              "detail": "Poland awarded Zelensky the Order of the White Eagle, its highest state distinction, during Russia's full-scale invasion of Ukraine."
+            },
+            {
+              "date": "2026-05-26",
+              "label": "26 May",
+              "title": "Ukrainian unit named for the UPA",
+              "detail": "Kyiv named a unit of the Armed Forces of Ukraine after the “Heroes of the UPA,” the WWII-era Ukrainian Insurgent Army, per Al Jazeera's account."
+            },
+            {
+              "date": "2026-06-19",
+              "label": "19 Jun",
+              "title": "Nawrocki strips the honour",
+              "detail": "Polish President Karol Nawrocki announced he had revoked Zelensky's Order of the White Eagle, citing the UPA unit's name and consultations with the order's Chapter."
+            },
+            {
+              "date": "2026-06-20",
+              "label": "20 Jun",
+              "title": "Zelensky returns the order; officials follow",
+              "detail": "Zelensky posted the order back to Warsaw and said it had been meant for the Ukrainian people and army; FM Sybiha, intelligence chief Budanov and ambassador Bodnar said they would return Polish honours."
+            }
+          ]
+        },
+        {
+          "type": "pullquote",
+          "text": "“We believed that the Order of the White Eagle, awarded in 2023, was meant for the Ukrainian People and our army.”",
+          "src": "— President Volodymyr Zelensky, statement, 20 June 2026"
+        },
+        {
+          "type": "p",
+          "html": "Ukraine characterised the revocation as a misstep. Foreign Minister Sybiha called it a “strategic mistake… from which only Moscow benefits,” adding that “we regret that emotions have prevailed in Warsaw and have pushed Polish politicians to take unjustified, impulsive, and disrespectful steps.” Nawrocki said the decision was “not directed against the Ukrainian people” and did not signal a change in Poland's security policy."
+        },
+        {
+          "type": "p",
+          "html": "The dispute turns on the legacy of the UPA, the armed wing associated with the Bandera faction of the Organization of Ukrainian Nationalists. Between 1943 and 1945, UPA units carried out killings of Polish civilians in the Volhynia and Eastern Galicia regions; <strong>Polish historians estimate</strong> as many as 100,000 Poles were killed. Poland's 2016 parliamentary resolution defined those events as a genocide — a characterisation Ukraine has not adopted."
+        },
+        {
+          "type": "framing",
+          "overview": "<strong>Political-bias overview:</strong> Western reporting (centre to lean-left) treated the story as a diplomatic rupture between allies; Russian state media framed it around “Nazi” glorification.",
+          "bias": [
+            {
+              "lean": "Left",
+              "pct": 40,
+              "color": "#3b82c4"
+            },
+            {
+              "lean": "Centre",
+              "pct": 45,
+              "color": "#8b909c"
+            },
+            {
+              "lean": "Right",
+              "pct": 15,
+              "color": "#e0414f"
+            }
+          ],
+          "caption": "Share of the gathered sources by lean - an approximate read, not a measure of the entire press.",
+          "ratings_html": "<strong>Source leans:</strong> CNN <b>Lean Left</b>, France 24 <b>Centre</b>, Al Jazeera <b>Centre</b>, The Times of Israel <b>Centre</b>; the Kyiv Independent is a Ukrainian outlet; RT is Russian <b>state media</b> (pro-Kremlin). <a href=\"https://www.allsides.com/media-bias/ratings\">AllSides ratings ↗</a>",
+          "lines": [
+            "<span class=\"lean\">Western mainstream (CNN, France 24, Al Jazeera, Times of Israel):</span> framed the dispute as a wartime-history row straining two allies during Russia's invasion, attributing each side's claims.",
+            "<span class=\"lean\">Ukrainian outlet (Kyiv Independent):</span> led with Kyiv calling the revocation a “strategic mistake” benefiting Moscow.",
+            "<span class=\"lean\">Russian state media (RT):</span> framed Zelensky's decree as honouring “Nazi collaborators,” a characterisation attributed here to RT and not endorsed."
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<strong>Why it matters:</strong> Poland is one of Ukraine's most important neighbours and a logistics hub for Western military aid amid Russia's invasion. A public exchange of honours between the two presidents marks an unusually visible strain in a relationship both governments describe as strategic."
+        },
+        {
+          "type": "p",
+          "html": "<strong>What comes next:</strong> watch whether the row spreads beyond symbolic gestures to affect aid, transit or accession diplomacy, and whether Warsaw and Kyiv move to de-escalate before Poland's 11 July remembrance day. Casualty estimates for the 1943–45 massacres remain contested between Polish and Ukrainian historians and should be attributed, not stated as settled."
+        }
+      ],
+      "sidebar_blocks": [
+        {
+          "type": "keyfacts",
+          "items": [
+            "Award stripped: <strong>Order of the White Eagle</strong>, Poland's highest distinction, given to Zelensky in <strong>2023</strong>",
+            "Revoked by President Nawrocki on <strong>19 June 2026</strong>; Zelensky returned it by post on <strong>20 June</strong>",
+            "Trigger: a Ukrainian military unit named “<strong>Heroes of the UPA</strong>”",
+            "Officials returning Polish honours: FM <strong>Sybiha</strong>, intelligence chief <strong>Budanov</strong>, ambassador <strong>Bodnar</strong>",
+            "Poland's Sejm declared the 1943–45 Volhynia killings a <strong>genocide</strong> in a 2016 resolution (432–1)"
+          ]
+        },
+        {
+          "type": "sources",
+          "items": [
+            {
+              "outlet": "CNN",
+              "title": "Zelensky returns Poland's highest honor amid escalating row over nationalist wartime unit",
+              "url": "https://www.cnn.com/2026/06/20/europe/zelensky-returns-poland-honor-latam-intl",
+              "lean": "Lean Left"
+            },
+            {
+              "outlet": "Kyiv Independent",
+              "title": "Polish president strips Zelensky of honorary title over military unit controversy",
+              "url": "https://kyivindependent.com/polish-president-strips-zelensky-of-honorary-title-over-military-unit-controversy/",
+              "lean": "Ukrainian outlet"
+            },
+            {
+              "outlet": "France 24",
+              "title": "Poland strips Zelensky of country's highest honour, escalating World War II-era row",
+              "url": "https://www.france24.com/en/europe/20260619-poland-strips-zelensky-of-highest-honour-escalating-world-war-ii-era-row",
+              "lean": "Centre"
+            },
+            {
+              "outlet": "Al Jazeera",
+              "title": "Zelenskyy and top Ukrainian officials return Polish awards in WWII dispute",
+              "url": "https://www.aljazeera.com/news/2026/6/20/top-ukrainian-officials-return-polish-awards-in-wwii-dispute",
+              "lean": "Centre"
+            },
+            {
+              "outlet": "The Times of Israel",
+              "title": "Top Ukrainian officials return Polish awards in row over WWII massacres",
+              "url": "https://www.timesofisrael.com/top-ukrainian-officials-return-polish-awards-in-row-over-wwii-massacres/",
+              "lean": "Centre"
+            }
+          ]
+        },
+        {
+          "type": "factcheck",
+          "items": [
+            {
+              "status": "ok",
+              "verdict": "Confirmed",
+              "text": "Nawrocki revoked Zelensky's Order of the White Eagle on 19 June 2026, and Zelensky returned it by mail on 20 June — reported by CNN, the Kyiv Independent, France 24, Al Jazeera and The Times of Israel."
+            },
+            {
+              "status": "ok",
+              "verdict": "Confirmed",
+              "text": "Foreign Minister Sybiha, intelligence chief Budanov and ambassador Bodnar said they would return Polish honours (Al Jazeera, Times of Israel, Kyiv Independent)."
+            },
+            {
+              "status": "unv",
+              "verdict": "Unverified",
+              "text": "The figure of about 100,000 Polish victims in Volhynia is a Polish historians' estimate; exact totals remain disputed between Polish and Ukrainian historians."
+            }
+          ]
+        },
+        {
+          "type": "ground",
+          "agree": [
+            "Nawrocki revoked the Order of the White Eagle on 19 June 2026 and Zelensky returned it on 20 June.",
+            "The trigger was a Ukrainian military unit named after the UPA.",
+            "Poland's parliament declared the 1943–45 Volhynia killings a genocide in 2016."
+          ],
+          "contest": [
+            "Whether the 1943–45 massacres should be defined as a “genocide” — Poland's position; Ukraine has not adopted the term.",
+            "The total number of Polish victims in Volhynia, which differs between Polish and Ukrainian historians.",
+            "RT's characterisation of the unit's name as honouring “Nazi collaborators,” which Western and Ukrainian sources do not use."
+          ]
+        },
+        {
+          "type": "logic",
+          "items": [
+            "<strong>Disputed historical figure:</strong> the “~100,000 Poles killed” total is attributed to Polish historians' estimates; it is contested and should not be stated as a settled fact.",
+            "<strong>Loaded framing flagged:</strong> RT's “Nazi tribute / Nazi collaborators” language is a pro-Kremlin characterisation, attributed here and not endorsed by this brief.",
+            "<strong>Date precision:</strong> Al Jazeera dates the unit's naming to 26 May 2026; other outlets do not specify the day, so this single-sourced date is flagged."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ebola",
+      "nav_label": "Ebola Outbreak",
+      "category": "Health",
+      "badges": [
+        {
+          "label": "Health",
+          "cls": "b-health"
+        }
+      ],
+      "dateline": "22 June 2026 | Kinshasa & Geneva",
+      "headline": "WHO warns of “missing” Ebola cases in DR Congo as official tallies diverge across agencies",
+      "summary": "A month into the Bundibugyo-virus outbreak, the WHO says it is still missing cases amid intense community transmission, while WHO, the CDC and the ECDC publish materially different case counts.",
+      "confidence": {
+        "level": "develop",
+        "label": "Developing",
+        "why": "— case counts are being revised and harmonised; agencies disagree on totals and the live figure is not independently verified"
+      },
+      "followup": true,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ebola_virus_virion.jpg?width=1100",
+        "alt": "Colorized transmission electron micrograph of a single filament-shaped Ebola virus virion",
+        "caption": "An Ebola virus virion under electron microscopy. The current Democratic Republic of the Congo outbreak is caused by the Bundibugyo strain, for which no vaccine is licensed. Photo: CDC / Cynthia Goldsmith (PHIL #10816) · public domain",
+        "credit": "CDC / Cynthia Goldsmith",
+        "license": "public domain"
+      },
+      "article_blocks": [
+        {
+          "type": "p",
+          "html": "<span class=\"followup\">Follow-up:</span> One month after the Bundibugyo-virus Ebola outbreak in the Democratic Republic of the Congo was declared a public health emergency of international concern, the World Health Organization says the epidemic is still spreading and that surveillance is not capturing every case. “That means we are missing cases,” WHO incident manager Dr Marie-Roseline Belizaire told CBS News on 16 June, describing continued community deaths and undetected transmission in affected provinces."
+        },
+        {
+          "type": "p",
+          "html": "The warning lands alongside a notable wrinkle in the data: as of late June, WHO, the U.S. Centers for Disease Control and Prevention and the European Centre for Disease Prevention and Control have published <strong>materially different</strong> running totals, and the count has at one point been revised sharply downward rather than up. The figures below should therefore be read as agency snapshots in flux, not a single settled number."
+        },
+        {
+          "type": "p",
+          "html": "The most recent national tally widely cited is from the DRC Ministry of Health and reported by the ECDC: as of <strong>15 June</strong>, <strong>837 confirmed cases</strong> and <strong>196 confirmed deaths</strong> in the DRC, with 376 people hospitalised in isolation. WHO’s own Disease Outbreak News (DON607) carried a lower figure dated earlier in the month — <strong>676 confirmed cases and 136 deaths</strong> in the DRC as of 10 June — because the published bulletins reflect different cut-off dates and verification stages."
+        },
+        {
+          "type": "p",
+          "html": "Earlier in June, the picture was murkier still. CIDRAP reported that WHO and the CDC had <strong>cut</strong> the official count from “nearly 1,000” cases to <strong>321 confirmed cases and 48 deaths</strong> in the DRC, with a further 116 suspected, attributing the swing to laboratory reclassification as a backlog of samples was tested. Relief groups quoted by CIDRAP called the shifting figures “part of a broader, chaotic picture of an outbreak that may have been simmering for months.” Which adjustment supersedes which is not fully reconciled in the public bulletins."
+        },
+        {
+          "type": "timeline",
+          "head": "Timeline — how the outbreak has unfolded",
+          "sub": "Tap an event to expand. Spacing reflects the time between events.",
+          "note": "Figures are as published by the named agency on each date and are subject to revision.",
+          "events": [
+            {
+              "date": "2026-05-17",
+              "label": "17 May",
+              "title": "PHEIC declared",
+              "detail": "The WHO Director-General determines the Bundibugyo-virus epidemic in the DRC and Uganda a public health emergency of international concern. (The declaration is variously dated 16–17 May in secondary coverage; WHO’s release is dated 17 May.)"
+            },
+            {
+              "date": "2026-06-10",
+              "label": "10 Jun",
+              "title": "WHO DON607 count",
+              "detail": "WHO Disease Outbreak News reports 676 confirmed cases and 136 deaths in the DRC as of 10 June, plus 19 confirmed cases and 2 deaths in Uganda as of 11 June."
+            },
+            {
+              "date": "2026-06-15",
+              "label": "15 Jun",
+              "title": "ECDC / DRC tally rises",
+              "detail": "The ECDC reports the DRC Ministry of Health figure of 837 confirmed cases and 196 deaths as of 15 June, with 376 hospitalised in isolation."
+            },
+            {
+              "date": "2026-06-16",
+              "label": "16 Jun",
+              "title": "WHO warns of missing cases",
+              "detail": "WHO incident manager Dr Marie-Roseline Belizaire tells CBS News the outbreak is still spreading and that community deaths mean cases are being missed."
+            },
+            {
+              "date": "2026-06-20",
+              "label": "20 Jun",
+              "title": "UN: response still insufficient",
+              "detail": "UN News reports more than 780 confirmed cases and 180 deaths in the DRC, and quotes WHO that the scaled-up response remains insufficient one month on."
+            }
+          ]
+        },
+        {
+          "type": "pullquote",
+          "text": "“One month after the outbreak has been declared, I’m still feeling concerned … that means we are missing cases.”",
+          "src": "— Dr Marie-Roseline Belizaire, WHO incident manager, to CBS News, 16 June 2026"
+        },
+        {
+          "type": "p",
+          "html": "The outbreak is concentrated in north-eastern DRC. Ituri province accounts for the large majority of confirmed cases, with North Kivu and a small number in South Kivu also affected; Uganda has reported 19 confirmed cases and two deaths, described by WHO as imported cases and secondary transmission among contacts and health workers. Al Jazeera reported on 19 June that more than 70 health workers had been infected. The DRC’s east is also an active conflict zone, which WHO and the UN say is hampering contact tracing and case finding."
+        },
+        {
+          "type": "p",
+          "html": "<strong>Why it matters:</strong> The current epidemic is caused by the <strong>Bundibugyo</strong> strain of ebolavirus, for which there is <strong>no licensed vaccine and no approved specific treatment</strong>; the CDC states care is supportive, and candidate therapeutics are under trial. The licensed Ebola vaccines target the Zaire strain and are not approved for Bundibugyo, removing a tool used to ring-fence prior outbreaks. The U.S. has pledged more than $220 million toward the response."
+        },
+        {
+          "type": "p",
+          "html": "<strong>What comes next:</strong> Watch whether WHO, the CDC and the ECDC converge on a single reconciled case count as laboratory backlogs clear, and whether reported community deaths translate into a higher confirmed tally — the scenario Belizaire flagged. The live figure remains <strong>unverified</strong> here pending that reconciliation; the PHEIC remains in force."
+        }
+      ],
+      "sidebar_blocks": [
+        {
+          "type": "keyfacts",
+          "items": [
+            "Pathogen: <strong>Bundibugyo</strong> ebolavirus — <strong>no licensed vaccine</strong>, no approved specific treatment (CDC).",
+            "PHEIC declared by WHO, dated <strong>17 May 2026</strong>.",
+            "DRC count (ECDC / Ministry of Health, 15 Jun): <strong>837 confirmed</strong>, <strong>196 deaths</strong>.",
+            "WHO DON607 (10 Jun): <strong>676 confirmed</strong>, 136 deaths in DRC.",
+            "Earlier WHO/CDC revision (CIDRAP): cut to <strong>321 confirmed</strong>, 48 deaths.",
+            "Uganda: <strong>19 confirmed</strong> cases, 2 deaths. U.S. funding pledged: <strong>$220m+</strong>."
+          ]
+        },
+        {
+          "type": "sources",
+          "items": [
+            {
+              "outlet": "WHO",
+              "title": "Disease Outbreak News — Ebola (Bundibugyo virus), DRC & Uganda (DON607)",
+              "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON607",
+              "lean": "Official"
+            },
+            {
+              "outlet": "CDC",
+              "title": "Ebola Outbreak: Current Situation",
+              "url": "https://www.cdc.gov/ebola/situation-summary/index.html",
+              "lean": "Official"
+            },
+            {
+              "outlet": "ECDC",
+              "title": "Ebola disease outbreak in the DRC and Uganda",
+              "url": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda",
+              "lean": "Official"
+            },
+            {
+              "outlet": "CIDRAP",
+              "title": "WHO drastically downsizes Ebola case count in DR Congo outbreak",
+              "url": "https://www.cidrap.umn.edu/ebola/who-drastically-downsizes-ebola-case-count-dr-congo-outbreak",
+              "lean": "Center"
+            },
+            {
+              "outlet": "CBS News",
+              "title": "Ebola outbreak still spreading in Congo — “we are missing cases,” WHO says",
+              "url": "https://www.cbsnews.com/news/ebola-outbreak-2026-congo-uganda-still-spreading-who/",
+              "lean": "Center"
+            }
+          ]
+        },
+        {
+          "type": "factcheck",
+          "items": [
+            {
+              "status": "ok",
+              "verdict": "Confirmed",
+              "text": "A PHEIC is in force for the Bundibugyo-virus outbreak — WHO release dated 17 May 2026; corroborated by ECDC, CDC and UN News."
+            },
+            {
+              "status": "ok",
+              "verdict": "Confirmed",
+              "text": "No vaccine is licensed for the Bundibugyo strain — CDC states care is supportive; WHO DON607 lists candidate therapeutics under trial."
+            },
+            {
+              "status": "unv",
+              "verdict": "Unverified",
+              "text": "The live case total. WHO (676/10 Jun), ECDC (837/15 Jun) and an earlier WHO–CDC revision (321) differ; no single reconciled figure is confirmed."
+            },
+            {
+              "status": "unv",
+              "verdict": "Unverified",
+              "text": "The exact PHEIC declaration date is given as 16 or 17 May in secondary coverage; WHO’s own release is dated 17 May."
+            }
+          ]
+        },
+        {
+          "type": "logic",
+          "items": [
+            "<strong>1 · Conflicting counts — unresolved.</strong> Three official figures circulate: WHO DON607 (676 confirmed / 136 deaths, 10 Jun), ECDC via the DRC Ministry of Health (837 / 196, 15 Jun), and an earlier WHO–CDC downward revision to 321 / 48 reported by CIDRAP. The gaps stem from different cut-off dates and laboratory reclassification of suspected cases, not necessarily contradiction. <em>What would resolve it:</em> a single harmonised WHO situation report stating one cut-off date and one confirmed total. Until then the live count is marked 🔍 Unverified.",
+            "<strong>2 · Undercount risk, attributed.</strong> WHO’s Belizaire says community deaths imply cases are being missed — a characterisation by a named official, not an independently measured figure. It cuts against the earlier downward revision and means confirmed totals may understate true spread."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rareearth",
+      "nav_label": "G7 Rare Earths",
+      "category": "Business",
+      "badges": [
+        {
+          "label": "Business",
+          "cls": "b-business"
+        },
+        {
+          "label": "Technology",
+          "cls": "b-tech"
+        }
+      ],
+      "dateline": "22 June 2026 | Tokyo",
+      "headline": "Japan proposes G7 jointly stockpile critical minerals; leaders set a 60% cap on reliance on any single supplier",
+      "summary": "Prime Minister Sanae Takaichi pitched a G7 \"Joint Stockpiling Cooperation Initiative\" at the Evian summit, where leaders agreed to cut dependence on any single non-G7 supplier of rare earths to below 60% by 2030.",
+      "confidence": {
+        "level": "corrob",
+        "label": "Verified",
+        "why": "— the proposal and the summit declaration are reported consistently across Reuters, Nikkei Asia, Bloomberg and the Élysée primary text"
+      },
+      "followup": false,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rareearthoxides.jpg?width=1100",
+        "alt": "Six samples of rare-earth oxide powders in different colours arranged in rows",
+        "caption": "Rare-earth oxides — among them praseodymium, cerium, lanthanum, neodymium, samarium and gadolinium. Photo: Peggy Greb, USDA Agricultural Research Service · public domain",
+        "credit": "Peggy Greb, USDA-ARS",
+        "license": "public domain"
+      },
+      "article_blocks": [
+        {
+          "type": "p",
+          "html": "Japanese Prime Minister <strong>Sanae Takaichi</strong> proposed at the Group of Seven summit in Evian, France, that member countries jointly stockpile critical minerals, including rare earths, under what Tokyo calls a <strong>\"Joint Stockpiling Cooperation Initiative.\"</strong> She put the plan to leaders at a working dinner on 15 June, the first day of the summit, according to Japanese government and wire accounts."
+        },
+        {
+          "type": "p",
+          "html": "Under the Japanese proposal, each G7 member and like-minded partner would build a national stockpile covering at least <strong>90 days</strong> of demand, and coordinate with the International Energy Agency (IEA) to release reserves jointly in the event of a supply disruption. Japan, which already operates a stockpiling system, offered to help other members set up their own."
+        },
+        {
+          "type": "p",
+          "html": "On 17 June, G7 leaders adopted a declaration on securing critical-mineral supply chains. It commits them to reduce dependence on any single supplier outside the G7 and partner countries for <strong>rare earths and permanent magnets to under 60% by 2030</strong>, \"with an ambition to reach 50 per cent as soon as possible.\" The leaders established a non-binding <strong>Critical Minerals Resilience and Production Alliance</strong>, backed by a coordination platform drawing on the IEA and the OECD, and named <strong>lithium and nickel</strong> as the two pilot metals for joint mechanisms."
+        },
+        {
+          "type": "timeline",
+          "head": "Timeline — how it unfolded",
+          "sub": "Tap an event to expand. Spacing reflects the time between events.",
+          "note": "Dates reflect the G7 summit programme and official declarations.",
+          "events": [
+            {
+              "date": "2026-01-13",
+              "label": "13 Jan",
+              "title": "G7 finance ministers flag the issue",
+              "detail": "G7 finance ministers agreed to address rare-earth supply problems quickly, after China tightened export controls affecting Japan and Europe."
+            },
+            {
+              "date": "2026-06-15",
+              "label": "15 Jun",
+              "title": "Takaichi pitches joint stockpiling",
+              "detail": "At a working dinner on the first day of the Evian summit, PM Takaichi proposed the Joint Stockpiling Cooperation Initiative, including 90-day national stockpiles and coordinated releases via the IEA."
+            },
+            {
+              "date": "2026-06-17",
+              "label": "17 Jun",
+              "title": "G7 leaders' declaration",
+              "detail": "Leaders adopted a declaration setting the sub-60% target by 2030, launching the Critical Minerals Resilience and Production Alliance and naming lithium and nickel as pilot metals."
+            }
+          ]
+        },
+        {
+          "type": "pullquote",
+          "text": "\"Measures against Japan, such as China's export restrictions on rare earths, could affect the supply chains of like-minded countries such as the G7.\"",
+          "src": "— Sanae Takaichi, Japanese Prime Minister, G7 Evian summit, 17 June 2026"
+        },
+        {
+          "type": "framing",
+          "overview": "<strong>Framing overview:</strong> Western business press treats the move as supply-chain de-risking; Chinese state media frames it as a hardline anti-China campaign.",
+          "bias": [
+            {
+              "lean": "Wire / Centre",
+              "pct": 60,
+              "color": "#8b909c"
+            },
+            {
+              "lean": "State media",
+              "pct": 25,
+              "color": "#e0414f"
+            },
+            {
+              "lean": "Business/Other",
+              "pct": 15,
+              "color": "#3b82c4"
+            }
+          ],
+          "caption": "Share of the gathered sources by lean - an approximate read, not a measure of the entire press.",
+          "ratings_html": "<strong>Source leans:</strong> Reuters and Nikkei Asia <b>Wire</b>, Bloomberg <b>Centre/business</b>; Global Times is a Chinese state outlet. <a href=\"https://www.allsides.com/media-bias/ratings\">AllSides ratings ↗</a>",
+          "lines": [
+            "<span class=\"lean\">Western wires/business press:</span> describe the plan as reducing reliance on a single dominant supplier, naming China as the de-facto target of the de-risking effort.",
+            "<span class=\"lean\">Chinese state media:</span> Global Times quoted analysts framing Tokyo's push as an attempt to rally a \"collective Western front\" and to deflect from Japan's own conduct."
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<strong>Why it matters:</strong> Rare earths and the permanent magnets made from them are essential to electric vehicles, wind turbines, semiconductors, smartphones and defence systems such as fighter jets, drones and precision weapons. China holds roughly 70% of global critical-mineral supply and refining capacity, giving export controls significant leverage; the G7 framework is the bloc's most explicit attempt yet to dilute that concentration."
+        },
+        {
+          "type": "p",
+          "html": "<strong>What comes next:</strong> The alliance is non-binding, and key operational details — how stockpiles are financed, how releases are triggered and whether members hit the 60% target by 2030 — remain to be worked out. China has not announced a formal government response to the declaration; its position to date frames its export curbs as countermeasures rather than coercion. Watch the pilot work on lithium and nickel and any Chinese diplomatic reaction."
+        }
+      ],
+      "sidebar_blocks": [
+        {
+          "type": "keyfacts",
+          "items": [
+            "Proposal: national stockpiles of at least <strong>90 days</strong> of demand, with coordinated IEA-linked releases",
+            "G7 target: reliance on any single non-G7 supplier of rare earths and magnets <strong>under 60% by 2030</strong>, aiming for 50%",
+            "Pilot metals: <strong>lithium and nickel</strong>; alliance named the Critical Minerals Resilience and Production Alliance",
+            "China holds roughly <strong>70%</strong> of global critical-mineral supply",
+            "Members report <strong>195 projects</strong> announced in 2026 worth about €64bn ($74bn)"
+          ]
+        },
+        {
+          "type": "sources",
+          "items": [
+            {
+              "outlet": "Nikkei Asia",
+              "title": "G7 forges critical minerals alliance, platform to cut reliance on China",
+              "url": "https://asia.nikkei.com/business/markets/commodities/g7-forges-critical-minerals-alliance-platform-to-cut-reliance-on-china",
+              "lean": "Wire"
+            },
+            {
+              "outlet": "Bloomberg",
+              "title": "G7 Aims to See China Supply No More Than 60% of Rare Earths",
+              "url": "https://www.bloomberg.com/news/articles/2026-06-17/g7-aims-to-ensure-china-supplies-no-more-than-60-of-rare-earths",
+              "lean": "Centre"
+            },
+            {
+              "outlet": "Élysée",
+              "title": "G7 leaders' declaration on securing supply chains for critical minerals",
+              "url": "https://www.elysee.fr/en/G7evian/2026/06/17/g7-leaders-declaration-on-securing-supply-chains-for-critical-minerals",
+              "lean": "Primary"
+            },
+            {
+              "outlet": "The Japan Times",
+              "title": "Takaichi proposes G7 framework for stockpiling critical minerals",
+              "url": "https://www.japantimes.co.jp/news/2026/06/16/japan/politics/takaichi-g7-critical-minerals/",
+              "lean": "Centre"
+            },
+            {
+              "outlet": "Global Times",
+              "title": "Takaichi's hype of China's export restrictions at G7 summit ... : Chinese experts",
+              "url": "https://www.globaltimes.cn/page/202606/1363812.shtml",
+              "lean": "State media"
+            }
+          ]
+        },
+        {
+          "type": "factcheck",
+          "items": [
+            {
+              "status": "ok",
+              "verdict": "Confirmed",
+              "text": "The sub-60%-by-2030 target, the lithium/nickel pilots and the alliance name are stated in the Élysée declaration and corroborated by Nikkei Asia, Bloomberg and Reuters reporting."
+            },
+            {
+              "status": "ok",
+              "verdict": "Confirmed",
+              "text": "Takaichi proposed the Joint Stockpiling Cooperation Initiative at a 15 June working dinner; reported by Nikkei/Nippon.com and the Japan Times."
+            },
+            {
+              "status": "unv",
+              "verdict": "Attribution",
+              "text": "Characterising the plan as \"aimed at countering China\" is sourced framing — used by wire/business outlets and disputed by Chinese state media — not an asserted fact."
+            }
+          ]
+        },
+        {
+          "type": "ground",
+          "agree": [
+            "G7 leaders adopted a critical-minerals declaration on 17 June with a sub-60%-by-2030 supplier-concentration target.",
+            "Japan proposed a joint stockpiling initiative built around 90-day national reserves and IEA coordination.",
+            "China currently dominates global rare-earth supply and refining."
+          ],
+          "contest": [
+            "Whether the initiative is primarily an 'anti-China' move (Western framing) or a deflection by Tokyo (Chinese state-media framing).",
+            "Whether China's recent export curbs constitute 'economic coercion' (Japan) or legitimate 'countermeasures' (Beijing)."
+          ]
+        },
+        {
+          "type": "logic",
+          "items": [
+            "<strong>1 · Internal-consistency check.</strong> The 90-day stockpile, the 60%/50% targets and the lithium/nickel pilots are reported consistently across the primary declaration and the wires; no numerical conflict.",
+            "<strong>2 · Flagged characterisation.</strong> The phrase 'aimed at countering China' originates with reporting and analysts, not the G7 text, which does not name China; it is attributed, not asserted. China's formal government response was not reported at publication."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pfas",
+      "nav_label": "Forever Chemicals",
+      "category": "Science",
+      "badges": [
+        {
+          "label": "Science",
+          "cls": "b-science"
+        },
+        {
+          "label": "Climate",
+          "cls": "b-climate"
+        }
+      ],
+      "dateline": "22 June 2026 | Aarhus, Denmark",
+      "headline": "Aarhus researchers report intense UV light can break down PFAS without added chemicals",
+      "summary": "A lab study at Aarhus University finds that hydrogen radicals released from water by short-wavelength UV light can strip fluorine from PFAS “forever chemicals,” though degradation is partial and slow.",
+      "confidence": {
+        "level": "corrob",
+        "label": "Verified",
+        "why": "— named institution, researchers and peer-reviewed journal (Environmental Science & Technology) confirmed across the university release, ScienceDaily and the journal record"
+      },
+      "followup": false,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Perfluorooctanoic_acid.svg?width=1100",
+        "alt": "Skeletal chemical structure of perfluorooctanoic acid (PFOA), a long carbon chain lined with fluorine atoms ending in a carboxylic acid group",
+        "caption": "Perfluorooctanoic acid (PFOA), one of the best-known PFAS compounds. The carbon–fluorine bonds that make such molecules persistent are what the Aarhus team set out to break. Image: Wikimedia Commons · public domain",
+        "credit": "Wikimedia Commons",
+        "license": "public domain"
+      },
+      "article_blocks": [
+        {
+          "type": "p",
+          "html": "Researchers at <strong>Aarhus University</strong> in Denmark report that intense ultraviolet light can break down PFAS “forever chemicals” in water without any added chemical reagents, by generating highly reactive hydrogen radicals directly from water molecules. The findings were published in the peer-reviewed journal <em>Environmental Science &amp; Technology</em> and summarised by ScienceDaily on 16 June 2026."
+        },
+        {
+          "type": "p",
+          "html": "In the team’s account, ultraviolet light at wavelengths below 300 nanometres (the UV-C range) splits water to produce hydrogen radicals. These radicals attack the carbon–fluorine bonds that make PFAS so stable, progressively stripping away fluorine atoms and breaking the molecules into smaller, less persistent substances. The study identifies hydrogen radicals — rather than hydrated electrons, the species earlier work had emphasised — as the dominant driver of the reaction."
+        },
+        {
+          "type": "p",
+          "html": "The work is laboratory-stage and the breakdown is partial. For GenX, a PFOA substitute, the researchers reported up to <strong>49.1% degradation</strong> and <strong>21.2% defluorination</strong> within five hours under simulated solar light in a catalyst-free setup. The team notes the process is relatively slow and that intermediate compounds can form during treatment, and presents the result as a mechanistic insight rather than a finished treatment technology."
+        },
+        {
+          "type": "timeline",
+          "head": "Timeline — how it was reported",
+          "sub": "Tap an event to expand. Spacing reflects the time between events.",
+          "note": "",
+          "events": [
+            {
+              "date": "2026-05-04",
+              "label": "4 May",
+              "title": "University release",
+              "detail": "Aarhus University and EurekAlert! publish the news release describing the hydrogen-radical mechanism, tied to the paper in Environmental Science & Technology."
+            },
+            {
+              "date": "2026-06-16",
+              "label": "16 Jun",
+              "title": "Wider science coverage",
+              "detail": "ScienceDaily and other science outlets summarise the study, reporting that intense UV light can degrade PFAS without added chemicals."
+            }
+          ]
+        },
+        {
+          "type": "pullquote",
+          "text": "\"By identifying hydrogen radicals as a dominant driver, we now have a clearer direction for how to design more efficient and sustainable technologies to actually destroy these chemicals, rather than just removing them.\"",
+          "src": "— Zongsu Wei, Associate Professor, Aarhus University, May 2026"
+        },
+        {
+          "type": "p",
+          "html": "The authors listed on the paper are Lu Bai, Shuang Luo, Jan Thøgersen, Xingaoyuan Xiong, Zheng Guo and Zongsu Wei, based at Aarhus University’s Centre for Water Technology and Department of Biological and Chemical Engineering. The article, titled “Mechanistic Insights into Per- and Polyfluoroalkyl Substance (PFAS) Photolysis under Intensified Simulated Solar Light,” carries DOI 10.1021/acs.est.5c16178."
+        },
+        {
+          "type": "p",
+          "html": "<strong>Why it matters:</strong> PFAS are a class of thousands of synthetic chemicals valued for their resistance to heat, water and grease, but their carbon–fluorine bonds make them persist in the environment and accumulate in water and the body. PFAS have been detected in drinking water across all 50 US states and have been linked in regulatory and health literature to certain cancers, immune effects and developmental harm. Most existing treatments capture or concentrate PFAS rather than destroying them, so methods that actually break the molecules apart are of particular interest."
+        },
+        {
+          "type": "p",
+          "html": "<strong>What comes next:</strong> the open questions are whether the approach can be scaled beyond the lab — UV-C generation is energy-intensive, and reactor design would have to ensure light reaches the contaminated water — and how to push degradation closer to complete mineralisation while controlling the intermediate compounds that form. The researchers describe the result as a starting point for designing UV reactors, not an immediate fix for PFAS contamination."
+        }
+      ],
+      "sidebar_blocks": [
+        {
+          "type": "keyfacts",
+          "items": [
+            "Institution: <strong>Aarhus University</strong>, Denmark (Centre for Water Technology)",
+            "Journal: <strong>Environmental Science &amp; Technology</strong>; DOI 10.1021/acs.est.5c16178",
+            "Mechanism: hydrogen radicals from water under <strong>UV light below 300 nm</strong>",
+            "GenX result: up to <strong>49.1% degradation</strong>, <strong>21.2% defluorination</strong> in 5 hours",
+            "Stage: laboratory; no added chemical reagents (catalyst-free)"
+          ]
+        },
+        {
+          "type": "sources",
+          "items": [
+            {
+              "outlet": "Environmental Science & Technology",
+              "title": "Mechanistic Insights into PFAS Photolysis under Intensified Simulated Solar Light",
+              "url": "https://pubs.acs.org/doi/10.1021/acs.est.5c16178",
+              "lean": "Peer-reviewed"
+            },
+            {
+              "outlet": "EurekAlert! / Aarhus University",
+              "title": "New insight could change how we break down 'forever chemicals'",
+              "url": "https://www.eurekalert.org/news-releases/1126756",
+              "lean": "Official"
+            },
+            {
+              "outlet": "ScienceDaily",
+              "title": "Scientists just found a hidden weakness in forever chemicals",
+              "url": "https://www.sciencedaily.com/releases/2026/06/260615033846.htm",
+              "lean": "Science"
+            },
+            {
+              "outlet": "Innovation News Network",
+              "title": "Hydrogen radicals identified as key to breaking down forever chemicals",
+              "url": "https://www.innovationnewsnetwork.com/hydrogen-radicals-identified-as-key-to-breaking-down-forever-chemicals/69170/",
+              "lean": "Science"
+            },
+            {
+              "outlet": "US EPA",
+              "title": "Per- and Polyfluoroalkyl Substances (PFAS) — drinking water",
+              "url": "https://www.epa.gov/sdwa/and-polyfluoroalkyl-substances-pfas",
+              "lean": "Official"
+            }
+          ]
+        },
+        {
+          "type": "factcheck",
+          "items": [
+            {
+              "status": "ok",
+              "verdict": "Confirmed",
+              "text": "Institution (Aarhus University), lead researcher (Zongsu Wei) and journal (Environmental Science & Technology, DOI 10.1021/acs.est.5c16178) corroborated across the university release, EurekAlert!, ScienceDaily and the journal record."
+            },
+            {
+              "status": "ok",
+              "verdict": "Confirmed",
+              "text": "The GenX figures of 49.1% degradation and 21.2% defluorination within 5 hours match the journal abstract and secondary summaries."
+            },
+            {
+              "status": "unv",
+              "verdict": "Unverified",
+              "text": "One outlet (Digital Journal) attributed the work to McGill University; this conflicts with all primary sources and appears to be an error. The Aarhus attribution is the verified one."
+            }
+          ]
+        },
+        {
+          "type": "logic",
+          "items": [
+            "<strong>1 · Scope of the claim.</strong> “Breaks down PFAS” is laboratory-stage and partial: the headline result is GenX at up to 49.1% degradation and 21.2% defluorination over 5 hours, not full destruction, and not all PFAS or field conditions were tested.",
+            "<strong>2 · Lab vs field.</strong> Results come from simulated solar / UV-C light in controlled conditions; scale-up, energy cost and reactor light penetration are unresolved, and the authors call it a mechanistic insight rather than a treatment ready for deployment.",
+            "<strong>3 · Date handling.</strong> The underlying university release dates to 4 May 2026; the 16 June 2026 date reflects later ScienceDaily coverage, not a new result. Both dates are stated rather than conflated."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vapes",
+      "nav_label": "Vapes & Cancer",
+      "category": "Health",
+      "badges": [
+        {
+          "label": "Health",
+          "cls": "b-health"
+        },
+        {
+          "label": "Science",
+          "cls": "b-science"
+        }
+      ],
+      "dateline": "22 June 2026 | Sydney",
+      "headline": "Review concludes nicotine vapes are likely to cause lung and oral cancer",
+      "summary": "A qualitative risk assessment led by UNSW Sydney in the journal Carcinogenesis judges nicotine e-cigarettes likely carcinogenic, while several outside experts call the conclusion an overinterpretation of the evidence.",
+      "confidence": {
+        "level": "develop",
+        "label": "Developing",
+        "why": "— the publication and its authorship are confirmed, but the central claim is a hazard judgement rather than a measured human cancer rate, and outside experts dispute its strength"
+      },
+      "followup": false,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Electronic%20cigarette.jpg?width=1100",
+        "alt": "An electronic cigarette device with refill pods on a plain surface",
+        "caption": "A nicotine e-cigarette device. The review assessed the cancer hazard of such products, not a measured cancer rate among users. Photo: Fair Expert via Wikimedia Commons · CC BY-SA 4.0",
+        "credit": "Fair Expert / Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      "article_blocks": [
+        {
+          "type": "p",
+          "html": "A research review led by UNSW Sydney has concluded that nicotine-based e-cigarettes are <strong>likely to cause lung and oral cancers</strong> in people who use them. The paper, titled \"The carcinogenicity of e-cigarettes: a qualitative risk assessment,\" was published in the journal <strong>Carcinogenesis</strong> on 30 March 2026 and drew a fresh wave of coverage around 19–21 June. The authors state that nicotine-based e-cigarettes are \"likely to be carcinogenic to humans who use them, causing an indeterminate burden of oral cancer and lung cancer.\""
+        },
+        {
+          "type": "p",
+          "html": "The assessment was led by UNSW cancer researcher Adjunct Professor Bernard W Stewart, with co-authors drawn from the University of Queensland, Flinders University, the University of Sydney, Royal North Shore Hospital, The Prince Charles Hospital and Sunshine Coast University Hospital. The team, which included pharmacists, epidemiologists, a thoracic surgeon and public-health researchers, weighed a wide body of international research rather than running a new trial."
+        },
+        {
+          "type": "p",
+          "html": "The review draws on three strands of evidence: human biomarkers showing DNA damage, oxidative stress and tissue inflammation in users; animal experiments in which mice exposed to e-cigarette aerosol developed lung tumours; and laboratory studies of cellular damage and disrupted biological pathways. The authors also point to carcinogenic compounds in the aerosol, including nicotine-derived nitrosamines, volatile organic compounds and metals released from heating coils."
+        },
+        {
+          "type": "timeline",
+          "head": "Timeline — how it unfolded",
+          "sub": "Tap an event to expand. Spacing reflects the time between events.",
+          "note": "Dates reflect publication and coverage of the assessment.",
+          "events": [
+            {
+              "date": "2026-03-30",
+              "label": "30 Mar",
+              "title": "Paper published",
+              "detail": "\"The carcinogenicity of e-cigarettes: a qualitative risk assessment\" appears in Carcinogenesis, Volume 47, Issue 1 (article bgag015)."
+            },
+            {
+              "date": "2026-03-30",
+              "label": "30 Mar",
+              "title": "Expert reactions issued",
+              "detail": "The UK Science Media Centre publishes reactions from several tobacco and biostatistics researchers, a number of whom call the conclusion an overinterpretation."
+            },
+            {
+              "date": "2026-06-19",
+              "label": "19 Jun",
+              "title": "Renewed coverage",
+              "detail": "ScienceDaily and other science outlets republish summaries of the review, driving a second round of public attention."
+            }
+          ]
+        },
+        {
+          "type": "pullquote",
+          "text": "\"Considering all the findings – from clinical monitoring, animal studies and mechanistic data – e-cigarettes are likely to cause lung cancer and oral cancer.\"",
+          "src": "— Adjunct Prof. Bernard W Stewart, UNSW Sydney, 30 March 2026"
+        },
+        {
+          "type": "p",
+          "html": "The authors are explicit about the limits of the work. \"Our assessment is qualitative and does not involve a numerical estimate of cancer risk or burden,\" the paper states; the team describes the result as the most definitive determination to date that vapers face an increased cancer risk, while noting that precise risk levels await longer-term human studies. Co-author Associate Professor Freddy Sitas argued that, with e-cigarettes introduced about 20 years ago, \"we should not wait another 80 years to decide what to do.\""
+        },
+        {
+          "type": "p",
+          "html": "Several outside experts pushed back. In reactions gathered by the UK Science Media Centre, Professor Lion Shahab of University College London said the narrative review \"makes extraordinary claims that are not borne out by the data,\" and Professor Peter Hajek of Queen Mary University of London called the conclusions \"misleading,\" stressing that \"it is the dose that makes the poison\" and that vapers receive a small fraction of the carcinogens in tobacco smoke. Dr Stephen Burgess of the MRC Biostatistics Unit said evidence linking the proposed mechanisms to a quantifiable rise in cancer risk \"is absent.\""
+        },
+        {
+          "type": "p",
+          "html": "<strong>Why it matters:</strong> E-cigarettes have been widely promoted as less harmful than smoking and as a quitting aid, and regulators including England's NHS have treated them as a lower-risk option for established smokers. A peer-reviewed judgement that vaping is likely carcinogenic, even without a measured population cancer rate, feeds directly into debates over marketing, age limits and product regulation; Australia restricted disposable vapes and limited therapeutic vapes to pharmacies in 2023."
+        },
+        {
+          "type": "p",
+          "html": "<strong>What comes next:</strong> The review does not establish how large any cancer risk is, and that gap will only close as long-running cohort studies of vapers mature. Watch for responses from cancer agencies and tobacco-control bodies, and for whether regulators cite the assessment. The relative-harm comparison with smoking — central to the experts' objections — remains contested and is the key claim still to be resolved."
+        }
+      ],
+      "sidebar_blocks": [
+        {
+          "type": "keyfacts",
+          "items": [
+            "Published in <strong>Carcinogenesis</strong>, Vol. 47, Issue 1, article bgag015, on 30 March 2026",
+            "Led by Adjunct Prof. <strong>Bernard W Stewart</strong> (UNSW Sydney) with co-authors across five universities and three hospitals",
+            "Evidence spans <strong>human biomarkers, mouse studies and laboratory mechanistic data</strong>",
+            "Conclusion is a <strong>qualitative</strong> hazard judgement — no numerical cancer-risk estimate",
+            "Cited dual-use (vaping plus smoking) figure: an additional <strong>four-fold</strong> lung-cancer risk"
+          ]
+        },
+        {
+          "type": "sources",
+          "items": [
+            {
+              "outlet": "Carcinogenesis (Oxford Academic)",
+              "title": "The carcinogenicity of e-cigarettes: a qualitative risk assessment",
+              "url": "https://academic.oup.com/carcin/article-abstract/47/1/bgag015/8555982",
+              "lean": "Science"
+            },
+            {
+              "outlet": "UNSW Sydney",
+              "title": "Vaping likely to cause cancer: new findings",
+              "url": "https://www.unsw.edu.au/newsroom/news/2026/03/vaping-likely-to-cause-cancer-new-findings",
+              "lean": "Official"
+            },
+            {
+              "outlet": "Science Media Centre",
+              "title": "Expert reaction to qualitative risk assessment on the carcinogenicity of e-cigarettes",
+              "url": "https://www.sciencemediacentre.org/expert-reaction-to-qualitative-risk-assessment-on-the-carcinogenicity-of-e-cigarettes/",
+              "lean": "Science"
+            },
+            {
+              "outlet": "ScienceDaily",
+              "title": "Major review finds vaping likely causes lung and oral cancer",
+              "url": "https://www.sciencedaily.com/releases/2026/06/260619020520.htm",
+              "lean": "Science"
+            },
+            {
+              "outlet": "ecancer",
+              "title": "Vaping likely to cause cancer: new findings",
+              "url": "https://ecancer.org/en/news/27977-vaping-likely-to-cause-cancer-new-findings",
+              "lean": "Science"
+            }
+          ]
+        },
+        {
+          "type": "factcheck",
+          "items": [
+            {
+              "status": "ok",
+              "verdict": "Confirmed",
+              "text": "The paper, journal, authorship and lead institution match across the Carcinogenesis abstract, the UNSW release and ScienceDaily."
+            },
+            {
+              "status": "ok",
+              "verdict": "Confirmed",
+              "text": "The authors themselves describe the assessment as qualitative, with no numerical estimate of cancer risk."
+            },
+            {
+              "status": "unv",
+              "verdict": "Contested",
+              "text": "Whether the evidence supports a 'likely carcinogenic' conclusion is disputed: several UK experts call it an overinterpretation."
+            },
+            {
+              "status": "unv",
+              "verdict": "Unverified",
+              "text": "The cited four-fold dual-use lung-cancer figure derives from separate epidemiological work and is not a finding of this review itself."
+            }
+          ]
+        },
+        {
+          "type": "logic",
+          "items": [
+            "<strong>1 · Hazard vs. population causation.</strong> The paper assesses whether vaping is <em>likely to cause</em> cancer (a hazard judgement from biomarkers, animal and lab data); it does <em>not</em> measure an observed cancer rate among vapers. 'Likely to cause' should not be read as a proven population-level cancer increase.",
+            "<strong>2 · Evidence types and their limits.</strong> Mouse-tumour and cell-line findings establish biological plausibility but do not fix human risk magnitude; the authors and critics agree long-term human cohort data are still maturing.",
+            "<strong>3 · Disputed strength.</strong> Independent experts (Shahab, Hajek, Burgess, Duffy) characterise the conclusion as an overinterpretation and stress dose and the smaller carcinogen exposure relative to smoking — a contested point this brief attributes rather than endorses.",
+            "<strong>4 · Conflict / framing note.</strong> Tobacco-harm debate features researchers on multiple sides; reactions are attributed to named experts and their institutions, and the relative-harm-vs-smoking comparison remains unresolved."
+          ]
+        }
+      ]
+    }
+  ],
+  "markets": {
+    "overview": {
+      "id": "markets-overview",
+      "nav_label": "Markets Overview",
+      "category": "Markets",
+      "badges": [
+        {
+          "label": "Markets & Investments",
+          "cls": "b-markets"
+        }
+      ],
+      "dateline": "22 June 2026 | The Week in Markets",
+      "headline": "Stocks steady into Monday after a week defined by a hawkish Fed and falling oil",
+      "summary": "US equities recovered after the FOMC sell-off and Brent fell about 8.5% on the week as the Strait of Hormuz reopened; the wildcard into Monday is oil.",
+      "confidence": {
+        "level": "corrob",
+        "label": "Verified",
+        "why": "— the week's index and commodity moves are reported consistently across Reuters, CNBC, TheStreet and Trading Economics"
+      },
+      "followup": false,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/NYSE127.jpg?width=1100",
+        "alt": "Trading floor of the New York Stock Exchange",
+        "caption": "US equities last traded a full session on Thursday 18 June; Friday 19 June was the Juneteenth holiday. Photo: public domain",
+        "credit": "",
+        "license": "public domain"
+      },
+      "article_blocks": [
+        {
+          "type": "p",
+          "html": "Global equity markets reopen on Monday 22 June after a week shaped by two forces: a hawkish US Federal Reserve and the de-escalation between the United States and Iran. The Federal Open Market Committee, meeting on 16–17 June in the first decision under new chair Kevin Warsh, held the federal funds target at <strong>3.50%–3.75%</strong> for a fourth consecutive meeting and dropped its prior easing bias. Updated projections showed nine of the participants who submitted forecasts penciling in at least one rate increase later in 2026."
+        },
+        {
+          "type": "p",
+          "html": "The decision drove a sharp sell-off on Wednesday 17 June, which equities then partly reversed. In the last full US session on <strong>Thursday 18 June</strong>, the S&amp;P 500 closed at <strong>7,500.58</strong>, up 1.08%; the Nasdaq Composite at <strong>26,517.93</strong>, up 1.91%; the Dow Jones Industrial Average at <strong>51,564.70</strong>, up 0.14%; and the small-cap Russell 2000 at <strong>2,979.77</strong>, up 2.12%. Friday 19 June was the Juneteenth holiday, so US cash markets did not trade."
+        },
+        {
+          "type": "p",
+          "html": "In Europe, which did trade on Friday 19 June, the FTSE 100 closed at about <strong>10,364</strong>, down 0.34%, weighed by mining and precious-metals shares. Germany's DAX ended at <strong>24,986</strong>, down 0.16%. In Asia, Japan's Nikkei 225 finished Friday at about <strong>71,250</strong>, up 0.28%."
+        },
+        {
+          "type": "p",
+          "html": "Oil set the tone for the week. Brent crude settled Friday at <strong>$80.57</strong> a barrel, up about 0.9% on the day but down roughly 8.5% over the week, as the conditional reopening of the Strait of Hormuz, the lifting of force-majeure declarations by Kuwait and the end of the US naval blockade convinced traders that the disruption which had earlier pushed prices above $120 had passed. West Texas Intermediate traded near <strong>$77.50</strong> a barrel. Spot gold eased to about <strong>$4,127</strong> an ounce, down roughly 1.5% on Friday, while US Henry Hub natural gas was around <strong>$3.10</strong> per million BTU."
+        },
+        {
+          "type": "p",
+          "html": "The live wildcard into Monday is the Strait of Hormuz. Tehran has said vessels passing through the strait will require mandatory insurance policies — currently free but potentially chargeable later — and major shipping lines have yet to fully resume transits. Talks between the US and Iran in Switzerland were abruptly postponed on Friday, leaving the path from interim agreement to lasting settlement uncertain."
+        },
+        {
+          "type": "p",
+          "html": "The week ahead is data- and earnings-heavy. FedEx reports on 23 June and Micron on 24 June; May personal-consumption-expenditures inflation and the final first-quarter GDP estimate are due on 25 June; and Nike closes the month with fiscal fourth-quarter results on 30 June."
+        }
+      ],
+      "sidebar_blocks": [
+        {
+          "type": "keyfacts",
+          "items": [
+            "S&amp;P 500 <strong>7,500.58</strong> (+1.08%) — Thu 18 Jun close",
+            "Nasdaq Composite <strong>26,517.93</strong> (+1.91%) — Thu 18 Jun close",
+            "FTSE 100 <strong>~10,364</strong> (−0.34%) — Fri 19 Jun close",
+            "Brent crude <strong>$80.57</strong> — Fri 19 Jun, down ~8.5% on the week",
+            "Fed funds target held at <strong>3.50%–3.75%</strong> (FOMC 16–17 Jun)"
+          ]
+        },
+        {
+          "type": "sources",
+          "items": [
+            {
+              "outlet": "TheStreet",
+              "title": "Stock Market Today (June 18, 2026): Russell 2000, Nasdaq rise after Fed surprise",
+              "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-18-2026",
+              "lean": ""
+            },
+            {
+              "outlet": "CNBC",
+              "title": "Oil drifts as Strait of Hormuz reopens; focus shifts to demand",
+              "url": "https://www.cnbc.com/2026/06/19/oil-prices-wti-brent-crude-us-iran-deal-strait-hormuz-shipping-recovery.html",
+              "lean": ""
+            },
+            {
+              "outlet": "Trading Economics",
+              "title": "United Kingdom & Germany stock market indices",
+              "url": "https://tradingeconomics.com/united-kingdom/stock-market",
+              "lean": ""
+            },
+            {
+              "outlet": "Federal Reserve",
+              "title": "FOMC statement, 17 June 2026",
+              "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
+              "lean": ""
+            }
+          ]
+        },
+        {
+          "type": "logic",
+          "items": [
+            "<strong>1 · Session labelling — checks pass.</strong> US levels are the Thursday 18 June close, the last full session before the Juneteenth holiday; UK, German and Japanese levels are the Friday 19 June close. None are presented as live Monday prices.",
+            "<strong>2 · Commodity timing.</strong> Brent ($80.57), WTI (~$77.50), gold (~$4,127) and natural gas (~$3.10) are Friday 19 June marks; the ~8.5% Brent weekly fall is consistent with the week's reported high-to-low move."
+          ]
+        }
+      ]
+    },
+    "movers": {
+      "dateline": "Last close · US Thu 18 Jun · UK & Europe Fri 19 Jun",
+      "headline": "Markets at a glance — biggest movers",
+      "note_html": "Figures are each market's most recent <strong>close</strong>, not live Monday prices. US cash markets were shut on Friday 19 June for the Juneteenth holiday, so US levels are the <strong>Thursday 18 June</strong> close; UK, German and Japanese levels are the <strong>Friday 19 June</strong> close.",
+      "indices": [
+        {
+          "name": "S&P 500",
+          "value": "7,500.58",
+          "change": "▲ 1.08%",
+          "direction": "up"
+        },
+        {
+          "name": "Nasdaq Comp.",
+          "value": "26,517.93",
+          "change": "▲ 1.91%",
+          "direction": "up"
+        },
+        {
+          "name": "Dow Jones",
+          "value": "51,564.70",
+          "change": "▲ 0.14%",
+          "direction": "up"
+        },
+        {
+          "name": "FTSE 100",
+          "value": "10,364",
+          "change": "▼ 0.34%",
+          "direction": "down"
+        },
+        {
+          "name": "DAX",
+          "value": "24,986",
+          "change": "▼ 0.16%",
+          "direction": "down"
+        },
+        {
+          "name": "Nikkei 225",
+          "value": "71,250",
+          "change": "▲ 0.28%",
+          "direction": "up"
+        }
+      ],
+      "groups": [
+        {
+          "section": "United States — top movers",
+          "boxes": [
+            {
+              "kind": "gain",
+              "heading": "▲ Top gainers",
+              "region_note": "US · Thu 18 Jun close",
+              "rows": [
+                {
+                  "ticker": "PENG",
+                  "name": "Penguin Solutions",
+                  "pct": "+13.95%",
+                  "direction": "up"
+                },
+                {
+                  "ticker": "MRVL",
+                  "name": "Marvell Technology",
+                  "pct": "+12.12%",
+                  "direction": "up"
+                },
+                {
+                  "ticker": "SNDK",
+                  "name": "Sandisk",
+                  "pct": "+11.10%",
+                  "direction": "up"
+                },
+                {
+                  "ticker": "INTC",
+                  "name": "Intel",
+                  "pct": "+10.50%",
+                  "direction": "up"
+                }
+              ]
+            },
+            {
+              "kind": "lose",
+              "heading": "▼ Top losers",
+              "region_note": "US · Thu 18 Jun close",
+              "rows": [
+                {
+                  "ticker": "ACN",
+                  "name": "Accenture",
+                  "pct": "−17.43%",
+                  "direction": "down"
+                },
+                {
+                  "ticker": "KR",
+                  "name": "Kroger",
+                  "pct": "−8.19%",
+                  "direction": "down"
+                }
+              ]
+            }
+          ],
+          "note_html": "US movers are the Thursday 18 June session (last full session before the holiday). Chip names led gainers as the Nasdaq rebounded; Accenture and Kroger fell after their earnings."
+        },
+        {
+          "section": "United Kingdom — FTSE 100 movers",
+          "boxes": [
+            {
+              "kind": "gain",
+              "heading": "▲ Top risers",
+              "region_note": "UK · Fri 19 Jun close",
+              "rows": [
+                {
+                  "ticker": "BP.",
+                  "name": "BP",
+                  "pct": "+2.08%",
+                  "direction": "up"
+                },
+                {
+                  "ticker": "REL",
+                  "name": "RELX",
+                  "pct": "+1.43%",
+                  "direction": "up"
+                },
+                {
+                  "ticker": "INF",
+                  "name": "Informa",
+                  "pct": "+1.40%",
+                  "direction": "up"
+                }
+              ]
+            },
+            {
+              "kind": "lose",
+              "heading": "▼ Top fallers",
+              "region_note": "UK · Fri 19 Jun close",
+              "rows": [
+                {
+                  "ticker": "ANTO",
+                  "name": "Antofagasta",
+                  "pct": "−6.16%",
+                  "direction": "down"
+                },
+                {
+                  "ticker": "FRES",
+                  "name": "Fresnillo",
+                  "pct": "−5.36%",
+                  "direction": "down"
+                },
+                {
+                  "ticker": "UTG",
+                  "name": "Unite Group",
+                  "pct": "−4.23%",
+                  "direction": "down"
+                }
+              ]
+            }
+          ],
+          "note_html": "FTSE 100 risers and fallers are the Friday 19 June close. Miners and precious-metals producers led the fallers as gold eased."
+        },
+        {
+          "section": "Europe — index level",
+          "boxes": [
+            {
+              "kind": "lose",
+              "heading": "▼ DAX index",
+              "region_note": "Germany · Fri 19 Jun close",
+              "rows": [
+                {
+                  "ticker": "GDAXI",
+                  "name": "DAX 40 index",
+                  "pct": "−0.16%",
+                  "direction": "down"
+                }
+              ]
+            }
+          ],
+          "note_html": "For continental Europe we show the DAX index level only (24,986; −0.16% on Friday 19 June), led lower by Volkswagen, Adidas and Beiersdorf with Rheinmetall and Bayer the strongest names per Trading Economics. We are not publishing a full single-stock gainers/losers strip for other European exchanges where individual moves could not be independently corroborated."
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "TheStreet",
+          "title": "Stock Market Today (June 18, 2026) — US movers",
+          "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-18-2026",
+          "lean": ""
+        },
+        {
+          "outlet": "London Stock Exchange",
+          "title": "FTSE 100 risers and fallers",
+          "url": "https://www.londonstockexchange.com/indices/ftse-100/constituents/risers-and-fallers-and-volume-leaders",
+          "lean": ""
+        },
+        {
+          "outlet": "Trading Economics",
+          "title": "Germany & Japan stock market indices",
+          "url": "https://tradingeconomics.com/germany/stock-market",
+          "lean": ""
+        }
+      ]
+    },
+    "calendar": {
+      "dateline": "Economic calendar · June 2026",
+      "headline": "June 2026 — earnings, IPOs, dividends & data",
+      "note_html": "Passed items are marked; upcoming items are highlighted. Earnings dates are issuer-confirmed where available.",
+      "days": [
+        {
+          "day": "10",
+          "month": "Jun",
+          "dow": "Wed",
+          "state": "past",
+          "items": [
+            {
+              "chip": "data",
+              "chip_label": "Data",
+              "event": "US CPI (May)",
+              "meta": "Headline +4.2% y/y; core +2.9%.",
+              "done": "✓ released"
+            }
+          ]
+        },
+        {
+          "day": "12",
+          "month": "Jun",
+          "dow": "Fri",
+          "state": "past",
+          "items": [
+            {
+              "chip": "ipo",
+              "chip_label": "IPO",
+              "event": "SpaceX (SPCX) debut",
+              "meta": "Nasdaq listing; closed +19% on day one.",
+              "done": "✓ priced"
+            }
+          ]
+        },
+        {
+          "day": "16–17",
+          "month": "Jun",
+          "dow": "Tue–Wed",
+          "state": "past",
+          "items": [
+            {
+              "chip": "bank",
+              "chip_label": "Central bank",
+              "event": "Federal Reserve FOMC",
+              "meta": "Held 3.50%–3.75%; easing bias dropped (chair Warsh).",
+              "done": "✓ held"
+            }
+          ]
+        },
+        {
+          "day": "23",
+          "month": "Jun",
+          "dow": "Tue",
+          "state": "next",
+          "items": [
+            {
+              "chip": "earn",
+              "chip_label": "Earnings",
+              "event": "FedEx (FDX) — Q4 FY26",
+              "meta": "After the close.",
+              "done": ""
+            }
+          ]
+        },
+        {
+          "day": "24",
+          "month": "Jun",
+          "dow": "Wed",
+          "state": "next",
+          "items": [
+            {
+              "chip": "earn",
+              "chip_label": "Earnings",
+              "event": "Micron (MU) — Q3 FY26",
+              "meta": "After the close (~4:30pm ET).",
+              "done": ""
+            }
+          ]
+        },
+        {
+          "day": "25",
+          "month": "Jun",
+          "dow": "Thu",
+          "state": "next",
+          "items": [
+            {
+              "chip": "data",
+              "chip_label": "Data",
+              "event": "US PCE (May) & final Q1 GDP",
+              "meta": "Both at 8:30am ET.",
+              "done": ""
+            }
+          ]
+        },
+        {
+          "day": "30",
+          "month": "Jun",
+          "dow": "Tue",
+          "state": "next",
+          "items": [
+            {
+              "chip": "earn",
+              "chip_label": "Earnings",
+              "event": "Nike (NKE) — Q4 FY26",
+              "meta": "After the close.",
+              "done": ""
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "outlet": "Trading Economics",
+          "title": "United States economic calendar",
+          "url": "https://tradingeconomics.com/united-states/calendar",
+          "lean": ""
+        },
+        {
+          "outlet": "Micron Technology",
+          "title": "Q3 FY2026 earnings date — 24 June 2026",
+          "url": "https://investors.micron.com/",
+          "lean": ""
+        },
+        {
+          "outlet": "NIKE, Inc.",
+          "title": "Q4 FY2026 earnings — 30 June 2026",
+          "url": "https://www.businesswire.com/news/home/20260528240663/en/NIKE-Inc.-Announces-Fourth-Quarter-Fiscal-2026-Earnings-and-Conference-Call",
+          "lean": ""
+        }
+      ]
+    }
+  },
+  "archive": [
+    {
+      "date": "22 Jun 2026",
+      "edition": "22 June 2026",
+      "cat": "Politics",
+      "title": "US and Iran open first round of technical talks in Switzerland as Tehran sets Hormuz insurance rule",
+      "summary": "US and Iranian delegations held a first round of technical-level talks in Switzerland under a 60-day window, as Iran imposed mandatory insurance on ships transiting the Strait of Hormuz and oil posted its sharpest weekly fall in months.",
+      "panel": "iran"
+    },
+    {
+      "date": "22 Jun 2026",
+      "edition": "22 June 2026",
+      "cat": "Politics",
+      "title": "Poland strips Zelensky of its highest honour over UPA military unit; Ukraine returns the award",
+      "summary": "Polish President Nawrocki revoked Ukrainian President Zelensky's Order of the White Eagle after a Ukrainian unit was named for the WWII-era UPA; Zelensky and several officials returned Polish honours.",
+      "panel": "poland"
+    },
+    {
+      "date": "22 Jun 2026",
+      "edition": "22 June 2026",
+      "cat": "Health",
+      "title": "WHO warns of “missing” Ebola cases in DR Congo as official tallies diverge across agencies",
+      "summary": "A month into the Bundibugyo-virus outbreak, the WHO says it is still missing cases amid intense community transmission, while WHO, the CDC and the ECDC publish materially different case counts.",
+      "panel": "ebola"
+    },
+    {
+      "date": "22 Jun 2026",
+      "edition": "22 June 2026",
+      "cat": "Business",
+      "title": "Japan proposes G7 jointly stockpile critical minerals; leaders set a 60% cap on reliance on any single supplier",
+      "summary": "Prime Minister Sanae Takaichi pitched a G7 \"Joint Stockpiling Cooperation Initiative\" at the Evian summit, where leaders agreed to cut dependence on any single non-G7 supplier of rare earths to below 60% by 2030.",
+      "panel": "rareearth"
+    },
+    {
+      "date": "22 Jun 2026",
+      "edition": "22 June 2026",
+      "cat": "Science",
+      "title": "Aarhus researchers report intense UV light can break down PFAS without added chemicals",
+      "summary": "A lab study at Aarhus University finds that hydrogen radicals released from water by short-wavelength UV light can strip fluorine from PFAS “forever chemicals,” though degradation is partial and slow.",
+      "panel": "pfas"
+    },
+    {
+      "date": "22 Jun 2026",
+      "edition": "22 June 2026",
+      "cat": "Health",
+      "title": "Review concludes nicotine vapes are likely to cause lung and oral cancer",
+      "summary": "A qualitative risk assessment led by UNSW Sydney in the journal Carcinogenesis judges nicotine e-cigarettes likely carcinogenic, while several outside experts call the conclusion an overinterpretation of the evidence.",
+      "panel": "vapes"
+    },
+    {
+      "date": "22 Jun 2026",
+      "edition": "22 June 2026",
+      "cat": "Markets",
+      "title": "Stocks steady into Monday after a week defined by a hawkish Fed and falling oil",
+      "summary": "US equities recovered after the FOMC sell-off and Brent fell about 8.5% on the week as the Strait of Hormuz reopened; the wildcard into Monday is oil.",
+      "panel": "markets"
+    }
+  ]
+}
