@@ -1,75 +1,138 @@
 [
 {
+"date": "23 Jun 2026",
+"edition": "23 June 2026",
+"cat": "Politics",
+"title": "US and Iran give conflicting accounts of nuclear-inspector access after first Switzerland talks",
+"summary": "US Vice-President JD Vance said Iran agreed to readmit IAEA inspectors after the first US–Iran talks in Switzerland; Iran's foreign ministry said no visit to its war-damaged nuclear sites is scheduled.",
+"panel": "iran"
+},
+{
+"date": "23 Jun 2026",
+"edition": "23 June 2026",
+"cat": "Business",
+"title": "Alan Greenspan, US Federal Reserve chair from 1987 to 2006, dies at 100",
+"summary": "Greenspan, who led the Fed for more than 18 years across four presidencies, died on 22 June of complications from Parkinson's disease.",
+"panel": "greenspan"
+},
+{
+"date": "23 Jun 2026",
+"edition": "23 June 2026",
+"cat": "Technology",
+"title": "Memory-chip shares lead a global equity sell-off; Kospi closes about 10% lower",
+"summary": "South Korea's Kospi fell 9.99% and triggered circuit breakers as Samsung and SK Hynix each dropped about 12%; the US Nasdaq closed 2.21% lower.",
+"panel": "chips"
+},
+{
+"date": "23 Jun 2026",
+"edition": "23 June 2026",
+"cat": "Politics",
+"title": "NATO heads to Ankara summit on 5% spending pledge as Czech PM excludes President Pavel from delegation",
+"summary": "Ahead of the 7–8 July summit, PM Andrej Babiš left President Petr Pavel off the Czech delegation; Pavel asked the Constitutional Court to rule on who represents the state abroad.",
+"panel": "nato"
+},
+{
+"date": "23 Jun 2026",
+"edition": "23 June 2026",
+"cat": "Politics",
+"title": "Albania protests over a Kushner-linked Adriatic resort enter a fourth week",
+"summary": "Demonstrators in Tirana have marched for more than three weeks against a resort planned for the protected Vjosa-Narta coast and Sazan island, demanding PM Edi Rama's resignation.",
+"panel": "albania"
+},
+{
+"date": "23 Jun 2026",
+"edition": "23 June 2026",
+"cat": "Climate",
+"title": "UN chief ties climate and energy crises to fossil fuels in London address",
+"summary": "António Guterres used a London Climate Action Week address to call for a faster renewables transition, AI data-centre emissions disclosure and methane cuts.",
+"panel": "unclimate"
+},
+{
+"date": "23 Jun 2026",
+"edition": "23 June 2026",
+"cat": "Sport",
+"title": "Messi becomes the World Cup's all-time leading scorer with 18 goals",
+"summary": "Lionel Messi scored both goals in Argentina's 2-0 win over Austria, passing Miroslav Klose's men's record and Marta's overall mark.",
+"panel": "messi"
+},
+{
+"date": "23 Jun 2026",
+"edition": "23 June 2026",
+"cat": "Science",
+"title": "Astronomers report the earliest known 'flickering' quasar, 850 million years after the Big Bang",
+"summary": "An MIT-led team says brightness changes in quasar J0439+1634 point to a settled accretion disk, suggesting some black holes matured very early.",
+"panel": "quasar"
+},
+{
+"date": "23 Jun 2026",
+"edition": "23 June 2026",
+"cat": "Markets",
+"title": "A chip-led sell-off; oil eases on Iran supply, gold slips as Fed-hike bets firm",
+"summary": "Wall Street and Asia fell on a memory-chip rout; Brent settled near $75.67 as Washington granted Iran a 60-day oil licence, and gold dropped 1.8%.",
+"panel": "markets"
+},
+{
 "date": "22 Jun 2026",
 "edition": "22 June 2026",
 "cat": "Politics",
 "title": "Starmer announces resignation as UK prime minister; Labour to choose a successor by 1 September",
-"summary": "Keir Starmer said on Monday he will step down as Labour leader and prime minister, triggering a leadership process with nominations opening on 9 July; Andy Burnham is the reported front-runner. Sterling held lower and gilt yields edged up.",
-"panel": "starmer"
+"summary": "Keir Starmer said on Monday he will step down as Labour leader and prime minister, triggering a leadership process with nominations opening on 9 July; Andy Burnham is the reported front-runner. Sterling held lower and gilt yields edged up."
 },
 {
 "date": "22 Jun 2026",
 "edition": "22 June 2026",
 "cat": "Politics",
 "title": "US and Iran conclude first Switzerland session; mediators report ‘encouraging progress’ on sanctions and Hormuz",
-"summary": "US and Iranian delegations wrapped up the first session of talks in Switzerland, with mediators Qatar and Pakistan reporting ‘encouraging progress’; Iranian officials said draft oil-sanctions waivers and the release of frozen assets were discussed, and technical teams will continue this week.",
-"panel": "iran"
+"summary": "US and Iranian delegations wrapped up the first session of talks in Switzerland, with mediators Qatar and Pakistan reporting ‘encouraging progress’; Iranian officials said draft oil-sanctions waivers and the release of frozen assets were discussed, and technical teams will continue this week."
 },
 {
 "date": "22 Jun 2026",
 "edition": "22 June 2026",
 "cat": "Politics",
 "title": "Italy's Meloni rejects Trump's ‘fabricated’ G7 account; foreign minister Tajani cancels US trip",
-"summary": "Italian Prime Minister Giorgia Meloni called ‘completely fabricated’ a claim by President Trump that she had begged him for a photo at the G7 summit; Foreign Minister Antonio Tajani cancelled a US visit, in a public rift between the two governments.",
-"panel": "italy"
+"summary": "Italian Prime Minister Giorgia Meloni called ‘completely fabricated’ a claim by President Trump that she had begged him for a photo at the G7 summit; Foreign Minister Antonio Tajani cancelled a US visit, in a public rift between the two governments."
 },
 {
 "date": "22 Jun 2026",
 "edition": "22 June 2026",
 "cat": "Politics",
 "title": "Poland strips Zelensky of its highest honour over UPA military unit; Ukraine returns the award",
-"summary": "Polish President Nawrocki revoked Ukrainian President Zelensky's Order of the White Eagle after a Ukrainian unit was named for the WWII-era UPA; Zelensky and several officials returned Polish honours.",
-"panel": "poland"
+"summary": "Polish President Nawrocki revoked Ukrainian President Zelensky's Order of the White Eagle after a Ukrainian unit was named for the WWII-era UPA; Zelensky and several officials returned Polish honours."
 },
 {
 "date": "22 Jun 2026",
 "edition": "22 June 2026",
 "cat": "Health",
 "title": "WHO warns of “missing” Ebola cases in DR Congo as official tallies diverge across agencies",
-"summary": "A month into the Bundibugyo-virus outbreak, the WHO says it is still missing cases amid intense community transmission, while WHO, the CDC and the ECDC publish materially different case counts.",
-"panel": "ebola"
+"summary": "A month into the Bundibugyo-virus outbreak, the WHO says it is still missing cases amid intense community transmission, while WHO, the CDC and the ECDC publish materially different case counts."
 },
 {
 "date": "22 Jun 2026",
 "edition": "22 June 2026",
 "cat": "Business",
 "title": "Japan proposes G7 jointly stockpile critical minerals; leaders set a 60% cap on reliance on any single supplier",
-"summary": "Prime Minister Sanae Takaichi pitched a G7 \"Joint Stockpiling Cooperation Initiative\" at the Evian summit, where leaders agreed to cut dependence on any single non-G7 supplier of rare earths to below 60% by 2030.",
-"panel": "rareearth"
+"summary": "Prime Minister Sanae Takaichi pitched a G7 \"Joint Stockpiling Cooperation Initiative\" at the Evian summit, where leaders agreed to cut dependence on any single non-G7 supplier of rare earths to below 60% by 2030."
 },
 {
 "date": "22 Jun 2026",
 "edition": "22 June 2026",
 "cat": "Science",
 "title": "Aarhus researchers report intense UV light can break down PFAS without added chemicals",
-"summary": "A lab study at Aarhus University finds that hydrogen radicals released from water by short-wavelength UV light can strip fluorine from PFAS “forever chemicals,” though degradation is partial and slow.",
-"panel": "pfas"
+"summary": "A lab study at Aarhus University finds that hydrogen radicals released from water by short-wavelength UV light can strip fluorine from PFAS “forever chemicals,” though degradation is partial and slow."
 },
 {
 "date": "22 Jun 2026",
 "edition": "22 June 2026",
 "cat": "Health",
 "title": "Review concludes nicotine vapes are likely to cause lung and oral cancer",
-"summary": "A qualitative risk assessment led by UNSW Sydney in the journal Carcinogenesis judges nicotine e-cigarettes likely carcinogenic, while several outside experts call the conclusion an overinterpretation of the evidence.",
-"panel": "vapes"
+"summary": "A qualitative risk assessment led by UNSW Sydney in the journal Carcinogenesis judges nicotine e-cigarettes likely carcinogenic, while several outside experts call the conclusion an overinterpretation of the evidence."
 },
 {
 "date": "22 Jun 2026",
 "edition": "22 June 2026",
 "cat": "Markets",
 "title": "Stocks mixed as Starmer resigns and US–Iran talks conclude; oil slips below $79",
-"summary": "European shares were modestly higher and the pound held lower after UK PM Keir Starmer announced his resignation, while US futures slipped on renewed Iran threats; Brent fell below $79 as the first Switzerland session ended with ‘encouraging progress.’",
-"panel": "markets"
+"summary": "European shares were modestly higher and the pound held lower after UK PM Keir Starmer announced his resignation, while US futures slipped on renewed Iran threats; Brent fell below $79 as the first Switzerland session ended with ‘encouraging progress.’"
 },
 {
 "date": "21 Jun 2026",

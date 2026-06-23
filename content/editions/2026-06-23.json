@@ -1,0 +1,968 @@
+{
+  "meta": {
+    "date_iso": "2026-06-23",
+    "date_display": "Tuesday, 23 June 2026",
+    "edition_label": "23 June 2026",
+    "compile_time": "23:20 BST",
+    "location": "London",
+    "kicker": "Investigative Global Edition"
+  },
+  "weather": {
+    "masthead": {
+      "loc": "Guildford, UK",
+      "temp": "34°C",
+      "cond": "Hot, sunny · amber heat",
+      "low": "↓ Low 20°C",
+      "rain": "Rain 5%",
+      "gusts": "Gusts 8 mph"
+    },
+    "current_temp": "23°C",
+    "current_cond": "Clear and hot",
+    "current_meta": "Feels like 26°C · Low 20°C · Rain <5% · Gusts 8 mph · Humidity 78%",
+    "warnings": [
+      {
+        "sev": "amber",
+        "sev_label": "Amber",
+        "title": "Extreme heat — south-east England",
+        "body_html": "Met Office <strong>Amber</strong> extreme-heat warning in force until <strong>23:59 Tue 23 Jun</strong>, covering Surrey. A Met Office <strong>Red</strong> warning and UKHSA red alert apply Wed 24–Thu 25 Jun."
+      },
+      {
+        "sev": "amber",
+        "sev_label": "Amber",
+        "title": "UKHSA heat-health alert — South East",
+        "body_html": "UKHSA <strong>Amber</strong> heat-health alert for the South East (incl. Surrey), <strong>11:00 Mon 22 Jun → 23:00 Fri 26 Jun</strong>."
+      }
+    ],
+    "hourly_temp": [21, 21, 20, 20, 20, 21, 22, 24, 26, 28, 30, 31, 33, 34, 34, 35, 35, 34, 34, 33, 31, 29, 27, 25],
+    "hourly_precip": [2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 4, 4, 4, 3, 3, 3, 3],
+    "days": [
+      {"d": "Tue 23", "ic": "☀️", "cond": "Hot, sunny", "hi": 34, "lo": 20, "feels": 36, "wind": 8, "gust": 8, "hum": 78, "uv": 7, "pc": 5, "mm": 0.0, "sr": "04:48", "ss": "21:22", "warn": true, "tag": "Amber heat", "sum": "Very hot and humid with unbroken sunshine; amber heat warning in force until midnight."},
+      {"d": "Wed 24", "ic": "☀️", "cond": "Sunny, extreme heat", "hi": 36, "lo": 19, "feels": 37, "wind": 11, "gust": 18, "hum": 60, "uv": 7, "pc": 5, "mm": 0.0, "sr": "04:48", "ss": "21:22", "warn": true, "tag": "Red heat", "sum": "Exceptional heat under a red warning; the Met Office says June records may break — stay out of midday sun."},
+      {"d": "Thu 25", "ic": "☀️", "cond": "Sunny, extreme heat", "hi": 38, "lo": 21, "feels": 38, "wind": 13, "gust": 26, "hum": 55, "uv": 7, "pc": 5, "mm": 0.0, "sr": "04:48", "ss": "21:22", "warn": true, "tag": "Red heat", "sum": "Peak of the heat near 38°C; red warning in force, with disruption to transport and health services possible."},
+      {"d": "Fri 26", "ic": "⛅", "cond": "Hot, sunny spells", "hi": 35, "lo": 17, "feels": 34, "wind": 13, "gust": 26, "hum": 55, "uv": 7, "pc": 30, "mm": 0.4, "sr": "04:49", "ss": "21:22", "warn": true, "tag": "30% rain", "sum": "Still very hot with building cloud and a small risk of an afternoon thundery shower."},
+      {"d": "Sat 27", "ic": "🌦️", "cond": "Warm, scattered showers", "hi": 31, "lo": 18, "feels": 30, "wind": 12, "gust": 22, "hum": 60, "uv": 6, "pc": 40, "mm": 1.5, "sr": "04:49", "ss": "21:22", "warn": false, "tag": "40% rain", "sum": "Hot start, then heat eases as showers and possible thunderstorms develop later."},
+      {"d": "Sun 28", "ic": "⛅", "cond": "Fresher, sunny intervals", "hi": 25, "lo": 13, "feels": 24, "wind": 14, "gust": 27, "hum": 58, "uv": 6, "pc": 20, "mm": 0.3, "sr": "04:50", "ss": "21:21", "warn": false, "tag": "20% rain", "sum": "Noticeably fresher and more comfortable, with sunny intervals and a brisk breeze."},
+      {"d": "Mon 29", "ic": "⛅", "cond": "Sunny intervals", "hi": 23, "lo": 15, "feels": 23, "wind": 10, "gust": 18, "hum": 60, "uv": 6, "pc": 5, "mm": 0.0, "sr": "04:50", "ss": "21:21", "warn": false, "tag": "Settled", "sum": "Pleasant and settled, with sunny intervals and near-average late-June warmth."}
+    ],
+    "sources": [
+      {"outlet": "Met Office", "title": "Guildford (Surrey) forecast", "url": "https://weather.metoffice.gov.uk/forecast/gcpe7p302", "lean": ""},
+      {"outlet": "Met Office", "title": "Red extreme-heat warning issued as June records forecast to break", "url": "https://www.metoffice.gov.uk/about-us/news-and-media/media-centre/weather-and-climate-news/2026/red-extreme-heat-warning-issued-with-june-temperature-records-forecast-to-break", "lean": ""},
+      {"outlet": "UKHSA / GOV.UK", "title": "UKHSA issues amber and yellow heat-health alerts across England", "url": "https://www.gov.uk/government/news/ukhsa-issues-amber-and-yellow-heat-health-alerts-across-england", "lean": ""}
+    ]
+  },
+  "headlines": {
+    "hero": {
+      "target": "iran",
+      "badge": {"label": "Politics", "cls": "b-politics"},
+      "cat_cls": "cat-politics",
+      "emoji": "☢️",
+      "headline": "US and Iran give conflicting accounts of nuclear-inspector access after first Switzerland talks",
+      "summary": "US Vice-President JD Vance said Iran agreed to readmit IAEA inspectors after the first US–Iran talks in Switzerland; Iran's foreign ministry said no visit to its war-damaged nuclear sites is scheduled.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vienna_International_Center_-_4687515089.jpg?width=1100",
+      "lead": true
+    },
+    "cards": [
+      {
+        "target": "greenspan",
+        "badge": {"label": "Business", "cls": "b-business"},
+        "cat_cls": "cat-business",
+        "emoji": "🏦",
+        "headline": "Alan Greenspan, US Federal Reserve chair from 1987 to 2006, dies at 100",
+        "summary": "Greenspan, who led the Fed for more than 18 years across four presidencies, died on 22 June of complications from Parkinson's disease.",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alan_Greenspan_color_photo_portrait.jpg?width=1100",
+        "lead": false
+      },
+      {
+        "target": "chips",
+        "badge": {"label": "Technology", "cls": "b-tech"},
+        "cat_cls": "cat-technology",
+        "emoji": "📉",
+        "headline": "Memory-chip shares lead a global equity sell-off; Kospi closes about 10% lower",
+        "summary": "South Korea's Kospi fell 9.99% and triggered circuit breakers as Samsung and SK Hynix each dropped about 12%; the US Nasdaq closed 2.21% lower.",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Silicon_wafer.jpg?width=1100",
+        "lead": false
+      },
+      {
+        "target": "nato",
+        "badge": {"label": "Politics", "cls": "b-politics"},
+        "cat_cls": "cat-politics",
+        "emoji": "🎖",
+        "headline": "NATO heads to Ankara summit on 5% pledge as Czech PM excludes President Pavel from delegation",
+        "summary": "Ahead of the 7–8 July summit, PM Andrej Babiš left President Petr Pavel off the Czech delegation; Pavel asked the Constitutional Court to rule on who represents the state abroad.",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ankara_Skyline.jpg?width=1100",
+        "lead": false
+      },
+      {
+        "target": "albania",
+        "badge": {"label": "Politics", "cls": "b-politics"},
+        "cat_cls": "cat-politics",
+        "emoji": "🦩",
+        "headline": "Albania protests over a Kushner-linked Adriatic resort enter a fourth week",
+        "summary": "Demonstrators in Tirana have marched for more than three weeks against a resort planned for the protected Vjosa-Narta coast and Sazan island, demanding PM Edi Rama's resignation.",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Skanderbeg_square_from_the_Municipality_building_rooftop.jpeg?width=1100",
+        "lead": false
+      },
+      {
+        "target": "unclimate",
+        "badge": {"label": "Climate", "cls": "b-climate"},
+        "cat_cls": "cat-climate",
+        "emoji": "🌍",
+        "headline": "UN chief ties climate and energy crises to fossil fuels in London address",
+        "summary": "António Guterres used a London Climate Action Week address to call for a faster renewables transition, AI data-centre emissions disclosure and methane cuts.",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/UN_General_Assembly_hall.jpg?width=1100",
+        "lead": false
+      },
+      {
+        "target": "messi",
+        "badge": {"label": "Sport", "cls": "b-sport"},
+        "cat_cls": "cat-sport",
+        "emoji": "⚽",
+        "headline": "Messi becomes the World Cup's all-time leading scorer with 18 goals",
+        "summary": "Lionel Messi scored both goals in Argentina's 2-0 win over Austria, passing Miroslav Klose's men's record and Marta's overall mark.",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lionel_Messi_20180626.jpg?width=1100",
+        "lead": false
+      },
+      {
+        "target": "quasar",
+        "badge": {"label": "Science", "cls": "b-science"},
+        "cat_cls": "cat-science",
+        "emoji": "🔭",
+        "headline": "Astronomers report the earliest known 'flickering' quasar, 850 million years after the Big Bang",
+        "summary": "An MIT-led team says brightness changes in quasar J0439+1634 point to a settled accretion disk, suggesting some black holes matured very early.",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Artist's_rendering_ULAS_J1120+0641.jpg?width=1100",
+        "lead": false
+      },
+      {
+        "target": "markets",
+        "badge": {"label": "Markets & Investments", "cls": "b-markets"},
+        "cat_cls": "cat-markets",
+        "emoji": "💹",
+        "headline": "A chip-led sell-off; oil eases on Iran supply, gold slips as Fed-hike bets firm",
+        "summary": "Wall Street and Asia fell on a memory-chip rout; Brent settled near $75.67 as Washington granted Iran a 60-day oil licence, and gold dropped 1.8%.",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/New_York_Stock_Exchange_August_2017_04.jpg?width=1100",
+        "lead": false
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "iran",
+      "nav_label": "US–Iran Inspector Dispute",
+      "category": "Politics",
+      "badges": [
+        {"label": "Politics", "cls": "b-politics"},
+        {"label": "Conflict", "cls": "b-conflict"}
+      ],
+      "dateline": "23 June 2026 | Bürgenstock, Tehran & Washington",
+      "headline": "US and Iran give conflicting accounts of nuclear-inspector access after first Switzerland talks",
+      "summary": "US Vice-President JD Vance said Iran agreed to readmit IAEA inspectors after the first US–Iran talks in Switzerland; Iran's foreign ministry said no visit to its war-damaged nuclear sites is scheduled.",
+      "confidence": {"level": "disputed", "label": "Disputed", "why": "— US and Iranian officials publicly conflict on whether IAEA inspectors will reach the war-damaged nuclear sites; the scope of any agreement is unresolved."},
+      "followup": true,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vienna_International_Center_-_4687515089.jpg?width=1100",
+        "alt": "The Vienna International Centre, headquarters of the International Atomic Energy Agency",
+        "caption": "The IAEA is headquartered at the Vienna International Centre. Photo: IAEA Imagebank via Wikimedia Commons · CC BY-SA 2.0",
+        "credit": "IAEA Imagebank via Wikimedia Commons",
+        "license": "CC BY-SA 2.0"
+      },
+      "inline_image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bürgenstock.jpg?width=600",
+        "alt": "The Bürgenstock resort above Lake Lucerne, Switzerland",
+        "caption": "The Bürgenstock resort near Lucerne, venue of the 21–22 June 2026 US–Iran talks. Photo: Wikimedia Commons · CC BY-SA",
+        "credit": "Wikimedia Commons",
+        "license": "CC BY-SA"
+      },
+      "article_blocks": [
+        {"type": "p", "html": "The United States and Iran offered conflicting accounts of nuclear-inspector access following the first round of direct talks aimed at ending the war between the two countries, held on 21–22 June 2026 at the Bürgenstock resort near Lucerne, Switzerland."},
+        {"type": "p", "html": "US Vice-President JD Vance told reporters at the Bürgenstock on 22 June that \"the Iranians have agreed to invite IAEA inspectors back into their country,\" describing it as \"a major milestone for the American people and the first step in permanently denuclearising or permanently ending a nuclear weapons programme in Iran.\" Vance said coordination between Iran, the United States and the International Atomic Energy Agency could take place \"this week, maybe as soon as today.\""},
+        {"type": "p", "html": "Iran's foreign ministry spokesman Esmail Baghaei told a news conference in Tehran on 23 June that no visit had been scheduled for IAEA inspectors to examine the nuclear sites struck by the United States, and said there was no protocol for such inspections. Baghaei said Iran had neither held a meeting with IAEA chief Rafael Grossi in Switzerland nor planned for the agency to inspect its damaged facilities, while inspections of sites such as the Bushehr power plant would continue."},
+        {"type": "p", "html": "The talks, mediated by Qatar and Pakistan, produced what the mediators called \"encouraging progress\" and a roadmap toward a final deal within 60 days. Negotiators created a high-level committee for political oversight and working groups on Iran's nuclear programme, sanctions, and a monitoring and dispute-resolution mechanism. Both sides said substantial differences remained on nuclear issues, sanctions and regional security."},
+        {"type": "timeline", "head": "Timeline — how it unfolded", "sub": "Tap an event to expand. Spacing reflects the time between events.", "note": "", "events": [
+          {"date": "2026-02-28", "label": "28 Feb", "title": "War begins; IAEA verification halts", "detail": "Strikes on Iran open the war; the IAEA stops NPT-safeguards verification activities inside Iran."},
+          {"date": "2026-06-17", "label": "17 Jun", "title": "Memorandum signed", "detail": "Trump and Iranian President Masoud Pezeshkian sign a memorandum of understanding to end the war, around a G7 dinner."},
+          {"date": "2026-06-20", "label": "20 Jun", "title": "Hormuz closure claim", "detail": "Iran announces a closure of the Strait of Hormuz, citing Israeli actions; the US military disputes the claim."},
+          {"date": "2026-06-22", "label": "22 Jun", "title": "Talks conclude, roadmap set", "detail": "The first round ends at the Bürgenstock with a roadmap to a final deal within 60 days; Vance says Iran agreed to readmit IAEA inspectors."},
+          {"date": "2026-06-23", "label": "23 Jun", "title": "Iran disputes the claim", "detail": "Baghaei says no IAEA visit is scheduled for the bombed sites and no Grossi meeting took place."}
+        ]},
+        {"type": "pullquote", "text": "The Iranians have agreed to invite IAEA inspectors back into their country.", "src": "— JD Vance, US Vice-President, 22 June 2026"},
+        {"type": "p", "html": "Negotiators also established a communication line intended to prevent incidents in the Strait of Hormuz and to support a ceasefire in southern Lebanon. The IAEA has said it has been unable to verify Iran's stock of highly enriched uranium since 28 February 2026; Grossi estimated in April that about 440 pounds of uranium enriched to roughly 60% purity was likely still at the Isfahan complex."},
+        {"type": "framing", "overview": "<strong>Political-bias overview:</strong> coverage converges on the talks and the 60-day roadmap but diverges on whether the inspector agreement is real.", "bias": [
+          {"lean": "Left", "pct": 30, "color": "#3b82c4"},
+          {"lean": "Centre", "pct": 40, "color": "#8b909c"},
+          {"lean": "Right", "pct": 30, "color": "#e0414f"}
+        ], "caption": "Share of the gathered sources by lean — an approximate read, not a measure of the entire press.", "ratings_html": "<strong>Source leans:</strong> Wire/Centre (NPR, CNBC, Axios) · Lean Left (Al Jazeera) · Lean Right (Times of Israel, Fox News).", "lines": [
+          "<span class=\"lean\">US mainstream:</span> frames the talks as progress toward ending the war while noting that Iran's denial leaves the inspector claim unconfirmed.",
+          "<span class=\"lean\">Iran- and Israel-attentive:</span> foregrounds Baghaei's statement that no inspections of the bombed sites are scheduled, presenting it as a direct contradiction of Vance."
+        ]},
+        {"type": "p", "html": "<strong>Why it matters:</strong> access for IAEA inspectors is the central mechanism by which governments would verify any limits on Iran's nuclear programme; a public disagreement over whether inspectors will reach the bombed sites leaves the announced \"milestone\" unresolved at the outset of the 60-day process."},
+        {"type": "p", "html": "<strong>What comes next:</strong> technical working groups are scheduled to continue over 60 days toward a final agreement, with the IAEA's role, the scope of any site visits and the status of the Strait of Hormuz among the unresolved points. President Donald Trump issued further warnings to Iran during the talks, and fighting in Lebanon continued — factors both sides cited in describing the process as fragile."}
+      ],
+      "sidebar_blocks": [
+        {"type": "keyfacts", "items": [
+          "Talks ran <strong>21–22 June 2026</strong> at the Bürgenstock near Lucerne, mediated by Qatar and Pakistan.",
+          "The parties agreed a roadmap toward a final deal within <strong>60 days</strong>.",
+          "Negotiators created a high-level committee plus <strong>3</strong> working groups: nuclear, sanctions, and monitoring/dispute-resolution.",
+          "The IAEA has been unable to verify Iran's enriched-uranium stock since <strong>28 February 2026</strong>.",
+          "Grossi estimated about <strong>440 pounds</strong> of uranium enriched to roughly <strong>60%</strong> likely remains at Isfahan."
+        ]},
+        {"type": "sources", "items": [
+          {"outlet": "NPR", "title": "A US–Iran dispute over nuclear inspections clouds work to finalize a war-ending deal", "url": "https://www.npr.org/2026/06/23/nx-s1-5867322/us-iran-finalize-war-ending-deal", "lean": "Centre"},
+          {"outlet": "Al Jazeera", "title": "Key outcomes of Iran–US talks in Switzerland; what next?", "url": "https://www.aljazeera.com/news/2026/6/22/what-are-the-key-outcomes-of-the-iran-us-talks-in-switzerland-what-next", "lean": "Lean Left"},
+          {"outlet": "CNBC", "title": "US, Iran agree on roadmap for final deal and plan to end operations in Lebanon", "url": "https://www.cnbc.com/2026/06/22/us-iran-roadmap-final-deal-switzerland-talks-lebanon-deconfliction.html", "lean": "Centre"},
+          {"outlet": "The Times of Israel", "title": "Contradicting Vance, Iran says no plans for IAEA inspections of damaged nuclear sites", "url": "https://www.timesofisrael.com/contradicting-vance-iran-says-no-plans-for-iaea-inspections-of-damaged-nuclear-sites/", "lean": "Lean Right"},
+          {"outlet": "Axios", "title": "Iran to allow UN nuclear inspectors back in, Vance says", "url": "https://www.axios.com/2026/06/22/iran-un-inspectors-vance", "lean": "Centre"},
+          {"outlet": "Fox News", "title": "Vance, Iranian officials end first round of Switzerland talks, move to next phase", "url": "https://www.foxnews.com/live-news/us-iran-peace-deal-nuclear-talks-switzerland-06-21-26", "lean": "Lean Right"}
+        ]},
+        {"type": "factcheck", "items": [
+          {"status": "ok", "verdict": "Confirmed", "text": "Vance's \"major milestone\" quote and IAEA-inspector claim are reported for 22 June by Axios, the Times of Israel and CNBC."},
+          {"status": "ok", "verdict": "Confirmed", "text": "Baghaei's denial that inspectors are scheduled for the bombed sites is reported for 23 June by NPR, the Times of Israel and Al Jazeera."},
+          {"status": "ok", "verdict": "Confirmed", "text": "The 60-day roadmap and working groups are corroborated by NPR, CNBC and Fox News via the Qatar/Pakistan mediators' statement."},
+          {"status": "unv", "verdict": "Unverified", "text": "Whether IAEA inspectors will actually visit the US-bombed sites within the timeframe is unverified; US and Iranian accounts directly conflict."}
+        ]},
+        {"type": "ground", "agree": [
+          "A first round of US–Iran talks took place 21–22 June 2026 in Switzerland.",
+          "The parties set a roadmap toward a final deal within 60 days and a Hormuz/Lebanon deconfliction line."
+        ], "contest": [
+          "Whether Iran agreed to readmit IAEA inspectors to the US-bombed sites.",
+          "Whether a Grossi meeting occurred, and the legal status of the Strait of Hormuz."
+        ]},
+        {"type": "logic", "items": [
+          "<strong>1 · Reconciling the claims.</strong> Vance says Iran agreed to readmit inspectors while Baghaei says no visit to the bombed sites is scheduled; the statements may be reconcilable only if \"back into the country\" refers to undamaged sites such as Bushehr — sources do not confirm a single agreed scope.",
+          "<strong>2 · The 60-day window.</strong> The roadmap timeframe is consistently reported, but Baghaei frames the 60 days as the window to negotiate the nuclear issue, not a window in which site inspections are guaranteed.",
+          "<strong>3 · Hormuz status.</strong> Iran's 20 June closure claim and the US military's denial coexist with the new deconfliction line; the strait's operational status on 23 June is asserted differently by each side and is not independently verified here."
+        ]}
+      ]
+    },
+    {
+      "id": "greenspan",
+      "nav_label": "Greenspan Dies at 100",
+      "category": "Business",
+      "badges": [
+        {"label": "Business", "cls": "b-business"},
+        {"label": "Markets & Investments", "cls": "b-markets"}
+      ],
+      "dateline": "23 June 2026 | Washington, D.C.",
+      "headline": "Alan Greenspan, US Federal Reserve chair from 1987 to 2006, dies at 100",
+      "summary": "Greenspan, who led the Fed for more than 18 years across four presidencies, died on 22 June of complications from Parkinson's disease.",
+      "confidence": {"level": "corrob", "label": "Verified", "why": "— the death, age and cause are confirmed across multiple major outlets."},
+      "followup": false,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alan_Greenspan_color_photo_portrait.jpg?width=1100",
+        "alt": "Portrait photograph of Alan Greenspan",
+        "caption": "Alan Greenspan, chair of the US Federal Reserve from 1987 to 2006. Photo: US federal government via Wikimedia Commons · public domain",
+        "credit": "US federal government via Wikimedia Commons",
+        "license": "public domain"
+      },
+      "inline_image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Marriner_S._Eccles_Federal_Reserve_Board_Building.jpg?width=600",
+        "alt": "The Marriner S. Eccles Federal Reserve Board Building in Washington, D.C.",
+        "caption": "The Marriner S. Eccles Federal Reserve Board Building, headquarters of the Federal Reserve. Photo: AgnosticPreachersKid via Wikimedia Commons · CC BY-SA 3.0",
+        "credit": "AgnosticPreachersKid via Wikimedia Commons",
+        "license": "CC BY-SA 3.0"
+      },
+      "article_blocks": [
+        {"type": "p", "html": "Alan Greenspan, who served as chairman of the US Federal Reserve from 1987 to 2006, died on 22 June 2026 at his home in Washington, D.C., at the age of 100. His wife of 29 years, NBC News correspondent Andrea Mitchell, said in a statement that the cause was complications from Parkinson's disease."},
+        {"type": "p", "html": "Greenspan was born on 6 March 1926 in New York City. He studied music at the Juilliard School and played jazz saxophone and clarinet before earning bachelor's and master's degrees in economics from New York University and beginning doctoral study at Columbia University. In the 1950s he joined the circle around the novelist Ayn Rand and became an advocate of laissez-faire economics."},
+        {"type": "p", "html": "He chaired the Council of Economic Advisers under President Gerald Ford from 1974 to 1977. President Ronald Reagan nominated him to lead the Federal Reserve in 1987; the Senate confirmed him on 11 August 1987. He was reappointed at four-year intervals and served under Reagan, George H.W. Bush, Bill Clinton and George W. Bush, retiring on 31 January 2006."},
+        {"type": "p", "html": "During his tenure he was widely referred to as \"the Maestro,\" a label drawn from the title of Bob Woodward's 2000 book. On 5 December 1996, in a speech at the American Enterprise Institute, he posed a question about \"irrational exuberance\" in asset prices that became one of his most-cited remarks."},
+        {"type": "timeline", "head": "Timeline — a career at the Fed", "sub": "Tap an event to expand. Spacing reflects the time between events.", "note": "", "events": [
+          {"date": "1987-08-11", "label": "Aug 1987", "title": "Confirmed as Fed chairman", "detail": "The US Senate confirmed Greenspan, nominated by President Ronald Reagan, to lead the Federal Reserve."},
+          {"date": "1996-12-05", "label": "Dec 1996", "title": "\"Irrational exuberance\"", "detail": "In a speech at the American Enterprise Institute, Greenspan asked how to recognise \"irrational exuberance\" in asset values."},
+          {"date": "2006-01-31", "label": "Jan 2006", "title": "Retirement", "detail": "Greenspan retired after the second-longest tenure as Fed chair, succeeded by Ben Bernanke."},
+          {"date": "2008-10-23", "label": "Oct 2008", "title": "Greenspan cites \"a flaw\"", "detail": "He told a House committee he had found a flaw in his assumption that lenders would protect shareholders' equity."},
+          {"date": "2026-06-22", "label": "22 Jun 2026", "title": "Greenspan dies at 100", "detail": "He died at his home in Washington, D.C., of complications from Parkinson's disease."}
+        ]},
+        {"type": "pullquote", "text": "How do we know when irrational exuberance has unduly escalated asset values, which then become subject to unexpected and prolonged contractions?", "src": "— Alan Greenspan, American Enterprise Institute, 5 December 1996"},
+        {"type": "p", "html": "<strong>Why it matters:</strong> Greenspan's tenure of about 18 years and five months was the second-longest in the central bank's history, behind William McChesney Martin Jr., who served from 1951 to 1970. His decisions on interest rates shaped US monetary conditions during a period that included an expansion lasting from 1991 to 2001."},
+        {"type": "p", "html": "After the 2007–08 financial crisis, Greenspan drew criticism over his support for financial deregulation. Testifying before the House Committee on Oversight and Government Reform on 23 October 2008, he said he had found \"a flaw\" in his assumption that lending institutions would act to protect shareholders' equity. The Economist later described him as \"a naive believer in market efficiency.\" Defenders point to the long expansion of the 1990s."},
+        {"type": "p", "html": "<strong>What comes next:</strong> tributes followed. Former Fed chair Ben Bernanke, his successor, said \"we are still learning from him.\" The Federal Reserve said his \"contributions to monetary policy and economic thought left a lasting mark on this institution.\" Survivors include his wife, Andrea Mitchell; memorial arrangements had not been announced as of 23 June."}
+      ],
+      "sidebar_blocks": [
+        {"type": "keyfacts", "items": [
+          "Greenspan died on <strong>22 June 2026</strong> at age <strong>100</strong>, of complications from Parkinson's disease.",
+          "He was born on <strong>6 March 1926</strong> in New York City.",
+          "He led the Federal Reserve from <strong>1987 to 2006</strong>, serving under <strong>four</strong> presidents.",
+          "His tenure of about <strong>18 years, 5 months</strong> was the second-longest, behind William McChesney Martin Jr.",
+          "On <strong>23 October 2008</strong> he told Congress he had found \"a flaw\" in his assumptions about market self-regulation."
+        ]},
+        {"type": "sources", "items": [
+          {"outlet": "CNBC", "title": "Alan Greenspan, former chairman of the Fed, dies at age 100", "url": "https://www.cnbc.com/2026/06/22/alan-greenspan-former-chairman-of-the-fed-dies-at-age-100.html", "lean": "Centre"},
+          {"outlet": "NPR", "title": "Alan Greenspan, the legendary former Federal Reserve chair, dies", "url": "https://www.npr.org/2026/06/22/656930918/alan-greenspan-the-legendary-former-federal-reserve-chair-dies", "lean": "Centre"},
+          {"outlet": "CBS News", "title": "Alan Greenspan, chair of the Fed under four presidents, dies at 100", "url": "https://www.cbsnews.com/news/alan-greenspan-dies-age-100-federal-reserve-chairman/", "lean": "Centre"},
+          {"outlet": "NBC News", "title": "Alan Greenspan, longtime head of the Federal Reserve, dies at 100", "url": "https://www.nbcnews.com/news/obituaries/alan-greenspan-economist-longtime-head-federal-reserve-dies-100-rcna42286", "lean": "Lean Left"},
+          {"outlet": "PBS NewsHour", "title": "Former Federal Reserve Chairman Alan Greenspan dies at 100", "url": "https://www.pbs.org/newshour/economy/former-federal-reserve-chairman-alan-greenspan-dies-at-100", "lean": "Centre"},
+          {"outlet": "CNN Business", "title": "Alan Greenspan, former head of the Federal Reserve, dies at 100", "url": "https://www.cnn.com/2026/06/22/economy/alan-greenspan-obituary", "lean": "Lean Left"}
+        ]},
+        {"type": "factcheck", "items": [
+          {"status": "ok", "verdict": "Confirmed", "text": "CNBC, NPR, CBS News and NBC News all report Greenspan died on 22 June 2026 at age 100."},
+          {"status": "ok", "verdict": "Confirmed", "text": "CBS News and NBC News state the cause was complications of Parkinson's disease, announced by his wife, Andrea Mitchell."},
+          {"status": "ok", "verdict": "Confirmed", "text": "His 11 August 1987 confirmation, 31 January 2006 retirement and second-longest tenure are corroborated across outlets."}
+        ]},
+        {"type": "ground", "agree": [
+          "Greenspan died on 22 June 2026 at age 100 of Parkinson's-related complications.",
+          "He chaired the Fed from 1987 to 2006 under four presidents."
+        ], "contest": [
+          "Whether his support for financial deregulation contributed to the 2007–08 crisis is debated by economists."
+        ]},
+        {"type": "logic", "items": [
+          "<strong>1 · Tenure check passes.</strong> Greenspan served about 18 years 5 months; William McChesney Martin Jr. served about 18 years 10 months — so \"second-longest\" is consistent.",
+          "<strong>2 · Age check passes.</strong> Born 6 March 1926, died 22 June 2026 = 100 years and about 3 months."
+        ]}
+      ]
+    },
+    {
+      "id": "chips",
+      "nav_label": "Global Chip Sell-off",
+      "category": "Technology",
+      "badges": [
+        {"label": "Technology", "cls": "b-tech"},
+        {"label": "Markets & Investments", "cls": "b-markets"}
+      ],
+      "dateline": "23 June 2026 | Seoul & New York",
+      "headline": "Memory-chip shares lead a global equity sell-off; Kospi closes about 10% lower",
+      "summary": "South Korea's Kospi fell 9.99% and triggered circuit breakers as Samsung and SK Hynix each dropped about 12%; the US Nasdaq closed 2.21% lower.",
+      "confidence": {"level": "develop", "label": "Developing", "why": "— index and named-stock moves are corroborated across outlets, but causes are contested analyst opinion and Micron's 24 June earnings is a pending catalyst."},
+      "followup": false,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Silicon_wafer.jpg?width=1100",
+        "alt": "A polished silicon wafer used in semiconductor manufacturing",
+        "caption": "Memory-chip and other semiconductor shares led the global equity decline (file image). Photo: Inductiveload via Wikimedia Commons · public domain",
+        "credit": "Inductiveload via Wikimedia Commons",
+        "license": "public domain"
+      },
+      "inline_image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/NASDAQ_stock_market_display.jpg?width=600",
+        "alt": "Illuminated Nasdaq stock-market displays",
+        "caption": "The Nasdaq Composite closed about 2.2% lower on 23 June (file image). Photo: bfishadow via Wikimedia Commons · CC BY 2.0",
+        "credit": "bfishadow via Wikimedia Commons",
+        "license": "CC BY 2.0"
+      },
+      "article_blocks": [
+        {"type": "p", "html": "A global sell-off in memory-chip and other technology shares deepened on Tuesday, 23 June 2026. South Korea's benchmark Kospi index closed down 9.99% at 8,203.84, a fall of 910.71 points that triggered market-wide circuit breakers halting trading. Memory leaders Samsung Electronics and SK Hynix each fell about 12%."},
+        {"type": "p", "html": "Foreign investors sold a net 5.79 trillion won — about $3.8 billion — of Kospi shares during the session, according to exchange data cited in market reports. Japan's Nikkei 225 closed down about 3.55% at 69,788.38, ending an eight-session run of gains, while Hong Kong's Hang Seng fell 1.82%."},
+        {"type": "p", "html": "In New York, the Nasdaq Composite closed at 25,587.04, down 2.21%, a second consecutive decline. The S&P 500 fell 1.44% and the Dow Jones Industrial Average ended little changed, down 0.09% at 51,666.84. In Europe, the Stoxx 600 technology sub-index recorded one of its larger daily falls of the year, with STMicroelectronics, Infineon and ASML among the decliners."},
+        {"type": "p", "html": "Samsung Electronics and SK Hynix are the two largest makers of memory chips, with Micron Technology the third and the only major US supplier; the three trade as a closely watched proxy for memory demand and the artificial-intelligence build-out. Reporting attributed the move to a combination of factors rather than a single catalyst."},
+        {"type": "timeline", "head": "Timeline — a two-session slide", "sub": "Tap an event to expand. Spacing reflects the time between events.", "note": "", "events": [
+          {"date": "2026-06-19", "label": "19 Jun", "title": "Kospi near a record", "detail": "The index had traded near record highs as SK Hynix and Samsung rallied on memory and high-bandwidth-memory demand."},
+          {"date": "2026-06-22", "label": "22 Jun", "title": "Wall Street wobbles", "detail": "The Nasdaq fell about 1.3% as memory names came under pressure; the Russell 2000 had closed above 3,000 for the first time."},
+          {"date": "2026-06-23", "label": "23 Jun", "title": "Kospi triggers circuit breakers", "detail": "The Kospi closed down 9.99%; Samsung and SK Hynix fell about 12%; the Nasdaq closed 2.21% lower."},
+          {"date": "2026-06-24", "label": "24 Jun", "title": "Micron earnings", "detail": "Micron Technology is scheduled to report fiscal Q3 results after the US close — a near-term test for the memory complex."}
+        ]},
+        {"type": "pullquote", "text": "There is some added nervousness on the important memory-chip trade ahead of Micron's earnings; this is a gut-check moment, but the AI trade remains in the third inning.", "src": "— Dan Ives, Wedbush Securities, 22 June 2026"},
+        {"type": "p", "html": "Analysts offered competing explanations. Ross Mayfield of Baird said the trade \"has been highly concentrated and flow-driven, which makes it vulnerable to relatively small shifts in sentiment.\" Lauren Hyslop of Mattioli Woods pointed to a more challenging interest-rate backdrop and to concern about the scale of capital required for the next phase of AI investment. Reporting also cited fears around US export controls on advanced chips and high-bandwidth memory."},
+        {"type": "p", "html": "<strong>Why it matters:</strong> Samsung and SK Hynix together account for a large and rising share of the Kospi's market value, so concentrated moves in memory shares transmit quickly into the headline index and into US- and Europe-listed peers, linking the Seoul, European and New York sessions."},
+        {"type": "p", "html": "<strong>What comes next:</strong> Micron reports fiscal third-quarter results after the US close on 24 June, a print analysts have flagged as a catalyst for the memory sector; investors are also watching for any further US Commerce Department export-control guidance affecting advanced chips and high-bandwidth memory."}
+      ],
+      "sidebar_blocks": [
+        {"type": "keyfacts", "items": [
+          "The Kospi closed <strong>−9.99% at 8,203.84</strong> (23 Jun), down 910.71 points; circuit breakers were triggered.",
+          "Samsung Electronics and SK Hynix each fell <strong>about 12%</strong> (23 Jun); foreign net selling was about <strong>5.79tn won (~$3.8bn)</strong>.",
+          "The Nasdaq Composite closed <strong>25,587.04, −2.21%</strong> (23 Jun); the S&P 500 fell <strong>1.44%</strong>.",
+          "Japan's Nikkei 225 closed <strong>−3.55% at 69,788.38</strong> (23 Jun), ending an eight-session rise.",
+          "Micron reports fiscal Q3 results after the US close on <strong>24 June 2026</strong>."
+        ]},
+        {"type": "sources", "items": [
+          {"outlet": "TheStreet", "title": "Stock Market Today (June 23, 2026): Nasdaq, S&P 500 fall as Asian markets tumble", "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-23-2026", "lean": "Centre"},
+          {"outlet": "Yahoo Finance", "title": "S&P 500, Nasdaq sink as AI trade cools, semiconductor stocks retreat", "url": "https://finance.yahoo.com/economy/live/stock-market-today-nasdaq-sp-500-fall-as-global-chip-sell-off-spurs-ai-doubts-230258084.html", "lean": "Centre"},
+          {"outlet": "Bloomberg", "title": "Kospi index slides with Samsung, SK Hynix falling on chip concerns", "url": "https://www.bloomberg.com/news/articles/2026-06-23/korean-stocks-fall-more-than-4-from-record-high-on-tech-selloff", "lean": "Centre"},
+          {"outlet": "CNBC", "title": "S&P 500 falls on global chip rout with Nasdaq off 2%, led by Micron", "url": "https://www.cnbc.com/2026/06/22/stock-market-today-live-updates.html", "lean": "Centre"},
+          {"outlet": "Korea Herald", "title": "Kospi tumbles as chip heavyweights lead losses", "url": "https://www.koreaherald.com/article/10781684", "lean": "Centre"},
+          {"outlet": "Yahoo Finance", "title": "Kospi falls, triggers circuit breakers as big-tech sell-off hits Asia", "url": "https://finance.yahoo.com/markets/world-indices/articles/kospi-falls-8-triggers-circuit-061212686.html", "lean": "Centre"}
+        ]},
+        {"type": "factcheck", "items": [
+          {"status": "ok", "verdict": "Confirmed", "text": "The Nasdaq closed about 2% lower on 23 June (25,587.04, −2.21%) per TheStreet and Yahoo Finance."},
+          {"status": "ok", "verdict": "Confirmed", "text": "The Kospi closed sharply lower with circuit breakers; TheStreet and TradingKey cite about a 10% fall (9.99% to 8,203.84) and Samsung/SK Hynix down about 12%."},
+          {"status": "unv", "verdict": "Unverified", "text": "Early-session reports put the Kospi down about 4% (Bloomberg) before the close deepened; intraday vendor figures varied between roughly 4% and 10%."}
+        ]},
+        {"type": "ground", "agree": [
+          "The Nasdaq fell about 2% on 23 June, led by memory-chip names.",
+          "Korean chip heavyweights SK Hynix and Samsung led the Kospi sharply lower, triggering circuit breakers."
+        ], "contest": [
+          "Whether the sell-off is policy-driven (export-control fears) or valuation- and flow-driven (an AI-trade unwind).",
+          "The precise magnitude of the Kospi decline, which varied by data vendor through the session."
+        ]},
+        {"type": "logic", "items": [
+          "<strong>1 · Session labelling.</strong> The Nasdaq −2.21% close is the completed 23 June US session; the Kospi −9.99% is the 23 June Asian close. Each figure is dated to its own session rather than presented as a single live snapshot.",
+          "<strong>2 · Cause is opinion, not fact.</strong> Export-control fears, AI-spending concern and a flow-driven unwind are competing analyst explanations; no single confirmed policy action is shown to have triggered the specific 23 June move."
+        ]}
+      ]
+    },
+    {
+      "id": "nato",
+      "nav_label": "NATO Ankara Summit",
+      "category": "Politics",
+      "badges": [
+        {"label": "Politics", "cls": "b-politics"}
+      ],
+      "dateline": "23 June 2026 | Prague & Brussels",
+      "headline": "NATO heads to Ankara summit on 5% spending pledge as Czech PM excludes President Pavel from delegation",
+      "summary": "Ahead of the 7–8 July summit, PM Andrej Babiš left President Petr Pavel off the Czech delegation; Pavel asked the Constitutional Court to rule on who represents the state abroad.",
+      "confidence": {"level": "develop", "label": "Developing", "why": "— the summit dates, 5% structure, delegation list and Pavel's filing are corroborated, but the Constitutional Court has not ruled and the delegation may still change."},
+      "followup": false,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ankara_Skyline.jpg?width=1100",
+        "alt": "Skyline of Ankara, Türkiye, host city of the 2026 NATO summit",
+        "caption": "Ankara, Türkiye, will host the NATO summit on 7–8 July 2026. Photo: Bjørn Christian Tørrissen via Wikimedia Commons · CC BY-SA 3.0",
+        "credit": "Bjørn Christian Tørrissen via Wikimedia Commons",
+        "license": "CC BY-SA 3.0"
+      },
+      "inline_image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Petr_Pavel_(2023-02-14)_(cropped).jpg?width=600",
+        "alt": "Czech President Petr Pavel",
+        "caption": "Czech President Petr Pavel has asked the Constitutional Court to rule on his exclusion from the Ankara delegation. Photo: European People's Party via Wikimedia Commons · CC BY 2.0",
+        "credit": "European People's Party via Wikimedia Commons",
+        "license": "CC BY 2.0"
+      },
+      "article_blocks": [
+        {"type": "p", "html": "NATO's 32 member states are preparing for a summit in Ankara, Türkiye, on 7–8 July 2026, the alliance's second hosted by Türkiye after Istanbul in 2004. Secretary General Mark Rutte will preside, with President Recep Tayyip Erdoğan as host. The gathering is being framed around delivery rather than new pledges."},
+        {"type": "p", "html": "The central benchmark is the commitment agreed at The Hague in June 2025, under which allies pledged to invest 5% of GDP in defence by 2035 — at least 3.5% for core military requirements and up to 1.5% for defence- and security-related spending such as infrastructure and industrial capacity. The pledge built on the alliance's 2014 target of 2% of GDP."},
+        {"type": "p", "html": "Allied defence ministers held their final pre-summit meeting in Brussels on 18 June 2026. Rutte said the ministers had made \"good progress\" and that NATO needed to \"turn the cash into combat-ready capabilities, and fast.\" Against that backdrop, the Czech government said its delegation to Ankara would comprise Prime Minister Andrej Babiš, Defence Minister Jaromír Zuna and Foreign Minister Petr Macinka. President Petr Pavel was not included."},
+        {"type": "p", "html": "Babiš described the reasoning as \"purely practical,\" saying the government would need to defend its defence-spending plans at the summit, an area he said falls to his cabinet, and rejecting the suggestion that the government was \"forbidding\" the president from acting. Pavel responded by filing a competence action at the Constitutional Court, arguing that representing the state abroad is a presidential power under Article 63 of the Czech Constitution."},
+        {"type": "timeline", "head": "Timeline — the road to Ankara", "sub": "Tap an event to expand. Spacing reflects the time between events.", "note": "", "events": [
+          {"date": "2025-06-25", "label": "Jun 2025", "title": "The Hague sets a 5% target", "detail": "NATO's 32 allies agree to invest 5% of GDP in defence by 2035 — at least 3.5% core plus up to 1.5% related."},
+          {"date": "2026-06-18", "label": "18 Jun", "title": "Final pre-summit ministerial", "detail": "Defence ministers meet in Brussels; Rutte reports \"good progress\" and stresses turning spending into capabilities."},
+          {"date": "2026-06-22", "label": "22 Jun", "title": "Babiš excludes Pavel", "detail": "The Czech government names a delegation of Babiš, Zuna and Macinka, omitting President Pavel."},
+          {"date": "2026-07-07", "label": "7–8 Jul", "title": "Ankara summit opens", "detail": "NATO leaders convene in Ankara to focus on implementing the 5% pledge."}
+        ]},
+        {"type": "pullquote", "text": "Cash is crucial, but you can't stop a missile or a tank with a dollar or a euro. We need to turn the cash into combat-ready capabilities, and fast.", "src": "— Mark Rutte, NATO Secretary General, 18 June 2026"},
+        {"type": "p", "html": "The Czech Republic is among allies that have not met NATO's 2% benchmark. Lawmakers approved a 2026 budget allocating roughly 1.7% of GDP to core defence, and Babiš said on 19 June 2026 that the country would miss the target again this year while aiming to comply from 2027, citing a strained budget and competing priorities."},
+        {"type": "framing", "overview": "<strong>Political-bias overview:</strong> coverage splits between the alliance-wide spending story and the domestic Czech constitutional clash, and is largely procedural and quote-driven.", "bias": [
+          {"lean": "Left", "pct": 20, "color": "#3b82c4"},
+          {"lean": "Centre", "pct": 65, "color": "#8b909c"},
+          {"lean": "Right", "pct": 15, "color": "#e0414f"}
+        ], "caption": "Share of the gathered sources by lean — an approximate read, not a measure of the entire press.", "ratings_html": "<strong>Source leans:</strong> NATO.int (official) and Euronews (Centre) on the summit; Czech and European outlets on the delegation dispute.", "lines": [
+          "<span class=\"lean\">Centre:</span> frames the story around NATO's delivery agenda and a constitutional competence question, attributing characterisations to Rutte, Babiš and Pavel.",
+          "<span class=\"lean\">Right:</span> foregrounds the Czech spending shortfall and Babiš's fiscal-priority rationale."
+        ]},
+        {"type": "p", "html": "<strong>Why it matters:</strong> the dispute couples a procedural question over Czech foreign-policy authority with the summit's substantive theme — defence spending — at a moment when allies are being measured against the 5% pledge, placing an EU and NATO member arriving below the 2% floor on a public stage."},
+        {"type": "p", "html": "<strong>What comes next:</strong> the Constitutional Court has not ruled on Pavel's filing, and the composition of the Czech delegation may depend on its decision before the 7–8 July summit, where Rutte has said allies will focus on translating spending commitments into capabilities."}
+      ],
+      "sidebar_blocks": [
+        {"type": "keyfacts", "items": [
+          "NATO's pledge totals <strong>5% of GDP by 2035</strong> — <strong>3.5%</strong> core plus <strong>1.5%</strong> related — agreed at The Hague on 25 June 2025.",
+          "The Ankara summit runs <strong>7–8 July 2026</strong> at Türkiye's Presidential Complex.",
+          "The Czech 2026 budget allocates about <strong>1.7% of GDP</strong> to core defence, below NATO's <strong>2%</strong> benchmark; Babiš targets compliance from 2027.",
+          "The Czech delegation comprises <strong>3</strong> members — Babiš, Zuna and Macinka — with President Pavel excluded.",
+          "Pavel cites <strong>Article 63</strong> of the Czech Constitution in his Constitutional Court filing."
+        ]},
+        {"type": "sources", "items": [
+          {"outlet": "NATO", "title": "NATO defence ministers make good progress ahead of the Ankara Summit", "url": "https://nato.int/en/news-and-events/articles/news/2026/06/18/nato-defence-ministers-make-good-progress-ahead-of-the-ankara-summit", "lean": "Official"},
+          {"outlet": "Euronews", "title": "Czech president appeals to Constitutional Court amid clash over NATO summit", "url": "https://www.euronews.com/my-europe/2026/06/23/czech-president-appeals-to-constitutional-court-amid-clash-over-nato-summit", "lean": "Centre"},
+          {"outlet": "Brno Daily", "title": "President Pavel files lawsuit against government over exclusion from NATO summit", "url": "https://brnodaily.com/2026/06/23/news/politics/president-pavel-files-lawsuit-against-government-over-exclusion-from-nato-summit/", "lean": "Centre"},
+          {"outlet": "NATO", "title": "The Hague Summit Declaration", "url": "https://www.nato.int/en/about-us/official-texts-and-resources/official-texts/2025/06/25/the-hague-summit-declaration", "lean": "Official"},
+          {"outlet": "Daily Sabah", "title": "NATO summit in Ankara expected to shape alliance's next chapter", "url": "https://www.dailysabah.com/politics/nato-summit-in-ankara-expected-to-shape-alliances-next-chapter/news", "lean": "Lean Right"},
+          {"outlet": "Wikipedia", "title": "2026 Ankara NATO summit", "url": "https://en.wikipedia.org/wiki/2026_Ankara_NATO_summit", "lean": "Reference"}
+        ]},
+        {"type": "factcheck", "items": [
+          {"status": "ok", "verdict": "Confirmed", "text": "The Hague pledge (25 June 2025) commits allies to 5% of GDP by 2035, as 3.5% core + 1.5% related — confirmed by NATO's official text and multiple outlets."},
+          {"status": "ok", "verdict": "Confirmed", "text": "Babiš said the Czech Republic will miss NATO's 2% target again in 2026 (budget ~1.7% core), aiming to comply from 2027."},
+          {"status": "ok", "verdict": "Confirmed", "text": "Pavel filed a competence action at the Constitutional Court citing Article 63; the delegation is Babiš, Zuna and Macinka."}
+        ]},
+        {"type": "ground", "agree": [
+          "The Ankara summit takes place 7–8 July 2026 and centres on implementing the 5% Hague pledge.",
+          "The Czech Republic's core defence spending (~1.7%) is below NATO's 2% benchmark."
+        ], "contest": [
+          "Whether foreign representation at the summit is a presidential prerogative (Pavel, Article 63) or a government competence (Babiš).",
+          "Whether excluding Pavel is a \"purely practical\" choice or a question of constitutional powers."
+        ]},
+        {"type": "logic", "items": [
+          "<strong>1 · Date check.</strong> The summit is in July (7–8 July 2026), not June; the 18 June event was the separate pre-summit defence ministers' meeting.",
+          "<strong>2 · Math check.</strong> 5% = 3.5% core + 1.5% related; the Czech ~1.7% core is below the 2% floor and well below the 3.5% core component, so the shortfall claim is consistent."
+        ]}
+      ]
+    },
+    {
+      "id": "albania",
+      "nav_label": "Albania Resort Protests",
+      "category": "Politics",
+      "badges": [
+        {"label": "Politics", "cls": "b-politics"},
+        {"label": "Climate", "cls": "b-climate"}
+      ],
+      "dateline": "23 June 2026 | Tirana",
+      "headline": "Albania protests over a Kushner-linked Adriatic resort enter a fourth week",
+      "summary": "Demonstrators in Tirana have marched for more than three weeks against a resort planned for the protected Vjosa-Narta coast and Sazan island, demanding PM Edi Rama's resignation.",
+      "confidence": {"level": "develop", "label": "Developing", "why": "— a fast-moving, multi-week protest; crowd sizes and the project's precise approval status are contested and attributed to differing sources."},
+      "followup": false,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Skanderbeg_square_from_the_Municipality_building_rooftop.jpeg?width=1100",
+        "alt": "View of Skanderbeg Square in Tirana, Albania, from a municipal rooftop",
+        "caption": "Skanderbeg Square in central Tirana, focal point of the daily protests. Photo: Wikimedia Commons · CC BY-SA",
+        "credit": "Wikimedia Commons",
+        "license": "CC BY-SA"
+      },
+      "inline_image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sazan_Island,_Albania_2016_02.jpg?width=600",
+        "alt": "Sazan island seen from the Karaburun Peninsula on the Albanian Adriatic coast",
+        "caption": "Sazan island, a former military island slated for resort development. Photo: Wikimedia Commons · CC BY-SA",
+        "credit": "Wikimedia Commons",
+        "license": "CC BY-SA"
+      },
+      "article_blocks": [
+        {"type": "p", "html": "Demonstrators gathered in Albania's capital for a 22nd consecutive day on 22 June 2026 to oppose a planned luxury resort on the country's southern Adriatic coast, in protests that organisers and local media have called the \"Flamingo Revolution\" after the wading birds that inhabit the targeted wetland."},
+        {"type": "p", "html": "The development centres on the uninhabited former military island of Sazan and a stretch of the Vjosa-Narta protected area near Zvërnec, a delta wetland that environmental groups including PPNEA say is a breeding ground for flamingos, seals and sea turtles. Planning documents reviewed by CBS News describe a project that could include 800 guest rooms and suites, villas, a golf course, a casino and a water park."},
+        {"type": "p", "html": "The project is linked to Jared Kushner, son-in-law of US President Donald Trump, and his fund Affinity Partners. The Albanian government granted strategic-investor status in 2024, and the development is led by a dedicated real-estate company. A representative for the developers told Al Jazeera the individual investors were participating \"in their personal capacity\" rather than through Affinity Partners directly. Al Jazeera has cited a Sazan land valuation of about €1.4 billion, with Rama referencing a broader Vlora-area project valued at roughly €4–5 billion."},
+        {"type": "p", "html": "Protesters and environmental groups have raised two principal objections: alleged environmental harm to the protected delta and an alleged absence of consultation. Aleksandr Trajce, director of PPNEA, told CBS News, \"There was no public consultation whatsoever,\" adding that residents learned of works only after bulldozers had begun cutting roads and clearing dunes."},
+        {"type": "timeline", "head": "Timeline — from a beach fence to a movement", "sub": "Tap an event to expand. Spacing reflects the time between events.", "note": "Crowd figures are attributed estimates that the parties dispute.", "events": [
+          {"date": "2024-12-30", "label": "Dec 2024", "title": "Strategic status granted", "detail": "The Albanian government grants the project strategic-investor status over a coastal site."},
+          {"date": "2026-05-23", "label": "23 May", "title": "First protests at Narta", "detail": "Residents protest barbed-wire fencing of a beach near the Narta lagoon."},
+          {"date": "2026-05-31", "label": "31 May", "title": "Protests reach Tirana", "detail": "Demonstrations spread to the capital after confrontations between residents and private security."},
+          {"date": "2026-06-20", "label": "20 Jun", "title": "Largest rally", "detail": "Organisers estimate more than 250,000 people march in Tirana; the government cites far lower figures."},
+          {"date": "2026-06-22", "label": "22 Jun", "title": "A demands platform", "detail": "A protest grouping presents a formal platform led by a call for Rama's resignation, on the 22nd consecutive day."}
+        ]},
+        {"type": "pullquote", "text": "There is no chance for this investment to stop as long as I am here.", "src": "— Edi Rama, Prime Minister of Albania, quoted by Al Jazeera, 5 June 2026"},
+        {"type": "p", "html": "What began on 23 May 2026 as a local dispute over fencing near the Narta lagoon expanded to Tirana on 31 May. By 22 June, a protest grouping presented demands including the resignation of Rama and his cabinet, a non-partisan transitional government, and repeal of the strategic-investment framework. \"Albania is not for sale\" has become the movement's rallying cry, according to multiple outlets."},
+        {"type": "framing", "overview": "<strong>Political-bias overview:</strong> reporting converges on the core facts but diverges on emphasis, with environmental and anti-corruption framing more prominent in left-of-centre outlets.", "bias": [
+          {"lean": "Left", "pct": 50, "color": "#3b82c4"},
+          {"lean": "Centre", "pct": 42, "color": "#8b909c"},
+          {"lean": "Right", "pct": 8, "color": "#e0414f"}
+        ], "caption": "Share of the gathered sources by lean — an approximate read, not a measure of the entire press.", "ratings_html": "<strong>Source leans:</strong> Al Jazeera, NPR, Time (Lean Left/Centre-Left); CBS, CNBC, Balkan Insight (Centre).", "lines": [
+          "<span class=\"lean\">Left:</span> foregrounds environmental harm to the protected delta and frames the movement as an anti-corruption campaign against Rama.",
+          "<span class=\"lean\">Other outlets:</span> emphasise the Trump-family connection and Rama's argument that the project is a major foreign investment."
+        ]},
+        {"type": "p", "html": "Rama has said the project will proceed and has disputed protest crowd figures, putting attendance far below organisers' estimates and describing the campaign as \"digital hysteria.\" The two sets of figures diverge sharply, and no independent count was available."},
+        {"type": "p", "html": "<strong>Why it matters:</strong> the protests, described by CBS News as among the largest in Albania since 1991, have, according to organisers, broadened from a single development into a movement contesting governance under Rama, who has led Albania since 2013, drawing scrutiny to a project tied to the family of the US president."},
+        {"type": "p", "html": "<strong>What comes next:</strong> daily evening protests are continuing; the government has not indicated it will halt the project, and developers say the design remains in an \"iterative phase,\" leaving the project's approval status and the protests' trajectory unresolved."}
+      ],
+      "sidebar_blocks": [
+        {"type": "keyfacts", "items": [
+          "Protests reached <strong>22 consecutive days</strong> by 22 June 2026.",
+          "The Sazan land deal is valued at about <strong>€1.4 billion</strong>; Rama has cited a broader project worth up to <strong>€4–5 billion</strong>.",
+          "Planning documents describe up to <strong>800 guest rooms and suites</strong>, plus villas, a golf course and a casino.",
+          "Organisers estimated the 20 June rally at <strong>more than 250,000</strong>; the government cited far lower figures.",
+          "A petition against construction gathered nearly <strong>60,000</strong> signatures, with more than 40 environmental groups opposed."
+        ]},
+        {"type": "sources", "items": [
+          {"outlet": "CBS News", "title": "Albania protests sparked by Kushner-backed luxury resort snowball into anti-corruption movement", "url": "https://www.cbsnews.com/news/albania-protests-jared-kushner-luxury-resort-plans-anti-corruption/", "lean": "Centre"},
+          {"outlet": "Al Jazeera", "title": "Why the Kushners' plan to build an Albanian resort has sparked protests", "url": "https://www.aljazeera.com/news/2026/6/5/why-the-kushners-plan-to-build-an-albanian-resort-has-sparked-protests", "lean": "Lean Left"},
+          {"outlet": "NPR", "title": "Protests in Albania continue against Kushner-linked luxury resort", "url": "https://www.npr.org/2026/06/16/g-s1-128162/albania-resort-protests-kushner-trump", "lean": "Centre"},
+          {"outlet": "CNBC", "title": "Albania protests target Kushner-linked project", "url": "https://www.cnbc.com/2026/06/22/albania-protests-kushner-development.html", "lean": "Centre"},
+          {"outlet": "Balkan Insight", "title": "Albania's 'Flamingo Revolution' is about more than Kushner and birds", "url": "https://balkaninsight.com/2026/06/11/albanias-flamingo-revolution-is-about-more-than-kushner-and-birds/bi/", "lean": "Centre"},
+          {"outlet": "TIME", "title": "What to know about the Kushner-backed luxury resort drawing protests in Albania", "url": "https://time.com/article/2026/06/05/jared-kushner-backed-luxury-resort-albania-protests/", "lean": "Centre"}
+        ]},
+        {"type": "factcheck", "items": [
+          {"status": "ok", "verdict": "Confirmed", "text": "The project is tied to Kushner/Affinity Partners; developers say investors act \"in their personal capacity\" (Al Jazeera, CBS)."},
+          {"status": "ok", "verdict": "Confirmed", "text": "The government granted strategic-investor status in 2024; the Sazan land is valued at about €1.4 billion (Al Jazeera)."},
+          {"status": "unv", "verdict": "Unverified", "text": "Precise crowd sizes (e.g. 250,000+ on 20 June) come from organisers and local media; Rama cites far lower figures, and no independent count was located."}
+        ]},
+        {"type": "ground", "agree": [
+          "The resort is planned for Sazan island and the Vjosa-Narta protected coastal area.",
+          "The project is linked to Jared Kushner and received strategic-investor status in 2024."
+        ], "contest": [
+          "Whether the development is an economic benefit (Rama) or an environmental threat to a protected wetland (protesters).",
+          "Whether adequate public consultation occurred."
+        ]},
+        {"type": "logic", "items": [
+          "<strong>1 · Crowd-size sourcing.</strong> Large figures are attributed to organisers and media; Rama gives far lower figures. No independent third-party count was located, so all crowd numbers are treated as attributed estimates.",
+          "<strong>2 · Project value.</strong> The ~€1.4bn figure is the Sazan land deal; the ~€4–5bn figure is the broader Vlora-area project — the two should not be conflated."
+        ]}
+      ]
+    },
+    {
+      "id": "unclimate",
+      "nav_label": "UN Climate–Energy Address",
+      "category": "Climate",
+      "badges": [
+        {"label": "Climate", "cls": "b-climate"},
+        {"label": "Politics", "cls": "b-politics"}
+      ],
+      "dateline": "23 June 2026 | London",
+      "headline": "UN chief ties climate and energy crises to fossil fuels in London address",
+      "summary": "António Guterres used a London Climate Action Week address to call for a faster renewables transition, AI data-centre emissions disclosure and methane cuts.",
+      "confidence": {"level": "corrob", "label": "Verified", "why": "— the as-delivered speech on un.org plus UN News and multiple outlets confirm the address, figures and initiatives."},
+      "followup": false,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/UN_General_Assembly_hall.jpg?width=1100",
+        "alt": "The United Nations General Assembly Hall",
+        "caption": "The UN General Assembly Hall. Secretary-General Guterres delivered the special address at London Climate Action Week. Photo: Patrick Gruban via Wikimedia Commons · CC BY-SA 2.0",
+        "credit": "Patrick Gruban via Wikimedia Commons",
+        "license": "CC BY-SA 2.0"
+      },
+      "inline_image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/WindFarm.jpg?width=600",
+        "alt": "Wind turbines at a wind farm",
+        "caption": "Guterres cited renewable-cost declines and said wind and solar last year exceeded all new electricity-demand growth worldwide. Photo: Wikimedia Commons · public domain",
+        "credit": "Wikimedia Commons",
+        "license": "public domain"
+      },
+      "article_blocks": [
+        {"type": "p", "html": "UN Secretary-General António Guterres delivered a special address at London Climate Action Week on 23 June 2026, arguing that the worsening climate crisis and growing energy insecurity stem from a common source. \"These crises may seem separate but they share the same destructive origin: fossil fuels,\" he said, calling for \"a fast, fair transition to clean energy.\""},
+        {"type": "p", "html": "Guterres said the world had \"just lived through the eleven hottest years ever recorded\" and cited a closing window to limit warming. He said the latest national climate plans \"would reduce global emissions by only 10 per cent by 2035,\" against a level he said science indicates \"must fall by 60 per cent over the same period to keep 1.5 within reach,\" and referenced a UN Scientific Advisory Board report on climate tipping points released the same day."},
+        {"type": "p", "html": "On energy, Guterres presented cost figures he attributed to the falling price of renewables: solar costs down \"almost 90 per cent\" since 2010, onshore wind \"more than 70 per cent\" and battery storage \"95 per cent.\" He said wind and solar last year \"exceeded all new electricity demand growth worldwide,\" and cited an International Renewable Energy Agency figure that existing renewable capacity \"saved the world economy 480 billion US dollars in avoided fossil-fuel costs in 2025.\""},
+        {"type": "p", "html": "Guterres announced an \"AI Environmental Transparency Initiative,\" calling on major AI companies to disclose the carbon, water and land footprints of their systems and to \"power every data centre with renewable energy by 2030.\" He said data centres \"already consume more electricity than most nations\" and \"by 2030 they could use more power than all but five countries.\""},
+        {"type": "timeline", "head": "Timeline — the run-up to the address", "sub": "Tap an event to expand. Spacing reflects the time between events.", "note": "Some dates are approximate.", "events": [
+          {"date": "2025-11-30", "label": "Nov 2025", "title": "National climate plans tabled", "detail": "Updated national plans are submitted; Guterres later says they would cut emissions only about 10% by 2035."},
+          {"date": "2026-03-15", "label": "Mar 2026", "title": "WMO temperature update", "detail": "The WMO warns global temperatures are likely to keep rising over the coming years (referenced in coverage)."},
+          {"date": "2026-06-23", "label": "23 Jun", "title": "Tipping-points report", "detail": "A UN Scientific Advisory Board report on climate tipping points is released the same day and cited by Guterres."},
+          {"date": "2026-06-23", "label": "23 Jun", "title": "London address", "detail": "Guterres delivers the special address, announcing the AI transparency initiative and a methane call to action."}
+        ]},
+        {"type": "pullquote", "text": "These crises may seem separate but they share the same destructive origin: fossil fuels.", "src": "— António Guterres, UN Secretary-General, 23 June 2026"},
+        {"type": "p", "html": "He also launched a \"Global Call to Action on Methane,\" describing the gas as \"responsible for around one-third of global warming,\" and cited an International Energy Agency finding that \"around 70 per cent of oil-and-gas methane emissions can be eliminated using existing technology.\" On finance, he said the \"$300 billion pledged to developing countries must be delivered,\" alongside steps to mobilise \"$1.3 trillion a year by 2035.\""},
+        {"type": "framing", "overview": "<strong>Political-bias overview:</strong> coverage is largely institutional and centrist, treating the address as a policy event; producer-state and industry pushback is noted as context.", "bias": [
+          {"lean": "Left", "pct": 30, "color": "#3b82c4"},
+          {"lean": "Centre", "pct": 60, "color": "#8b909c"},
+          {"lean": "Right", "pct": 10, "color": "#e0414f"}
+        ], "caption": "Share of the gathered sources by lean — an approximate read, not a measure of the entire press.", "ratings_html": "<strong>Source leans:</strong> UN News and un.org (official); Fortune and Euronews (Centre); Climate Home News and WRI (Centre-Left).", "lines": [
+          "<span class=\"lean\">Centre/institutional:</span> UN News and the primary speech text frame the address as a science-based policy blueprint linking climate and energy.",
+          "<span class=\"lean\">Centre-left:</span> outlets foreground the AI-disclosure and methane asks as accountability measures."
+        ]},
+        {"type": "p", "html": "<strong>Why it matters:</strong> Guterres framed the address as setting the agenda ahead of a planned September 2026 leaders' convening and the COP31 climate conference in Türkiye, positioning the dual framing of climate and energy security as the basis for negotiations on phasing out fossil fuels."},
+        {"type": "p", "html": "<strong>What comes next:</strong> Guterres said he would convene leaders in September 2026 ahead of COP31; updated national climate plans and delivery of the $300 billion climate-finance pledge remain pending. No major AI company issued an immediate public response to the disclosure initiative."}
+      ],
+      "sidebar_blocks": [
+        {"type": "keyfacts", "items": [
+          "Since 2010, Guterres said, solar costs fell <strong>almost 90%</strong>, onshore wind <strong>more than 70%</strong> and battery storage <strong>95%</strong>.",
+          "Existing renewable capacity \"saved the world economy <strong>$480 billion</strong>\" in avoided fossil-fuel costs in 2025 (Guterres, citing IRENA).",
+          "National climate plans would cut emissions only <strong>10% by 2035</strong>, versus the <strong>60%</strong> Guterres said is needed for 1.5°C.",
+          "About <strong>70%</strong> of oil-and-gas methane emissions can be eliminated with existing technology (Guterres, citing the IEA).",
+          "Guterres said data centres could use \"more power than all but <strong>five</strong> countries\" by 2030."
+        ]},
+        {"type": "sources", "items": [
+          {"outlet": "UN News", "title": "Climate crisis: UN chief lays out a clean-energy blueprint", "url": "https://news.un.org/en/story/2026/06/1167785", "lean": "Official"},
+          {"outlet": "United Nations", "title": "Secretary-General's special address at London Climate Action Week (as delivered)", "url": "https://www.un.org/sg/en/content/sg/statements/2026-06-23/secretary-generals-special-address-london-climate-action-week-delivered", "lean": "Official"},
+          {"outlet": "Fortune", "title": "UN Secretary-General calls out AI companies on their climate impact", "url": "https://fortune.com/2026/06/23/un-guterres-ai-climate-impact-disclosure-data-centers/", "lean": "Centre"},
+          {"outlet": "Euronews", "title": "UN chief demands AI firms 'come clean' over environmental footprint", "url": "https://www.euronews.com/2026/06/23/no-more-hidden-costs-un-chief-demands-ai-firms-come-clean-over-environmental-footprint", "lean": "Centre"},
+          {"outlet": "Climate Home News", "title": "UN asks AI companies to reveal full environmental impacts", "url": "https://www.climatechangenews.com/2026/06/23/un-ai-firms-to-reveal-full-environmental-impacts-data-centres-water-energy/", "lean": "Centre"},
+          {"outlet": "World Resources Institute", "title": "Statement: Guterres' special address at London Climate Action Week", "url": "https://www.wri.org/news/statement-un-secretary-general-guterres-special-address-london-climate-action-week", "lean": "Centre"}
+        ]},
+        {"type": "factcheck", "items": [
+          {"status": "ok", "verdict": "Confirmed", "text": "The address was delivered 23 June 2026 at London Climate Action Week; the as-delivered text is on un.org and reported by UN News, Fortune and Euronews."},
+          {"status": "ok", "verdict": "Confirmed", "text": "The solar (~90%), onshore-wind (>70%) and battery (95%) cost declines since 2010 appear in the as-delivered speech and the UN News write-up."},
+          {"status": "ok", "verdict": "Confirmed", "text": "The AI Environmental Transparency Initiative and Global Call to Action on Methane are stated in the primary speech text and corroborated across outlets."}
+        ]},
+        {"type": "ground", "agree": [
+          "Renewable-electricity costs have fallen sharply since 2010.",
+          "AI data-centre energy and water demand is rising and is a growing subject of disclosure debate."
+        ], "contest": [
+          "The pace and feasibility of phasing out fossil fuels, contested by producer states and parts of industry.",
+          "Whether a renewables-by-2030 target for data centres is achievable."
+        ]},
+        {"type": "logic", "items": [
+          "<strong>1 · Stated case, not independent modelling.</strong> The \"10% achieved vs 60% needed\" gap is Guterres's framing, drawn from the same address; it is presented as his stated case rather than verified here.",
+          "<strong>2 · Measured vs projected.</strong> The data-centre figures mix a measured 2025 share with 2030 projections, and the \"eleven hottest years\" is historical while the warming-window claims are forward-looking — measured and forecast figures should not be blurred."
+        ]}
+      ]
+    },
+    {
+      "id": "messi",
+      "nav_label": "Messi World Cup Record",
+      "category": "Sport",
+      "badges": [
+        {"label": "Sport", "cls": "b-sport"}
+      ],
+      "dateline": "22 June 2026 | Arlington, Texas",
+      "headline": "Messi becomes the World Cup's all-time leading scorer with 18 goals",
+      "summary": "Lionel Messi scored both goals in Argentina's 2-0 win over Austria, passing Miroslav Klose's men's record and Marta's overall mark.",
+      "confidence": {"level": "corrob", "label": "Verified", "why": "— the result and the scoring record are reported consistently across sports and wire outlets."},
+      "followup": false,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lionel_Messi_20180626.jpg?width=1100",
+        "alt": "Lionel Messi in an Argentina national-team jersey",
+        "caption": "Lionel Messi, who reached 18 World Cup goals against Austria on 22 June 2026. Photo: Кирилл Венедиктов / soccer.ru via Wikimedia Commons · CC BY-SA 3.0",
+        "credit": "Кирилл Венедиктов / soccer.ru via Wikimedia Commons",
+        "license": "CC BY-SA 3.0"
+      },
+      "inline_image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arlington_June_2020_4_(AT%26T_Stadium).jpg?width=600",
+        "alt": "Exterior of AT&T Stadium in Arlington, Texas",
+        "caption": "AT&T Stadium in Arlington, Texas, venue for Argentina's 2-0 win over Austria. Photo: Michael Barera via Wikimedia Commons · CC BY-SA 4.0",
+        "credit": "Michael Barera via Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      "article_blocks": [
+        {"type": "p", "html": "Lionel Messi scored both goals in Argentina's 2-0 win over Austria at AT&T Stadium in Arlington, Texas, on Monday, 22 June 2026, taking his career FIFA World Cup tally to 18 goals — the most by any player in the men's or women's tournament."},
+        {"type": "p", "html": "Messi opened the scoring in the 38th minute, finishing low from a delivery by Facundo Medina, and added the second in the fifth minute of stoppage time, forcing the ball home at the second attempt after a scramble in the penalty area. The win came in front of an announced crowd of 70,649."},
+        {"type": "p", "html": "The 38-year-old captain had missed a penalty in the ninth minute, awarded by VAR for a foul on Lautaro Martínez. \"There were moments when I was really angry about missing the penalty, but I was able to make up for it,\" Messi said after the match."},
+        {"type": "p", "html": "With the brace, Messi surpassed Germany's Miroslav Klose, who had held the men's record with 16 goals, and moved past Brazil's Marta, the women's World Cup record holder with 17 goals, to become the outright leading scorer across both competitions. He had equalled Klose's mark with a hat-trick — his first at a World Cup — in Argentina's 3-0 win over Algeria on 16 June."},
+        {"type": "timeline", "head": "Timeline — to a record", "sub": "Tap an event to expand. Spacing reflects the time between events.", "note": "", "events": [
+          {"date": "2026-06-16", "label": "16 Jun", "title": "Hat-trick vs Algeria", "detail": "Argentina win 3-0; Messi's first World Cup hat-trick equals Klose's record of 16 goals."},
+          {"date": "2026-06-22", "label": "22 Jun", "title": "Penalty miss", "detail": "VAR awards a ninth-minute penalty for a foul on Martínez; Messi's effort is saved."},
+          {"date": "2026-06-22", "label": "22 Jun", "title": "17th goal (38')", "detail": "Messi finishes from Medina's pass to pass Klose as the men's all-time leading scorer."},
+          {"date": "2026-06-22", "label": "22 Jun", "title": "18th goal (90+5')", "detail": "A stoppage-time goal takes Messi past Marta's 17 to lead both men's and women's World Cup scoring."}
+        ]},
+        {"type": "pullquote", "text": "Missing a penalty is a blow, but when Messi switches on, everyone switches on.", "src": "— Lionel Scaloni, Argentina head coach, 22 June 2026"},
+        {"type": "p", "html": "<strong>Why it matters:</strong> the total moves Messi clear of the men's record held by Klose since 2014 and past Marta's women's mark, establishing a single all-time World Cup scoring benchmark of 18 goals across six tournaments."},
+        {"type": "p", "html": "<strong>What comes next:</strong> the result confirmed Argentina's qualification to the knockout phase as Group J leaders with one group game remaining; Austria's defeat left them needing results elsewhere to advance. Reports place Argentina's round-of-32 fixture in early July, with the opponent depending on final group standings."}
+      ],
+      "sidebar_blocks": [
+        {"type": "keyfacts", "items": [
+          "Messi reached <strong>18</strong> career World Cup goals — the most by any player, men's or women's.",
+          "He scored in the <strong>38th</strong> and <strong>90+5th</strong> minutes in a <strong>2-0</strong> win over Austria.",
+          "The previous men's record holder, Miroslav Klose, had <strong>16</strong> goals; women's record holder Marta had <strong>17</strong>.",
+          "Messi has scored <strong>5</strong> goals at the 2026 tournament so far.",
+          "The match drew an attendance of <strong>70,649</strong> at AT&T Stadium."
+        ]},
+        {"type": "sources", "items": [
+          {"outlet": "Sky Sports", "title": "Argentina 2-0 Austria — Messi breaks World Cup scoring record", "url": "https://www.skysports.com/football/news/11095/13556817/lionel-messi-argentina-star-breaks-world-cup-scoring-record-with-goal-against-austria-at-2026-world-cup", "lean": "Sport"},
+          {"outlet": "ESPN", "title": "Messi breaks record for most World Cup goals with Austria double", "url": "https://www.espn.com/soccer/story/_/id/49140402/lionel-messi-world-cup-record-goals-miroslav-klose-all", "lean": "Sport"},
+          {"outlet": "Al Jazeera", "title": "Messi breaks World Cup's all-time scoring record with 18 goals", "url": "https://www.aljazeera.com/sports/2026/6/22/messi-breaks-world-cups-all-time-scoring-record-with-17th-goal-vs-austria", "lean": "Centre"},
+          {"outlet": "NBC News", "title": "Argentina's Messi makes history in 2-0 win over Austria", "url": "https://www.nbcnews.com/sports/soccer/live-blog/fifa-world-cup-games-2026-june-22-live-updates-rcna351129", "lean": "Centre"},
+          {"outlet": "CBS Sports", "title": "Argentina qualify for knockouts: Messi breaks men's World Cup scoring record", "url": "https://www.cbssports.com/soccer/news/argentina-austria-live-updates-world-cup-2026-score-result/live/", "lean": "Sport"},
+          {"outlet": "Buenos Aires Times", "title": "Scaloni: 'When Messi switches on, everyone switches on'", "url": "https://www.batimes.com.ar/news/sports/lionel-scaloni-on-argentinas-win-over-austria-when-messi-switches-on-everyone-switches-on.phtml", "lean": "Centre"}
+        ]},
+        {"type": "factcheck", "items": [
+          {"status": "ok", "verdict": "Confirmed", "text": "Messi's career World Cup tally of 18 goals is reported by Sky Sports, ESPN and Al Jazeera following the Austria brace."},
+          {"status": "ok", "verdict": "Confirmed", "text": "He passed Klose (16, men's) and Marta (17, women's); ESPN and others state he now leads across both tournaments."},
+          {"status": "ok", "verdict": "Confirmed", "text": "The 2-0 score, goal minutes and Argentina's qualification are confirmed by Sky Sports and CBS Sports."}
+        ]},
+        {"type": "ground", "agree": [
+          "Messi scored twice in a 2-0 win over Austria on 22 June 2026, reaching 18 career World Cup goals.",
+          "That is the all-time record across the men's and women's World Cups, passing Klose (16) and Marta (17)."
+        ], "contest": []},
+        {"type": "logic", "items": [
+          "<strong>1 · Tally check passes.</strong> 16 (after the Algeria hat-trick) + 2 (the Austria brace) = 18, consistent across sources.",
+          "<strong>2 · Record scope.</strong> 18 exceeds both Klose's 16 (men's) and Marta's 17 (women's); outlets explicitly state Messi now leads across both."
+        ]}
+      ]
+    },
+    {
+      "id": "quasar",
+      "nav_label": "Earliest Flickering Quasar",
+      "category": "Science",
+      "badges": [
+        {"label": "Science", "cls": "b-science"}
+      ],
+      "dateline": "23 June 2026 | Cambridge, Massachusetts",
+      "headline": "Astronomers report the earliest known 'flickering' quasar, 850 million years after the Big Bang",
+      "summary": "An MIT-led team says brightness changes in quasar J0439+1634 point to a settled accretion disk, suggesting some black holes matured very early.",
+      "confidence": {"level": "corrob", "label": "Verified", "why": "— object identity, redshift, mass, instrument, journal and named authors are confirmed across the Nature Astronomy paper and several outlets; the maturation-timeline inference is single-sourced."},
+      "followup": false,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Artist's_rendering_ULAS_J1120+0641.jpg?width=1100",
+        "alt": "Artist's impression of an early-universe quasar — a luminous accretion disk around a supermassive black hole",
+        "caption": "Artist's impression of a distant quasar in the early universe (illustrative; not J0439+1634). Image: ESO/M. Kornmesser via Wikimedia Commons · CC BY 4.0",
+        "credit": "ESO/M. Kornmesser via Wikimedia Commons",
+        "license": "CC BY 4.0"
+      },
+      "inline_image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Black_hole_-_Messier_87_crop_max_res.jpg?width=600",
+        "alt": "Event Horizon Telescope image of the supermassive black hole in galaxy M87",
+        "caption": "The first direct image of a black hole's surroundings (M87), shown for context on accretion-powered systems. Image: Event Horizon Telescope Collaboration · CC BY 4.0",
+        "credit": "Event Horizon Telescope Collaboration",
+        "license": "CC BY 4.0"
+      },
+      "article_blocks": [
+        {"type": "p", "html": "A team led by researchers at the Massachusetts Institute of Technology reports the detection of brightness variability, or \"flickering,\" in a quasar seen as it appeared roughly 850 million years after the Big Bang. The object, designated J0439+1634, is described by the authors as the earliest flickering quasar identified to date. The findings were published on 8 June 2026 in the journal Nature Astronomy."},
+        {"type": "p", "html": "A quasar is the luminous core of a galaxy in which gas falling toward a supermassive black hole is heated and radiates across the electromagnetic spectrum. J0439+1634 sits at a redshift of z = 6.51 and is gravitationally lensed by a foreground galaxy, which magnifies its light. After correcting for that lensing, the team estimates the black hole's mass at about 630 million times that of the Sun."},
+        {"type": "p", "html": "The variability signal was drawn from about 14 years of infrared observations by NASA's NEOWISE mission. Over that period the quasar's output changed by approximately 20 per cent, fluctuating without a fixed pattern. Lead author Gene Leung said the flickering arises from changes in the rate at which gas is fed into the black hole."},
+        {"type": "p", "html": "The team interprets the character of the variability as evidence that the gas-feeding structure is a geometrically thin, flat accretion disk, similar to those observed around black holes in the present-day universe. According to the authors, current models had generally expected black holes still in a rapid early-growth phase to host thicker, more turbulent disks."},
+        {"type": "timeline", "head": "Timeline — observation to publication", "sub": "Tap an event to expand. Spacing reflects the time between events.", "note": "Some dates are approximate.", "events": [
+          {"date": "2019-01-15", "label": "2019", "title": "Quasar identified", "detail": "Earlier work places J0439+1634 at z = 6.51, about 850 million years after the Big Bang."},
+          {"date": "2024-06-01", "label": "2010–24", "title": "NEOWISE monitoring", "detail": "NASA's NEOWISE mission accumulates about 14 years of infrared measurements used to detect the variability."},
+          {"date": "2026-06-08", "label": "8 Jun", "title": "Findings published", "detail": "Results appear in Nature Astronomy (Leung et al.)."},
+          {"date": "2026-06-22", "label": "22 Jun", "title": "Findings reported", "detail": "The MIT release and outlet coverage follow; NASA's Roman telescope separately arrives at Kennedy Space Center."}
+        ]},
+        {"type": "pullquote", "text": "Although there have been a lot of quasars found in the cosmic dawn, this is the first time we have actually seen one flickering.", "src": "— Gene Leung, MIT Kavli Institute, 22 June 2026"},
+        {"type": "p", "html": "Co-author Anna-Christina Eilers, an assistant professor of physics at MIT, said the result suggests the rapid growth phases expected for black holes occurred very early in cosmic history, and that feeding structures seen in the nearby universe were already in place at very early times. The conclusions rest on a single object, and the disk geometry is inferred from variability rather than imaged directly."},
+        {"type": "p", "html": "<strong>Why it matters:</strong> if the interpretation holds, it indicates that at least one black hole had completed its most energetic growth phase and reached a comparatively stable feeding state before the era of cosmic dawn ended — which, the authors say, would push the period of most intense black-hole assembly to earlier times."},
+        {"type": "p", "html": "<strong>What comes next:</strong> the researchers point to wide-field surveys, including NASA's Nancy Grace Roman Space Telescope, as a way to test whether J0439+1634 is typical; independent confirmation would require detecting flickering in additional quasars at comparable redshifts."}
+      ],
+      "sidebar_blocks": [
+        {"type": "keyfacts", "items": [
+          "The quasar is seen as it appeared about <strong>850 million years</strong> after the Big Bang, at redshift <strong>z = 6.51</strong>.",
+          "Its black-hole mass is estimated at about <strong>630 million solar masses</strong> (after lensing correction).",
+          "Brightness varied by about <strong>20 per cent</strong> over the monitoring period.",
+          "Variability was measured from about <strong>14 years</strong> of NASA NEOWISE infrared data.",
+          "The findings were published in <strong>Nature Astronomy</strong> on 8 June 2026."
+        ]},
+        {"type": "sources", "items": [
+          {"outlet": "Phys.org", "title": "Astronomers discover the earliest known flickering quasar", "url": "https://phys.org/news/2026-06-astronomers-earliest-flickering-quasar.html", "lean": "Science"},
+          {"outlet": "Nature Astronomy", "title": "Quasar variability and early accretion-disk signatures at cosmic dawn", "url": "https://www.nature.com/articles/s41550-026-02897-4", "lean": "Science"},
+          {"outlet": "Space.com", "title": "Could black-hole formation be locked in this record-breaking ancient quasar?", "url": "https://www.space.com/astronomy/black-holes/could-the-secret-to-black-hole-formation-be-locked-away-in-this-record-breaking-ancient-quasar", "lean": "Science"},
+          {"outlet": "Universe Today", "title": "A quasar at cosmic dawn flickers into view", "url": "https://www.universetoday.com/articles/a-quasar-at-cosmic-dawn-flickers-into-view", "lean": "Science"},
+          {"outlet": "ScienceAlert", "title": "Earliest flickering quasar ever seen could explain monster black holes", "url": "https://www.sciencealert.com/earliest-flickering-quasar-ever-seen-could-explain-monster-black-holes", "lean": "Science"},
+          {"outlet": "The Brighter Side of News", "title": "MIT astronomers detect oldest known flickering quasar", "url": "https://www.thebrighterside.news/post/mit-astronomers-detect-oldest-known-flickering-quasar-from-the-cosmic-dawn/", "lean": "Science"}
+        ]},
+        {"type": "factcheck", "items": [
+          {"status": "ok", "verdict": "Confirmed", "text": "J0439+1634 is at z = 6.51, about 850 million years after the Big Bang; consistent across prior catalogues and current coverage."},
+          {"status": "ok", "verdict": "Confirmed", "text": "Mass ~630 million solar masses and ~20% variability over ~14 years of NEOWISE data are attributed to Leung et al. and reported by Phys.org, Space.com and ScienceAlert."},
+          {"status": "unv", "verdict": "Unverified", "text": "The estimate that peak black-hole assembly occurred 200–600 million years after the Big Bang appears in secondary coverage as the authors' inference and is not independently confirmed here."}
+        ]},
+        {"type": "ground", "agree": [
+          "The object is a real, previously catalogued z = 6.51 lensed quasar.",
+          "Flickering was detected in long-baseline NEOWISE infrared data."
+        ], "contest": [
+          "Whether the variability proves a fully \"mature,\" thin accretion disk, and what that implies for the timing of early black-hole growth."
+        ]},
+        {"type": "logic", "items": [
+          "<strong>1 · Redshift–age check passes.</strong> z = 6.51 corresponds to a universe age of about 850 million years at emission under standard cosmology — the two figures are mutually consistent.",
+          "<strong>2 · Single-system caveat.</strong> The thin-disk conclusion is inferred from the variability of one lensed object, not imaged directly, so it remains a single-system result pending further detections."
+        ]}
+      ]
+    }
+  ],
+  "markets": {
+    "overview": {
+      "id": "markets-overview",
+      "nav_label": "Markets Overview",
+      "category": "Markets",
+      "badges": [
+        {"label": "Markets & Investments", "cls": "b-markets"}
+      ],
+      "dateline": "23 June 2026 | The Session in Markets",
+      "headline": "A chip-led sell-off hits Wall Street and Asia; oil eases on Iran supply, gold slips as Fed-hike bets firm",
+      "summary": "Wall Street and Asia fell on a memory-chip rout; Brent settled near $75.67 as Washington granted Iran a 60-day oil licence, and gold dropped 1.8%.",
+      "confidence": {"level": "develop", "label": "Developing", "why": "— US and European index levels and the tech sell-off are well corroborated; the Kospi magnitude and some single-stock movers varied by vendor through the session."},
+      "followup": false,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/New_York_Stock_Exchange_August_2017_04.jpg?width=1100",
+        "alt": "The neoclassical facade of the New York Stock Exchange on Wall Street",
+        "caption": "The New York Stock Exchange on Wall Street. Photo: Arild Vågen via Wikimedia Commons · CC BY-SA 4.0",
+        "credit": "Arild Vågen via Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      "inline_image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trading_Floor_at_the_New_York_Stock_Exchange.jpg?width=600",
+        "alt": "Traders at work on the floor of the New York Stock Exchange",
+        "caption": "The NYSE trading floor. Photo: Scott Beale via Wikimedia Commons · CC BY-SA 4.0",
+        "credit": "Scott Beale via Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      "article_blocks": [
+        {"type": "p", "html": "A global sell-off centred on memory-chip and AI-related shares extended into a second session on Tuesday, 23 June 2026. On Wall Street the Nasdaq Composite closed down 2.21% at 25,587.04, the S&P 500 fell 1.44%, and the Dow Jones Industrial Average ended little changed, down 0.09% at 51,666.84."},
+        {"type": "p", "html": "The sharpest moves were in Asia earlier in the day. South Korea's Kospi closed down 9.99% at 8,203.84, a fall of 910.71 points that triggered market-wide circuit breakers, with Samsung Electronics and SK Hynix each down about 12% and foreign investors selling a net 5.79 trillion won (about $3.8 billion). Japan's Nikkei 225 closed down about 3.55% at 69,788.38, and Hong Kong's Hang Seng fell 1.82%."},
+        {"type": "p", "html": "Europe followed Asia. Germany's DAX fell 0.98% to 24,893.58 and the Euro Stoxx 50 fell 1.25% to 6,232.46, with chip names STMicroelectronics, Infineon and ASML among the larger decliners. London's FTSE 100 was an outlier, easing 0.30% to about 10,406, cushioned by its lighter technology weighting."},
+        {"type": "p", "html": "In commodities, oil fell on signs of progress in the US–Iran talks. WTI settled near $73.36 a barrel, down about 0.7%, and Brent near $75.67, after Washington granted Iran a 60-day licence to sell oil internationally. Gold eased 1.81% to about $4,126.50 an ounce as firmer expectations for Federal Reserve rate increases and a steadier dollar weighed on demand."},
+        {"type": "p", "html": "Markets also absorbed the death of former Fed chair Alan Greenspan, who died on 22 June at age 100. Coverage framed the market reaction as muted, with attention concentrated on the technology sell-off and on shifting expectations for Fed policy; a specific Treasury-yield move attributable to the news was not independently established."},
+        {"type": "p", "html": "<strong>What to watch:</strong> Micron Technology reports fiscal third-quarter results after the US close on 24 June, a test for the memory-chip narrative. Nike reports on 30 June, and a month-end US PCE inflation reading is also in view as investors weigh the path of Fed policy."}
+      ],
+      "sidebar_blocks": [
+        {"type": "keyfacts", "items": [
+          "Nasdaq Composite <strong>25,587.04, −2.21%</strong> (23 Jun close); S&P 500 <strong>−1.44%</strong>.",
+          "DAX <strong>24,893.58, −0.98%</strong>; Euro Stoxx 50 <strong>6,232.46, −1.25%</strong> (23 Jun).",
+          "Kospi <strong>8,203.84, −9.99%</strong> with circuit breakers; Nikkei 225 <strong>69,788.38, −3.55%</strong> (23 Jun).",
+          "WTI crude about <strong>$73.36</strong>; Brent about <strong>$75.67</strong> (23 Jun), lower on Iran supply news.",
+          "Gold about <strong>$4,126.50, −1.81%</strong> (23 Jun)."
+        ]},
+        {"type": "sources", "items": [
+          {"outlet": "TheStreet", "title": "Stock Market Today (June 23, 2026): Nasdaq, S&P 500 fall as Asian markets tumble", "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-23-2026", "lean": "Centre"},
+          {"outlet": "Reuters (via MarketScreener)", "title": "STOXX 600 hits over one-week low on Fed-hike bets, tech sell-off", "url": "https://www.marketscreener.com/news/stoxx-600-hits-over-one-week-low-on-fed-hike-bets-tech-selloff-ce7f5fdada8aff20", "lean": "Centre"},
+          {"outlet": "Investing.com", "title": "Asia stocks slide as AI rally cools, Korea tumbles on chip sell-off", "url": "https://www.investing.com/news/stock-market-news/asia-stocks-slide-as-ai-rally-cools-korea-tumbles-on-chip-selloff-4754608", "lean": "Centre"},
+          {"outlet": "Yahoo Finance", "title": "S&P 500, Nasdaq sink as AI trade cools, semiconductor stocks retreat", "url": "https://finance.yahoo.com/economy/live/stock-market-today-nasdaq-sp-500-fall-as-global-chip-sell-off-spurs-ai-doubts-230258084.html", "lean": "Centre"}
+        ]},
+        {"type": "logic", "items": [
+          "<strong>1 · Dated to session.</strong> All index levels are the 23 June close; the 22 June session (Russell 2000's first close above 3,000; Nasdaq −1.3%) is kept separate and not presented as live.",
+          "<strong>2 · Anomalies flagged.</strong> The Kospi magnitude varied by vendor through the session (about −4% early, −9.99% at the close); no Treasury-yield move is attributed to Greenspan's death."
+        ]}
+      ]
+    },
+    "movers": {
+      "dateline": "23 June 2026 session · US & Europe cash close, UK movers from 22 Jun close",
+      "headline": "Markets at a glance — biggest movers",
+      "note_html": "Mover percentages are drawn from session reporting and may reflect intraday snapshots rather than official closes; figures vary by data vendor. UK single-stock movers are from the 22 June close (the FTSE 100 was little changed on 23 June).",
+      "indices": [
+        {"name": "S&P 500", "value": "7,378.84", "change": "▼ 1.44%", "direction": "down"},
+        {"name": "Nasdaq Comp.", "value": "25,587.04", "change": "▼ 2.21%", "direction": "down"},
+        {"name": "Dow Jones", "value": "51,666.84", "change": "▼ 0.09%", "direction": "down"},
+        {"name": "FTSE 100", "value": "10,406", "change": "▼ 0.30%", "direction": "down"},
+        {"name": "DAX", "value": "24,893.58", "change": "▼ 0.98%", "direction": "down"},
+        {"name": "Euro Stoxx 50", "value": "6,232.46", "change": "▼ 1.25%", "direction": "down"},
+        {"name": "Nikkei 225", "value": "69,788.38", "change": "▼ 3.55%", "direction": "down"},
+        {"name": "Kospi", "value": "8,203.84", "change": "▼ 9.99%", "direction": "down"},
+        {"name": "Hang Seng", "value": "23,336.28", "change": "▼ 1.82%", "direction": "down"},
+        {"name": "Russell 2000", "value": "2,976.10", "change": "▼ 0.94%", "direction": "down"},
+        {"name": "Brent crude", "value": "$75.67", "change": "▼ 0.26%", "direction": "down"},
+        {"name": "WTI crude", "value": "$73.36", "change": "▼ 0.68%", "direction": "down"},
+        {"name": "Gold", "value": "$4,126.50", "change": "▼ 1.81%", "direction": "down"}
+      ],
+      "groups": [
+        {
+          "section": "United States — top movers",
+          "boxes": [
+            {"kind": "lose", "heading": "▼ Top decliners", "region_note": "US · 23 Jun · session reporting", "rows": [
+              {"ticker": "WDC", "name": "Western Digital", "pct": "−8.4%", "direction": "down"},
+              {"ticker": "QCOM", "name": "Qualcomm", "pct": "−6.9%", "direction": "down"},
+              {"ticker": "MU", "name": "Micron Technology", "pct": "−5.7%", "direction": "down"},
+              {"ticker": "AMZN", "name": "Amazon", "pct": "−4.0%", "direction": "down"},
+              {"ticker": "META", "name": "Meta Platforms", "pct": "−4.0%", "direction": "down"}
+            ]},
+            {"kind": "gain", "heading": "▲ Top gainers", "region_note": "US · 23 Jun", "rows": [
+              {"ticker": "—", "name": "Verified US gainers were limited on a broad sell-off day; shown at index level", "pct": "n/a", "direction": "up"}
+            ]}
+          ],
+          "note_html": "US single-stock figures reflect session reporting and vary by vendor; treat as illustrative of the chip-led decline rather than an exhaustive leaderboard."
+        },
+        {
+          "section": "United Kingdom (FTSE 100) — top movers",
+          "boxes": [
+            {"kind": "gain", "heading": "▲ Top gainers", "region_note": "UK · 22 Jun close", "rows": [
+              {"ticker": "MKS", "name": "Marks & Spencer", "pct": "+2.68%", "direction": "up"},
+              {"ticker": "BAB", "name": "Babcock International", "pct": "+1.94%", "direction": "up"},
+              {"ticker": "BATS", "name": "British American Tobacco", "pct": "+1.42%", "direction": "up"}
+            ]},
+            {"kind": "lose", "heading": "▼ Top decliners", "region_note": "UK · 22 Jun close", "rows": [
+              {"ticker": "ANTO", "name": "Antofagasta", "pct": "−5.97%", "direction": "down"},
+              {"ticker": "FRES", "name": "Fresnillo", "pct": "−5.05%", "direction": "down"},
+              {"ticker": "AAL", "name": "Anglo American", "pct": "−4.74%", "direction": "down"}
+            ]}
+          ],
+          "note_html": "FTSE 100 single-stock movers shown are from the 22 June close; the index was little changed (−0.30%) on 23 June."
+        },
+        {
+          "section": "Europe — top movers",
+          "boxes": [
+            {"kind": "lose", "heading": "▼ Top decliners", "region_note": "Europe · 23 Jun close", "rows": [
+              {"ticker": "AIXA", "name": "Aixtron", "pct": "−8.3%", "direction": "down"},
+              {"ticker": "STM", "name": "STMicroelectronics", "pct": "−8.0%", "direction": "down"},
+              {"ticker": "IFX", "name": "Infineon", "pct": "−6.0%", "direction": "down"},
+              {"ticker": "ASML", "name": "ASML Holding", "pct": "−5.5%", "direction": "down"}
+            ]},
+            {"kind": "gain", "heading": "▲ Top gainers", "region_note": "Europe · 23 Jun", "rows": [
+              {"ticker": "—", "name": "Verified European gainers were limited amid the tech-led decline; shown at index level", "pct": "n/a", "direction": "up"}
+            ]}
+          ],
+          "note_html": "European decliners were concentrated in semiconductors; figures are session reporting and vary by vendor."
+        }
+      ],
+      "sources": [
+        {"outlet": "Reuters (via MarketScreener)", "title": "European tech stocks join accelerating global sell-off", "url": "https://www.marketscreener.com/news/european-tech-stocks-join-accelerating-global-selloff-ce7f5fdada8ef423", "lean": "Centre"},
+        {"outlet": "Hargreaves Lansdown", "title": "FTSE 100 risers and fallers", "url": "https://www.hl.co.uk/shares/stock-market-summary/ftse-100/fallers", "lean": ""},
+        {"outlet": "Yahoo Finance", "title": "S&P 500, Nasdaq sink as AI trade cools, semiconductors retreat", "url": "https://finance.yahoo.com/economy/live/stock-market-today-nasdaq-sp-500-fall-as-global-chip-sell-off-spurs-ai-doubts-230258084.html", "lean": "Centre"}
+      ]
+    },
+    "calendar": {
+      "dateline": "Economic calendar · June 2026",
+      "headline": "June 2026 — Fed holds mid-month; chip earnings and PCE in focus into month-end",
+      "note_html": "Dates reflect scheduled or reported items as of 23 June 2026. Passed items are marked; upcoming items are highlighted. Earnings consensus figures are analyst estimates, not results.",
+      "days": [
+        {"day": "16–17", "month": "Jun", "dow": "Tue–Wed", "state": "past", "items": [
+          {"chip": "bank", "chip_label": "Central bank", "event": "Federal Reserve FOMC", "meta": "Concluded; markets later priced firmer rate-hike expectations.", "done": "✓ held"}
+        ]},
+        {"day": "19", "month": "Jun", "dow": "Fri", "state": "past", "items": [
+          {"chip": "data", "chip_label": "Holiday", "event": "Juneteenth", "meta": "US markets closed.", "done": "✓ closed"}
+        ]},
+        {"day": "22", "month": "Jun", "dow": "Mon", "state": "past", "items": [
+          {"chip": "data", "chip_label": "Markets", "event": "Russell 2000 closes above 3,000 for the first time; tech sell-off begins", "meta": "Nasdaq −1.3%.", "done": "✓ done"},
+          {"chip": "data", "chip_label": "Obituary", "event": "Alan Greenspan, former Fed chair, dies at 100", "meta": "Announced 22 June.", "done": "✓ reported"}
+        ]},
+        {"day": "23", "month": "Jun", "dow": "Tue", "state": "past", "items": [
+          {"chip": "earn", "chip_label": "Earnings", "event": "FedEx — Q4 FY26", "meta": "After the close.", "done": "✓ reported"},
+          {"chip": "earn", "chip_label": "Earnings", "event": "Carnival — Q2 FY26", "meta": "Before the open.", "done": "✓ reported"}
+        ]},
+        {"day": "24", "month": "Jun", "dow": "Wed", "state": "next", "items": [
+          {"chip": "earn", "chip_label": "Earnings", "event": "Micron (MU) — Q3 FY26", "meta": "After the close; a key read on memory demand.", "done": ""}
+        ]},
+        {"day": "30", "month": "Jun", "dow": "Tue", "state": "", "items": [
+          {"chip": "earn", "chip_label": "Earnings", "event": "Nike (NKE) — Q4 FY26", "meta": "After the close.", "done": ""},
+          {"chip": "data", "chip_label": "Data", "event": "US PCE price index (month-end)", "meta": "Watched for the Fed-policy path.", "done": ""}
+        ]}
+      ],
+      "sources": [
+        {"outlet": "StockTitan", "title": "Micron sets 24 June date for fiscal Q3 earnings webcast", "url": "https://www.stocktitan.net/news/MU/micron-technology-to-report-fiscal-third-quarter-results-on-june-24-22gcrbths4gp.html", "lean": ""},
+        {"outlet": "AlphaStreet", "title": "FedEx Q4 2026 / Carnival Q2 2026 earnings previews — 23 June", "url": "https://news.alphastreet.com/fedex-q4-2026-earnings-preview-june-23-street-expects-5-95-eps/", "lean": ""},
+        {"outlet": "Nike Investor Relations", "title": "Nike announces Q4 FY26 earnings and conference call", "url": "https://investors.nike.com/", "lean": ""}
+      ]
+    }
+  },
+  "archive": [
+    {"date": "23 Jun 2026", "edition": "23 June 2026", "cat": "Politics", "title": "US and Iran give conflicting accounts of nuclear-inspector access after first Switzerland talks", "summary": "US Vice-President JD Vance said Iran agreed to readmit IAEA inspectors after the first US–Iran talks in Switzerland; Iran's foreign ministry said no visit to its war-damaged nuclear sites is scheduled.", "panel": "iran"},
+    {"date": "23 Jun 2026", "edition": "23 June 2026", "cat": "Business", "title": "Alan Greenspan, US Federal Reserve chair from 1987 to 2006, dies at 100", "summary": "Greenspan, who led the Fed for more than 18 years across four presidencies, died on 22 June of complications from Parkinson's disease.", "panel": "greenspan"},
+    {"date": "23 Jun 2026", "edition": "23 June 2026", "cat": "Technology", "title": "Memory-chip shares lead a global equity sell-off; Kospi closes about 10% lower", "summary": "South Korea's Kospi fell 9.99% and triggered circuit breakers as Samsung and SK Hynix each dropped about 12%; the US Nasdaq closed 2.21% lower.", "panel": "chips"},
+    {"date": "23 Jun 2026", "edition": "23 June 2026", "cat": "Politics", "title": "NATO heads to Ankara summit on 5% spending pledge as Czech PM excludes President Pavel from delegation", "summary": "Ahead of the 7–8 July summit, PM Andrej Babiš left President Petr Pavel off the Czech delegation; Pavel asked the Constitutional Court to rule on who represents the state abroad.", "panel": "nato"},
+    {"date": "23 Jun 2026", "edition": "23 June 2026", "cat": "Politics", "title": "Albania protests over a Kushner-linked Adriatic resort enter a fourth week", "summary": "Demonstrators in Tirana have marched for more than three weeks against a resort planned for the protected Vjosa-Narta coast and Sazan island, demanding PM Edi Rama's resignation.", "panel": "albania"},
+    {"date": "23 Jun 2026", "edition": "23 June 2026", "cat": "Climate", "title": "UN chief ties climate and energy crises to fossil fuels in London address", "summary": "António Guterres used a London Climate Action Week address to call for a faster renewables transition, AI data-centre emissions disclosure and methane cuts.", "panel": "unclimate"},
+    {"date": "23 Jun 2026", "edition": "23 June 2026", "cat": "Sport", "title": "Messi becomes the World Cup's all-time leading scorer with 18 goals", "summary": "Lionel Messi scored both goals in Argentina's 2-0 win over Austria, passing Miroslav Klose's men's record and Marta's overall mark.", "panel": "messi"},
+    {"date": "23 Jun 2026", "edition": "23 June 2026", "cat": "Science", "title": "Astronomers report the earliest known 'flickering' quasar, 850 million years after the Big Bang", "summary": "An MIT-led team says brightness changes in quasar J0439+1634 point to a settled accretion disk, suggesting some black holes matured very early.", "panel": "quasar"},
+    {"date": "23 Jun 2026", "edition": "23 June 2026", "cat": "Markets", "title": "A chip-led sell-off; oil eases on Iran supply, gold slips as Fed-hike bets firm", "summary": "Wall Street and Asia fell on a memory-chip rout; Brent settled near $75.67 as Washington granted Iran a 60-day oil licence, and gold dropped 1.8%.", "panel": "markets"}
+  ]
+}
