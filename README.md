@@ -7,18 +7,19 @@
 ### 🔗 Read it live → **https://owenautosport.github.io/Even-Brief/**
 
 <!--EDITION:START-->
-## Current edition — Wednesday, 24 June 2026
+## Current edition — Thursday, 25 June 2026
 
 Today's Top Headlines:
 
+- **UK provisionally records its hottest June day as red heat warnings hit western Europe** — The Met Office said the UK reached about 36°C on 24 June, provisionally its highest June temperature on record, as red extreme-heat warnings covered Surrey and South-East England and parts of France and Italy issued their own alerts.
 - **US and Iran agree Hormuz safe-passage line; IMO to evacuate 11,000 seafarers** — Mediators Qatar and Pakistan said the US and Iran agreed a communication line for safe shipping through the Strait of Hormuz and a Lebanon "de-confliction cell," as the IMO announced an evacuation of more than 11,000 stranded seafarers.
-- **Congress passes 21st Century ROAD to Housing Act, sending it to Trump** — The House passed the bipartisan housing bill 358-32 after the Senate's 85-5 vote, sending it to President Trump.
+- **Trump cancels housing-bill signing, conditioning it on an elections bill** — Hours before a planned ceremony, President Trump said he would not sign the bipartisan 21st Century ROAD to Housing Act until Congress passes the SAVE America Act on voter registration.
 - **Appeals court lets Trump administration resume nationwide expedited removal** — A divided D.C. Circuit panel vacated a lower-court order that had blocked fast-track deportation without a hearing for people who cannot prove two years' continuous presence.
 - **Ukraine strikes occupied Crimea; occupation officials report widespread power loss** — Ukraine said it destroyed a railway bridge over the North Crimean Canal and hit energy, fuel and military sites overnight on 23 June; occupation authorities reported about half the peninsula lost power.
-- **Micron and Anthropic sign AI-memory supply deal as chip shares fall before earnings** — The companies announced a multi-year memory and storage agreement and a Micron investment in Anthropic's funding round, two days before Micron's quarterly results and amid a sell-off in memory-chip shares.
+- **Micron beats estimates and guides higher; shares jump after the Anthropic AI-memory deal** — Micron reported fiscal Q3 revenue of about $41.5bn and adjusted EPS of $25.11, guided to roughly $50bn for the current quarter, and rose about 15% in after-hours trading, days after announcing a multi-year supply deal with Anthropic.
 - **Study identifies why H5N1 infects dairy cows' udders rather than their lungs** — University of Pittsburgh researchers found H5N1 binds N-linked sialic acid receptors that are abundant in cow udder tissue but scarce in their airways.
 - **SETI radio search of interstellar object 3I/ATLAS finds no technosignatures** — A SETI Institute-led scan of the interstellar object 3I/ATLAS detected no artificial radio signals, with all candidate detections attributed to human-made interference.
-- **World Cup group stage: England held by Ghana; Scotland face Brazil** — England drew 0-0 with Ghana and Colombia beat DR Congo 1-0 on 23 June, while Scotland meet Brazil on 24 June seeking the knockout stage for the first time.
+- **World Cup: Scotland beaten 2-0 by Brazil and exit; England held by Ghana** — Vinícius Júnior scored twice as Brazil beat Scotland 2-0 in Miami on 24 June, ending Scotland's bid for a first World Cup knockout place, a day after England were held 0-0 by Ghana.
 
 Read the live site: https://owenautosport.github.io/Even-Brief/
 <!--EDITION:END-->
