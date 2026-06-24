@@ -1,75 +1,138 @@
 [
 {
+"date": "24 Jun 2026",
+"edition": "24 June 2026",
+"cat": "Conflict",
+"title": "US and Iran agree Hormuz safe-passage line; IMO to evacuate 11,000 seafarers",
+"summary": "Mediators Qatar and Pakistan said the US and Iran agreed a communication line for safe shipping through the Strait of Hormuz and a Lebanon de-confliction cell, as the IMO announced an evacuation of more than 11,000 stranded seafarers.",
+"panel": "hormuz"
+},
+{
+"date": "24 Jun 2026",
+"edition": "24 June 2026",
+"cat": "Politics",
+"title": "Congress passes the 21st Century ROAD to Housing Act, sending it to Trump",
+"summary": "The US House passed the bipartisan housing bill 358-32 after the Senate's 85-5 vote; it limits institutional investors owning 350+ single-family homes and heads to the president's desk.",
+"panel": "housing"
+},
+{
+"date": "24 Jun 2026",
+"edition": "24 June 2026",
+"cat": "Politics",
+"title": "Appeals court lets Trump administration resume nationwide expedited removal",
+"summary": "A divided D.C. Circuit panel vacated a lower-court order, allowing fast-track deportation without a hearing for people who cannot prove two years' continuous US presence.",
+"panel": "deportation"
+},
+{
+"date": "24 Jun 2026",
+"edition": "24 June 2026",
+"cat": "Conflict",
+"title": "Ukraine strikes occupied Crimea; occupation officials report widespread power loss",
+"summary": "Ukraine said it destroyed a railway bridge over the North Crimean Canal and hit energy and fuel sites overnight on 23 June; occupation authorities reported about half the peninsula lost power.",
+"panel": "crimea"
+},
+{
+"date": "24 Jun 2026",
+"edition": "24 June 2026",
+"cat": "Technology",
+"title": "Micron and Anthropic sign AI-memory supply deal as chip shares fall before earnings",
+"summary": "The companies announced a multi-year memory and storage agreement and a Micron investment in Anthropic's funding round, two days before Micron's quarterly results.",
+"panel": "micron"
+},
+{
+"date": "24 Jun 2026",
+"edition": "24 June 2026",
+"cat": "Health",
+"title": "Study identifies why H5N1 infects dairy cows' udders rather than their lungs",
+"summary": "University of Pittsburgh researchers found H5N1 binds N-linked sialic acid receptors abundant in cow udder tissue but scarce in their airways; published in Science Advances.",
+"panel": "birdflu"
+},
+{
+"date": "24 Jun 2026",
+"edition": "24 June 2026",
+"cat": "Science",
+"title": "SETI radio search of interstellar object 3I/ATLAS finds no technosignatures",
+"summary": "A SETI Institute-led scan detected no artificial radio signals from 3I/ATLAS, with all candidate detections attributed to human-made interference.",
+"panel": "seti"
+},
+{
+"date": "24 Jun 2026",
+"edition": "24 June 2026",
+"cat": "Sport",
+"title": "World Cup group stage: England held by Ghana; Scotland face Brazil",
+"summary": "England drew 0-0 with Ghana and Colombia beat DR Congo 1-0 on 23 June, while Scotland met Brazil on 24 June seeking a first World Cup knockout place.",
+"panel": "worldcup"
+},
+{
+"date": "24 Jun 2026",
+"edition": "24 June 2026",
+"cat": "Markets",
+"title": "Memory-chip sell-off steadies as Seoul rebounds; oil near three-month lows",
+"summary": "After Tuesday's chip-led decline (S&P 500 -1.44%, Nasdaq -2.21%), the Kospi rebounded on 24 June while Japan and Europe stayed lower and Brent eased to about $76.4.",
+"panel": "markets"
+},
+{
 "date": "23 Jun 2026",
 "edition": "23 June 2026",
 "cat": "Politics",
 "title": "US and Iran give conflicting accounts of nuclear-inspector access after first Switzerland talks",
-"summary": "US Vice-President JD Vance said Iran agreed to readmit IAEA inspectors after the first US–Iran talks in Switzerland; Iran's foreign ministry said no visit to its war-damaged nuclear sites is scheduled.",
-"panel": "iran"
+"summary": "US Vice-President JD Vance said Iran agreed to readmit IAEA inspectors after the first US–Iran talks in Switzerland; Iran's foreign ministry said no visit to its war-damaged nuclear sites is scheduled."
 },
 {
 "date": "23 Jun 2026",
 "edition": "23 June 2026",
 "cat": "Business",
 "title": "Alan Greenspan, US Federal Reserve chair from 1987 to 2006, dies at 100",
-"summary": "Greenspan, who led the Fed for more than 18 years across four presidencies, died on 22 June of complications from Parkinson's disease.",
-"panel": "greenspan"
+"summary": "Greenspan, who led the Fed for more than 18 years across four presidencies, died on 22 June of complications from Parkinson's disease."
 },
 {
 "date": "23 Jun 2026",
 "edition": "23 June 2026",
 "cat": "Technology",
 "title": "Memory-chip shares lead a global equity sell-off; Kospi closes about 10% lower",
-"summary": "South Korea's Kospi fell 9.99% and triggered circuit breakers as Samsung and SK Hynix each dropped about 12%; the US Nasdaq closed 2.21% lower.",
-"panel": "chips"
+"summary": "South Korea's Kospi fell 9.99% and triggered circuit breakers as Samsung and SK Hynix each dropped about 12%; the US Nasdaq closed 2.21% lower."
 },
 {
 "date": "23 Jun 2026",
 "edition": "23 June 2026",
 "cat": "Politics",
 "title": "NATO heads to Ankara summit on 5% spending pledge as Czech PM excludes President Pavel from delegation",
-"summary": "Ahead of the 7–8 July summit, PM Andrej Babiš left President Petr Pavel off the Czech delegation; Pavel asked the Constitutional Court to rule on who represents the state abroad.",
-"panel": "nato"
+"summary": "Ahead of the 7–8 July summit, PM Andrej Babiš left President Petr Pavel off the Czech delegation; Pavel asked the Constitutional Court to rule on who represents the state abroad."
 },
 {
 "date": "23 Jun 2026",
 "edition": "23 June 2026",
 "cat": "Politics",
 "title": "Albania protests over a Kushner-linked Adriatic resort enter a fourth week",
-"summary": "Demonstrators in Tirana have marched for more than three weeks against a resort planned for the protected Vjosa-Narta coast and Sazan island, demanding PM Edi Rama's resignation.",
-"panel": "albania"
+"summary": "Demonstrators in Tirana have marched for more than three weeks against a resort planned for the protected Vjosa-Narta coast and Sazan island, demanding PM Edi Rama's resignation."
 },
 {
 "date": "23 Jun 2026",
 "edition": "23 June 2026",
 "cat": "Climate",
 "title": "UN chief ties climate and energy crises to fossil fuels in London address",
-"summary": "António Guterres used a London Climate Action Week address to call for a faster renewables transition, AI data-centre emissions disclosure and methane cuts.",
-"panel": "unclimate"
+"summary": "António Guterres used a London Climate Action Week address to call for a faster renewables transition, AI data-centre emissions disclosure and methane cuts."
 },
 {
 "date": "23 Jun 2026",
 "edition": "23 June 2026",
 "cat": "Sport",
 "title": "Messi becomes the World Cup's all-time leading scorer with 18 goals",
-"summary": "Lionel Messi scored both goals in Argentina's 2-0 win over Austria, passing Miroslav Klose's men's record and Marta's overall mark.",
-"panel": "messi"
+"summary": "Lionel Messi scored both goals in Argentina's 2-0 win over Austria, passing Miroslav Klose's men's record and Marta's overall mark."
 },
 {
 "date": "23 Jun 2026",
 "edition": "23 June 2026",
 "cat": "Science",
 "title": "Astronomers report the earliest known 'flickering' quasar, 850 million years after the Big Bang",
-"summary": "An MIT-led team says brightness changes in quasar J0439+1634 point to a settled accretion disk, suggesting some black holes matured very early.",
-"panel": "quasar"
+"summary": "An MIT-led team says brightness changes in quasar J0439+1634 point to a settled accretion disk, suggesting some black holes matured very early."
 },
 {
 "date": "23 Jun 2026",
 "edition": "23 June 2026",
 "cat": "Markets",
 "title": "A chip-led sell-off; oil eases on Iran supply, gold slips as Fed-hike bets firm",
-"summary": "Wall Street and Asia fell on a memory-chip rout; Brent settled near $75.67 as Washington granted Iran a 60-day oil licence, and gold dropped 1.8%.",
-"panel": "markets"
+"summary": "Wall Street and Asia fell on a memory-chip rout; Brent settled near $75.67 as Washington granted Iran a 60-day oil licence, and gold dropped 1.8%."
 },
 {
 "date": "22 Jun 2026",

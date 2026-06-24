@@ -1,0 +1,857 @@
+{
+  "meta": {
+    "date_iso": "2026-06-24",
+    "date_display": "Wednesday, 24 June 2026",
+    "edition_label": "24 June 2026",
+    "compile_time": "10:46 BST",
+    "location": "London",
+    "kicker": "Investigative Global Edition"
+  },
+  "weather": {
+    "masthead": {
+      "loc": "Guildford, UK",
+      "temp": "32°C",
+      "cond": "Sunny · extreme heat",
+      "low": "↓ Low 19°C",
+      "rain": "Rain 5%",
+      "gusts": "Gusts 19 mph"
+    },
+    "current_temp": "32°C",
+    "current_cond": "Sunny · extreme heat",
+    "current_meta": "Feels like 33°C · Low 19°C · Rain 5% · Gusts 19 mph · Humidity 45%",
+    "warnings": [
+      {
+        "sev": "red",
+        "sev_label": "Red",
+        "title": "Extreme heat — South East England (Met Office)",
+        "body_html": "Red Extreme Heat Warning in force for the South East, including Surrey, from <strong>09:00 Wed 24 June to 21:00 Thu 25 June</strong>. The Met Office says temperatures could widely reach <strong>37–38°C</strong> and that the June UK temperature record may be broken, with overnight temperatures staying above 20°C."
+      },
+      {
+        "sev": "red",
+        "sev_label": "Red",
+        "title": "Heat-health alert — UKHSA",
+        "body_html": "UKHSA Red heat-health alert covering South East England from <strong>01:00 Wed 24 June to 23:00 Thu 25 June</strong>. The agency says hot weather is likely to affect people of all ages, with increased risk to life across the population and added pressure on health and social-care services."
+      }
+    ],
+    "hourly_temp": [23, 22, 21, 20, 20, 20, 22, 24, 26, 28, 30, 32, 33, 35, 36, 37, 37, 36, 35, 33, 31, 29, 27, 25],
+    "hourly_precip": [1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 2, 2, 2, 1, 1, 1],
+    "days": [
+      {"d": "Wed 24", "ic": "☀️", "cond": "Sunny, extreme heat", "hi": 37, "lo": 19, "feels": 38, "wind": 7, "gust": 19, "hum": 45, "uv": 7, "pc": 5, "mm": 0.0, "sr": "04:48", "ss": "21:22", "warn": true, "tag": "Extreme heat", "sum": "Sunny all day with record-level heat up to 37°C; Red warning in force."},
+      {"d": "Thu 25", "ic": "☀️", "cond": "Sunny, extreme heat", "hi": 38, "lo": 21, "feels": 38, "wind": 12, "gust": 26, "hum": 44, "uv": 7, "pc": 10, "mm": 0.0, "sr": "04:48", "ss": "21:22", "warn": true, "tag": "Peak 38°C", "sum": "Peak of the heat near 38°C; Red warning until 21:00."},
+      {"d": "Fri 26", "ic": "☀️", "cond": "Sunny, very warm", "hi": 35, "lo": 17, "feels": 33, "wind": 12, "gust": 25, "hum": 40, "uv": 7, "pc": 30, "mm": 0.2, "sr": "04:48", "ss": "21:22", "warn": false, "tag": "30% rain", "sum": "Still very warm at 35°C with a small risk of an early shower."},
+      {"d": "Sat 27", "ic": "⛅", "cond": "Sunny, fresher", "hi": 30, "lo": 18, "feels": 29, "wind": 10, "gust": 21, "hum": 55, "uv": 6, "pc": 30, "mm": 0.3, "sr": "04:49", "ss": "21:22", "warn": false, "tag": "30% rain", "sum": "Cooler but still warm at 30°C, with a chance of a midday shower."},
+      {"d": "Sun 28", "ic": "⛅", "cond": "Sunny intervals", "hi": 25, "lo": 14, "feels": 24, "wind": 12, "gust": 25, "hum": 60, "uv": 6, "pc": 20, "mm": 0.1, "sr": "04:49", "ss": "21:22", "warn": false, "tag": "20% rain", "sum": "Much fresher at 25°C with sunny spells and a light breeze."},
+      {"d": "Mon 29", "ic": "⛅", "cond": "Sunny intervals", "hi": 23, "lo": 14, "feels": 23, "wind": 7, "gust": 17, "hum": 58, "uv": 6, "pc": 10, "mm": 0.0, "sr": "04:50", "ss": "21:21", "warn": false, "tag": "10% rain", "sum": "A comfortable summer day at 23°C with sunny intervals."},
+      {"d": "Tue 30", "ic": "⛅", "cond": "Sunny intervals", "hi": 23, "lo": 14, "feels": 23, "wind": 7, "gust": 17, "hum": 58, "uv": 6, "pc": 20, "mm": 0.1, "sr": "04:51", "ss": "21:21", "warn": false, "tag": "20% rain", "sum": "Settled and pleasant at 23°C, with a small chance of a shower."}
+    ],
+    "sources": [
+      {"outlet": "Met Office", "title": "Guildford forecast", "url": "https://weather.metoffice.gov.uk/forecast/gcpe7p302", "lean": ""},
+      {"outlet": "UKHSA", "title": "Red heat-health alerts across England", "url": "https://www.gov.uk/government/news/ukhsa-issues-red-heat-health-alerts-across-england", "lean": ""}
+    ]
+  },
+  "headlines": {
+    "hero": {
+      "target": "hormuz",
+      "badge": {"label": "Conflict", "cls": "b-conflict"},
+      "cat_cls": "cat-conflict",
+      "emoji": "🚢",
+      "headline": "US and Iran agree Hormuz safe-passage line; IMO to evacuate 11,000 seafarers",
+      "summary": "Mediators Qatar and Pakistan said the US and Iran agreed a communication line for safe shipping through the Strait of Hormuz and a Lebanon \"de-confliction cell,\" as the IMO announced an evacuation of more than 11,000 stranded seafarers.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/US%20Navy%20051111-N-8163B-032%20An%20oil%20tanker%20docked%20to%20the%20Al%20Basrah%20Oil%20Terminal%20%28ABOT%29%20takes%20on%20crude%20oil%20in%20the%20Persian%20Gulf.jpg?width=1100",
+      "lead": true
+    },
+    "cards": [
+      {
+        "target": "housing",
+        "badge": {"label": "Politics", "cls": "b-politics"},
+        "cat_cls": "cat-politics",
+        "emoji": "🏠",
+        "headline": "Congress passes 21st Century ROAD to Housing Act, sending it to Trump",
+        "summary": "The House passed the bipartisan housing bill 358-32 after the Senate's 85-5 vote, sending it to the president.",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Capitol%20-%20west%20front.jpg?width=1100",
+        "lead": false
+      },
+      {
+        "target": "markets",
+        "badge": {"label": "Markets & Investments", "cls": "b-markets"},
+        "cat_cls": "cat-markets",
+        "emoji": "💹",
+        "headline": "Memory-chip sell-off steadies as Seoul rebounds; Tokyo and Europe stay lower",
+        "summary": "After Tuesday's chip-led decline, Korea's Kospi rebounded on 24 June while Japan and Europe stayed soft and oil slipped near three-month lows.",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/New%20York%20Stock%20Exchange%20August%202017%2001.jpg?width=1100",
+        "lead": false
+      },
+      {
+        "target": "deportation",
+        "badge": {"label": "Politics", "cls": "b-politics"},
+        "cat_cls": "cat-politics",
+        "emoji": "⚖️",
+        "headline": "Appeals court lets Trump administration resume nationwide expedited removal",
+        "summary": "A divided D.C. Circuit panel vacated a lower-court order that had blocked fast-track deportation without a hearing for people who cannot prove two years' continuous presence.",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/E.%20Barrett%20Prettyman%20Federal%20Courthouse,%20DC.jpg?width=1100",
+        "lead": false
+      },
+      {
+        "target": "crimea",
+        "badge": {"label": "Conflict", "cls": "b-conflict"},
+        "cat_cls": "cat-conflict",
+        "emoji": "⚡",
+        "headline": "Ukraine strikes occupied Crimea; officials report widespread power loss",
+        "summary": "Ukraine said it destroyed a railway bridge over the North Crimean Canal and hit energy and fuel sites overnight; occupation authorities reported about half the peninsula lost power.",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Crimea_republic_map.png?width=1100",
+        "lead": false
+      },
+      {
+        "target": "micron",
+        "badge": {"label": "Technology", "cls": "b-tech"},
+        "cat_cls": "cat-technology",
+        "emoji": "💾",
+        "headline": "Micron and Anthropic sign AI-memory supply deal as chip shares fall before earnings",
+        "summary": "The companies announced a multi-year memory and storage agreement and a Micron investment in Anthropic's funding round, two days before Micron's quarterly results.",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/RAM_module_SDRAM_1GiB.jpg?width=1100",
+        "lead": false
+      },
+      {
+        "target": "birdflu",
+        "badge": {"label": "Health", "cls": "b-health"},
+        "cat_cls": "cat-health",
+        "emoji": "🐄",
+        "headline": "Study identifies why H5N1 infects dairy cows' udders rather than their lungs",
+        "summary": "University of Pittsburgh researchers found H5N1 binds N-linked sialic acid receptors abundant in udder tissue but scarce in cow airways.",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Holstein_dairy_cows.jpg?width=1100",
+        "lead": false
+      },
+      {
+        "target": "seti",
+        "badge": {"label": "Science", "cls": "b-science"},
+        "cat_cls": "cat-science",
+        "emoji": "📡",
+        "headline": "SETI radio search of interstellar object 3I/ATLAS finds no technosignatures",
+        "summary": "A SETI Institute-led scan detected no artificial radio signals, with all candidate detections attributed to human-made interference.",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Allen_Telescope_Array_-_brewbooks.jpg?width=1100",
+        "lead": false
+      },
+      {
+        "target": "worldcup",
+        "badge": {"label": "Sport", "cls": "b-sport"},
+        "cat_cls": "cat-sport",
+        "emoji": "⚽",
+        "headline": "World Cup group stage: England held by Ghana; Scotland face Brazil",
+        "summary": "England drew 0-0 with Ghana and Colombia beat DR Congo 1-0 on 23 June, while Scotland meet Brazil on 24 June seeking a first knockout place.",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hard_Rock_Stadium_for_Super_Bowl_LIV_(49606707583).jpg?width=1100",
+        "lead": false
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "hormuz",
+      "nav_label": "Hormuz Safe-Passage Deal",
+      "category": "Conflict",
+      "badges": [{"label": "Conflict", "cls": "b-conflict"}, {"label": "Politics", "cls": "b-politics"}],
+      "dateline": "24 June 2026 | London, Geneva & Doha",
+      "headline": "US and Iran agree Hormuz safe-passage line; IMO to evacuate 11,000 seafarers",
+      "summary": "Mediators Qatar and Pakistan said the US and Iran agreed a communication line for safe shipping through the Strait of Hormuz and a Lebanon \"de-confliction cell,\" as the IMO announced an evacuation of more than 11,000 stranded seafarers.",
+      "confidence": {"level": "corrob", "label": "Verified", "why": "— the de-confliction cell, the Hormuz line and the IMO evacuation are each reported by two or more independent outlets plus the IMO statement; some operational details remain thin"},
+      "followup": true,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/US%20Navy%20051111-N-8163B-032%20An%20oil%20tanker%20docked%20to%20the%20Al%20Basrah%20Oil%20Terminal%20%28ABOT%29%20takes%20on%20crude%20oil%20in%20the%20Persian%20Gulf.jpg?width=1100",
+        "alt": "An oil tanker loading crude oil at an offshore terminal in the Persian Gulf",
+        "caption": "An oil tanker takes on crude oil in the Persian Gulf; about a fifth to a quarter of seaborne oil normally transits the nearby Strait of Hormuz. Photo: U.S. Navy · public domain",
+        "credit": "U.S. Navy photo by Photographer's Mate Airman Eben Boothby",
+        "license": "public domain"
+      },
+      "inline_image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/International%20Maritime%20Organization%20London.jpg?width=1100",
+        "alt": "The headquarters of the International Maritime Organization on the River Thames in London",
+        "caption": "IMO headquarters in London; the UN agency announced a plan to evacuate more than 11,000 stranded seafarers. Photo: Wikimedia Commons · CC BY-SA 4.0",
+        "credit": "Celsoazevedo via Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      "article_blocks": [
+        {"type": "p", "html": "The United States and Iran agreed to establish a communication line intended to ensure the safe passage of commercial vessels through the Strait of Hormuz and a \"de-confliction cell\" covering Lebanon, mediators Qatar and Pakistan said following talks in Switzerland. The arrangements were set out in a joint statement issued by the two mediating states after the negotiating round near Lake Lucerne on 21 June 2026."},
+        {"type": "p", "html": "According to the mediators, the Hormuz channel is intended \"to avoid incidents and miscommunication with the aim of safe passage for commercial vessels,\" operating within a 60-day window outlined in a US–Iran road map toward a final agreement. The same statement described a de-confliction cell involving the United States, Iran and Lebanon, facilitated by Qatar and Pakistan, to support \"the termination of military operations in Lebanon.\""},
+        {"type": "p", "html": "Iran's foreign minister, Abbas Araghchi, called the Lebanon de-confliction cell the \"first real test\" of the process that emerged from the Switzerland talks. US Vice-President JD Vance said the discussions had set a \"good foundation,\" telling reporters on 22 June 2026: \"The final deal is the house. We set the foundation. We haven't built the house, but we've laid a successful foundation.\""},
+        {"type": "p", "html": "Separately, the International Maritime Organization announced on 23 June 2026 a plan to evacuate about 11,000 seafarers who remain stranded in the region. The UN agency said the operation would be carried out with Iran, Oman, other coastal states, the United States and the maritime industry."},
+        {"type": "timeline", "head": "Timeline — Hormuz and the talks", "sub": "Tap an event to expand. Spacing reflects the time between events.", "note": "", "events": [
+          {"date": "2026-02-28", "label": "28 Feb", "title": "Air war begins", "detail": "US and Israeli strikes on Iran disrupt shipping through the Strait of Hormuz."},
+          {"date": "2026-03-04", "label": "4 Mar", "title": "Strait declared closed", "detail": "Iran announces the Strait of Hormuz is \"closed\" and warns vessels against passage."},
+          {"date": "2026-06-21", "label": "21 Jun", "title": "Switzerland talks", "detail": "Mediators Qatar and Pakistan report a road map, a Hormuz communication line and a Lebanon de-confliction cell."},
+          {"date": "2026-06-22", "label": "22 Jun", "title": "Vance comments", "detail": "JD Vance says the talks set a \"good foundation\" for a final deal."},
+          {"date": "2026-06-23", "label": "23 Jun", "title": "IMO evacuation", "detail": "The IMO announces a plan to evacuate more than 11,000 stranded seafarers."}
+        ]},
+        {"type": "p", "html": "IMO Secretary-General Arsenio Dominguez said the agency had \"secured the necessary safety guarantees and have thoroughly verified the conditions for safe navigation.\" The IMO said two temporary maritime corridors had been designated to help vessels avoid floating mines and exit the region, with routing communicated through a Notice to Mariners issued by Oman. The agency said 14 seafarers had died during the conflict."},
+        {"type": "pullquote", "text": "\"We have secured the necessary safety guarantees and have thoroughly verified the conditions for safe navigation.\"", "src": "— Arsenio Dominguez, IMO Secretary-General, 23 June 2026"},
+        {"type": "p", "html": "Shipping through the Strait of Hormuz has been largely halted since late February 2026, after US and Israeli airstrikes on Iran; Iran declared the strait \"closed\" on 4 March 2026, leaving large numbers of vessels and crews in the Gulf."},
+        {"type": "framing", "overview": "<strong>Coverage overview:</strong> reporting is broadly factual and convergent across wire and broadcast outlets, drawing on the mediators' joint statement and the IMO release; differences are mainly of emphasis.", "bias": [{"lean": "Left", "pct": 30, "color": "#3b82c4"}, {"lean": "Centre", "pct": 55, "color": "#8b909c"}, {"lean": "Right", "pct": 15, "color": "#e0414f"}], "caption": "Share of the gathered sources by lean - an approximate read, not a measure of the entire press.", "ratings_html": "<strong>Source leans:</strong> NPR/CNN <b>Centre</b>, Al Jazeera <b>Lean Left</b>, ABC News <b>Centre</b>; IMO is a primary source.", "lines": ["<span class=\"lean\">Left-leaning outlets:</span> stress the humanitarian toll on seafarers and conditions tied to an Israeli withdrawal from Lebanon.", "<span class=\"lean\">Centre/wire:</span> relay the mediators' and IMO statements and the 60-day road map plainly.", "<span class=\"lean\">Right-leaning outlets:</span> foreground Vance's \"good foundation\" framing and US negotiating leverage."]},
+        {"type": "p", "html": "<strong>Why it matters:</strong> about a fifth to a quarter of seaborne oil normally transits the Strait of Hormuz. A functioning safe-passage mechanism and a crew evacuation would address both the situation of stranded mariners and a months-long disruption to energy shipping."},
+        {"type": "p", "html": "<strong>What comes next:</strong> mediators said a high-level committee approved a road map aimed at a final deal within 60 days, with technical talks on the nuclear file, sanctions and dispute resolution to follow. Lebanon was reported to be pursuing direct talks with Israel; Hezbollah has set a full Israeli withdrawal as a condition. Implementation of the Hormuz line and the pace of the evacuation remain to be confirmed."}
+      ],
+      "sidebar_blocks": [
+        {"type": "keyfacts", "items": [
+          "Mediators Qatar and Pakistan said the US and Iran agreed a communication line for safe passage of commercial vessels through the Strait of Hormuz, tied to a <strong>60-day</strong> window.",
+          "A \"de-confliction cell\" involving the US, Iran and Lebanon was created to support the end of military operations in Lebanon.",
+          "The IMO announced (23 June) an evacuation plan for about <strong>11,000</strong> stranded seafarers, coordinated with Iran, Oman, the US and others.",
+          "The IMO designated <strong>two</strong> temporary corridors and said <strong>14</strong> seafarers died during the conflict.",
+          "Iran declared the strait \"closed\" on 4 March 2026; about a fifth to a quarter of seaborne oil normally transits Hormuz."
+        ]},
+        {"type": "sources", "items": [
+          {"outlet": "NPR", "title": "US and Iran agree to a 'road map' for a final deal, mediators say", "url": "https://www.npr.org/2026/06/21/g-s1-129222/us-iran-deal-lebanon-israel-strait-hormuz-jd-vance", "lean": "Centre"},
+          {"outlet": "CNN", "title": "Iran and US make 'encouraging progress' in talks, mediators say", "url": "https://www.cnn.com/2026/06/21/world/live-news/iran-war-trump-israel-lebanon", "lean": "Centre"},
+          {"outlet": "IMO", "title": "IMO announces evacuation plan in the Strait of Hormuz", "url": "https://www.imo.org/en/mediacentre/pressbriefings/pages/imo-accounces-evacuation-plan-in-strait-of-hormuz.aspx", "lean": "Primary"},
+          {"outlet": "Al Jazeera", "title": "Lebanon discusses 'de-confliction' mechanism ahead of Israel talks", "url": "https://www.aljazeera.com/news/2026/6/22/lebanon-discusses-de-confliction-mechanism-ahead-of-israel-talks", "lean": "Lean Left"},
+          {"outlet": "ABC News", "title": "Vance says talks set 'good foundation' for a deal to end the war", "url": "https://abcnews.com/International/wireStory/vance-talks-switzerland-iranian-officials-set-good-foundation-134086110", "lean": "Centre"}
+        ]},
+        {"type": "factcheck", "items": [
+          {"status": "ok", "verdict": "Confirmed", "text": "Mediators stated a Hormuz communication line for commercial vessels and a Lebanon de-confliction cell (NPR, CNN, Al Jazeera)."},
+          {"status": "ok", "verdict": "Confirmed", "text": "The IMO announced a plan to evacuate about 11,000 seafarers, citing 14 deaths and two temporary corridors (IMO statement, Gulf News)."},
+          {"status": "ok", "verdict": "Confirmed", "text": "JD Vance said the talks set a \"good foundation\" on 22 June 2026 (ABC News, NBC News)."},
+          {"status": "unv", "verdict": "Unverified", "text": "The exact number of vessels still trapped and the precise coordinates of the two corridors; reporting gives \"hundreds of vessels\" without a confirmed current count."}
+        ]},
+        {"type": "ground", "agree": [
+          "A Hormuz communication line for commercial shipping was announced.",
+          "A Lebanon de-confliction cell was created.",
+          "The IMO is moving to evacuate about 11,000 seafarers.",
+          "Mediators framed the talks as a 60-day road map."
+        ], "contest": [
+          "Whether the mechanisms will hold and end the war.",
+          "Hezbollah's demand for a full Israeli withdrawal as a condition.",
+          "Characterisations of \"progress\" against unresolved nuclear-inspection disputes."
+        ]},
+        {"type": "logic", "items": [
+          "<strong>1 · Stated vs implemented.</strong> The de-confliction cell and safe-passage line are sourced to a mediators' joint statement; they describe stated agreements, not verified on-the-ground implementation.",
+          "<strong>2 · \"Underway\" vs \"announced.\"</strong> Some outlets said the evacuation is underway while the IMO wording describes a plan; treat operational status as developing.",
+          "<strong>3 · Counts vary.</strong> Earlier reports cited larger vessel and crew figures; avoid conflating cumulative and current numbers with the ~11,000 figure."
+        ]}
+      ]
+    },
+    {
+      "id": "housing",
+      "nav_label": "US Housing Act",
+      "category": "Politics",
+      "badges": [{"label": "Politics", "cls": "b-politics"}, {"label": "Business", "cls": "b-business"}],
+      "dateline": "24 June 2026 | Washington",
+      "headline": "Congress passes 21st Century ROAD to Housing Act, sending it to Trump",
+      "summary": "The House passed the bipartisan housing bill 358-32 after the Senate's 85-5 vote, sending it to President Trump.",
+      "confidence": {"level": "corrob", "label": "Verified", "why": "— vote counts, sponsors and the 350-home investor provision are corroborated across NPR, NBC, CNBC and TIME; outlets differ slightly on the exact calendar dates"},
+      "followup": false,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Capitol%20-%20west%20front.jpg?width=1100",
+        "alt": "The west front of the United States Capitol building in Washington, D.C.",
+        "caption": "The U.S. Capitol, where the House passed the 21st Century ROAD to Housing Act. Photo: Architect of the Capitol · public domain",
+        "credit": "Architect of the Capitol via Wikimedia Commons",
+        "license": "public domain"
+      },
+      "inline_image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tim_Scott_official_portrait.jpg?width=1100",
+        "alt": "Official U.S. Senate portrait of Senator Tim Scott",
+        "caption": "Sen. Tim Scott (R-S.C.), Banking Committee chairman and a lead sponsor of the bill. Photo: U.S. Senate · public domain",
+        "credit": "U.S. Senate via Wikimedia Commons",
+        "license": "public domain"
+      },
+      "article_blocks": [
+        {"type": "p", "html": "The U.S. House of Representatives passed the 21st Century ROAD to Housing Act by a vote of <strong>358-32</strong>, sending the bill to President Donald Trump for his signature. All 32 votes against were cast by Republicans, while Democrats present voted in favour, according to NPR and NBC News."},
+        {"type": "p", "html": "The Senate cleared the same measure by <strong>85-5</strong>. The five senators who voted against were all Republicans: Ron Johnson of Wisconsin, Mike Lee of Utah, Rand Paul of Kentucky, Rick Scott of Florida and Tommy Tuberville of Alabama, according to TIME. Among the 85 votes in favour were 41 Republicans and 44 Democrats."},
+        {"type": "p", "html": "\"ROAD\" stands for \"Renewing Opportunity in the American Dream.\" The legislation was developed by Senate Banking Committee chairman Tim Scott (R-S.C.) and ranking member Elizabeth Warren (D-Mass.), with House Financial Services Committee chairman French Hill (R-Ark.) and ranking member Maxine Waters (D-Calif.)."},
+        {"type": "p", "html": "The bill includes more than 45 provisions. A section titled \"Homes Are For People, Not Corporations\" restricts purchases of single-family homes by large institutional investors that directly or indirectly own at least <strong>350</strong> single-family homes, with exemptions for investors building or buying new homes for the rental market, according to the Bipartisan Policy Center."},
+        {"type": "p", "html": "Other provisions include a <strong>$200 million</strong> annual competitive grant program for local governments and tribes, an FHA pilot for mortgages under $100,000, an expansion of the Rental Assistance Demonstration program cap by 100,000 units, and streamlined federal environmental reviews for housing. NBC News reported the package gives local governments incentives to revise zoning rules to allow more homebuilding."},
+        {"type": "timeline", "head": "Timeline — the housing bill", "sub": "Tap an event to expand. Spacing reflects the time between events.", "note": "Outlets differ by a day on the exact vote dates.", "events": [
+          {"date": "2025-10-01", "label": "Oct 2025", "title": "Bill text released", "detail": "Scott and Warren release the 21st Century ROAD to Housing Act package."},
+          {"date": "2026-06-23", "label": "23 Jun", "title": "Senate passes", "detail": "The Senate votes 85-5 to pass the bill."},
+          {"date": "2026-06-24", "label": "24 Jun", "title": "House passes", "detail": "The House votes 358-32, sending the bill to the president."}
+        ]},
+        {"type": "pullquote", "text": "\"Every time every member of Congress goes back home they hear how urgent it is to bring down home prices. And that's what the bill does.\"", "src": "— Elizabeth Warren, 23 June 2026"},
+        {"type": "framing", "overview": "<strong>Coverage overview:</strong> reporting across the spectrum is broadly factual, emphasising the bipartisan vote and the investor provision; outlets differ mainly in adjectives and in framing the result as the president's win or Congress's.", "bias": [{"lean": "Left", "pct": 30, "color": "#3b82c4"}, {"lean": "Centre", "pct": 45, "color": "#8b909c"}, {"lean": "Right", "pct": 25, "color": "#e0414f"}], "caption": "Share of the gathered sources by lean - an approximate read, not a measure of the entire press.", "ratings_html": "<strong>Source leans:</strong> NPR <b>Centre</b>, NBC/TIME <b>Lean Left</b>, Washington Times <b>Lean Right</b>; Bipartisan Policy Center is non-partisan.", "lines": ["<span class=\"lean\">Left-leaning outlets:</span> frame it as a Warren-led consumer-protection and renter measure.", "<span class=\"lean\">Centre/wire:</span> report vote counts, provisions and timeline with limited characterisation.", "<span class=\"lean\">Right-leaning outlets:</span> frame it as a Trump and Tim Scott affordability measure and note Republican dissent over federal overreach."]},
+        {"type": "p", "html": "<strong>Why it matters:</strong> NPR described the measure as the largest housing affordability bill in decades. Rep. French Hill called it \"one of the most significant bipartisan housing reforms in recent memory.\" The bill passed during a period of elevated U.S. home prices and constrained supply. A stricter Senate provision that would have required investors to sell newly built homes within seven years was not included, according to NBC News."},
+        {"type": "p", "html": "<strong>What comes next:</strong> the bill goes to President Trump for signature; the White House has signalled support, and Trump's proposal to limit large institutional investors from buying single-family homes was incorporated into the final text, according to NBC News."}
+      ],
+      "sidebar_blocks": [
+        {"type": "keyfacts", "items": [
+          "House vote: <strong>358-32</strong>; all 32 no votes were Republicans.",
+          "Senate vote: <strong>85-5</strong>; the five no votes were all Republicans (Johnson, Lee, Paul, R. Scott, Tuberville).",
+          "Investor limit applies to firms owning at least <strong>350</strong> single-family homes.",
+          "The package contains more than <strong>45</strong> provisions, including a <strong>$200 million</strong>/year grant program.",
+          "Lead sponsors: Sens. Tim Scott and Elizabeth Warren; Reps. French Hill and Maxine Waters."
+        ]},
+        {"type": "sources", "items": [
+          {"outlet": "NPR", "title": "Congress passes the largest housing affordability bill in decades", "url": "https://www.npr.org/2026/06/23/nx-s1-5867575/congress-passes-housing-affordability-bill", "lean": "Centre"},
+          {"outlet": "NBC News", "title": "House passes bill to lower housing costs, sending it to Trump's desk", "url": "https://www.nbcnews.com/politics/congress/senate-passes-bill-lower-housing-costs-restrict-wall-street-buying-hom-rcna350753", "lean": "Lean Left"},
+          {"outlet": "TIME", "title": "The Five Republican Senators Who Voted Against the Housing Bill", "url": "https://time.com/article/2026/06/23/housing-bill-congress-senators-voted-against/", "lean": "Lean Left"},
+          {"outlet": "CNBC", "title": "House passes affordable housing bill, sends it to Trump's desk", "url": "https://www.cnbc.com/2026/06/23/house-affordable-housing-bill-trump.html", "lean": "Centre"},
+          {"outlet": "Bipartisan Policy Center", "title": "What's in the Final 21st Century ROAD to Housing Act", "url": "https://bipartisanpolicy.org/issue-brief/inside-the-deal-whats-in-the-final-21st-century-road-to-housing-act/", "lean": "Centre"}
+        ]},
+        {"type": "factcheck", "items": [
+          {"status": "ok", "verdict": "Confirmed", "text": "House passed 358-32 and Senate 85-5; corroborated by NPR, NBC, TIME and CNBC."},
+          {"status": "ok", "verdict": "Confirmed", "text": "The five GOP no votes were Johnson, Lee, Paul, Rick Scott and Tuberville (TIME)."},
+          {"status": "unv", "verdict": "Unverified", "text": "Exact passage dates vary by outlet by about a day; the day-of-week labels are not fully consistent across sources."}
+        ]},
+        {"type": "ground", "agree": [
+          "The bill passed both chambers with large bipartisan majorities.",
+          "It limits institutional investors owning 350+ single-family homes.",
+          "It aims to raise supply and lower costs and now heads to the president."
+        ], "contest": [
+          "Whether the investor limit and regulatory changes will meaningfully lower prices.",
+          "Whether federal action or local zoning is the right lever.",
+          "The dropped seven-year resale requirement."
+        ]},
+        {"type": "logic", "items": [
+          "<strong>1 · Superlative check.</strong> \"First major housing legislation since 2008\" is stronger than the sourcing; outlets support \"largest/most significant in decades\" — attribute carefully.",
+          "<strong>2 · Date check.</strong> Passage dates differ by a day between outlets; the official Congress.gov roll-call records would settle the exact calendar dates."
+        ]}
+      ]
+    },
+    {
+      "id": "deportation",
+      "nav_label": "Expedited Removal Ruling",
+      "category": "Politics",
+      "badges": [{"label": "Politics", "cls": "b-politics"}],
+      "dateline": "24 June 2026 | Washington",
+      "headline": "Appeals court lets Trump administration resume nationwide expedited removal",
+      "summary": "A divided D.C. Circuit panel vacated a lower-court order that had blocked fast-track deportation without a hearing for people who cannot prove two years' continuous presence.",
+      "confidence": {"level": "corrob", "label": "Verified", "why": "— the court, 2-1 vote, panel judges, district judge and policy mechanics are corroborated across NPR/AP, CBS, Fox News and CNN; the exact docket number was not located"},
+      "followup": false,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/E.%20Barrett%20Prettyman%20Federal%20Courthouse,%20DC.jpg?width=1100",
+        "alt": "Exterior of the E. Barrett Prettyman Federal Courthouse in Washington, D.C.",
+        "caption": "The E. Barrett Prettyman U.S. Courthouse in Washington, D.C., which houses the U.S. Court of Appeals for the D.C. Circuit. Photo: Wikimedia Commons · public domain",
+        "credit": "AgnosticPreachersKid via Wikimedia Commons",
+        "license": "public domain"
+      },
+      "inline_image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Border%20Wall%20at%20Tijuana%20and%20San%20Diego%20Border.jpg?width=1100",
+        "alt": "Section of the border barrier between Tijuana, Mexico and San Diego, United States",
+        "caption": "The U.S.–Mexico border barrier near Tijuana and San Diego; expedited removal was previously applied mainly at or near the border. Photo: Wikimedia Commons · CC BY-SA 4.0",
+        "credit": "Tomascastelazo via Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      "article_blocks": [
+        {"type": "p", "html": "A three-judge panel of the U.S. Court of Appeals for the District of Columbia Circuit ruled on Tuesday, 23 June 2026, that the Trump administration may resume applying expedited removal nationwide, vacating a lower-court order that had blocked the expansion."},
+        {"type": "p", "html": "The decision was <strong>2-1</strong>. Judge Justin R. Walker, an appointee of President Donald Trump, wrote the majority opinion and was joined by Judge Neomi Rao, also a Trump appointee. Judge Robert Wilkins, an appointee of President Barack Obama, dissented."},
+        {"type": "p", "html": "Expedited removal is a process under federal immigration law that allows the Department of Homeland Security to deport certain people without a hearing before an immigration judge. It had been applied mainly to people arriving by sea or apprehended at or near the border shortly after crossing. The administration moved in January 2026 to apply it throughout the country to people who cannot show they have lived in the United States continuously for at least two years."},
+        {"type": "p", "html": "The expansion had been blocked by U.S. District Judge Jia Cobb, an appointee of President Joe Biden, who ruled in August 2025 that the administration had not established procedures to ensure people were not wrongly removed. The appeals panel's majority concluded that challengers were unlikely to succeed on their claim that the policy violates the due-process protections of the Fifth Amendment."},
+        {"type": "p", "html": "Writing for the majority, Walker said the constitutional requirement is \"notice of the action the government is taking and the grounds for it, plus an opportunity to respond,\" and not that the government \"explain how the individual might prevail.\" The majority held that federal law permits DHS to apply expedited removal as broadly as Congress authorized."},
+        {"type": "timeline", "head": "Timeline — expedited removal", "sub": "Tap an event to expand. Spacing reflects the time between events.", "note": "The August 2025 order date is approximate.", "events": [
+          {"date": "2025-08-01", "label": "Aug 2025", "title": "District court blocks expansion", "detail": "Judge Jia Cobb halts nationwide expedited removal, citing inadequate safeguards."},
+          {"date": "2026-01-15", "label": "Jan 2026", "title": "Administration expands policy", "detail": "DHS moves to apply expedited removal nationwide to those who cannot prove two-plus years' presence."},
+          {"date": "2026-06-23", "label": "23 Jun", "title": "Appeals court vacates block", "detail": "A D.C. Circuit panel rules 2-1 for the administration; DHS and the ACLU respond the same day."}
+        ]},
+        {"type": "pullquote", "text": "\"The Trump administration's push for fast-track deportations will subject people to an unfair and error-prone system.\"", "src": "— Anand Balakrishnan, ACLU Immigrants' Rights Project, 23 June 2026"},
+        {"type": "framing", "overview": "<strong>Coverage overview:</strong> outlets across the spectrum converge on the core facts and diverge in tone — right-leaning outlets frame it as a victory and stress the overruled Biden-appointed judge, while left-leaning outlets foreground due-process concerns.", "bias": [{"lean": "Left", "pct": 40, "color": "#3b82c4"}, {"lean": "Centre", "pct": 30, "color": "#8b909c"}, {"lean": "Right", "pct": 30, "color": "#e0414f"}], "caption": "Share of the gathered sources by lean - an approximate read, not a measure of the entire press.", "ratings_html": "<strong>Source leans:</strong> CNN/CBS <b>Lean Left</b>, NPR/AP <b>Centre/Wire</b>, Fox News/Washington Times <b>Lean Right</b>.", "lines": ["<span class=\"lean\">Left-leaning framing:</span> emphasises the risk of wrongful deportation and erosion of due process for long-term residents.", "<span class=\"lean\">Right-leaning framing:</span> emphasises the court restoring an enforcement tool and reversing a lower-court judge."]},
+        {"type": "p", "html": "The Justice Department had argued that Judge Cobb's order was an \"egregious error\" that deprived the government of an \"essential tool\" for immigration enforcement. DHS general counsel James Percival said on 23 June 2026 that the court \"vindicated our decision to apply the law as written.\""},
+        {"type": "p", "html": "<strong>What comes next:</strong> the American Civil Liberties Union, which represents plaintiffs through its Immigrants' Rights Project, said the decision \"undermines the fundamental principle that people receive due process when the government seeks to deport them.\" In dissent, Judge Wilkins argued that DHS's procedures do not give people a meaningful chance to prove two years' residence. Further litigation is expected."}
+      ],
+      "sidebar_blocks": [
+        {"type": "keyfacts", "items": [
+          "Court: U.S. Court of Appeals for the D.C. Circuit; vote <strong>2-1</strong>, ruling dated 23 June 2026.",
+          "Majority: Judges Justin R. Walker and Neomi Rao (Trump appointees); dissent: Judge Robert Wilkins (Obama appointee).",
+          "Blocked below by U.S. District Judge Jia Cobb (Biden appointee) in August 2025.",
+          "The policy applies expedited removal nationwide to people who cannot prove at least two years' continuous U.S. presence, bypassing an immigration-judge hearing.",
+          "The administration expanded the practice in January 2026 from its prior use mainly at or near the border."
+        ]},
+        {"type": "sources", "items": [
+          {"outlet": "NPR (AP)", "title": "Appeals court allows Trump administration to resume speedy deportations", "url": "https://www.npr.org/2026/06/24/nx-s1-5869125/court-allows-trump-speedy-deportations", "lean": "Wire"},
+          {"outlet": "PBS NewsHour (AP)", "title": "Federal appeals court allows expanded use of speedy deportations", "url": "https://www.pbs.org/newshour/politics/federal-appeals-court-allows-trump-to-resume-expanded-use-of-speedy-deportations", "lean": "Wire"},
+          {"outlet": "CBS News", "title": "Federal court allows ICE to expand expedited deportations nationwide", "url": "https://www.cbsnews.com/news/federal-court-allows-ice-trump-admimistration-expand-expedited-deportations-nationwide/", "lean": "Lean Left"},
+          {"outlet": "Fox News", "title": "Appeals court revives Trump expedited removal policy", "url": "https://www.foxnews.com/politics/biden-judge-overruled-key-trump-immigration-policy", "lean": "Lean Right"},
+          {"outlet": "CNN Politics", "title": "Trump effort to expand speedy deportations can proceed, court rules", "url": "https://www.cnn.com/2026/06/23/politics/expand-speedy-deportations-of-migrants-court-rules", "lean": "Lean Left"}
+        ]},
+        {"type": "factcheck", "items": [
+          {"status": "ok", "verdict": "Confirmed", "text": "A 2-1 D.C. Circuit panel (Walker and Rao in the majority, Wilkins dissenting) vacated the lower-court block on 23 June 2026."},
+          {"status": "ok", "verdict": "Confirmed", "text": "District Judge Jia Cobb, a Biden appointee, had blocked the nationwide expansion in August 2025."},
+          {"status": "ok", "verdict": "Confirmed", "text": "The policy lets DHS deport people found anywhere in the U.S. without an immigration-judge hearing if they cannot prove two years' continuous presence."},
+          {"status": "unv", "verdict": "Unverified", "text": "The exact case caption/docket number and the precise date of Judge Cobb's order were not located in the public sources reviewed."}
+        ]},
+        {"type": "ground", "agree": [
+          "The D.C. Circuit ruled 2-1 to let the administration resume nationwide expedited removal.",
+          "The case turns on Fifth Amendment due process.",
+          "Further litigation is expected."
+        ], "contest": [
+          "Whether the procedures adequately protect people who may have lived in the U.S. for two or more years.",
+          "Whether the expansion is lawful enforcement or an unfair removal process."
+        ]},
+        {"type": "logic", "items": [
+          "<strong>1 · Preliminary posture.</strong> The ruling addresses likelihood of success on appeal, not a final merits judgment; calling it a final settlement of the policy's legality would overstate it.",
+          "<strong>2 · Burden shift.</strong> \"Cannot prove two years' presence\" places the burden on the individual; the dissent disputes whether the process to meet that burden is adequate.",
+          "<strong>3 · Appointer labels.</strong> Naming the appointing presidents describes the judges, not evidence that outcomes were predetermined."
+        ]}
+      ]
+    },
+    {
+      "id": "crimea",
+      "nav_label": "Ukraine Crimea Strikes",
+      "category": "Conflict",
+      "badges": [{"label": "Conflict", "cls": "b-conflict"}],
+      "dateline": "24 June 2026 | Kyiv & Crimea",
+      "headline": "Ukraine strikes occupied Crimea; occupation officials report widespread power loss",
+      "summary": "Ukraine said it destroyed a railway bridge over the North Crimean Canal and hit energy, fuel and military sites overnight on 23 June; occupation authorities reported about half the peninsula lost power.",
+      "confidence": {"level": "develop", "label": "Developing", "why": "— the bridge strike and Putin's response are confirmed, but several figures (the \"half of Crimea\" power claim, target counts, the sea-drone account) rest on single sources per side and are attributed"},
+      "followup": true,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Crimea_republic_map.png?width=1100",
+        "alt": "Map of the Crimean peninsula and Sevastopol",
+        "caption": "Map of Crimea, the Russian-occupied peninsula where Ukraine reported strikes on 23 June 2026. Illustrative. Photo: Wikimedia Commons · CC0",
+        "credit": "WikiEditor2004 via Wikimedia Commons",
+        "license": "CC0"
+      },
+      "inline_image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/North_Crimean_Canal.jpg?width=1100",
+        "alt": "The North Crimean Canal running through open terrain",
+        "caption": "The North Crimean Canal, over which Ukraine said it destroyed a railway bridge near Rozdolne. Illustrative; not the strike site. Photo: Wikimedia Commons · CC BY-SA 3.0",
+        "credit": "Russianname via Wikimedia Commons",
+        "license": "CC BY-SA 3.0"
+      },
+      "article_blocks": [
+        {"type": "p", "html": "Ukraine's Special Operations Forces said on 23 June 2026 that they had destroyed a railway bridge over the North Crimean Canal near Rozdolne in occupied Crimea, part of what Kyiv described as a campaign to disrupt Russian logistics on the peninsula. In a statement posted to social media, the force said \"the railway bridge across the North Crimean Canal in Crimea no longer exists.\""},
+        {"type": "p", "html": "Ukraine's Unmanned Systems Forces said drones struck more than 60 Russian military targets across occupied territory overnight. Targets cited by Ukrainian sources included fuel reservoirs at the Kerch thermal power plant, an electrical substation near Karierne, a Simferopol gas distribution station, the Port Kavkaz oil terminal, and air-defence equipment. These target lists come from Ukrainian military statements and have not been independently confirmed."},
+        {"type": "p", "html": "Occupation authority spokesperson Oleg Kryuchkov said about half of Crimea was left without electricity following the strikes, and that rolling blackouts had been introduced. The \"half of Crimea\" figure originates with occupation officials and could not be independently verified. The local energy supplier in some statements attributed outages to \"technical malfunctions\" rather than to strikes."},
+        {"type": "p", "html": "Reporting also noted suspensions of gasoline sales to civilians in parts of Crimea during the summer tourist season, which Ukrainian and Western outlets linked to the strike campaign."},
+        {"type": "timeline", "head": "Timeline — strikes on Crimea", "sub": "Tap an event to expand. Spacing reflects the time between events.", "note": "", "events": [
+          {"date": "2026-06-19", "label": "19 Jun", "title": "Zelensky ultimatum to Belarus", "detail": "Kyiv gives Minsk about one week to remove relay equipment it says guides Russian drones."},
+          {"date": "2026-06-23", "label": "23 Jun", "title": "Rail bridge struck", "detail": "Ukrainian forces say the North Crimean Canal railway bridge near Rozdolne \"no longer exists.\""},
+          {"date": "2026-06-23", "label": "23 Jun", "title": "Wider strike campaign", "detail": "Ukraine reports hitting 60+ targets; occupation officials report about half of Crimea without power."},
+          {"date": "2026-06-23", "label": "23 Jun", "title": "Putin responds", "detail": "Putin orders the consequences of Ukrainian strikes \"reduced to zero,\" per TASS and RIA."}
+        ]},
+        {"type": "pullquote", "text": "\"We are seeing almost daily attacks on Crimea's energy infrastructure.\"", "src": "— Oleg Kryuchkov, occupation authority spokesperson, 23 June 2026"},
+        {"type": "p", "html": "President Vladimir Putin commented on the attacks during a government video conference, in remarks reported by the Russian state agencies TASS and RIA Novosti. Putin said the government \"must also take additional measures to minimise, to reduce to zero, the consequences of such actions,\" and said Ukraine was seeking to disrupt Crimea's tourist season. Ukrainska Pravda noted these were Putin's first public comments on Ukrainian long-range strikes since attacks on the Moscow oil refinery on 16 and 18 June."},
+        {"type": "p", "html": "Separately, Ukraine said Russia attempted a strike on Ukraine's south-western Black Sea coast early on 23 June using unmanned surface vessels. Defence Ministry adviser Serhii Beskrestnov said the boats were launched at around 4 a.m., were destroyed before reaching the coast, and were fitted with Starlink terminals. This account rests on a single Ukrainian official and is not independently verified."},
+        {"type": "framing", "overview": "<strong>Coverage overview:</strong> accounts split between Ukrainian and Western framing of a deliberate campaign to isolate Crimea and Russian and occupation framing that minimises the impact and attributes outages to technical faults.", "bias": [{"lean": "Left", "pct": 25, "color": "#3b82c4"}, {"lean": "Centre", "pct": 45, "color": "#8b909c"}, {"lean": "Right", "pct": 30, "color": "#e0414f"}], "caption": "Share of the gathered sources by lean - an approximate read, not a measure of the entire press.", "ratings_html": "<strong>Source leans:</strong> Reuters/AP <b>Wire</b>, Kyiv Independent/Kyiv Post <b>Pro-Ukraine</b>, TASS/RIA <b>Russian state</b>.", "lines": ["<span class=\"lean\">Ukrainian framing:</span> the strikes are precise, lawful targeting of military logistics aimed at making the occupation untenable.", "<span class=\"lean\">Russian state framing:</span> Ukraine targets civilian tourism and energy to destabilise, with consequences to be \"reduced to zero.\""]},
+        {"type": "p", "html": "<strong>What comes next:</strong> the Institute for the Study of War assessed on 23 June that Ukraine is conducting a campaign to limit Russia's ability to move fuel and supplies across the Kerch Strait. Casualty figures were not confirmed, and the extent and duration of damage to the bridge, substations and fuel sites could not be independently established."}
+      ],
+      "sidebar_blocks": [
+        {"type": "keyfacts", "items": [
+          "Ukraine said it destroyed a railway bridge over the North Crimean Canal near Rozdolne on 23 June 2026.",
+          "Ukrainian forces reported striking more than <strong>60</strong> Russian military targets across occupied territory overnight.",
+          "Occupation spokesperson Oleg Kryuchkov said about <strong>half</strong> of Crimea lost electricity; rolling blackouts were introduced.",
+          "Putin on 23 June ordered the consequences of the strikes \"reduced to zero\" (TASS/RIA Novosti).",
+          "Ukraine said it destroyed Russian Starlink-equipped sea drones off its south-western coast early on 23 June."
+        ]},
+        {"type": "sources", "items": [
+          {"outlet": "Reuters/AP (via Washington Post)", "title": "Ukraine says it hit a railway bridge to Crimea", "url": "https://www.washingtonpost.com/world/2026/06/23/russia-ukraine-war-crimea-drone-peninsula/a14ca8b2-6f09-11f1-8730-e7fd0e2a6404_story.html", "lean": "Centre"},
+          {"outlet": "Kyiv Independent", "title": "Half of Crimea without electricity after Ukrainian strikes, Russian proxy claims", "url": "https://kyivindependent.com/half-of-crimea-without-electricity-after-ukrainian-strikes-russian-proxy-claims/", "lean": "Pro-Ukraine"},
+          {"outlet": "Ukrainska Pravda", "title": "Putin comments on Ukrainian strikes on Crimea", "url": "https://www.pravda.com.ua/eng/news/2026/06/23/8040750/", "lean": "Pro-Ukraine"},
+          {"outlet": "Kyiv Post", "title": "Explained: bridge destroyed, blackouts, fires, fuel bans in Crimea", "url": "https://www.kyivpost.com/post/78787", "lean": "Pro-Ukraine"},
+          {"outlet": "Kyiv Post", "title": "ISW Russian Offensive Campaign Assessment, June 23, 2026", "url": "https://www.kyivpost.com/post/78835", "lean": "Centre/analysis"}
+        ]},
+        {"type": "factcheck", "items": [
+          {"status": "ok", "verdict": "Confirmed", "text": "Ukraine's Special Operations Forces said it destroyed the North Crimean Canal railway bridge near Rozdolne on 23 June (corroborated by AP/Reuters and Kyiv Post)."},
+          {"status": "ok", "verdict": "Confirmed", "text": "Putin said the government must \"reduce to zero\" the consequences of Ukrainian strikes, per TASS/RIA on 23 June."},
+          {"status": "unv", "verdict": "Unverified", "text": "\"About half of Crimea\" lost power — a claim from occupation spokesperson Kryuchkov; the local supplier elsewhere cited \"technical malfunctions.\""},
+          {"status": "unv", "verdict": "Unverified", "text": "The Russian sea-drone attack and Starlink fitting rest on a single Ukrainian official (Beskrestnov)."}
+        ]},
+        {"type": "ground", "agree": [
+          "Ukrainian strikes hit Crimea on 23 June.",
+          "Energy and rail infrastructure were affected.",
+          "Putin commented publicly; Crimea is experiencing power and fuel disruption."
+        ], "contest": [
+          "The scale of the blackout (\"half\" of Crimea).",
+          "Whether outages were caused by strikes or \"technical malfunctions.\"",
+          "The extent of bridge destruction and the sea-drone account."
+        ]},
+        {"type": "logic", "items": [
+          "<strong>1 · Single-source figure.</strong> The \"half of Crimea without power\" claim comes from occupation spokesperson Kryuchkov; \"half\" is imprecise and unverifiable, and the supplier's separate \"technical malfunctions\" line conflicts with the strike narrative.",
+          "<strong>2 · Unverified tallies.</strong> Ukrainian target counts (\"60+ targets,\" specific systems destroyed) come from Ukrainian military channels and lack independent or imagery confirmation.",
+          "<strong>3 · One-sided account.</strong> The sea-drone attack and Starlink detail derive from one Ukrainian adviser, with no Russian acknowledgement."
+        ]}
+      ]
+    },
+    {
+      "id": "micron",
+      "nav_label": "Micron–Anthropic Deal",
+      "category": "Technology",
+      "badges": [{"label": "Technology", "cls": "b-tech"}, {"label": "Business", "cls": "b-business"}],
+      "dateline": "24 June 2026 | Boise, Idaho",
+      "headline": "Micron and Anthropic sign AI-memory supply deal as chip shares fall before earnings",
+      "summary": "The companies announced a multi-year memory and storage agreement and a Micron investment in Anthropic's funding round, two days before Micron's quarterly results and amid a sell-off in memory-chip shares.",
+      "confidence": {"level": "corrob", "label": "Verified", "why": "— the deal scope, date and executive quote are confirmed via the Micron/Anthropic release and multiple outlets; earnings timing and the sell-off are corroborated, though some session percentages vary by source"},
+      "followup": false,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/RAM_module_SDRAM_1GiB.jpg?width=1100",
+        "alt": "A DDR SDRAM memory module on a white background",
+        "caption": "The Micron–Anthropic agreement covers supply of memory products including DRAM and high-bandwidth memory. Photo: Wikimedia Commons · CC BY-SA 2.5",
+        "credit": "Sassospicco via Wikimedia Commons",
+        "license": "CC BY-SA 2.5"
+      },
+      "inline_image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/CERN_Server_03.jpg?width=1100",
+        "alt": "Rows of server racks in a data center server room",
+        "caption": "The supply deal targets data-centre memory and storage for AI training and inference workloads. Photo: Wikimedia Commons · CC BY-SA 3.0",
+        "credit": "Florian Hirzinger via Wikimedia Commons",
+        "license": "CC BY-SA 3.0"
+      },
+      "article_blocks": [
+        {"type": "p", "html": "Micron Technology and the AI developer Anthropic on 22 June 2026 announced a strategic agreement covering memory and storage supply, joint technical work, use of Anthropic's Claude software inside Micron, and a Micron investment in Anthropic's Series H funding round. Financial terms of the agreement and the investment were not disclosed."},
+        {"type": "p", "html": "Under the supply component, the companies entered a multi-year memory and storage agreement spanning Micron's data-centre portfolio, including high-bandwidth memory, DRAM and solid-state drives, to support Anthropic's compute needs as it scales its Claude models. The two firms also said they will study how memory and storage subsystems perform across AI training and inference workloads."},
+        {"type": "p", "html": "The deal extends a relationship already disclosed in Anthropic's Series H round, which closed on 28 May 2026 at $65 billion raised and a $965 billion post-money valuation. That announcement named Micron, Samsung and SK Hynix among strategic infrastructure partners. Micron separately said it has deployed Claude internally for coding and agentic uses across engineering, manufacturing and enterprise functions."},
+        {"type": "p", "html": "The announcement came during a sharp sell-off in memory and AI-related equities. On 23 June 2026, South Korea's Kospi index triggered a market-wide circuit breaker, closing down 9.99%. SK Hynix and Samsung Electronics both fell more than 12% in the session. In the United States, the Nasdaq Composite declined about 2.2%, with chip and memory names among the larger decliners."},
+        {"type": "timeline", "head": "Timeline — Micron and Anthropic", "sub": "Tap an event to expand. Spacing reflects the time between events.", "note": "", "events": [
+          {"date": "2026-05-28", "label": "28 May", "title": "Anthropic closes Series H", "detail": "$65bn raised at a $965bn post-money valuation; Micron, Samsung and SK Hynix named as strategic partners."},
+          {"date": "2026-06-22", "label": "22 Jun", "title": "Micron–Anthropic agreement", "detail": "Multi-year memory and storage supply deal, joint technical work, Claude adoption and a Series H investment."},
+          {"date": "2026-06-23", "label": "23 Jun", "title": "Memory-stock sell-off", "detail": "The Kospi triggers a circuit breaker and closes down 9.99%; SK Hynix and Samsung each fall more than 12%."},
+          {"date": "2026-06-24", "label": "24 Jun", "title": "Micron Q3 earnings due", "detail": "Micron reports fiscal Q3 2026 results after the US close."}
+        ]},
+        {"type": "pullquote", "text": "\"Our compute strategy depends on getting every layer of the stack right, and memory and storage are central to how efficiently we can train and serve Claude.\"", "src": "— Tom Brown, co-founder and chief compute officer, Anthropic, 22 June 2026"},
+        {"type": "p", "html": "Reporting attributed the share-price falls to investor concern over the pace of hyperscaler AI-infrastructure spending, possible memory-pricing pressure as supply expands into 2027, interest-rate worries, and forced selling in leveraged products tied to semiconductor stocks. Micron's own shares had risen ahead of the broader sell-off; following the Anthropic announcement, Micron closed up 6.82% at $1,211.38, according to Benzinga."},
+        {"type": "p", "html": "<strong>What comes next:</strong> Micron reports its fiscal third-quarter 2026 results after the US market close on 24 June 2026. Analyst consensus cited by AlphaStreet centred on roughly $19.7 to $20.0 in adjusted earnings per share and about $34.5 billion to $34.7 billion in revenue, against $1.91 EPS and $12.73 billion a year earlier. Investors said they would focus on HBM4 demand and allocation, gross-margin sustainability and Micron's guidance for fiscal 2027."}
+      ],
+      "sidebar_blocks": [
+        {"type": "keyfacts", "items": [
+          "Micron–Anthropic strategic agreement announced 22 June 2026; financial terms not disclosed.",
+          "Covers multi-year supply of HBM, DRAM and SSDs, joint technical work, internal Claude use, and a Micron investment in Anthropic's Series H round.",
+          "Anthropic's Series H closed 28 May 2026: <strong>$65bn</strong> raised at a <strong>$965bn</strong> post-money valuation.",
+          "On 23 June the Kospi fell <strong>9.99%</strong> and triggered a circuit breaker; SK Hynix and Samsung each fell more than 12%; the Nasdaq fell about 2.2%.",
+          "Micron reports fiscal Q3 2026 after the US close on 24 June; consensus near <strong>$19.7–20.0</strong> EPS on about <strong>$34.5–34.7bn</strong> revenue."
+        ]},
+        {"type": "sources", "items": [
+          {"outlet": "Micron / GlobeNewswire", "title": "Micron and Anthropic Announce Strategic Agreement", "url": "https://www.globenewswire.com/news-release/2026/06/22/3315307/14450/en/micron-and-anthropic-announce-strategic-agreement-to-scale-next-generation-ai-infrastructure.html", "lean": "Primary"},
+          {"outlet": "Anthropic", "title": "Anthropic raises $65B in Series H funding at $965B post-money valuation", "url": "https://www.anthropic.com/news/series-h", "lean": "Primary"},
+          {"outlet": "Benzinga", "title": "Micron and Anthropic Strike Strategic AI Partnership", "url": "https://www.benzinga.com/markets/tech/26/06/60034685/", "lean": "Centre"},
+          {"outlet": "AlphaStreet", "title": "Micron Technology Q3 2026 Earnings Preview — June 24", "url": "https://news.alphastreet.com/micron-technology-q3-2026-earnings-preview-june-24-street-expects-19-72-eps/", "lean": "Centre"},
+          {"outlet": "investing.com", "title": "Micron surges on Anthropic AI deal ahead of earnings", "url": "https://www.investing.com/news/stock-market-news/micron-surges-55-on-blockbuster-anthropic-ai-deal-ahead-of-earnings-4752824", "lean": "Centre"}
+        ]},
+        {"type": "factcheck", "items": [
+          {"status": "ok", "verdict": "Confirmed", "text": "Micron–Anthropic agreement announced 22 June 2026; spans supply, technical collaboration, Claude adoption and a Series H investment; terms not disclosed (Micron release; Benzinga; investing.com)."},
+          {"status": "ok", "verdict": "Confirmed", "text": "Micron reports fiscal Q3 2026 after the US close on 24 June; consensus ~$19.7–20.0 EPS on ~$34.5–34.7bn revenue (AlphaStreet, MarketBeat)."},
+          {"status": "unv", "verdict": "Unverified", "text": "The size of Micron's Series H investment and the dollar value of the supply agreement were not disclosed by either company."}
+        ]},
+        {"type": "logic", "items": [
+          "<strong>1 · Deal value undisclosed.</strong> No dollar figure exists for the supply agreement or Micron's Series H stake; do not infer a value from the $65bn round total.",
+          "<strong>2 · Correlation, not causation.</strong> The 23 June memory-stock sell-off is concurrent with, not caused by, the deal; sources tie the falls to broader AI-spend, pricing and rate concerns. Session attribution of Micron's own move varies slightly by outlet."
+        ]}
+      ]
+    },
+    {
+      "id": "birdflu",
+      "nav_label": "H5N1 Cow Study",
+      "category": "Health",
+      "badges": [{"label": "Health", "cls": "b-health"}, {"label": "Science", "cls": "b-science"}],
+      "dateline": "24 June 2026 | Pittsburgh",
+      "headline": "Study identifies why H5N1 infects dairy cows' udders rather than their lungs",
+      "summary": "University of Pittsburgh researchers found H5N1 binds N-linked sialic acid receptors that are abundant in cow udder tissue but scarce in their airways.",
+      "confidence": {"level": "corrob", "label": "Verified", "why": "— the journal, lead author and receptor mechanism are reported consistently by the University of Pittsburgh release, EurekAlert, ScienceDaily and Phys.org"},
+      "followup": false,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Holstein_dairy_cows.jpg?width=1100",
+        "alt": "Black-and-white Holstein dairy cows in a barn",
+        "caption": "Holstein dairy cattle; the study explains why H5N1 caused udder infections rather than respiratory illness in cows. Photo: Wikimedia Commons · CC BY-SA",
+        "credit": "Wikimedia Commons",
+        "license": "CC BY-SA"
+      },
+      "inline_image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Colorized_transmission_electron_micrograph_of_Avian_influenza_A_H5N1_viruses.jpg?width=1100",
+        "alt": "Colorized transmission electron micrograph of avian influenza A (H5N1) virus particles",
+        "caption": "A colorized electron micrograph of avian influenza A (H5N1) virus particles. Photo: CDC / Wikimedia Commons · public domain",
+        "credit": "CDC via Wikimedia Commons",
+        "license": "public domain"
+      },
+      "article_blocks": [
+        {"type": "p", "html": "Researchers at the University of Pittsburgh School of Public Health have reported a mechanistic explanation for why H5N1 avian influenza infects dairy cows' udders rather than their lungs. The study was published in the journal <em>Science Advances</em> on 19 June 2026."},
+        {"type": "p", "html": "When H5N1 began infecting U.S. dairy cattle in 2024, the disease looked different from the respiratory illness the virus causes in other mammals: it produced severe infection in the cows' udders and largely spared the lungs, which made it difficult for veterinarians to recognise at first."},
+        {"type": "p", "html": "Using binding experiments, staining methods and high-resolution imaging, the team found that not all of the cows' sialic acid receptors behaved the same way. Only a subtype known as N-linked sialic acid receptors could bind H5N1. Those receptors were nearly absent in the cows' airway tissue but widespread in udder tissue."},
+        {"type": "p", "html": "The lead author, Suresh Kuchipudi, chair of infectious diseases and microbiology at the school, said the finding helps explain the unusual pathology. \"When the real culprit turned out to be bird flu, everyone in the field was caught completely by surprise,\" he said."},
+        {"type": "timeline", "head": "Timeline — H5N1 in cattle", "sub": "Tap an event to expand. Spacing reflects the time between events.", "note": "", "events": [
+          {"date": "2024-03-25", "label": "Mar 2024", "title": "H5N1 detected in US dairy cattle", "detail": "Bird flu is confirmed in dairy herds, with infections concentrated in the udders."},
+          {"date": "2024-05-01", "label": "2024", "title": "Spread across herds", "detail": "The virus spreads among U.S. dairy cattle, with shedding into milk."},
+          {"date": "2026-06-19", "label": "19 Jun", "title": "Receptor study published", "detail": "University of Pittsburgh researchers report the receptor mechanism in Science Advances."}
+        ]},
+        {"type": "pullquote", "text": "\"We can preemptively screen different species and different tissues within them for susceptibility.\"", "src": "— Suresh Kuchipudi, University of Pittsburgh, 19 June 2026"},
+        {"type": "p", "html": "Kuchipudi said the receptor distribution makes the udder \"a perfect breeding ground for the virus,\" and noted that \"if a cow is infected, it sheds a lot of virus into the milk.\" Pasteurisation inactivates the virus, and health agencies have said the commercial milk supply remains safe."},
+        {"type": "p", "html": "<strong>Why it matters:</strong> the researchers said the approach provides a framework other scientists can use to predict not just whether H5N1 can jump to new hosts, but how, by screening particular tissues for the receptors the virus needs. H5N1 now affects more than 100 bird and mammal species globally."},
+        {"type": "p", "html": "<strong>What comes next:</strong> the work identifies a binding mechanism rather than a treatment or vaccine. The authors framed it as a tool for surveillance and risk assessment; how the receptor pattern translates to transmission risk in other species remains to be tested."}
+      ],
+      "sidebar_blocks": [
+        {"type": "keyfacts", "items": [
+          "Published in <em>Science Advances</em> on 19 June 2026 by University of Pittsburgh School of Public Health researchers.",
+          "H5N1 binds only N-linked sialic acid receptors, which are abundant in udder tissue but nearly absent in cow airways.",
+          "This explains why the virus caused udder infections (mastitis) rather than respiratory illness in cattle.",
+          "H5N1 was first confirmed in U.S. dairy cattle in 2024 and now affects more than <strong>100</strong> bird and mammal species globally.",
+          "Lead author: Suresh Kuchipudi, chair of infectious diseases and microbiology."
+        ]},
+        {"type": "sources", "items": [
+          {"outlet": "EurekAlert (Univ. of Pittsburgh)", "title": "How H5N1 bird flu hid unrecognized for weeks in dairy cattle", "url": "https://www.eurekalert.org/news-releases/1131354", "lean": "Primary"},
+          {"outlet": "ScienceDaily", "title": "Scientists solved how H5N1 bird flu hid in dairy cows", "url": "https://www.sciencedaily.com/releases/2026/06/260620100315.htm", "lean": "Centre"},
+          {"outlet": "Phys.org", "title": "How H5N1 bird flu hid unrecognized for weeks in dairy cattle", "url": "https://phys.org/news/2026-06-h5n1-bird-flu-hid-unrecognized.html", "lean": "Centre"},
+          {"outlet": "Morning Ag Clips", "title": "How H5N1 bird flu hid unrecognized for weeks in dairy cattle", "url": "https://www.morningagclips.com/how-h5n1-bird-flu-hid-unrecognized-for-weeks-in-dairy-cattle/", "lean": "Trade"}
+        ]},
+        {"type": "factcheck", "items": [
+          {"status": "ok", "verdict": "Confirmed", "text": "The study was published in Science Advances on 19 June 2026 by University of Pittsburgh researchers led by Suresh Kuchipudi."},
+          {"status": "ok", "verdict": "Confirmed", "text": "H5N1 binds N-linked sialic acid receptors abundant in udder tissue and scarce in cow airways (university release; ScienceDaily; Phys.org)."},
+          {"status": "unv", "verdict": "Unverified", "text": "How the receptor pattern translates to transmission risk in other species is a stated implication, not a demonstrated outcome."}
+        ]},
+        {"type": "logic", "items": [
+          "<strong>1 · Mechanism, not therapy.</strong> The study explains tissue tropism; it does not establish a treatment, vaccine or change to current control measures.",
+          "<strong>2 · Lab finding vs in-vivo.</strong> Receptor mapping and binding assays identify a plausible mechanism; predictive use across species remains to be validated."
+        ]}
+      ]
+    },
+    {
+      "id": "seti",
+      "nav_label": "3I/ATLAS Radio Search",
+      "category": "Science",
+      "badges": [{"label": "Science", "cls": "b-science"}],
+      "dateline": "24 June 2026 | Mountain View, California",
+      "headline": "SETI radio search of interstellar object 3I/ATLAS finds no technosignatures",
+      "summary": "A SETI Institute-led scan of the interstellar object 3I/ATLAS detected no artificial radio signals, with all candidate detections attributed to human-made interference.",
+      "confidence": {"level": "corrob", "label": "Verified", "why": "— a peer-reviewed paper plus a separate Breakthrough Listen study are corroborated by Phys.org, Space.com and SETI Berkeley; frequencies, dates and power limits cross-checked"},
+      "followup": false,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Allen_Telescope_Array_-_brewbooks.jpg?width=1100",
+        "alt": "Multiple white radio dishes of the Allen Telescope Array pointed at the sky",
+        "caption": "The Allen Telescope Array at Hat Creek Radio Observatory, California, used by the SETI Institute to scan 3I/ATLAS. Photo: Wikimedia Commons · CC BY-SA 4.0",
+        "credit": "brewbooks via Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      "inline_image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/3I-ATLAS_noirlab2532b.jpg?width=1100",
+        "alt": "Telescope image of interstellar object 3I/ATLAS as a faint point of light against background stars",
+        "caption": "Interstellar object 3I/ATLAS imaged by the International Gemini Observatory in 2025. Photo: NOIRLab/NSF/AURA · CC BY 4.0",
+        "credit": "International Gemini Observatory/NOIRLab/NSF/AURA/B. Bolin",
+        "license": "CC BY 4.0"
+      },
+      "article_blocks": [
+        {"type": "p", "html": "Researchers searching the interstellar object 3I/ATLAS for radio signals that could indicate extraterrestrial technology have reported a null result, finding no transmissions beyond known sources of human-made interference. The object remains, by scientific consensus, a natural comet."},
+        {"type": "p", "html": "The principal search was carried out with the Allen Telescope Array, a 42-dish radio interferometer at the Hat Creek Radio Observatory in northern California, operated by the SETI Institute. The team observed 3I/ATLAS for a total of 7.25 hours across five sessions in July 2025, shortly after the object's discovery, scanning frequencies from 1 to 9 gigahertz for narrowband signals of the kind a transmitter might produce."},
+        {"type": "p", "html": "The search initially flagged nearly 74 million narrowband \"hits.\" After filtering for radio-frequency interference and applying localisation checks, about 211 candidates remained for visual inspection. None were judged worthy of follow-up, and all were consistent with human-generated interference. The study, led by Sofia Z. Sheikh of the SETI Institute, was published in <em>The Astronomical Journal</em> in June 2026."},
+        {"type": "p", "html": "The null result allowed the team to place upper limits on any radio transmitter operating on or near the object, ruling out narrowband transmitters with an effective radiated power of roughly 10 to 110 watts — comparable to common household electronics."},
+        {"type": "timeline", "head": "Timeline — interstellar visitors", "sub": "Tap an event to expand. Spacing reflects the time between events.", "note": "", "events": [
+          {"date": "2017-10-19", "label": "Oct 2017", "title": "First interstellar object", "detail": "1I/ʻOumuamua is discovered passing through the Solar System."},
+          {"date": "2025-07-01", "label": "1 Jul 2025", "title": "3I/ATLAS discovered", "detail": "Found by the ATLAS survey in Chile; the third confirmed interstellar object."},
+          {"date": "2025-12-18", "label": "18 Dec 2025", "title": "Green Bank observations", "detail": "Breakthrough Listen scans near the object's closest approach, ~1–12 GHz."},
+          {"date": "2026-06-15", "label": "Jun 2026", "title": "Results published", "detail": "The Allen Telescope Array null result is published in The Astronomical Journal."}
+        ]},
+        {"type": "pullquote", "text": "\"There is currently no evidence to suggest that interstellar objects are anything other than natural astrophysical objects.\"", "src": "— Breakthrough Listen study authors, Green Bank observations of 3I/ATLAS, December 2025"},
+        {"type": "p", "html": "A separate, more sensitive campaign was conducted by the Breakthrough Listen program using the 100-metre Robert C. Byrd Green Bank Telescope in West Virginia, on 18 December 2025, less than a day before the object's closest approach to Earth, across roughly 1 to 12 gigahertz. Those data found no continuous-wave transmitters above about 0.1 watts at the object's location; of more than 471,000 initial candidate signals, the nine remaining events were all attributed to interference."},
+        {"type": "p", "html": "3I/ATLAS is the third confirmed interstellar object to pass through the Solar System, after 1I/ʻOumuamua in 2017 and 2I/Borisov in 2019. It was discovered on 1 July 2025 and follows a highly eccentric, unbound trajectory, indicating an origin outside the Solar System."},
+        {"type": "p", "html": "Harvard astrophysicist Avi Loeb has catalogued what he describes as anomalies in the object's behaviour and has discussed the possibility of an artificial origin, while also stating that 3I/ATLAS is \"most likely a comet of natural origin.\" Other astronomers attribute the features to ordinary cometary processes; observations of dust, gas and carbon dioxide around the object support the prevailing view that it is a natural comet."}
+      ],
+      "sidebar_blocks": [
+        {"type": "keyfacts", "items": [
+          "The Allen Telescope Array observed 3I/ATLAS for <strong>7.25 hours</strong> over five sessions in July 2025, scanning 1–9 GHz.",
+          "About <strong>74 million</strong> narrowband hits were flagged; none survived as credible technosignatures.",
+          "The search constrains any transmitter to roughly <strong>10–110 W</strong>; the Green Bank scan ruled out transmitters above ~0.1 W.",
+          "Green Bank observed on 18 December 2025, under a day before the object's closest approach to Earth.",
+          "3I/ATLAS is the third confirmed interstellar object, discovered 1 July 2025; consensus holds it is a natural comet."
+        ]},
+        {"type": "sources", "items": [
+          {"outlet": "SETI Institute / arXiv", "title": "A Search for Radio Technosignatures from 3I/ATLAS with the Allen Telescope Array", "url": "https://arxiv.org/abs/2512.18142", "lean": "Primary"},
+          {"outlet": "Phys.org", "title": "Interstellar object 3I/ATLAS reveals no technosignatures in seven-hour radio scan", "url": "https://phys.org/news/2026-06-interstellar-3iatlas-reveals-technosignatures-hour.html", "lean": "Centre"},
+          {"outlet": "Space.com", "title": "Hunt for technosignatures around interstellar comet 3I/ATLAS comes up empty", "url": "https://www.space.com/space-exploration/search-for-life/not-an-alien-spacecraft-hunt-for-technosignatures-around-interstellar-comet-3i-atlas-comes-up-empty", "lean": "Centre"},
+          {"outlet": "SETI Berkeley", "title": "Breakthrough Listen observations of interstellar object 3I/ATLAS", "url": "https://seti.berkeley.edu/atlas/", "lean": "Primary"}
+        ]},
+        {"type": "factcheck", "items": [
+          {"status": "ok", "verdict": "Confirmed", "text": "The Allen Telescope Array scanned 3I/ATLAS for 7.25 hours over five July 2025 sessions across 1–9 GHz, led by Sofia Z. Sheikh."},
+          {"status": "ok", "verdict": "Confirmed", "text": "No credible technosignatures were found; all candidates were attributed to radio-frequency interference."},
+          {"status": "ok", "verdict": "Confirmed", "text": "3I/ATLAS is the third confirmed interstellar object, discovered 1 July 2025; consensus treats it as a natural comet."}
+        ]},
+        {"type": "logic", "items": [
+          "<strong>1 · Absence of evidence.</strong> A null radio result rules out transmitters above the stated power limits within the observed bands and times — not the existence of any conceivable signal.",
+          "<strong>2 · Natural vs artificial.</strong> The radio searches constrain technosignatures but do not by themselves establish the object's nature; the natural-comet conclusion rests chiefly on imaging and spectroscopy of its dust and gas."
+        ]}
+      ]
+    },
+    {
+      "id": "worldcup",
+      "nav_label": "World Cup Group Stage",
+      "category": "Sport",
+      "badges": [{"label": "Sport", "cls": "b-sport"}],
+      "dateline": "24 June 2026 | Foxborough, Zapopan & Miami Gardens",
+      "headline": "World Cup group stage: England held by Ghana; Scotland face Brazil",
+      "summary": "England drew 0-0 with Ghana and Colombia beat DR Congo 1-0 on 23 June, while Scotland meet Brazil on 24 June seeking the knockout stage for the first time.",
+      "confidence": {"level": "corrob", "label": "Verified", "why": "— completed results are corroborated across ESPN, Sky Sports, FIFA and Al Jazeera; Scotland v Brazil had not kicked off at compile time and is reported as a fixture"},
+      "followup": false,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hard_Rock_Stadium_for_Super_Bowl_LIV_(49606707583).jpg?width=1100",
+        "alt": "Exterior panorama of Hard Rock Stadium in Miami Gardens, Florida",
+        "caption": "Hard Rock Stadium in Miami Gardens, the venue for Scotland v Brazil on 24 June 2026. Photo: Wikimedia Commons · CC BY-SA 2.0",
+        "credit": "elisfkc2 via Wikimedia Commons",
+        "license": "CC BY-SA 2.0"
+      },
+      "inline_image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrew_Robertson_2019.jpg?width=1100",
+        "alt": "Scotland defender Andrew Robertson in a national-team shirt",
+        "caption": "Scotland captain Andrew Robertson, pictured in 2019; Scotland seek a first World Cup knockout place against Brazil. Photo: Wikimedia Commons · CC BY-SA 3.0",
+        "credit": "soccer.ru via Wikimedia Commons",
+        "license": "CC BY-SA 3.0"
+      },
+      "article_blocks": [
+        {"type": "p", "html": "England drew 0-0 with Ghana in Group L at Gillette Stadium in Foxborough, Massachusetts, on 23 June 2026, and did not confirm a place in the knockout stage. England had about 79% possession and 19 shots; Nico O'Reilly struck the crossbar and Harry Kane shot over from close range, both late in the second half, and Marc Guehi had a header cleared off the line in stoppage time."},
+        {"type": "p", "html": "The result left both sides on four points from two matches, with England ahead on goal difference. England play Panama and Ghana play Croatia in their final group fixtures."},
+        {"type": "p", "html": "In Group K, Colombia beat DR Congo 1-0 at Estadio Akron in Zapopan, Mexico, with a 76th-minute goal from the defender Daniel Munoz that deflected past goalkeeper Lionel Mpasi. The win, Munoz's second goal of the tournament, took Colombia to six points and a place in the round of 32 before their final group game against Portugal."},
+        {"type": "p", "html": "DR Congo, on one point, were left needing to beat Uzbekistan in their final match to advance. Also in Group K on 23 June, Portugal beat Uzbekistan 5-0 in Houston, with Cristiano Ronaldo scoring twice; the result left Portugal level on points with Colombia at the top of the group."},
+        {"type": "timeline", "head": "Timeline — 23–24 June fixtures", "sub": "Tap an event to expand. Spacing reflects the time between events.", "note": "Scotland v Brazil and Morocco v Haiti were upcoming at compile time.", "events": [
+          {"date": "2026-06-23", "label": "23 Jun", "title": "England 0-0 Ghana", "detail": "Group L, Foxborough; O'Reilly hit the bar, Kane missed the rebound."},
+          {"date": "2026-06-23", "label": "23 Jun", "title": "Colombia 1-0 DR Congo", "detail": "Group K, Zapopan; Munoz scored in the 76th minute to reach the last 32."},
+          {"date": "2026-06-23", "label": "23 Jun", "title": "Portugal 5-0 Uzbekistan", "detail": "Group K, Houston; Ronaldo scored twice."},
+          {"date": "2026-06-24", "label": "24 Jun", "title": "Scotland v Brazil (fixture)", "detail": "Group C, Hard Rock Stadium, Miami Gardens, 18:00 EDT; Scotland seek a first knockout place."}
+        ]},
+        {"type": "pullquote", "text": "\"I think we've shown in my time in charge that we can be flexible with our system. Pick the right team, give them the right tactics and rely on the players on the pitch.\"", "src": "— Steve Clarke, Scotland manager, 23 June 2026"},
+        {"type": "p", "html": "Attention on 24 June turns to Scotland, who face Brazil at Hard Rock Stadium in Miami Gardens at 18:00 EDT (23:00 BST) in their final Group C match. Scotland have three points after a 1-0 win over Haiti and a 1-0 defeat by Morocco; Brazil and Morocco lead the group on four points each. Morocco play Haiti in Atlanta at the same time."},
+        {"type": "p", "html": "Scotland have not advanced beyond the group stage in any of their previous World Cup appearances. On current standings, a win over Brazil would secure progression, while a draw would strengthen their position among the eight best third-placed teams who advance from the expanded 48-team format. A defeat would leave their qualification dependent on results in other groups."}
+      ],
+      "sidebar_blocks": [
+        {"type": "keyfacts", "items": [
+          "England 0-0 Ghana: England had about <strong>79%</strong> possession and 19 shots; O'Reilly hit the bar and Kane missed from close range.",
+          "Both England and Ghana sit on <strong>four points</strong> in Group L; England lead on goal difference.",
+          "Colombia 1-0 DR Congo: Munoz scored in the 76th minute; Colombia reached six points and the round of 32.",
+          "Scotland have three points and have never reached a World Cup knockout stage; they face Brazil on 24 June.",
+          "The 48-team format sends the top two from each group plus the eight best third-placed teams to a round of 32."
+        ]},
+        {"type": "sources", "items": [
+          {"outlet": "ESPN", "title": "England 0-0 Ghana — Final Score", "url": "https://www.espn.com/soccer/match/_/gameId/760458/ghana-england", "lean": "Centre"},
+          {"outlet": "Sky Sports", "title": "Colombia 1-0 DR Congo — Munoz strike sends Colombia into last 32", "url": "https://www.skysports.com/football/news/11095/13554944/world-cup-2026-colombia-1-0-dr-congo-daniel-munoz-strike-sends-south-americans-into-last-32", "lean": "Centre"},
+          {"outlet": "FIFA", "title": "Scotland v Brazil — match centre", "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021455", "lean": "Governing body"},
+          {"outlet": "Al Jazeera", "title": "Munoz sends Colombia into World Cup knockouts", "url": "https://www.aljazeera.com/sports/2026/6/24/colombia-dr-congo-1-0-fifa-world-cup-2026-knockout-munoz-rodrigruez-arias-mpasi", "lean": "Centre"}
+        ]},
+        {"type": "factcheck", "items": [
+          {"status": "ok", "verdict": "Confirmed", "text": "England drew 0-0 with Ghana on 23 June at Foxborough; O'Reilly hit the bar and Kane missed (ESPN, Al Jazeera, FIFA)."},
+          {"status": "ok", "verdict": "Confirmed", "text": "Colombia beat DR Congo 1-0 via a Munoz goal in the 76th minute, reaching the round of 32 (Sky Sports, ESPN, Al Jazeera)."},
+          {"status": "unv", "verdict": "Unverified", "text": "Scotland v Brazil had not kicked off at compile time and is reported as a fixture, not a result."}
+        ]},
+        {"type": "logic", "items": [
+          "<strong>1 · Fixture vs result.</strong> Scotland v Brazil and Morocco v Haiti were upcoming at compile time (18:00 EDT / 23:00 BST, 24 June); no scoreline is reported.",
+          "<strong>2 · Conditional standings.</strong> Scotland's draw-or-loss qualification scenarios depend on other groups' third-place results and are presented as conditional."
+        ]}
+      ]
+    }
+  ],
+  "markets": {
+    "overview": {
+      "id": "markets-overview",
+      "nav_label": "Markets Overview",
+      "category": "Markets",
+      "badges": [{"label": "Markets & Investments", "cls": "b-markets"}],
+      "dateline": "24 June 2026 | The Week in Markets",
+      "headline": "Memory-chip sell-off steadies as Seoul rebounds; Tokyo and Europe stay lower",
+      "summary": "After Tuesday's chip-led decline, Korea's Kospi rebounded on 24 June while Japan and Europe stayed soft and oil slipped near three-month lows on US–Iran progress.",
+      "confidence": {"level": "corrob", "label": "Verified", "why": "— US (23 Jun close), Asia (24 Jun) and oil/gold (24 Jun) figures are corroborated across two or more outlets; European levels are 24 Jun intraday and labelled as such"},
+      "followup": false,
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/New%20York%20Stock%20Exchange%20August%202017%2001.jpg?width=1100",
+        "alt": "Exterior of the New York Stock Exchange building on Wall Street",
+        "caption": "The New York Stock Exchange; US markets were closed at compile time and reopen 14:30 BST. Photo: Wikimedia Commons · CC BY-SA 4.0",
+        "credit": "Beyond My Ken via Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      "inline_image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Frankfurt%20Stock%20Exchange%20(Ank%20Kumar)%2004.jpg?width=1100",
+        "alt": "Interior of the Frankfurt Stock Exchange",
+        "caption": "The Frankfurt Stock Exchange, home of the DAX, which traded lower mid-morning on 24 June. Photo: Wikimedia Commons · CC BY-SA 4.0",
+        "credit": "Ank Kumar via Wikimedia Commons",
+        "license": "CC BY-SA 4.0"
+      },
+      "article_blocks": [
+        {"type": "p", "html": "U.S. equities closed lower on Tuesday 23 June, with the memory-chip group leading the decline. The S&P 500 fell 1.44% to 7,365.46 and the Nasdaq Composite dropped 2.21% to 25,587.04, while the Dow Jones Industrial Average finished little changed, down about 0.09% at roughly 51,666.84 (all 23 June close). At compile time (24 June, about 10:00 BST) U.S. markets are closed; they reopen at 14:30 BST."},
+        {"type": "p", "html": "The decline was concentrated in memory and AI-linked names. Micron and SanDisk each fell about 13% into the 23 June close, while Arm fell more than 10% and Marvell, Western Digital and Qualcomm shed about 9%, per CNBC and 24/7 Wall St. Defensive sectors cushioned the index: consumer staples led the S&P 500's eleven sectors, and names such as Public Storage, IBM and Accenture advanced."},
+        {"type": "p", "html": "Asia diverged on Wednesday 24 June. South Korea's Kospi rebounded after Tuesday's near-10% fall, closing up roughly 3 to 4%, helped by a Samsung Electronics buyback announcement and short-covering. Japan's Nikkei 225 did not follow, slipping 0.88% to close at 69,174.75 (24 June close)."},
+        {"type": "p", "html": "European markets traded lower mid-morning on 24 June (intraday, not close). The FTSE 100 was around 10,351.54 (down 0.21%), the DAX near 24,848 (down 1.10%) and the pan-regional Stoxx 600 about 0.57% lower, as the technology-led caution from Wall Street and Tokyo carried over. These European levels are live intraday snapshots and will move before the close."},
+        {"type": "p", "html": "Commodities reflected easing geopolitics. Brent crude was around $76.4 a barrel, down about 0.8%, and WTI near $72.6, down about 0.9% on 24 June, near three-month lows after Washington granted Iran a 60-day licence to sell oil and as Strait of Hormuz traffic began to recover. Gold eased to about $4,075 an ounce on 24 June, down about 0.95%."},
+        {"type": "p", "html": "The macro backdrop is a Fed leaning hawkish. At its 16–17 June meeting the FOMC held its benchmark rate at 3.5%–3.75% unanimously, dropped language biased toward cuts, and lifted its end-2026 median projection to about 3.8% from 3.4%, with nine of 18 members now penciling in at least one rate rise this year, citing energy-driven inflation. That rate-rise risk has weighed on higher-multiple chip and AI stocks."},
+        {"type": "p", "html": "<strong>Ahead today:</strong> Micron reports fiscal Q3 2026 results after the U.S. close on 24 June, a read on the memory cycle. Consensus estimates cluster around revenue of roughly $34–35 billion and adjusted EPS near $19.7–20.0, against company guidance of about $33.5 billion. The options market implied a one-day share move of roughly 17%. Investors will focus on HBM4 allocations, gross-margin sustainability and fiscal-2027 guidance."}
+      ],
+      "sidebar_blocks": [
+        {"type": "keyfacts", "items": [
+          "S&P 500 closed at <strong>7,365.46 (-1.44%)</strong> and the Nasdaq at <strong>25,587.04 (-2.21%)</strong> — 23 June close; U.S. markets shut at compile time.",
+          "Korea's Kospi <strong>rebounded about 3–4%</strong> on 24 June after Tuesday's ~10% fall; the Nikkei 225 fell <strong>0.88% to 69,174.75</strong> (24 June close).",
+          "Europe softer mid-morning: FTSE 100 <strong>~10,351.54 (-0.21%)</strong>, DAX <strong>~24,848 (-1.10%)</strong> — 24 June intraday.",
+          "Brent <strong>~$76.4 (-0.8%)</strong>, WTI <strong>~$72.6 (-0.9%)</strong> near three-month lows; gold <strong>~$4,075/oz (-0.95%)</strong> — 24 June.",
+          "The Fed held at <strong>3.5%–3.75%</strong> on 17 June; the median end-2026 projection was raised to about <strong>3.8%</strong>.",
+          "<strong>Micron (MU)</strong> reports fiscal Q3 2026 after the U.S. close on 24 June; implied one-day move about 17%."
+        ]},
+        {"type": "sources", "items": [
+          {"outlet": "CNBC", "title": "Nasdaq closes 2% lower as global tech sell-off rattles markets", "url": "https://www.cnbc.com/2026/06/22/stock-market-today-live-updates.html", "lean": "Centre"},
+          {"outlet": "TradingKey", "title": "Japan, South Korea stocks diverge; Kospi surges, Nikkei declines", "url": "https://www.tradingkey.com/analysis/stocks/more/261986888-stock-kospi-nekki-kioxia-samsung-skhynix-softbank-tradingkey", "lean": "Centre"},
+          {"outlet": "HDFC Sky", "title": "Oil prices today, June 24, 2026: crude continues slide on Hormuz optimism", "url": "https://hdfcsky.com/news/brent-crude-oil-price-today-june-24-2026-crude-oil-price-continue-slide-as-us-iran-peace-progress-sparks-hormuz-optimism", "lean": "Centre"},
+          {"outlet": "Federal Reserve", "title": "FOMC statement, June 17 2026", "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm", "lean": "Primary"},
+          {"outlet": "AlphaStreet", "title": "Micron Q3 2026 earnings preview — June 24", "url": "https://news.alphastreet.com/micron-technology-q3-2026-earnings-preview-june-24-street-expects-19-72-eps/", "lean": "Centre"}
+        ]},
+        {"type": "logic", "items": [
+          "<strong>1 · Last-close, not live.</strong> U.S. index figures are the 23 June close — U.S. cash markets are shut at the 24 June compile time and reopen 14:30 BST.",
+          "<strong>2 · Intraday vs close.</strong> European levels are 24 June intraday snapshots and will change by the close; Asian figures are 24 June (Nikkei close; Kospi late session)."
+        ]}
+      ]
+    },
+    "movers": {
+      "dateline": "US 23 Jun close · Europe 24 Jun intraday · Asia 24 Jun",
+      "headline": "Chip names led U.S. losses at Tuesday's close; Seoul rebounded Wednesday",
+      "note_html": "U.S. single-stock and index figures are the <strong>23 June close</strong> (U.S. markets shut at compile time, reopening 14:30 BST). European index levels are <strong>24 June intraday</strong> and will change. Asian index levels are <strong>24 June</strong> (Nikkei close; Kospi late session). UK and European single-stock movers could not be corroborated to two sources for the open 24 June session and are shown at index level only.",
+      "indices": [
+        {"name": "S&P 500", "value": "7,365.46", "change": "▼ 1.44%", "direction": "down"},
+        {"name": "Nasdaq Comp.", "value": "25,587.04", "change": "▼ 2.21%", "direction": "down"},
+        {"name": "Dow Jones", "value": "51,666.84", "change": "▼ 0.09%", "direction": "down"},
+        {"name": "FTSE 100", "value": "10,351.54", "change": "▼ 0.21%", "direction": "down"},
+        {"name": "DAX", "value": "24,848.06", "change": "▼ 1.10%", "direction": "down"},
+        {"name": "Nikkei 225", "value": "69,174.75", "change": "▼ 0.88%", "direction": "down"}
+      ],
+      "groups": [
+        {
+          "section": "United States — top movers (23 June close)",
+          "boxes": [
+            {"kind": "gain", "heading": "▲ Top gainers", "region_note": "US · 23 Jun close", "rows": [
+              {"ticker": "PSA", "name": "Public Storage", "pct": "+4.40%", "direction": "up"},
+              {"ticker": "IBM", "name": "International Business Machines", "pct": "+4.20%", "direction": "up"},
+              {"ticker": "ACN", "name": "Accenture", "pct": "+3.30%", "direction": "up"}
+            ]},
+            {"kind": "lose", "heading": "▼ Top losers", "region_note": "US · 23 Jun close", "rows": [
+              {"ticker": "MU", "name": "Micron Technology", "pct": "−13.00%", "direction": "down"},
+              {"ticker": "SNDK", "name": "SanDisk", "pct": "−13.00%", "direction": "down"},
+              {"ticker": "ARM", "name": "Arm Holdings", "pct": "−10.00%", "direction": "down"},
+              {"ticker": "MRVL", "name": "Marvell Technology", "pct": "−9.00%", "direction": "down"},
+              {"ticker": "WDC", "name": "Western Digital", "pct": "−9.00%", "direction": "down"},
+              {"ticker": "QCOM", "name": "Qualcomm", "pct": "−9.00%", "direction": "down"}
+            ]}
+          ],
+          "note_html": "Single-stock movers are approximate, from the 23 June U.S. close. UK and European single-stock movers were not corroborated across two sources for the open 24 June session; see the index strip above for FTSE 100 and DAX levels."
+        }
+      ],
+      "sources": [
+        {"outlet": "CNBC", "title": "Nasdaq closes 2% lower, led by Micron, as global tech sell-off rattles markets", "url": "https://www.cnbc.com/2026/06/22/stock-market-today-live-updates.html", "lean": "Centre"},
+        {"outlet": "24/7 Wall St.", "title": "SanDisk, Micron and Western Digital slide as memory chips are hit", "url": "https://247wallst.com/investing/2026/06/23/sandisk-plunges-11-micron-and-western-digital-slide-10-as-korean-market-crash-hits-memory-chips/", "lean": "Centre"},
+        {"outlet": "TradingKey", "title": "Japan, South Korea stocks diverge; Kospi surges over 3%", "url": "https://www.tradingkey.com/analysis/stocks/more/261986888-stock-kospi-nekki-kioxia-samsung-skhynix-softbank-tradingkey", "lean": "Centre"}
+      ]
+    },
+    "calendar": {
+      "dateline": "Economic calendar · June 2026",
+      "headline": "Fed holds rates as Micron earnings headline a tech-heavy week",
+      "note_html": "Passed events are marked done; the next upcoming item is highlighted. Central-bank and earnings dates are issuer-confirmed where possible.",
+      "days": [
+        {"day": "16–17", "month": "Jun", "dow": "Tue–Wed", "state": "past", "items": [
+          {"chip": "bank", "chip_label": "Central bank", "event": "Federal Reserve FOMC", "meta": "Held at 3.5%–3.75%; end-2026 median projection raised to ~3.8%.", "done": "✓ held"}
+        ]},
+        {"day": "18", "month": "Jun", "dow": "Thu", "state": "past", "items": [
+          {"chip": "data", "chip_label": "Data", "event": "US initial jobless claims", "meta": "Weekly labour-market reading.", "done": "✓ released"}
+        ]},
+        {"day": "19", "month": "Jun", "dow": "Fri", "state": "past", "items": [
+          {"chip": "data", "chip_label": "Data", "event": "Flash PMIs (US/EU/UK)", "meta": "S&P Global purchasing-managers surveys.", "done": "✓ released"}
+        ]},
+        {"day": "23", "month": "Jun", "dow": "Tue", "state": "past", "items": [
+          {"chip": "earn", "chip_label": "Markets", "event": "Global memory-chip sell-off", "meta": "Kospi triggers circuit breakers; Nasdaq −2.21%.", "done": "✓"}
+        ]},
+        {"day": "24", "month": "Jun", "dow": "Wed", "state": "next", "items": [
+          {"chip": "earn", "chip_label": "Earnings", "event": "Micron (MU) — Q3 FY26", "meta": "After the US close.", "done": ""},
+          {"chip": "data", "chip_label": "Data", "event": "EIA crude inventories", "meta": "Weekly US oil stocks; Brent near three-month lows.", "done": ""}
+        ]},
+        {"day": "26", "month": "Jun", "dow": "Fri", "state": "", "items": [
+          {"chip": "data", "chip_label": "Data", "event": "US PCE price index (May)", "meta": "The Fed's preferred inflation gauge.", "done": ""}
+        ]},
+        {"day": "30", "month": "Jun", "dow": "Tue", "state": "", "items": [
+          {"chip": "data", "chip_label": "Data", "event": "Euro-area flash HICP (June)", "meta": "Eurostat inflation estimate.", "done": ""}
+        ]}
+      ],
+      "sources": [
+        {"outlet": "Federal Reserve", "title": "FOMC statement, June 17 2026", "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm", "lean": "Primary"},
+        {"outlet": "StockTitan", "title": "Micron to report fiscal Q3 results on June 24", "url": "https://www.stocktitan.net/news/MU/micron-technology-to-report-fiscal-third-quarter-results-on-june-24-22gcrbths4gp.html", "lean": "Centre"},
+        {"outlet": "MarketBeat", "title": "MU Q3 2026 earnings report 6/24/2026", "url": "https://www.marketbeat.com/earnings/reports/2026-6-24-micron-technology-inc-stock/", "lean": "Centre"}
+      ]
+    }
+  },
+  "archive": [
+    {"date": "24 Jun 2026", "edition": "24 June 2026", "cat": "Conflict", "title": "US and Iran agree Hormuz safe-passage line; IMO to evacuate 11,000 seafarers", "summary": "Mediators Qatar and Pakistan said the US and Iran agreed a communication line for safe shipping through the Strait of Hormuz and a Lebanon de-confliction cell, as the IMO announced an evacuation of more than 11,000 stranded seafarers.", "panel": "hormuz"},
+    {"date": "24 Jun 2026", "edition": "24 June 2026", "cat": "Politics", "title": "Congress passes the 21st Century ROAD to Housing Act, sending it to Trump", "summary": "The US House passed the bipartisan housing bill 358-32 after the Senate's 85-5 vote; it limits institutional investors owning 350+ single-family homes and heads to the president's desk.", "panel": "housing"},
+    {"date": "24 Jun 2026", "edition": "24 June 2026", "cat": "Politics", "title": "Appeals court lets Trump administration resume nationwide expedited removal", "summary": "A divided D.C. Circuit panel vacated a lower-court order, allowing fast-track deportation without a hearing for people who cannot prove two years' continuous US presence.", "panel": "deportation"},
+    {"date": "24 Jun 2026", "edition": "24 June 2026", "cat": "Conflict", "title": "Ukraine strikes occupied Crimea; occupation officials report widespread power loss", "summary": "Ukraine said it destroyed a railway bridge over the North Crimean Canal and hit energy and fuel sites overnight on 23 June; occupation authorities reported about half the peninsula lost power.", "panel": "crimea"},
+    {"date": "24 Jun 2026", "edition": "24 June 2026", "cat": "Technology", "title": "Micron and Anthropic sign AI-memory supply deal as chip shares fall before earnings", "summary": "The companies announced a multi-year memory and storage agreement and a Micron investment in Anthropic's funding round, two days before Micron's quarterly results.", "panel": "micron"},
+    {"date": "24 Jun 2026", "edition": "24 June 2026", "cat": "Health", "title": "Study identifies why H5N1 infects dairy cows' udders rather than their lungs", "summary": "University of Pittsburgh researchers found H5N1 binds N-linked sialic acid receptors abundant in cow udder tissue but scarce in their airways; published in Science Advances.", "panel": "birdflu"},
+    {"date": "24 Jun 2026", "edition": "24 June 2026", "cat": "Science", "title": "SETI radio search of interstellar object 3I/ATLAS finds no technosignatures", "summary": "A SETI Institute-led scan detected no artificial radio signals from 3I/ATLAS, with all candidate detections attributed to human-made interference.", "panel": "seti"},
+    {"date": "24 Jun 2026", "edition": "24 June 2026", "cat": "Sport", "title": "World Cup group stage: England held by Ghana; Scotland face Brazil", "summary": "England drew 0-0 with Ghana and Colombia beat DR Congo 1-0 on 23 June, while Scotland met Brazil on 24 June seeking a first World Cup knockout place.", "panel": "worldcup"},
+    {"date": "24 Jun 2026", "edition": "24 June 2026", "cat": "Markets", "title": "Memory-chip sell-off steadies as Seoul rebounds; oil near three-month lows", "summary": "After Tuesday's chip-led decline (S&P 500 -1.44%, Nasdaq -2.21%), the Kospi rebounded on 24 June while Japan and Europe stayed lower and Brent eased to about $76.4.", "panel": "markets"}
+  ]
+}
