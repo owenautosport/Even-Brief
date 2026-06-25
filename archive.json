@@ -2,81 +2,65 @@
 {
 "date": "25 Jun 2026",
 "edition": "25 June 2026",
+"cat": "Science",
+"title": "Twin earthquakes near Caracas kill at least 164, Venezuela's acting president says",
+"summary": "An M7.2 foreshock and an M7.5 mainshock 39 seconds apart struck northern Venezuela on 24 June, killing at least 164 and injuring 971 by the government's early-Thursday count, with the toll expected to rise.",
+"panel": "venezuela-quake"
+},
+{
+"date": "25 Jun 2026",
+"edition": "25 June 2026",
+"cat": "Conflict",
+"title": "US and Iran set 60-day roadmap; dispute inspections as Israel–Lebanon talks run in Washington",
+"summary": "US and Iranian negotiators concluded Switzerland talks on a 60-day roadmap toward a final deal, with four working groups and a Strait of Hormuz communication line, while the two sides publicly disagreed over the timing of nuclear inspections.",
+"panel": "iran-roadmap"
+},
+{
+"date": "25 Jun 2026",
+"edition": "25 June 2026",
 "cat": "Climate",
-"title": "UK provisionally records its hottest June day as red heat warnings hit western Europe",
-"summary": "The Met Office said the UK reached about 36°C on 24 June, provisionally its highest June temperature on record, as red extreme-heat warnings covered Surrey and South-East England and France and Italy issued alerts.",
-"panel": "heatwave"
-},
-{
-"date": "25 Jun 2026",
-"edition": "25 June 2026",
-"cat": "Conflict",
-"title": "US and Iran agree Hormuz safe-passage line; IMO to evacuate 11,000 seafarers",
-"summary": "Mediators Qatar and Pakistan said the US and Iran agreed a communication line for safe shipping through the Strait of Hormuz and a Lebanon de-confliction cell, as the IMO announced an evacuation of more than 11,000 stranded seafarers.",
-"panel": "hormuz"
+"title": "France records hottest day on national scale since 1947 as Europe heat peaks",
+"summary": "France's national temperature indicator reached 30.0°C on 24 June — its highest since the measure began in 1947 — and Météo-France placed 72 departments under red heatwave alert for 25 June as extreme heat extended across western Europe.",
+"panel": "europe-heat"
 },
 {
 "date": "25 Jun 2026",
 "edition": "25 June 2026",
 "cat": "Politics",
-"title": "Trump cancels housing-bill signing, conditioning it on an elections bill",
-"summary": "Hours before a planned ceremony, Trump said he would not sign the bipartisan 21st Century ROAD to Housing Act until Congress passes the SAVE America Act on voter registration.",
-"panel": "housing"
-},
-{
-"date": "25 Jun 2026",
-"edition": "25 June 2026",
-"cat": "Politics",
-"title": "Appeals court lets Trump administration resume nationwide expedited removal",
-"summary": "A divided D.C. Circuit panel vacated a lower-court order, allowing fast-track deportation without a hearing for people who cannot prove two years' continuous US presence.",
-"panel": "deportation"
-},
-{
-"date": "25 Jun 2026",
-"edition": "25 June 2026",
-"cat": "Conflict",
-"title": "Ukraine strikes occupied Crimea; occupation officials report widespread power loss",
-"summary": "Ukraine said it destroyed a railway bridge over the North Crimean Canal and hit energy and fuel sites; occupation officials reported widespread blackouts and two people injured in Sevastopol.",
-"panel": "crimea"
+"title": "Colombia's electoral council certifies de la Espriella as president-elect after challenge rejected",
+"summary": "Colombia's electoral council on 24 June officially declared conservative Abelardo de la Espriella the winner of the 21 June runoff over Iván Cepeda, who conceded after the council rejected his party's challenge to roughly 33,000 polling stations.",
+"panel": "colombia-election"
 },
 {
 "date": "25 Jun 2026",
 "edition": "25 June 2026",
 "cat": "Technology",
-"title": "Micron beats estimates and guides higher; shares jump after the Anthropic AI-memory deal",
-"summary": "Micron reported fiscal Q3 revenue of about $41.5bn and adjusted EPS of $25.11, guided to roughly $50bn for the current quarter, and rose about 15% after the close.",
-"panel": "micron"
+"title": "Asian memory-chip shares rise after Micron's record quarter; SK Hynix plans Nasdaq listing",
+"summary": "AI-memory chip stocks across Asia rose in the 25 June session after Micron reported record fiscal third-quarter revenue of $41.46bn and SK Hynix disclosed a plan to raise up to about $29.4bn in a US listing.",
+"panel": "chip-rally"
 },
 {
 "date": "25 Jun 2026",
 "edition": "25 June 2026",
 "cat": "Health",
-"title": "Study identifies why H5N1 infects dairy cows' udders rather than their lungs",
-"summary": "University of Pittsburgh researchers found H5N1 binds N-linked sialic acid receptors abundant in cow udder tissue but scarce in their airways; published in Science Advances.",
-"panel": "birdflu"
-},
-{
-"date": "25 Jun 2026",
-"edition": "25 June 2026",
-"cat": "Science",
-"title": "SETI radio search of interstellar object 3I/ATLAS finds no technosignatures",
-"summary": "A SETI Institute-led scan detected no artificial radio signals from 3I/ATLAS, with all candidate detections attributed to human-made interference.",
-"panel": "seti"
+"title": "CDC ends response to cruise-ship hantavirus outbreak after US monitoring clears",
+"summary": "The US Centers for Disease Control and Prevention said on 24 June it had concluded its response to an Andes virus outbreak tied to the cruise ship M/V Hondius, after all US-exposed travellers completed a 42-day monitoring period without illness.",
+"panel": "hantavirus"
 },
 {
 "date": "25 Jun 2026",
 "edition": "25 June 2026",
 "cat": "Sport",
-"title": "World Cup: Scotland beaten 2-0 by Brazil and exit; England held by Ghana",
-"summary": "Vinícius Júnior scored twice as Brazil beat Scotland 2-0 in Miami on 24 June, ending Scotland's bid for a first World Cup knockout place, a day after England were held 0-0 by Ghana.",
-"panel": "worldcup"
+"title": "Scotland lose 0-3 to Brazil and finish third in Group C; qualification out of their hands",
+"summary": "Brazil beat Scotland 3-0 through two Vinícius Júnior goals and one from Matheus Cunha, leaving Scotland third in Group C on three points and dependent on other groups to advance as a best third-placed side.",
+"panel": "world-cup"
 },
 {
 "date": "25 Jun 2026",
 "edition": "25 June 2026",
 "cat": "Markets",
-"title": "Wall Street steadies on rotation out of tech; oil and gold fall, Micron jumps after the close",
-"summary": "U.S. stocks were mixed at Wednesday's close as the Dow rose and the S&P 500 and Nasdaq slipped; Brent and gold fell on easing Middle East tension and Micron rose about 15% after hours.",
+"title": "AI memory chips lift Asia after Micron's record quarter; oil holds below $70",
+"summary": "Asian markets closed higher on 25 June on a memory-chip rally after Micron's record fiscal Q3, while oil stayed near four-month lows and the Fed's mid-June hold framed the rate backdrop.",
 "panel": "markets"
 },
 {
